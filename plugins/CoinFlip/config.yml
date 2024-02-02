@@ -1,0 +1,56 @@
+# The min bet amount
+minAmount: 1000
+
+GUI:
+  Size: 9
+  Title: "&6&lYAZITURA &8» "
+  SkullItem:
+    name: "&f&l%name%"
+    lore:
+    - ""
+    - "&b&lBahiş"
+    - " &7$%money%"
+    - ""
+    - "&b&lTaraf"
+    - " &7%side%"
+    - ""
+    - "&7Oyuna katılmak için &a&lTIKLA"
+  BookInfo:
+    type: BOOK
+    name: "&b&lYazıTura Yardım"
+    lore:
+    - ""
+    - "&e/coinflip"
+    - "&7Mevcut oyunları gösterir."
+    - ""
+    - "&e/coinflip <amount> <heads/tails>"
+    - "&7Yeni bir oyun oluşturur."
+    - ""
+    - "&e/coinflip cancel"
+    - "&7Mevcut oyunu kapatır."
+    - ""
+    - "&e/coinflip toggle"
+    - "&7YazıTura mesajlarını açıp kapatır."
+  RefreshItem:
+    type: CHEST
+    name: "&b&lYenile"
+    lore:
+    - "&7Sayfayı yenilemek için tıkla."
+
+AnimationGUI:
+  Title: "&lKAZANAN.."
+
+# messages
+Messages:
+  WinBroadcast: "&6&lYAZITURA &8» &a%winner% &7oyunu kazandı, &c%loser% &7kaybetti. Kazanilan para &6$%amount%"
+  Entered: "&6&lYAZITURA &8» &3$%amount% &bdegerinde yazitura baslattin. &6/yazitura"
+  Canceled: "&6&lYAZITURA &8» &eOyundan cekildin."
+  CanceledHelp: "&6&lYAZITURA &8» &eOyunu iptal etmek icin &6/cf cancel"
+  ReceivedMoney: " &a&l+ %amount%"
+  LostMoney: " &c&l- %amount%"
+  NotEnoughMoney: "&6&lYAZITURA &8» &cYaziTura oynayacak paran yok!"
+  NotEnoughEnterMoney: "&6&lYAZITURA &8» &cYeterince paraniz yok. &7(Minimum bahis 1000$)"
+  AlreadyInBet: "&6&lYAZITURA &8» &cZaten acik bir oyunun bulunmakta. Yeniden oynamak icin baslattigin oyunun bitmesini beklemelisin."
+  NotInBet: "&6&lYAZITURA &8» &eAcik bir yazitura oyunun yok."
+  ToggleON: "&6&lYAZITURA &8» &eYazıTura mesajları &a&lAKTIF!"
+  ToggleOFF: "&6&lYAZITURA &8» &eYazıTura mesajları &c&lKAPALI!"

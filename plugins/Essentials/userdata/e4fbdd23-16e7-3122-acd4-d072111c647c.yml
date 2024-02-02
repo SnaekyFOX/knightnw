@@ -1,0 +1,20 @@
+lastAccountName: Trxor
+timestamps:
+  login: 1677784490271
+  lastteleport: 1677784083216
+  logout: 1677784502320
+ipAddress: 127.0.0.1
+lastlocation:
+  world: trxzort
+  x: 1.6558023560149213
+  y: 29.0
+  z: -11.051706505891676
+  yaw: 202.52478
+  pitch: -1.4174223
+logoutlocation:
+  world: trxzort
+  x: 18.775588013357513
+  y: 22.0
+  z: -16.69999998807907
+  yaw: 122.30499
+  pitch: 27.394848

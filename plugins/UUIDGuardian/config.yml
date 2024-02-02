@@ -1,0 +1,30 @@
+# 
+# +------------------------------------------------------+ #
+# |                CONFIGURATION FILES                   | #
+# |                DEVELOPED BY @ACCO                    | #
+# +------------------------------------------------------+ #
+Config:
+  ReasonKick: '&c&l&nYour UUID seems to be Spoofed, if you believe that this is an
+    error contact the server administrator, also if you changed your nickname'
+  InfoOnLogin: true
+  BanIp:
+    Enable: false
+    Reason: '&c&l&nTried to spoof UUID!'
+  Ban:
+    Enable: false
+    Reason: '&c&l&nTried to spoof UUID!'
+Database:
+  Nicks:
+    Ricky_22: 107ac876-1f33-3815-a3c6-c47231f0b766
+    Odori: 73b98c02-f12f-39fc-afce-f767e69bd7ed
+    Trxor: e4fbdd23-16e7-3122-acd4-d072111c647c
+    Salam62: 8d3c4a3d-147b-3d7e-8b29-abaee01bb86b
+    SnaekyFOX: 3d39a953-f1f1-3325-a1e6-5ffa72dfd6df
+    LAHODEN: ed10d90d-1ef2-3586-af02-e15d4d3baeae
+  UUID:
+    107ac876-1f33-3815-a3c6-c47231f0b766: Ricky_22
+    73b98c02-f12f-39fc-afce-f767e69bd7ed: Odori
+    e4fbdd23-16e7-3122-acd4-d072111c647c: Trxor
+    8d3c4a3d-147b-3d7e-8b29-abaee01bb86b: Salam62
+    3d39a953-f1f1-3325-a1e6-5ffa72dfd6df: SnaekyFOX
+    ed10d90d-1ef2-3586-af02-e15d4d3baeae: LAHODEN

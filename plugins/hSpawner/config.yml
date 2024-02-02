@@ -1,0 +1,544 @@
+﻿Settings:
+  Server-Wait-Time: 0 #data update will start in 60 seconds
+  Auto-Backup-Interval: 7200 #every 7200 seconds if you don't want, type -1
+  Auto-Save-Interval: 600 #every 600 seconds if you don't want, type -1
+  Broken-Spawner-Mode: true
+  Place-Sound: ''
+  Place-Effect: ''
+  Upgrade-Sound: ''
+  Upgrade-Effect: ''
+  Parse-Sound: ''
+  Parse-Effect: ''
+  Mob-Stacker:
+    Mob-Name: '%mob% x%stack%'
+    Kill-Count: 10 #if stack of spawned mob is smaller than or equal to 10, it will be killed directly
+  Parse-Sign-Lines:
+    - ''
+    - '^^^^^^'
+    - 'Arkadaşının'
+    - 'Adını gir'
+  Friend-Sign-Lines:
+    - ''
+    - '^^^^^^'
+    - 'Arkadaşının'
+    - 'Adını gir'
+  SilkTouch: true
+  Place-Again-Time-ItemSP: 1
+  Break-Again-Time-ItemSP: 1
+  Place-Again-Time-MobSP: 1
+  Break-Again-Time-MobSP: 1
+  Hologram-Height: 2
+  Hologram-Lines:
+    - '&6%spawner%'
+    - '&fSahibi: &b%owner%'
+    - ' '
+    - '&fLevel: &b%level%'
+    - ' '
+
+Messages:
+  Error-Break-Time: '&6SkyBlock &8► &cSpawner Kırmak İçin &4%wait% &cSaniye Bekleyiniz.'
+  Error-Place-Time: '&6SkyBlock &8► &cSpawner Yerleştirmeden Önce &4%wait% &cSaniye Bekleyiniz'
+  Error-Need-Silktouch: '&6SkyBlock &8► &cSpawnerler İpeksi Dokunuş İle Kırılır!'
+  Error-Spawner-Is-Not-Yours: '&6SkyBlock &8► &cSize ait olmayan bir spawner erişemezsiniz!'
+  Error-Spawner-Level-Out: '&6SkyBlock &8► &cSpawner 100 seviyeyi geçemez, başka bir yere koyun!'
+  Error-There-Is-No-Spawner: '&6SkyBlock &8► &cEnvanterinizde spawner yok, bu spawner seviyesini yükseltemezsiniz.'
+  Error-Spawner-Count-Exceeded: '&6SkyBlock &8► &cMaksimum Spawner seviyesine ulaştınız.'
+  Error-Parse: '&6SkyBlock &8► &cBu spawner seviyesi, girilen değerden daha küçük!'
+  Error-There-Is-No-Item-In-Store: '&6SkyBlock &8► &cMağazanızda ürün yok, biraz beklemeniz gerekiyor :('
+  Everyone-Was-Given-Spawner: '&6SkyBlock &8► &a%spawnertype% &espawner has been awarded by &b%giver%!'
+  Spawner-Is-Broken: '&6SkyBlock &8► &aSpawner başarıyla kaldırıldı!'
+  Spawner-Placed: '&6SkyBlock &8► &aSpawner başarıyla yerleştirildi!'
+  Hologram-Mode: '&6SkyBlock &8► &eHologram %mode%!'
+  Store-Mode: '&6SkyBlock &8► &eSpawner Depo Durumu %mode%!'
+  Auto-Sell-Mode: '&6SkyBlock &8► &eSpawner otomatik satış %mode%!'
+  Spawner-Upgraded: '&6SkyBlock &8► &eSpawner Yükseltildi &a%level% &elevel'
+  Spawner-Parsed: '&6SkyBlock &8► &eKaybedilen &b%level% &eseviyeler ve Spawnerler envanterinize eklendi!'
+  Store-Sold: '&6SkyBlock &8► &eMağazanızda &a%amount% &eSattınız Ve Para Kazandınız &2%money%$'
+  States:
+    Active: '&aAktif'
+    Deactive: '&cKapalı'
+
+GUI-Main:
+  Title: '&8Spawner (%x%, %y%, %z%)'
+  Size: 3
+  Items:
+    Spawner-Upgrade:
+      Type: 'DOUBLE_PLANT'
+      Data-Value: 0
+      Name: '&a&lSeviye Yükselt'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Spawner birleştirerek'
+        - ' &7seviyelerini yükselt.'
+        - ''
+        - ' &7birleşik spawnerler'
+        - ' &7daha az yer kaplar'
+        - ' &7ve aynı verimi saglar.'
+        - ''
+        - '&6→ &eYükseltmek için tıklayın!'
+      NBT: '{}'
+      Slot: 4
+    Spawner-Parse:
+      Type: 'COAL'
+      Data-Value: 0
+      Name: '&a&lAyrıştır'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Birleştirilmiş spawnerinizi dilediğiniz'
+        - ' &7miktarda tekrar ayrıştırabilirsiniz'
+        - ''
+        - ' &7Ayrıştırılan her seviye 1 &b&l(Bir)'
+        - ' &d&lspawneri envanterinize ekler.'
+        - ''
+        - '&6→ &eAyrıştırmak için tıkla!'
+      NBT: '{}'
+      Slot: 12
+    Spawner-Settings:
+      Type: 'REDSTONE_COMPARATOR'
+      Data-Value: 0
+      Name: '&a&lAyarlar'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Spawner ile ilgili genel'
+        - ' &7ayarları düzenlemene olanak sağlar'
+        - ''
+        - '&6→ &eGörüntülemek için tıkla!'
+      NBT: '{}'
+      Slot: 13
+    Spawner-Store:
+      Type: 'SKULL_ITEM'
+      Data-Value: 3
+      Name: '&aSpawner Deposu'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Spawneriniz için 2 &b&l(iki)'
+        - ' &7durum mevcut!'
+        - ''
+        - ' &8Ganimet noktası:'
+        - ' &bDışına: &7Ganimetleri dışarı atar.'
+        - ' &bİçine: &7Ganimetleri depoya atar.'
+        - ''
+        - ' &eDepo bana ne sağlar?'
+        - ' &7Eşyalarınızı otomatik olarak satabilir'
+        - ' &7ya da istediğiniz zaman alabilirsiniz'
+        - ''
+        - '&6→ &eErişmek için tıkla !'
+      NBT: '{SkullOwner:{Id:"33a84c61-263c-4689-a62c-3b8044e1ff4d",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDVjNmRjMmJiZjUxYzM2Y2ZjNzcxNDU4NWE2YTU2ODNlZjJiMTRkNDdkOGZmNzE0NjU0YTg5M2Y1ZGE2MjIifX19"}]}}}'
+      Slot: 14
+
+GUI-Upgrade:
+  Title: '&7Spawner &8> Yükselt'
+  Size: 4
+  Items:
+    Upgrade:
+      Type: 'FIREWORK'
+      Data-Value: 0
+      Name: '&a&lSeviye Yükselt'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Boş alanlara yerleştirdiğin'
+        - ' &7aynı tür Spawnerler mevcut'
+        - ' &7konumda bulunan Spawnere Seviye Ekler!'
+        - ''
+        - '&6→ &eYükseltmek İçin Tıkla !'
+      NBT: '{}'
+      Slot: 32
+    Back:
+      Type: 'FENCE_GATE'
+      Data-Value: 0
+      Name: '&c<- Geri Dön'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 30
+
+GUI-Settings:
+  Title: '&7Spawner &8> Ayarlar'
+  Size: 3
+  Items:
+    Hologram-Settings:
+      Type: 'PAINTING'
+      Data-Value: 0
+      Name: '&a&lHologram'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Spawner üstünde bulunan'
+        - ' &7hologramı açıp kapatmanıza yarar'
+        - ''
+        - ' &dHologramları herkes görürmü?'
+        - ' &7Yanlızca eklediğiniz arkadaşlar tarafından'
+        - ' &7bu ayarın aktif olduğu durumlarda görülür'
+        - ''
+        - '&6→ &eDeğiştirmek için tıkla!'
+      NBT: '{}'
+      Slot: 10
+    Store-Settings:
+      Type: 'CAULDRON_ITEM'
+      Data-Value: 0
+      Name: '&a&lDepo'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Depo durumunu ayarlamanıza'
+        - ' &7yardımcı olur.'
+        - ''
+        - ' &8Ganimet Barları:'
+        - ' &bDışına: &7Ganimetleri dışarı atar.'
+        - ' &bİçine: &7Ganimetleri depoya atar.'
+        - ''
+        - ' &eDepo bana nee sağlar?'
+        - ' &7Eşyalarınızı otomatik olarak satabilir'
+        - ' &7ya da istediğiniz zaman alabilirsiniz'
+        - ''
+        - '&6→ &eDeğiştirmek için tıkla!'
+      NBT: '{}'
+      Slot: 12
+    Auto-Sell-Settings:
+      Type: 'DOUBLE_PLANT'
+      Data-Value: 0
+      Name: '&a&lOtomatik Satış'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Depo içerisinde bulunan ganimetleri'
+        - ' &7otomatik olarak satar'
+        - ''
+        - ' &dFiyatlar sabitmi?'
+        - ' &7Depo içerisinde biriken'
+        - ' &7tüm ganimetler aynı fiyatta.'
+        - ''
+        - '&6→ &eDeğiştirmek için tıkla!'
+      NBT: '{}'
+      Slot: 14
+    Friend-Settings:
+      Type: 'SKULL_ITEM'
+      Data-Value: 3
+      Name: '&a&lArkadaş'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Deponuza erişebilen oyuncu'
+        - ' &7ve bu oyuncuların erişim'
+        - ' &7yetkilerini kişileştirin.'
+        - ''
+        - ' &bArkadaş sınırı varmı?'
+        - ' &7Herhangi bir sınır yok'
+        - ' &7tüm oyuncular eklenebilir'
+        - ' &7aynı şekilde hepsi kişileştirilir.'
+        - ''
+        - '&6→ &eGitmek için tıkla!'
+      NBT: '{SkullOwner:{Id:"4b3d7b37-bd13-4441-bebd-02b7088d7577",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzcwZTk2MzZiZGRiYzE0MGQyZDc0ODE5NGJkN2UxZGZiZGE0NTI2ZTk2MGMzNzMzZWI3ZGFlMTRiMWY2MDdmNiJ9fX0="}]}}}'
+      Slot: 16
+    Back:
+      Type: 'FENCE_GATE'
+      Data-Value: 0
+      Name: '&c<- Geri dön'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 22
+
+GUI-Store:
+  Title: '&7Spawner &8> Depo'
+  Size: 6
+  Items:
+    Stock-Item-Slots:
+      - 0
+      - 1
+      - 2
+      - 3
+      - 4
+      - 5
+      - 6
+      - 7
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 13
+      - 14
+      - 15
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      - 22
+      - 23
+      - 24
+      - 25
+      - 26
+      - 27
+      - 28
+      - 29
+      - 30
+      - 31
+      - 32
+      - 33
+      - 34
+      - 35
+      - 36
+      - 37
+      - 38
+      - 39
+      - 40
+      - 41
+      - 42
+      - 43
+      - 44
+    Previous-Page:
+      Type: 'ARROW'
+      Data-Value: 0
+      Name: '&c<- Önceki sayfa'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 48
+    Next-Page:
+      Type: 'ARROW'
+      Data-Value: 0
+      Name: '&aSonraki sayfa ->'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 50
+    Sell-Store:
+      Type: 'EMERALD'
+      Data-Value: 0
+      Name: '&aDepoyu sat'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Deponuzda bulunan tüm'
+        - ' &7ürünleri satar.'
+        - ''
+        - ' &fKazanç: &d%money% ⛁'
+        - ''
+        - '&6→ &eTıkla, sat!'
+      NBT: '{}'
+      Slot: 53
+    Sell-Page:
+      Type: 'EMERALD'
+      Data-Value: 0
+      Name: '&aSayfayı sat'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Deponuzda bulunan tüm'
+        - ' &7ürünleri satar.'
+        - ''
+        - ' &fKazanç: &d%money% ⛁'
+        - ''
+        - '&6→ &eTıkla, sat!'
+      NBT: '{}'
+      Slot: 45
+    Back:
+      Type: 'FENCE_GATE'
+      Data-Value: 0
+      Name: '&c<- Geri dön'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 49
+
+GUI-Friend:
+  Title: '&7Spawner &8> Arkadaşlar'
+  Size: 6
+  Items:
+    Friend-Head-Item:
+      Type: 'SKULL_ITEM'
+      Data-Value: 3
+      Name: '&a%player%'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - '&eShift + right &8» &7Click to delete friend,'
+        - '&eLeft click &8» &7Click to access moderation menu.'
+      NBT: '{}'
+      Slots:
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+    Add-Friend:
+      Type: 'EMERALD_BLOCK'
+      Data-Value: 0
+      Name: '&aArkadaş ekle'
+      Glow: false
+      Amount: 1
+      Lore:
+        - ''
+        - ' &7Yeni bir arkadaş ekleyebilir eklediğiniz'
+        - ' &7kişiyi kendine göre kişileştirebilirsin'
+        - ''
+        - ' &bArkadaş sınırı varmı?'
+        - ' &7Herhangi bir sınır yok'
+        - ' &7tüm oyuncular eklenebilir.'
+        - ' &7Aynı şekilde hepsi kişileştirilir..'
+        - ''
+        - '&6→ &eGitmek için tıkla!'
+      NBT: '{}'
+      Slot: 4
+    Previous-Page:
+      Type: 'ARROW'
+      Data-Value: 0
+      Name: '&c<- Önceki sayfa'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 48
+    Next-Page:
+      Type: 'ARROW'
+      Data-Value: 0
+      Name: '&aSonraki sayfa ->'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 50
+    Back:
+      Type: 'FENCE_GATE'
+      Data-Value: 0
+      Name: '&c<- Geri dön'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 49
+
+GUI-FriendModeration:
+  Title: '&7Spawner > Friends &8> %friend%'
+  Size: 3
+  Items:
+    Spawner-Upgrade:
+      Type: 'FIREWORK'
+      Data-Value: 0
+      Name: '&a&lSeviye yükseltme'
+      Glow: false
+      Amount: 1
+      Lore:
+        - '&7Arkadaşınız Spawnerınızın'
+        - '&7seviyesini yükseltebilir.'
+        - ''
+        - ' &dAyrıştırabilir mi?'
+        - ' &7Hayır,ayrıştırma yetkisi ayrı.'
+        - ' &7Yanlızca seviye yükseltir!.'
+        - ''
+        - '&6→ &eAyarlamak için tıkla!'
+      NBT: '{}'
+      Slot: 10
+    Spawner-Parse:
+      Type: 'COAL'
+      Data-Value: 0
+      Name: '&a&lSpawner Ayrıştırma'
+      Glow: false
+      Amount: 1
+      Lore:
+        - '&7Spawner Ayrıştırma'
+        - '&7Arkadaşınız spawnerinizin.'
+        - '&7seviyesini azaltabilir.'
+        - ''
+        - '&dYükseltebilirmi?'
+        - '&7Hayır yükseltme yetkisi ayrı.'
+        - '&7yanlızca seviyesini azaltabilir!.'
+        - ''
+        - '&6→ &eAyarlamak için tıkla.'
+      NBT: '{}'
+      Slot: 12
+    Spawner-Settings:
+      Type: 'ANVIL'
+      Data-Value: 0
+      Name: '&a&lSpawner Ayarları'
+      Glow: false
+      Amount: 1
+      Lore:
+        - '&7Arkadaşınız Spawnerinizin'
+        - '&7genel ayarlarını yönetir.'
+        - ''
+        - '&6→ &eAyarlamak için tıkla!'
+      NBT: '{}'
+      Slot: 14
+    Spawner-Store:
+      Type: ''
+      Data-Value: 0
+      Name: ''
+      Glow: false
+      Amount: 1
+      Lore:
+        - '&7Arkadaşınız spawnerinizin'
+      NBT: '{}'
+      Slot: 
+    Back:
+      Type: 'FENCE_GATE'
+      Data-Value: 0
+      Name: '&c<- Geri Dön'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 22
+
+GUI-Parse:
+  Title: '&7Spawner &8> Parse'
+  Size: 1
+  Items:
+    Parse-Item:
+      Type: 'MOB_SPAWNER'
+      Data-Value: 0
+      Name: 'Kaç level istiyorsun'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 0
+
+GUI-FriendAdd:
+  Title: '&7Spawner &8> Arkadaş ekle'
+  Size: 1
+  Items:
+    Friend-Item:
+      Type: 'MOB_SPAWNER'
+      Data-Value: 0
+      Name: 'Arkadaşının ismi...'
+      Glow: false
+      Amount: 1
+      Lore: [ ]
+      NBT: '{}'
+      Slot: 0

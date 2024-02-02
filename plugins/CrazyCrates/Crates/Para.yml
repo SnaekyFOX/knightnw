@@ -1,0 +1,348 @@
+﻿# 
+#         For Cosmic Crates Only
+Crate:
+  CrateType: QuickCrate
+  CrateName: '&6&lPara Kasası'
+  Preview-Name: '&b&l&nPARA KASASI İÇERİĞİ:'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 27
+  OpeningBroadCast: true
+  BroadCast: ''
+  Item: CHEST
+  Glowing: false
+  Name: '&7&lBasic Chest'
+  Lore:
+  - '&7This crate contains strange objects.'
+  - '&7You have &6%Keys% keys &7to open this crate with.'
+  - '&7&l(&e&l!&7&l) Right click to view rewards.'
+  PhysicalKey:
+    Name: '&a&nPara Kasası Anahtarı' #Name of the Key.
+    Lore:
+      - ''
+      - '&7Kasayı açmak için sol, bakmak için sağ tıklayınız.'
+    Item: 288
+    Glowing: true
+  Prizes:  
+    '1':
+      DisplayName: '&370 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a90%'
+      MaxRange: 100
+      Chance: 90
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 70000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n70 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '2':
+      DisplayName: '&3140 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a85%'
+      MaxRange: 100
+      Chance: 85
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 140000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n140 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '3':
+      DisplayName: '&3210 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a%80'
+      MaxRange: 100
+      Chance: 80
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 210000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n210 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'      
+    '4':
+      DisplayName: '&3280 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a75%'
+      MaxRange: 100
+      Chance: 75
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 280000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n280 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '5':
+      DisplayName: '&3350 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a70%'
+      MaxRange: 100
+      Chance: 70
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 350000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n350 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '6':
+      DisplayName: '&3420 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a65%'
+      MaxRange: 100
+      Chance: 65
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 420000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n420 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '7':
+      DisplayName: '&3490 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a60%'
+      MaxRange: 100
+      Chance: 60
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 490000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n490 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '8':
+      DisplayName: '&3560 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a55%'
+      MaxRange: 100
+      Chance: 55
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 560000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n560 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '9':
+      DisplayName: '&3630 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a50%'
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 630000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n630 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '10':
+      DisplayName: '&3700 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a45%'
+      MaxRange: 100
+      Chance: 45
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 700000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n700 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '11':
+      DisplayName: '&3770 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a40%'
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 770000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n770 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '12':
+      DisplayName: '&3840 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a35%'
+      MaxRange: 100
+      Chance: 35
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 840000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n840 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '13':
+      DisplayName: '&3910 Milyon'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a15%'
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 910000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n910 Milyon Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '14':
+      DisplayName: '&31 Milyar'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a10%'
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 1000000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n1 Milyar Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'

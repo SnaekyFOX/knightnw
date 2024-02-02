@@ -1,0 +1,64 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.2-dev37c
+
+adareklamsure::salam62, date, 810974696D657374616D7004000001883A58091B
+bc::<player>, long, 0000000000000000
+bc::lahoden, long, 0000000000000000
+bc::odori, long, 0000000000000000
+bc::salam62, long, 0000000000000001
+bc::snaekyfox, long, 0000000000000000
+bc::trxor, long, 0000000000000000
+borsa::bitcoin::lahoden, long, 0000000000000000
+borsa::bitcoin::odori, long, 0000000000000000
+borsa::bitcoin::salam62, long, 0000000000000000
+borsa::bitcoin::snaekyfox, long, 0000000000000000
+borsa::bitcoin::trxor, long, 0000000000000000
+borsa::laststate, string, 8000
+borsa::price, long, 00000001FBD9FD3A
+borsaa::ethereum::lahoden, long, 0000000000000000
+borsaa::ethereum::odori, long, 0000000000000000
+borsaa::ethereum::salam62, long, 0000000000000000
+borsaa::ethereum::snaekyfox, long, 0000000000000000
+borsaa::ethereum::trxor, long, 0000000000000000
+borsaa::laststatee, string, 8000
+borsaa::pricee, long, 00000000E5AD900F
+ciftlik2::alanlar::salam62, boolean, 01
+ciftlik2::hayvanlar::lahoden::fabrikasayısı, long, 0000000000000000
+ciftlik2::hayvanlar::odori::fabrikasayısı, long, 0000000000000000
+ciftlik2::hayvanlar::salam62::fabrikasayısı, long, 0000000000000002
+ciftlik2::hayvanlar::snaekyfox::fabrikasayısı, long, 0000000000000000
+ciftlik2::hayvanlar::trxor::fabrikasayısı, long, 0000000000000000
+coin::<player>, long, 0000000000000000
+coin::lahoden, long, 0000000000000000
+coin::odori, long, 0000000000000000
+coin::salam62, long, 0000000000000000
+coin::snaekyfox, long, 0000000000000000
+coin::trxor, long, 0000000000000000
+dc::<player>, long, 0000000000000000
+dc::lahoden, long, 000000000000003A
+dc::odori, long, 0000000000000000
+dc::salam62, long, 0000000000000031
+dc::snaekyfox, long, 0000000000000091
+dc::trxor, long, 000000000000000A
+dogecoin::<player>, long, 0000000000000000
+dogecoin::lahoden, long, 0000000000000000
+dogecoin::odori, long, 0000000000000000
+dogecoin::salam62, long, 0000000000000000
+dogecoin::snaekyfox, long, 0000000000000000
+dogecoin::trxor, long, 0000000000000000
+doğma::süre::ejderha, long, 000000000756B5B3
+ejderha::lahoden, boolean, 01
+emc::g::ko::kb, boolean, 01
+emc::g::ko::k, long, 0000007439113793
+fabrikabacasi2::salam62, long, 0000000000000001
+fabrikaisci2::salam62, long, 0000000000000001
+gokyuzu.ejderhasi, long, 0000000000000002
+kurt, long, 0000000000000000
+lsater, date, 810974696D657374616D70040000018D61FE2FC4
+nq, string, 80013F
+spawn, location, 8605776F726C6480FF0000000181046E616D652080077472787A6F72740178093FF80A2DB5464A09017909403D000000000000017A09C00260DCBF884F45057069746368084090020F03796177084334FD01
+süre::ejderha, long, 000000000756B2A3
+yellow::salam62, long, 0000000000000020
+

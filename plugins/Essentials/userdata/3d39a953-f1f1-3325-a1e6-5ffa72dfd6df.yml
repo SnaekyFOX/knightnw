@@ -1,0 +1,21 @@
+lastAccountName: SnaekyFOX
+timestamps:
+  login: 1706768193721
+  logout: 1706768466738
+  lastteleport: 1706740808831
+ipAddress: 31.223.61.122
+logoutlocation:
+  world: trxzort
+  x: 39.63991112003258
+  y: 23.0
+  z: -62.8380937118933
+  yaw: 323.18835
+  pitch: 5.100254
+lastlocation:
+  world: trxzort
+  x: 1.850516229620247
+  y: 25.0
+  z: -18.135196827437177
+  yaw: -332.91962
+  pitch: -2.6318028
+money: '8000000000'

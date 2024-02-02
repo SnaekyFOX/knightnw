@@ -1,0 +1,107 @@
+GUIName: '&3Pet Menüsü'
+showPermissions: false
+hasPerms: 'Has Permissions: '
+permsYes: 'Yes'
+permsNo: 'No'
+hideIfNoPerms: true
+useGenericItemIfNoPerms: true
+lore:
+  isDisguised: '&cŞu anda &kılık değiştirmişsiniz'
+  isNotDisguised: '&cŞu anda &4kılık değiştirmiş değilsin'
+  isRiding: '&cŞu anda onun evcil hayvanına &bekliyorsunuz'
+  isNotRiding: '&cŞu anda onun evcil hayvanına binmiyorsunuz'
+items:
+  nextPage:
+    Material: ARROW
+    Amount: 1
+    Data: 0
+    Name: '&r&aSonraki Sayfa'
+  previousPage:
+    Material: ARROW
+    Amount: 1
+    Data: 0
+    Name: '&r&aÖnceki Sayfa'
+  removePet:
+    Material: BARRIER
+    Amount: 1
+    Data: 0
+    Name: '&r&cPetini Sil!'
+  noPet:
+    Material: INK_SACK
+    Amount: 1
+    Data: 14
+    Name: '&r&cHenüz bir evcil hayvanınız yok!'
+  callPet:
+    Material: LEASH
+    Amount: 1
+    Data: 0
+    Name: '&r&cEvcil hayvanınızı ışınlayın'
+  changeName:
+    Material: NAME_TAG
+    Amount: 1
+    Data: 0
+    Name: '&r&cevcil hayvanına isim ver'
+petInteract:
+  title: '&c%owner%&cın Evcil Hayvanı'
+  noName: '&cİsimsiz'
+  adminView:
+    clearName: '&cAdı temizlemek için sağ tıklayın'
+    isDisguised: '&c%owner%&c şu anda &kılık değiştirmiş'
+    isNotDisguised: '&c%owner%&c şu anda &4kılık değiştirmiş değil'
+    isRiding: '&c%owner%&c şu anda bu evcil hayvanı besliyor'
+    isNotRiding: '&c%owner%&c şu anda bu evcil hayvana &4 binmiyor'
+  playerView:
+    changeName: '&aAdı değiştirmek için sağ tıklayın'
+    isDisguised: '&cŞu anda &kılık değiştirmişsiniz'
+    isNotDisguised: '&cŞu anda &4kılık değiştirmiş değilsin'
+    isRiding: '&cŞu anda bu evcil hayvana &bakıyorsunuz'
+    isNotRiding: '&cŞu anda bu evcil hayvana &4 binmiyorsunuz'
+  items:
+    changeName:
+      Material: NAME_TAG
+      Amount: 1
+      Data: 0
+      Name: THIS GETS OVVERIDEN ALWAYS
+    disguise:
+      Material: IRON_CHESTPLATE
+      Amount: 1
+      Data: 0
+      Name: '&aEvcil hayvanın kılığına gir'
+    ride:
+      Material: SADDLE
+      Amount: 1
+      Data: 0
+      Name: '&aEvcil hayvanına bin'
+    removePet:
+      Material: BARRIER
+      Amount: 1
+      Data: 0
+      Name: '&cEvcil Hayvanı Kaldır'
+    blank:
+      Material: INK_SACK
+      Amount: 1
+      Data: 8
+      Name: ' '
+  messages:
+    changeName:
+      playerMessage: '&cBir yönetici evcil hayvanınızın adını kaldırdı'
+      adminMessage: '&c%owner%&4ün evcil hayvan adını kaldırdınız'
+    disguise:
+      adminUndisguiseMessage: '&cBir yönetici sizi gizledi'
+      adminMessage: '&a%sahip%in kimliğini açığa çıkardınız'
+    ride:
+      adminEjectMessage: '&cBir yönetici sizi evcil hayvandan çıkardı'
+      adminMessage: '&a%owner%&ayı bu evcil hayvandan çıkardınız'
+    removePet:
+      adminMessage: '&c%owner%&cnin evcil hayvanını kaldırdınız'
+      playerMessage: '&cBir yönetici evcil hayvanınızı kaldırdı'
+mainCommand:
+  disguise:
+    rideInterrupt: '&cBinerken evcil hayvanınızın kılığına giremezsiniz'
+    toUndisguise: '&aKılık değiştirmek için tekrar kılık değiştirme komutunu kullanın.'
+    disguised: '&aşimdi kılık değiştirmişsin'
+    notDisguised: '&cartık kılık değiştirmedin'
+  ride:
+    disguiseInterrupt: '&cKılık değiştirmişken evcil hayvanına binemezsin'
+    ridingMessage: '&aArtık evcil hayvanınıza biniyorsunuz'
+    notRidingMessage: '&cArtık evcil hayvanınıza binmiyorsunuz'

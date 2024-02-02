@@ -1,0 +1,49 @@
+mine:
+  name: doge
+  timer: 500
+  type: Gradual
+  reset:
+    speed: FAST
+    reset-messages: false
+    broadcast-messages: false
+    delay-messages: false
+    broadcast-delay-messages: false
+  block-placing: false
+  children: []
+  effects: []
+  schematic: false
+  fly: false
+  alerts:
+  - 60
+  - 20
+  - 10
+  - 3
+  - 2
+  - 1
+  hologram: false
+  automessages:
+    radius: 8
+  timedreset:
+    enabled: true
+  percentagereset:
+    enabled: true
+    value: 50.0
+  region:
+    world: kazi
+    min:
+      x: -509
+      y: 194
+      z: 3459
+    max:
+      x: -473
+      y: 237
+      z: 3510
+  blocks:
+  - PUMPKIN;100.0
+  teleport:
+    world: kazi
+    x: -487.5655110593946
+    y: 238.0
+    z: 3457.4718395546324
+    pitch: 9.3695135
+    yaw: 0.66571045

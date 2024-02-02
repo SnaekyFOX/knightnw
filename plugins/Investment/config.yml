@@ -1,0 +1,29 @@
+mysql:
+  enabled: false
+  hostname: localhost
+  port: 3306
+  username: root
+  password: ''
+  database: MyDatabase
+  playerstable: PlayerTable
+settings:
+  vanish: false
+  investment-zone: trxzort:-64.0:24.0:-75.0;trxzort:-51.0:28.0:-58.0
+  refund-enable: true
+  refund-percentage: 50
+  commands-when-player-finish-investment:
+  - give %player% diamond 1
+  limit-investment-time: false
+  limit-investment-time-in-second: 36000
+  max-account-with-same-ip-in-investment: 3
+  money-formatted: true
+  progress-bar:
+    size: 50
+    char: '|'
+    progress-color: '&a'
+    remaining-progress-color: '&7'
+  afk:
+    afk-teleport-location: world:0:0:0
+    teleport-when-afk: false
+    teleport-back-location: false
+    anti-kick-player: true

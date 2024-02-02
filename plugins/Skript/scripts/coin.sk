@@ -1,0 +1,509 @@
+﻿variables: 
+    {coin::%player%} = 0
+    
+
+on first join:  
+    set {coin::%player%} to 0 
+        
+command /coinekle <player> <number>:
+    permission: admin.coin
+    permission message: &c?
+    trigger:
+        if arg-1 is set:
+            if arg-2 is set:
+                add arg-2 to {coin::%arg-1%}
+                stop
+            else:  
+                send "&6&lCoin &8► &cMiktar Girmelisin!"
+        else:
+            send ""
+            
+command /coinsıfırla <player>:
+    permission: admin.coin
+    trigger:
+        send "&6&lCoin &8► &b%arg-1% &eİsimli Oyuncunun Coini Sıfırlandı!" 
+        if arg 1 is set:
+            set {coin::%arg-1%} to 0
+        else:
+            send "&6&lCoin &8► &b%player% &eİsimli Yetkili Kredini Sıfırladı!"  to arg-1
+        
+command /coinbak <player>:
+    trigger:
+        send "&6&lCoin &8► &a%arg-1% &eİsimli Oyuncunun Coin Miktarı: &b%{coin::%arg-1%}% "
+		
+command /coin [<text>] [<player>] [<number>] [<text>]:
+	trigger:
+		if arg-1 is not set:
+			send "&3Skyblock &8» &eDoğru Kullanım: /coin gönder <oyuncu> <miktar>." to player
+			stop trigger
+		if arg-1 is "gönder" or "send":
+			if arg 2 is player:
+				send "&3Skyblock &8» &cKendine coin gönderemezsin."
+				stop trigger
+			if arg 2 is offline:
+				send "&3Skyblock &8» &cOyuncu bulunamadı!"
+				stop trigger
+			if arg 3 < 0:
+				send "&3Skyblock &8» &cGeçersiz sayı!"
+				stop trigger
+			if arg 2 and arg 3 is set:
+				if {coin::%player%} >= arg 3:
+					add arg 3 to {coin::%arg 2%}
+					remove arg 3 from {coin::%player%}
+					send "&3Skyblock &8» &e%arg 2% &7adlı oyuncuya &e%arg 3% &7Coin yolladın." to player
+					send "&3Skyblock &8» &e%player% &7adlı oyuncu sana &e%arg 3% &7Coin yolladı." to arg 2
+				else:
+					send "&3Skyblock &8» &fYeterli Coin bulunamadı!"
+			else:
+				send "&3Skyblock &8» &7/coin gönder <oyuncu> <miktar>"
+
+command /coinelmascsp:
+    trigger:
+        if {coin::%player%} is greater than 2999:
+            execute console command "hsp give elmascevheri %player% 1"
+            add -3000 to {coin::%player%}
+            send "&6&lCoin &8► &aElmas cevheri spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinzümrütcsp:
+    trigger:
+        if {coin::%player%} is greater than 4999:
+            execute console command "hsp give zumrutcevheri %player% 1"
+            add -5000 to {coin::%player%}
+            send "&6&lCoin &8► &aZümrüt cevheri spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinkiziltascsp:
+    trigger:
+        if {coin::%player%} is greater than 6999:
+            execute console command "hsp give kiziltascevheri %player% 1"
+            add -7000 to {coin::%player%}
+            send "&6&lCoin &8► &aKızıltaş cevheri spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinkpsp:
+    trigger:
+        if {coin::%player%} is greater than 7499:
+            execute console command "hsp give koyuprizmarin %player% 1"
+            add -7500 to {coin::%player%}
+            send "&6&lCoin &8► &aKoyu Prizmarin spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinpsp:
+    trigger:
+        if {coin::%player%} is greater than 11999:
+            execute console command "hsp give prizmarin %player% 1"
+            add -12000 to {coin::%player%}
+            send "&6&lCoin &8► &aPrizmarin spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinkuvarssp:
+    trigger:
+        if {coin::%player%} is greater than 19999:
+            execute console command "hsp give keskinkuvars %player% 1"
+            add -20000 to {coin::%player%}
+            send "&6&lCoin &8► &aKeskin Kuvars spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinparakey:
+    trigger:
+        if {coin::%player%} is greater than 2999:
+            execute console command "cc give p para 1 %player%"
+            add -3000 to {coin::%player%}
+            send "&6&lCoin &8► &aPara kasa anahtarı satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinkitkey:
+    trigger:
+        if {coin::%player%} is greater than 4999:
+            execute console command "cc give p kit 1 %player%"
+            add -5000 to {coin::%player%}
+            send "&6&lCoin &8► &aKit kasa anahtarı satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinkey:
+    trigger:
+        if {coin::%player%} is greater than 24999:
+            execute console command "cc give p coin 1 %player%"
+            add -25000 to {coin::%player%}
+            send "&6&lCoin &8► &aCoin kasa anahtarı satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinv20kazma:
+    trigger:
+        if {coin::%player%} is greater than 14999:
+            execute console command "v20 %player%"
+            add -15000 to {coin::%player%}
+            send "&6&lCoin &8► &aKazma satın aldınız. &7(&8V20&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinv30kazma:
+    trigger:
+        if {coin::%player%} is greater than 19999:
+            execute console command "v30 %player%"
+            add -20000 to {coin::%player%}
+            send "&6&lCoin &8► &aKazma satın aldınız. &7(&8V30&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+command /coinv40kazma:
+    trigger:
+        if {coin::%player%} is greater than 29999:
+            execute console command "v40 %player%"
+            add -30000 to {coin::%player%}
+            send "&6&lCoin &8► &aKazma satın aldınız. &7(&8V40&7)"
+        else:
+            send "&6&lCoin &8► &cYetersiz coin miktarınız var!"
+
+command /v20 <player>:
+	permission: console.coin 
+	permission message: &7Bilinmeyen bir komut girdiniz.
+	trigger:
+		give 1 278 of efficiency 20 and unbreaking 20 named "&6&lCOIN KAZMA &7(&8V20&7)" to arg-1
+		stop
+command /v30 <player>:
+	permission: console.coin 
+	permission message: &7Bilinmeyen bir komut girdiniz.
+	trigger:
+		give 1 278 of efficiency 30 and unbreaking 30 named "&6&lCOIN KAZMA &7(&8V30&7)" to arg-1
+		stop
+command /v40 <player>:
+	permission: console.coin 
+	permission message: &7Bilinmeyen bir komut girdiniz.
+	trigger:
+		give 1 278 of efficiency 40 and unbreaking 40 named "&6&lCOIN KAZMA &7(&8V40&7)" to arg-1
+		stop
+		
+on break obsidian:
+	if player has permission "obsi.oyuncu":
+		if player has 128 49:
+			remove 128 49 from player
+			execute console command "coinekle %player% 128"
+			set action bar of player to "&6&lCOIN &8» &a+128"
+	if player has permission "obsi.vip":
+		if player has 128 49:
+			remove 128 49 from player
+			execute console command "coinekle %player% 192"
+			set action bar of player to "&6&lCOIN &8» &a+192"
+	if player has permission "obsi.vip+":
+		if player has 128 49:
+			remove 128 49 from player
+			execute console command "coinekle %player% 192"
+			set action bar of player to "&6&lCOIN &8» &a+192"
+	if player has permission "obsi.svip":
+		if player has 128 49:
+			remove 128 49 from player
+			execute console command "coinekle %player% 256"
+			set action bar of player to "&6&lCOIN &8» &a+256"
+	if player has permission "obsi.svip+":
+		if player has 128 49:
+			remove 128 49 from player
+			execute console command "coinekle %player% 256"
+			set action bar of player to "&6&lCOIN &8» &a+256"
+	if player has permission "obsi.winter":
+		if player has 128 49:
+			remove 128 49 from player
+			execute console command "coinekle %player% 288"
+			set action bar of player to "&6&lCOIN &8» &a+288"
+	if player has permission "obsi.winter+":
+		if player has 128 49:
+			remove 128 49 from player
+			execute console command "coinekle %player% 288"
+			set action bar of player to "&6&lCOIN &8» &a+288"
+	
+	
+on break 48:
+	if player has permission "yosun.oyuncu":
+		if player has 128 48:
+			remove 128 48 from player
+			execute console command "coinekle %player% 64"
+			set action bar of player to "&6&lCOIN &8» &a+64"
+	if player has permission "yosun.vip":
+		if player has 128 48:
+			remove 128 48 from player
+			execute console command "coinekle %player% 96"
+			set action bar of player to "&6&lCOIN &8» &a+96"
+	if player has permission "yosun.vip+":
+		if player has 128 48:
+			remove 128 48 from player
+			execute console command "coinekle %player% 96"
+			set action bar of player to "&6&lCOIN &8» &a+96"
+	if player has permission "yosun.svip":
+		if player has 128 48:
+			remove 128 48 from player
+			execute console command "coinekle %player% 128"
+			set action bar of player to "&6&lCOIN &8» &a+128"
+	if player has permission "yosun.svip+":
+		if player has 128 48:
+			remove 128 48 from player
+			execute console command "coinekle %player% 128"
+			set action bar of player to "&6&lCOIN &8» &a+128"
+	if player has permission "yosun.winter":
+		if player has 128 48:
+			remove 128 48 from player
+			execute console command "coinekle %player% 160"
+			set action bar of player to "&6&lCOIN &8» &a+160"
+	if player has permission "yosun.winter+":
+		if player has 128 48:
+			remove 128 48 from player
+			execute console command "coinekle %player% 160"
+			set action bar of player to "&6&lCOIN &8» &a+160"
+			
+variables: 
+    {bc::%player%} = 0
+    
+
+on first join:  
+    set {bc::%player%} to 0
+        
+command /bcekle <player> <number>:
+    permission: admin.bc
+    permission message: &c?
+    trigger:
+        if arg-1 is set:
+            if arg-2 is set:
+                add arg-2 to {bc::%arg-1%}
+                stop
+            else:  
+                send "&6&lB&f&lC &7► &cMiktar Girmelisin!"
+        else:
+            send ""
+            
+command /bcsıfırla <player>:
+    permission: admin.bc
+    trigger:
+        send "&6&lB&f&lC &7► &b%arg-1% &eİsimli Oyuncunun BCSİ Sıfırlandı!" 
+        if arg 1 is set:
+            set {bc::%arg-1%} to 0
+        else:
+            send "&6&lB&f&lC &7► &b%player% &eİsimli Yetkili BCNİ Sıfırladı!"  to arg-1
+        
+command /bcbak <player>:
+    trigger:
+        send "&6&lB&F&LC &7► &e%arg-1% İsimli Oyuncunun BC Miktarı: &b%{bc::%arg-1%}%"
+        
+on fishing state of caught fish:
+    chance of 50%:
+        execute console command "bcekle %player% 1"
+        set action bar of player to "&6&lB&f&lC &8» &a+1"
+    chance of 5%:
+        execute console command "bcekle %player% 5"
+        set action bar of player to "&6&lB&f&lC &8» &a+5"
+        send "&6&lB&f&lC &7► &aŞansınız yaver gitti, 5 bc kazandınız."
+		
+command /bcendsp:
+    trigger:
+        if {bc::%player%} is greater than 99:
+            execute console command "hsp give endtasi %player% 1"
+            add -100 to {bc::%player%}
+            send "&6B&fC &8► &aEnd taşı spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6B&fC &8► &cYetersiz bc miktarınız var!"
+command /bcdfsp:
+    trigger:
+        if {bc::%player%} is greater than 199:
+            execute console command "hsp give denizfeneri %player% 1"
+            add -200 to {bc::%player%}
+            send "&6B&fC &8► &aDeniz feneri spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6B&fC &8► &cYetersiz bc miktarınız var!"
+command /bckpsp:
+    trigger:
+        if {bc::%player%} is greater than 349:
+            execute console command "hsp give koyuprizmarin %player% 1"
+            add -350 to {bc::%player%}
+            send "&6B&fC &8► &aKoyu prizmarin spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6B&fC &8► &cYetersiz bc miktarınız var!"
+command /bcpsp:
+    trigger:
+        if {bc::%player%} is greater than 499:
+            execute console command "hsp give prizmarin %player% 1"
+            add -500 to {bc::%player%}
+            send "&6B&fC &8► &aPrizmarin spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6B&fC &8► &cYetersiz bc miktarınız var!"
+command /bckuvarssp:
+    trigger:
+        if {bc::%player%} is greater than 749:
+            execute console command "hsp give keskinkuvars %player% 1"
+            add -750 to {bc::%player%}
+            send "&6B&fC &8► &aKeskin kuvars spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6B&fC &8► &cYetersiz bc miktarınız var!"
+command /bcparakey:
+    trigger:
+        if {bc::%player%} is greater than 249:
+            execute console command "cc give p para %player% 1"
+            add -250 to {bc::%player%}
+            send "&6B&fC &8► &aPara kasa anahtarı satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6B&fC &8► &cYetersiz bc miktarınız var!"
+command /bckitkey:
+    trigger:
+        if {bc::%player%} is greater than 349:
+            execute console command "cc give p kit %player% 1"
+            add -350 to {bc::%player%}
+            send "&6B&fC &8► &aKit kasa anahtarı satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6B&fC &8► &cYetersiz bc miktarınız var!"
+command /bcvipkey:
+    trigger:
+        if {bc::%player%} is greater than 499:
+            execute console command "cc give p vip %player% 1"
+            add -500 to {bc::%player%}
+            send "&6B&fC &8► &aVip kasa anahtarı satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6B&fC &8► &cYetersiz bc miktarınız var!"
+			
+variables: 
+    {dc::%player%} = 0
+    
+
+on first join:  
+    set {dc::%player%} to 0
+           
+command /dcekle <player> <number>:
+    permission: admin.dc
+    permission message: &c?
+    trigger:
+        if arg-1 is set:
+            if arg-2 is set:
+                add arg-2 to {dc::%arg-1%}
+                stop
+            else:  
+                send "&6&lDakikaCoin &7► &cMiktar Girmelisin!"
+        else:
+            send ""
+            
+command /dcsıfırla <player>:
+    permission: admin.dc
+    trigger:
+        send "&6&lDakikaCoin &7► &b%arg-1% &eİsimli Oyuncunun DC Sıfırlandı!" 
+        if arg 1 is set:
+            set {dc::%arg-1%} to 0
+        else:
+            send "&6&lDakikaCoin &7► &b%player% &eİsimli Yetkili DCSİ Sıfırladı!"  to arg-1
+        
+command /dcbak <player>:
+    trigger:
+        send "&6&lD&f&lC &7► &b%arg-1% &aİsimli Oyuncunun DC Miktarı: &b%{dc::%arg-1%}%"
+
+every minute:
+    loop all players:
+        add 1 to {dc::%loop-player%}
+		
+command /dczamankey:
+    trigger:
+        if {dc::%player%} is greater than 119:
+            execute console command "cc give p zaman 1 %player%"
+            add -120 to {dc::%player%}
+            send "&6D&fC &8► &aZaman kutusu anahtarı satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6D&fC &8► &cYetersiz dc miktarınız var!"
+			
+variables: 
+    {dogecoin::%player%} = 0
+    
+
+on first join:  
+    set {dogecoin::%player%} to 0 
+        
+command /dogecoinekle <player> <number>:
+    permission: admin.coin
+    permission message: &c?
+    trigger:
+        if arg-1 is set:
+            if arg-2 is set:
+                add arg-2 to {dogecoin::%arg-1%}
+                stop
+            else:  
+                send "&6&lW&f&lCoin &8► &cMiktar Girmelisin!"
+        else:
+            send ""
+            
+command /dogecoinsıfırla <player>:
+    permission: admin.coin
+    trigger:
+        send "&6&lW&f&lCoin &8► &b%arg-1% &eİsimli Oyuncunun w-coini Sıfırlandı!" 
+        if arg 1 is set:
+            set {dogecoin::%arg-1%} to 0
+        else:
+            send "&6&lW&f&lCoin &8► &b%player% &eİsimli Yetkili w-coinini Sıfırladı!"  to arg-1
+        
+command /dogecoinbak <player>:
+    trigger:
+        send "&6&lW&f&lCoin &8► &a%arg-1% &eİsimli Oyuncunun w-coin Miktarı: &b%{dogecoin::%arg-1%}% "
+		
+on break 86:
+    if player has 128 86:
+        remove 128 86 from player
+        execute console command "dogecoinekle %player% 25"
+        set action bar of player to "&6&lW&f&lCoin &8» &a+25"
+		
+command /dogeprizsp:
+    trigger:
+        if {dogecoin::%player%} is greater than 5999:
+            execute console command "hsp give prizmarin %player% 1"
+            add -6000 to {dogecoin::%player%}
+            send "&6&lW&f&lCoin &8► &aPrizmarin spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lW&f&lCoin &8► &cYetersiz w-coin miktarınız var!"
+command /dogekuvarssp:
+    trigger:
+        if {dogecoin::%player%} is greater than 9999:
+            execute console command "hsp give keskinkuvars %player% 1"
+            add -10000 to {dogecoin::%player%}
+            send "&6&lW&f&lCoin &8► &aKeskin kuvars spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lW&f&lCoin &8► &cYetersiz w-coin miktarınız var!"
+			
+command /dogeprizmarintuglasp:
+    trigger:
+        if {dogecoin::%player%} is greater than 19999:
+            execute console command "hsp give prizmarintugla %player% 1"
+            add -20000 to {dogecoin::%player%}
+            send "&6&lW&f&lCoin &8► &aPrizmarin tuğlası spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lW&f&lCoin &8► &cYetersiz w-coin miktarınız var!"
+command /dogeecsp:
+    trigger:
+        if {dogecoin::%player%} is greater than 199:
+            execute console command "hsp give elmascevheri %player% 1"
+            add -200 to {dogecoin::%player%}
+            send "&6&lW&f&lCoin &8► &aElmas cevheri spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lW&f&lCoin &8► &cYetersiz w-coin miktarınız var!"
+command /dogezcsp:
+    trigger:
+        if {dogecoin::%player%} is greater than 399:
+            execute console command "hsp give zumrutcevheri %player% 1"
+            add -400 to {dogecoin::%player%}
+            send "&6&lW&f&lCoin &8► &aZümrüt cevheri spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lW&f&lCoin &8► &cYetersiz w-coin miktarınız var!"
+command /dogerssp:
+    trigger:
+        if {dogecoin::%player%} is greater than 649:
+            execute console command "hsp give kiziltascevheri %player% 1"
+            add -650 to {dogecoin::%player%}
+            send "&6&lW&f&lCoin &8► &aKızıltaş cevheri spawner satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lW&f&lCoin &8► &cYetersiz w-coin miktarınız var!"
+command /dogesitekasa:
+    trigger:
+        if {dogecoin::%player%} is greater than 17999:
+            execute console command "cc give p site 1 %player%"
+            add -18000 to {dogecoin::%player%}
+            send "&6&lW&f&lCoin &8► &aSite kasa anahtarı satın aldınız. &7(&8x1&7)"
+        else:
+            send "&6&lW&f&lCoin &8► &cYetersiz w-coin miktarınız var!"
+			
+			
+
+
+
+
+
+
+
+

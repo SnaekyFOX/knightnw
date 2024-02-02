@@ -1,0 +1,21 @@
+lastAccountName: LAHODEN
+timestamps:
+  login: 1706739642157
+  lastteleport: 1706729766097
+  logout: 1706741123521
+ipAddress: 78.190.143.116
+money: '12040000000'
+lastlocation:
+  world: trxzort
+  x: 4.738680121793099
+  y: 29.0
+  z: -7.203084535154606
+  yaw: 128.6552
+  pitch: 25.70266
+logoutlocation:
+  world: trxzort
+  x: 57.667706216459045
+  y: 19.0
+  z: 1.352959906638906
+  yaw: 220.09126
+  pitch: 6.1973243

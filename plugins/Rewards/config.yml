@@ -1,0 +1,233 @@
+check-for-updates: false
+
+storage-method: YAML
+
+host: localhost
+port: 3306
+database: rewards
+table: players
+username: root
+password: ''
+
+click-message: '&7'
+cooldown-message: '&6&lSkyBlock &8► &7Ödülünü tekrar almak için &a%days% &7gün &a%hours% &7saat &a%minutes% &7dakika &a%seconds% &7saniye &7beklemelisin.'
+
+title: '&6&lGünlük Ödül'
+rows: 3
+keep-open: true
+
+fill-blank-space:
+  enabled: true
+  item: STAINED_GLASS_PANE
+  data-value: 7
+
+
+Items:
+  daily:
+    name: '&eGünlük Ödül'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 10
+    lore:
+      - '&8Oyuncu alabilir.'
+      - ''
+      - '&7Bu ödül, &7her &f24 saatte'
+      - '&7bir toplanabilir.'
+      - ''
+      - '&e&l * &fKömür Cevheri Spawner &8(&7x2&8)'
+      - '&e&l * &eLapis Cevheri &8(&7x2&8)'
+      - '&e&l * &eDemir Cevheri Spawner &8(&7x2&8)'
+      - '&e&l * &dPara Kasası Anahtarı &8(&7x1&8) '
+      - ''
+      - '&eTıkla ve topla!'
+    give-money: 0
+    commands:
+      - 'console: whisper %player% &6&lSkyBlock &8► &aÖdülünü aldın. &b24 saat &2sonra tekrar uğra.'
+      - 'console: crazycrates give p para 1 %player%'
+      - 'console: hsp give komurcevheri %player% 2'
+      - 'console: hsp give lapiscevheri %player% 2'
+      - 'console: hsp give demircevheri %player% 2'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: odul.oyuncu
+    no-permission-message: "&4&lSkyBlock &8► &cBu ödüle erişim sağlayamazsınız."
+
+  daily-vip:
+    name: '&eGünlük &6VIP &eÖdülü'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 11
+    lore:
+      - '&8VIP alabilir.'   
+      - ''
+      - '&7Bu ödül, &7her &f24 saatte'
+      - '&7bir toplanabilir.'
+      - ''
+      - '&e&l * &fKömür Cevheri Spawner &8(&7x4&8)'
+      - '&e&l * &eLapis Cevheri &8(&7x4&8)'
+      - '&e&l * &eDemir Cevheri Spawner &8(&7x4&8)'
+      - '&e&l * &dPara Kasası Anahtarı &8(&7x2&8) '
+      - ''
+      - '&eTıkla ve topla!'
+    give-money: 0
+    commands:
+      - 'console: whisper %player% &6&lSkyBlock &8► &aÖdülünü aldın. &b24 saat &2sonra tekrar uğra.'
+      - 'console: crazycrates give p para 2 %player%'
+      - 'console: hsp give komurcevheri %player% 4'
+      - 'console: hsp give lapiscevheri %player% 4'
+      - 'console: hsp give demircevheri %player% 4'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: odul.vip
+    no-permission-message: "&4&lSkyBlock &8► &cBu ödüle erişim sağlayamazsınız."
+   
+  daily-vip+:
+    name: '&eGünlük &6VIP+ &eÖdülü'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 12
+    lore:
+      - '&8VIP+ alabilir.'   
+      - ''
+      - '&7Bu ödül, &7her &f24 saatte'
+      - '&7bir toplanabilir.'
+      - ''
+      - '&e&l * &fKömür Cevheri Spawner &8(&7x6&8)'
+      - '&e&l * &eLapis Cevheri &8(&7x6&8)'
+      - '&e&l * &eDemir Cevheri Spawner &8(&7x6&8)'
+      - '&e&l * &dPara Kasası Anahtarı &8(&7x3&8) '
+      - ''
+      - '&eTıkla ve topla!'
+    give-money: 0
+    commands:
+      - 'console: whisper %player% &6&lSkyBlock &8► &aÖdülünü aldın. &b24 saat &2sonra tekrar uğra.'
+      - 'console: crazycrates give p para 3 %player%'
+      - 'console: hsp give komurcevheri %player% 6'
+      - 'console: hsp give lapiscevheri %player% 6'
+      - 'console: hsp give demircevheri %player% 6'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: odul.vip+
+    no-permission-message: "&4&lSkyBlock &8► &cBu ödüle erişim sağlayamazsınız."
+
+  daily-svip:
+    name: '&eGünlük &aSVIP &eÖdülü'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 13
+    lore:
+      - '&8SVIP alabilir.'
+      - ''
+      - '&7Bu ödül, &7her &f24 saatte'
+      - '&7bir toplanabilir.'
+      - ''
+      - '&e&l * &fKömür Cevheri Spawner &8(&7x8&8)'
+      - '&e&l * &eLapis Cevheri &8(&7x8&8)'
+      - '&e&l * &eDemir Cevheri Spawner &8(&7x8&8)'
+      - '&e&l * &dPara Kasası Anahtarı &8(&7x4&8) '
+      - ''
+      - '&eTıkla ve topla!'
+    give-money: 0
+    commands:
+      - 'console: whisper %player% &6&lSkyBlock &8► &aÖdülünü aldın. &b24 saat &2sonra tekrar uğra.'
+      - 'console: crazycrates give p para 4 %player%'
+      - 'console: hsp give komurcevheri %player% 8'
+      - 'console: hsp give lapiscevheri %player% 8'
+      - 'console: hsp give demircevheri %player% 8'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: odul.svip
+    no-permission-message: "&4&lSkyBlock &8► &cBu ödüle erişim sağlayamazsınız."
+    
+  daily-svip+:
+    name: '&eGünlük &cSVIP+ &eÖdülü'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 14
+    lore:
+      - '&8SVIP+ alabilir.'
+      - ''
+      - '&7Bu ödül, &7her &f24 saatte'
+      - '&7bir toplanabilir.'
+      - ''
+      - '&e&l * &fKömür Cevheri Spawner &8(&7x10&8)'
+      - '&e&l * &eLapis Cevheri &8(&7x10&8)'
+      - '&e&l * &eDemir Cevheri Spawner &8(&7x10&8)'
+      - '&e&l * &dPara Kasası Anahtarı &8(&7x5&8) '
+      - ''
+      - '&eTıkla ve topla!'
+    give-money: 0
+    commands:
+      - 'console: whisper %player% &6&lSkyBlock &8► &aÖdülünü aldın. &b24 saat &2sonra tekrar uğra.'
+      - 'console: crazycrates give p para 5 %player%'
+      - 'console: hsp give komurcevheri %player% 10'
+      - 'console: hsp give lapiscevheri %player% 10'
+      - 'console: hsp give demircevheri %player% 10'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: odul.svip+
+    no-permission-message: "&4&lSkyBlock &8► &cBu ödüle erişim sağlayamazsınız."
+  daily-winter:
+    name: '&eGünlük &bWinter &eÖdülü'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 15
+    lore:
+      - '&bWinter alabilir.'
+      - ''
+      - '&7Bu ödül, &7her &f24 saatte'
+      - '&7bir toplanabilir.'
+      - ''
+      - '&e&l * &fKömür Cevheri Spawner &8(&7x15&8)'
+      - '&e&l * &eLapis Cevheri &8(&7x15&8)'
+      - '&e&l * &eDemir Cevheri Spawner &8(&7x15&8)'
+      - '&e&l * &dPara Kasası Anahtarı &8(&7x10&8) '
+      - ''
+      - '&eTıkla ve topla!'
+    give-money: 0
+    commands:
+      - 'console: whisper %player% &6&lSkyBlock &8► &aÖdülünü aldın. &b24 saat &2sonra tekrar uğra.'
+      - 'console: crazycrates give p para 10 %player%'
+      - 'console: hsp give komurcevheri %player% 15'
+      - 'console: hsp give lapiscevheri %player% 15'
+      - 'console: hsp give demircevheri %player% 15'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: odul.winter
+    no-permission-message: "&4&lSkyBlock &8► &cBu ödüle erişim sağlayamazsınız."    
+  daily-winter+:
+    name: '&eGünlük &bWinter&c+ &eÖdülü'
+    type: STORAGE_MINECART
+    active-cooldown-type: MINECART
+    slot: 16
+    lore:
+      - '&bWinter&c &7alabilir.'
+      - ''
+      - '&7Bu ödül, &7her &f24 saatte'
+      - '&7bir toplanabilir.'
+      - ''
+      - '&e&l * &fKömür Cevheri Spawner &8(&7x20&8)'
+      - '&e&l * &eLapis Cevheri &8(&7x20&8)'
+      - '&e&l * &eDemir Cevheri Spawner &8(&7x20&8)'
+      - '&e&l * &dPara Kasası Anahtarı &8(&7x15&8) '
+      - ''
+      - '&eTıkla ve topla!'
+    give-money: 0
+    commands:
+      - 'console: whisper %player% &6&lSkyBlock &8► &aÖdülünü aldın. &b24 saat &2sonra tekrar uğra.'
+      - 'console: crazycrates give p para 15 %player%'
+      - 'console: hsp give komurcevheri %player% 20'
+      - 'console: hsp give lapiscevheri %player% 20'
+      - 'console: hsp give demircevheri %player% 20'
+    sound: 'LEVEL_UP'
+    unavailable-sound: 'NOTE_PLING'
+    cooldown: 86400
+    permission: odul.winter+
+    no-permission-message: "&4&lSkyBlock &8► &cBu ödüle erişim sağlayamazsınız."    
+

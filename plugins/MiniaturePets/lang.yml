@@ -1,0 +1,18 @@
+prefix: '&3Pet &8»'
+petRemoved: §cEvcil hayvanınız kaldırıldı.
+namedPet: §aEvcil hayvanınız başarıyla §b%name% olarak adlandırıldı!
+removedName: §aEvcil hayvanınızın adı kaldırıldı.
+worldRemove: §cDünyaları değiştirdiğiniz için evcil hayvanınız kaldırıldı.
+changeName: §aLütfen evcil hayvanınızın istediğiniz adını sohbete yazın. Bu mesaj gönderilmeyecek. Sıfırlamak için, bağımsız değişken olmadan §b/pet name §a yazın.
+noPet: §cBu eylemi gerçekleştirmeden önce bir evcil hayvan oluşturmalısınız.
+petSpawnMessage: §aBaşarıyla bir §b%petname% oluşturdunuz!
+worldDisable: §cBu işlevsellik bu dünyada devre dışı bırakıldı.
+worldDisablePet: §cEvcil hayvan yumurtlaması bu dünyada devre dışı bırakıldı.
+worldDisableGUI: §cEvcil hayvan seçici bu dünyada devre dışı bırakıldı.
+notYourPetInteraction: §cBu senin evcil hayvanın değil. İsteseniz de yürüyüşe çıkaramazsınız!
+petNameNotAllowed: §cSeçtiğiniz ad yasak karakterler içeriyor. Lütfen başka bir adla tekrar deneyin.
+disguiseRemovedTP: §cIşınlandığınız için kılık değiştirme işleminiz kaldırıldı.
+tpCancelledDisguise: §cKılık değiştirmişken ışınlanmanıza izin verilmez.
+combatMessage: §cBaşka bir oyuncuyla kavga ettiğiniz için evcil hayvanınız kaldırıldı.
+name-too-long: '&cThe name you chose is over the the name limit (&4%limit%&c)'
+dismountOnWater: '&cYour pet was dismounted because you were in water!'

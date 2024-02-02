@@ -1,0 +1,43 @@
+mine:
+  name: vips
+  timer: 594
+  type: Gradual
+  reset:
+    speed: FAST
+    reset-messages: false
+    broadcast-messages: false
+    delay-messages: false
+    broadcast-delay-messages: false
+  block-placing: false
+  children: []
+  effects: []
+  schematic: false
+  fly: false
+  alerts:
+  - 60
+  - 20
+  - 10
+  - 3
+  - 2
+  - 1
+  hologram: false
+  automessages:
+    radius: 8
+  timedreset:
+    enabled: true
+  percentagereset:
+    enabled: true
+    value: 50.0
+  region:
+    world: kazi
+    min:
+      x: -1675
+      y: 59
+      z: 1951
+    max:
+      x: -1647
+      y: 82
+      z: 1978
+  blocks:
+  - PRISMARINE;50.0
+  - PRISMARINE:2;50.0

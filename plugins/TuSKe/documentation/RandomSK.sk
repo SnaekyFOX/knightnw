@@ -1,0 +1,139 @@
+Events:
+	On On Fishing State:
+		ID: on_fishing_state
+		Patterns:
+			[on] [fishing] state of %state%
+		Event values:
+			event-player
+			event-world
+		Cancellable: true
+Conditions:
+	CondIsOnGround:
+		ID: CondIsOnGround
+		Patterns:
+			%entity% (is|are) on ground
+			%entity% (isn't|is not|aren't|are not) on ground
+Effects:
+	EffAnimation:
+		ID: EffAnimation
+		Patterns:
+			(create|show) %animation% [animation] (on|to) %players% for %players%
+			(create|show) %animation% [animation] (on|to) %player%
+			(create|show) %animation% [animation] (on|to) %player% but exclude self
+	EffBlockAction:
+		ID: EffBlockAction
+		Patterns:
+			make the %block% (appear|look) open
+			play chest open animation (at|on) %block%
+			make the %block% (appear|look) closed
+			play chest close animation (at|on) %block%
+			make the %block% (appear|look) open for %players%
+			play chest open animation at %block% for %players%
+			make the %block% (appear|look) closed for %players%
+			play chest close animation at %block% for %players%
+	EffBlockBreakAnimation:
+		ID: EffBlockBreakAnimation
+		Patterns:
+			show block break [animation] stage %number% at %block% for %players%
+			show block break [animation] stage %number% at %block%
+	EffBreakNaturally:
+		ID: EffBreakNaturally
+		Patterns:
+			break %block% [naturally]
+	EffEnvironment:
+		ID: EffEnvironment
+		Patterns:
+			change (sky|environment) of %players% to %environment%
+	EffRespawn:
+		ID: EffRespawn
+		Patterns:
+			force respawn %players%
+			force [the] %players% to respawn
+Expressions:
+	ExprAge:
+		ID: ExprAge
+		Return type: age
+		Changers:
+			set
+		Patterns:
+			[the] age of %entitys%
+			%entitys%'[s] age
+	ExprCatch:
+		ID: ExprCatch
+		Return type: Entity
+		Changers:
+			set
+		Patterns:
+			caught entity
+			catch
+	ExprHook:
+		ID: ExprHook
+		Return type: Entity
+		Changers:
+			none
+		Patterns:
+			[fishing] (hook|lure)
+	ExprItemEntities:
+		ID: ExprItemEntities
+		Return type: Item / Material
+		Changers:
+			set
+		Patterns:
+			(item|items) (within|inside) %entity%
+	ExprMaxDamageTicks:
+		ID: ExprMaxDamageTicks
+		Return type: Timespan
+		Changers:
+			set
+		Patterns:
+			[the] [maximum] damage delay of %entitys%
+			%entitys%'[s] [maximum] damage delay
+	ExprNameVisibility:
+		ID: ExprNameVisibility
+		Return type: Boolean
+		Changers:
+			set
+		Patterns:
+			[the] name visibility of %entitys%
+			%entitys%'[s] name visibility
+	ExprPickUpDelay:
+		ID: ExprPickUpDelay
+		Return type: Timespan
+		Changers:
+			set
+		Patterns:
+			[the] pick up delay of %entitys%
+			%entitys%'[s] pick up delay
+	ExprPitchYaw:
+		ID: ExprPitchYaw
+		Return type: Number
+		Changers:
+			add
+			set
+			remove
+		Patterns:
+			[the] (yaw|pitch) of %locations%
+			%locations%'[s] (yaw|pitch)
+	ExprSlimeSize:
+		ID: ExprSlimeSize
+		Return type: Number
+		Changers:
+			set
+		Patterns:
+			[the] slime size of %entitys%
+			%entitys%'[s] slime size
+	ExprState:
+		ID: ExprState
+		Return type: state
+		Changers:
+			none
+		Patterns:
+			fishing state
+			state of fishing
+	ExprTimeLived:
+		ID: ExprTimeLived
+		Return type: Timespan
+		Changers:
+			none
+		Patterns:
+			%entity%'s time lived

@@ -1,0 +1,55 @@
+Locations:
+  '11':
+    Crate: Spawner
+    World: trxzort
+    X: -3
+    Y: 24
+    Z: -104
+  '12':
+    Crate: Para
+    World: trxzort
+    X: 5
+    Y: 24
+    Z: -104
+  '13':
+    Crate: Coin
+    World: trxzort
+    X: 7
+    Y: 24
+    Z: -100
+  '14':
+    Crate: Event
+    World: trxzort
+    X: 7
+    Y: 24
+    Z: -97
+  '15':
+    Crate: Kit
+    World: trxzort
+    X: 6
+    Y: 24
+    Z: -94
+  '16':
+    Crate: Vote
+    World: trxzort
+    X: -5
+    Y: 24
+    Z: -100
+  '17':
+    Crate: zaman
+    World: trxzort
+    X: -5
+    Y: 24
+    Z: -97
+  '18':
+    Crate: Vip
+    World: trxzort
+    X: -4
+    Y: 24
+    Z: -94
+  '1':
+    Crate: Site
+    World: trxzort
+    X: 1
+    Y: 24
+    Z: -105

@@ -1,0 +1,406 @@
+'1':
+  uniqueId: c802171c-43e9-4a2b-8465-3b4525fb3fb8
+  name: LevelSPTakas
+  world: kazi
+  x: -479
+  y: 239
+  z: 3446
+  type: admin
+  object:
+    type: villager
+    uuid: eb24d818-cd34-4566-8af2-206a9ca2f11f
+    prof: FARMER
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bKömür Blok §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLQQqAMAwEwC0opn2NPqlCQGnaSEz0+56c+xSAsNxXfQcbctMetos2Qjmde+0aw5FWwiz8sCBthHzwPya3YHzV/puvRgAAAA==
+          blockMaterial: MOB_SPAWNER
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bSünger §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAAONiYOBgYC8uSCzPSy1iYCsuzUtPLeJg4MosSc1NzM0vzSthYDTgYGDNSS1LzWFgNORg4MxIhSlnKSkqTWUAADpYLXtDAAAA
+          blockMaterial: MOB_SPAWNER
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bSünger §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAAONiYOBgYC8uSCzPSy1iYCsuzUtPLeJg4MosSc1NzM0vzSthYDTgYGDNSS1LzWFgNORg4MxIhSlnKSkqTWUAADpYLXtDAAAA
+          blockMaterial: MOB_SPAWNER
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bEnd Taşı §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXKUQqAIBAFwCcUbp6mjrTQgwRdQ9e6fl/N9yRAEMetr7Ej0k7XkQUpO6vWNs0RdsFa+LAgHILt4v8X75P4ALT1aV1EAAAA
+          blockMaterial: MOB_SPAWNER
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bEnd Taşı §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXKUQqAIBAFwCcUbp6mjrTQgwRdQ9e6fl/N9yRAEMetr7Ej0k7XkQUpO6vWNs0RdsFa+LAgHILt4v8X75P4ALT1aV1EAAAA
+          blockMaterial: MOB_SPAWNER
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bDeniz Feneri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAAONiYOBgYC8uSCzPSy1i4E5JzcusSksFsjM5GLgyS1JzE3PzS/NKGBgNOBhYc1LLUnMYGA05GDgzUmF6WEqKSlMZAMrSaglIAAAA
+          blockMaterial: MOB_SPAWNER
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bDeniz Feneri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAAONiYOBgYC8uSCzPSy1i4E5JzcusSksFsjM5GLgyS1JzE3PzS/NKGBgNOBhYc1LLUnMYGA05GDgzUmF6WEqKSlMZAMrSaglIAAAA
+          blockMaterial: MOB_SPAWNER
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bKoyu Prizmarin §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLSwqAMAwFwFdQjAXvokfKImCxP2Ki6OldOfuJAGE6O99VFMvRHu+a3sKaKiEmk8KleTWElTBmuSQjbIR5l38Npi74AEJ6CrpKAAAA
+          blockMaterial: MOB_SPAWNER
+'2':
+  uniqueId: b289559d-df6c-4ccc-b35b-0f1d83e84d56
+  name: ParaSPTakas
+  world: kazi
+  x: -479
+  y: 239
+  z: 3449
+  type: admin
+  object:
+    type: villager
+    uuid: 7fb64f3e-5152-40fc-903e-fc713411d3da
+    prof: FARMER
+  recipes:
+    '0':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bKömür Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLWwqAIBAF0CsUTdJiakkSF5R8xDTa9vvq/B8PCJbnDm+lYrta6XpyRGoS+GQsobReDW4XzJmDGe4QrJF/mkw78QEEdrdYSQAAAA==
+          blockMaterial: MOB_SPAWNER
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bLapis Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLWwqAIBAF0CsUTdJiaklDXFBQk/HR9vvq/B8PCLZW9S00HElrbDdnoEWBj51Z8zNKhzsFa+JkgrsEe+Cflm6D+AAyGR1rSQAAAA==
+          blockMaterial: MOB_SPAWNER
+    '1':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bLapis Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLWwqAIBAF0CsUTdJiaklDXFBQk/HR9vvq/B8PCLZW9S00HElrbDdnoEWBj51Z8zNKhzsFa+JkgrsEe+Cflm6D+AAyGR1rSQAAAA==
+          blockMaterial: MOB_SPAWNER
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bDemir Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLUQqAIBAFwCcUbeJh6khSD1xQi03t+n01/+MBwfLc8a00hJNF7eBINBV4bSyxXL02uE0wZw5muF2wJv5pataJD0128bZJAAAA
+          blockMaterial: MOB_SPAWNER
+    '2':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bDemir Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLUQqAIBAFwCcUbeJh6khSD1xQi03t+n01/+MBwfLc8a00hJNF7eBINBV4bSyxXL02uE0wZw5muF2wJv5pataJD0128bZJAAAA
+          blockMaterial: MOB_SPAWNER
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bAltın Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLUQqAIBAFwCcUbdJh6khLPFBQi2216/fV/E8EBMtz69to2LR4bidHomVBzM6q9erNEXbBXDhYEA7Bmvinya0TH8HGWzNJAAAA
+          blockMaterial: MOB_SPAWNER
+    '3':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bAltın Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLUQqAIBAFwCcUbdJh6khLPFBQi2216/fV/E8EBMtz69to2LR4bidHomVBzM6q9erNEXbBXDhYEA7Bmvinya0TH8HGWzNJAAAA
+          blockMaterial: MOB_SPAWNER
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bElmas Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLWwqAIBAF0CsUTeJiaklDXFBwLHy1/b46/8cDgq09+hZWBGbTdnFG1iTwqdPU7lE63CFYMycz3CnYI/+09DqID+0PA+tJAAAA
+          blockMaterial: MOB_SPAWNER
+    '4':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bElmas Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLWwqAIBAF0CsUTeJiaklDXFBwLHy1/b46/8cDgq09+hZWBGbTdnFG1iTwqdPU7lE63CFYMycz3CnYI/+09DqID+0PA+tJAAAA
+          blockMaterial: MOB_SPAWNER
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bZümrüt Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLQQqAMAwEwC0oxoJ/0ScVWbDQVolJBV/vyblPBATTfaWnUbG8XtVtZz+oWRCzsaZ6ejOEVTAWdhaETTAf/Ndg6sQHPuFyHkoAAAA=
+          blockMaterial: MOB_SPAWNER
+    '5':
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        amount: 2
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bZümrüt Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLQQqAMAwEwC0oxoJ/0ScVWbDQVolJBV/vyblPBATTfaWnUbG8XtVtZz+oWRCzsaZ6ejOEVTAWdhaETTAf/Ndg6sQHPuFyHkoAAAA=
+          blockMaterial: MOB_SPAWNER
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        type: MOB_SPAWNER
+        meta:
+          ==: ItemMeta
+          meta-type: TILE_ENTITY
+          display-name: §bKızıltaş Cevheri §8(§7Spawner§8)
+          lore:
+          - ''
+          - §7→ §fSunucuda kaybolan veya çalınan
+          - §7→ §fspawnerlardan sunucu sorumlu değildir!
+          - ''
+          - §7→ §fSpawnerları sadece §a/kit ipeksi ile
+          - §7→ §fkırabilirsiniz.
+          - ''
+          - '§7→Level: §a1'
+          internal: H4sIAAAAAAAAADXLQQqAIBAF0C8UTW66Sh1J4kNDaqGjQadv1ds/Dwimeocns2A59dVooe7sB4sKvBpTSFfLBrcKxsjOCLcJ5oP/G6w04gNHEPvITAAAAA==
+          blockMaterial: MOB_SPAWNER

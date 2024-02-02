@@ -1,0 +1,75 @@
+import:
+    com.bgsoftware.superiorskyblock.api.island.Island
+    com.bgsoftware.superiorskyblock.api.handlers.PlayersManager
+    com.bgsoftware.superiorskyblock.api.SuperiorSkyblockAPI
+    com.bgsoftware.superiorskyblock.api.wrappers.SuperiorPlayer
+    java.util.UUID
+on load:
+    delete {as::*}
+    set {nq} to "?"
+    adaSavaslariTimer()
+function adaSavaslariTimer():
+    delete {as::timer}
+    wait 2 seconds
+    set {as::timer} to 60
+    while {as::timer} is set:
+        remove 1 from {as::timer}
+        if {as::timer} < 1:
+            delete {as::timer}
+            adaSavaslariBaslat()
+        wait a second
+function adaSavaslariBaslat():
+    set {as::started} to 300
+    set {as::firstpoint} to 0
+    broadcast ""
+    broadcast "&6&lSunucuISMI &8| &eAda savaşları etkinliği başladı. &a[/adasavaşları]"
+    broadcast ""
+    while {as::started} is set:
+        remove 1 from {as::started}
+        if {as::started} < 1:
+            delete {as::started}
+            broadcast ""
+            broadcast "&6&lSunucuISMI &8| &eAda savaşları etkinliği bitti. &d[%{as::first}%]"
+            broadcast ""
+            delete {as::*}
+            delete {as::started}
+            loop all players:
+                if "%region at loop-player%" contains "arenaic":
+                teleport loop-player to {vspawn} 
+        wait a second
+function canHit(p: player, t: player) :: boolean:
+    set {_attacker} to SuperiorSkyblockAPI.getPlayer({_p}'s name)
+    set {_victim} to SuperiorSkyblockAPI.getPlayer({_t}'s name)
+    return {_attacker}.getIsland().isMember({_victim})
+on damage:
+    if {as::started} is set:
+        if "%region at attacker%" contains "arena":
+            if canHit(attacker, victim) isn't true:
+                if damage >= 3:
+                    set {_leader} to SuperiorSkyblockAPI.getPlayer(attacker's name).getIsland().getOwner().getName()
+                    if {_leader} is set:
+                        set {_leader} to "%{_leader}%"
+                        add damage to {as::oyuncular::%{_leader}%::puan}
+                        set {_vleader} to SuperiorSkyblockAPI.getPlayer(victim's name).getIsland().getOwner().getName()
+                        set {_vleader} to {_vleader}
+                        remove (damage / 3) from {as::oyuncular::%{_vleader}%::puan}
+                        if {as::oyuncular::%{_leader}%::puan} > ({as::firstpoint} ? 0):
+                            set {as::firstpoint} to {as::oyuncular::%{_leader}%::puan}
+                            set {as::first} to {_leader}
+on region enter:
+    if {as::started} is set:
+        wait a tick
+        while "%region at player%" contains "arena":
+            send action bar "&aAda savaşı lideri: &2%{as::first} ? {nq}%" to player
+            wait a second
+			
+command /asspawn:
+    permission: skript.admin
+    trigger:
+        set {aspawn} to location of player
+        message "&8▪ [&6Sunucuİsmi&8] ↠ &cAS Spawn bölgesini ayarladın."
+        stop
+command /adasavaşları:
+    trigger:
+        teleport the player to {aspawn}
+        message "&8▪ [&2Sunucuİsmi&8] ↠ &aAda savaşlarına katıldın."

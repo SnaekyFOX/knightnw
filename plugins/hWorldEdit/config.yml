@@ -1,0 +1,196 @@
+Ayarlar:
+  Koyma-Hızı: 10 #1 Saniyede kaç tane blok koyacak - Max 20
+
+  Aynı-Anda-Kaç-İşlem: 3
+
+  Bekliyor: '&eBekliyor...'
+  Başladı: '&aBaşladı'
+
+  Max-Blok:
+    Oyuncu: 5000
+    vip: 6000
+    vip+: 7000
+    svip: 8000
+    svip+: 9000
+    winter: 10000
+    winter+: 12000
+    DİĞER: 5000
+
+  ActionBar-Durumu: true
+  ActionBar: '&4Koyulan Blok: &7&l(&e%now%/%total%&7&l) &8| &4Kalan Süre: &7&l(&e%time%&7&l)'
+
+  BossBar-Durumu: true
+  BossBar: '&4Koyulan Blok: &7&l(&e%now%/%total%&7&l) &8| &4Kalan Süre: &7&l(&e%time%&7&l)'
+  BossBar-Rengi: 'RED'
+
+  Particle: 'CLOUD'
+  Sound: ''
+
+  Süreli-Balta-Tipi: 'STONE_AXE'
+  Süreli-Balta-İsmi: '&6Süreli balta'
+  Süreli-Balta-Açıklama:
+    - ''
+    - '&fBitiş Zamanı: &b%finish%'
+
+  Haklı-Balta-Tipi: 'STONE_AXE'
+  Haklı-Balta-İsmi: '&6Yeni Haklı balta'
+  Haklı-Balta-Açıklama:
+    - ''
+    - '&fKalan hak: &b%finish%'
+
+  Blok-Balta-Tipi: 'STONE_AXE'
+  Blok-Balta-İsmi: '&6Blok Kullanımlı balta'
+  Blok-Balta-Açıklama:
+    - ''
+    - '&fKalan hak: &b%finish%'
+
+  Blok-Karalistesi:
+    - 'OBSIDIAN'
+    - 'SPONGE'
+
+  Atlanacak-Bloklar:
+    - 'BEDROCK'
+    - 'SPAWNER'
+
+GUI-Operasyon:
+  Title: '&cAyarlar'
+  Size: 3
+  Eşyalar:
+    Balta-Seç:
+      Tür: 'STONE_AXE'
+      İsim: '&aTıkla ve Balta Seç'
+      Açıklama:
+        - ''
+        - '&aBalta seçmek için tıkla'
+      Miktar: 1
+      Data-Value: 0
+      Işıltı-Efekti: false
+      NBT: '{}'
+      Slot: 10
+    Eşya-Yükle:
+      Tür: 'CHEST'
+      İsim: '&aTıkla ve Eşya doldur'
+      Açıklama:
+        - ''
+        - '&aTıkla ve dizmek için harcayacağın'
+        - '&aeşyaları buraya yerleştir'
+        - ''
+        - '%now%/%total%'
+      Miktar: 1
+      Data-Value: 0
+      Işıltı-Efekti: false
+      NBT: '{}'
+      Slot: 16
+    Başlat:
+      Tür: 'DIAMOND'
+      İsim: '&aTıkla ve Dizme işlemini başlat'
+      Açıklama:
+        - ''
+        - 'Depoda yeteri kadar eşya varsa'
+        - 'dizme işlemini başlat'
+      Miktar: 1
+      Data-Value: 0
+      Işıltı-Efekti: false
+      NBT: '{}'
+      Slot: 13
+    İptal-Et:
+      Tür: 'REDSTONE'
+      İsim: '&aTıkla ve Dizme işlemini iptal et'
+      Açıklama:
+        - ''
+        - 'tıkla ve iptal et'
+      Miktar: 1
+      Data-Value: 0
+      Işıltı-Efekti: false
+      NBT: '{}'
+      Slot: 4
+    Geri:
+      Tür: 'BARRIER'
+      İsim: '&aTıkla ve önceki sayfaya dön'
+      Açıklama:
+        - ''
+        - 'tıkla ve dön'
+      Miktar: 1
+      Data-Value: 0
+      Işıltı-Efekti: false
+      NBT: '{}'
+      Slot: 22
+
+GUI-OperasyonListesi:
+  Title: '&cİşlemler'
+  Size: 4
+  Eşyalar:
+    Ana-Eşya:
+      Tür: 'SKULL_ITEM'
+      İsim: '&aOperasyon: %id%'
+      Açıklama:
+        - ''
+        - 'Durum: %state%'
+        - ''
+        - '&cDevam eden bir işlemi durdurmak için'
+        - '&cShift + sol tık yapınız'
+        - ''
+        - 'Bekleyen bir işlemi silmek için'
+        - '&cShift + sol tık yapınız'
+      Miktar: 1
+      Data-Value: 3
+      Işıltı-Efekti: false
+      NBT: '{SkullOwner:{Id:"fe02ba7c-6fb4-458d-af7d-85a72a7e8163",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzQ5YzYzYmM1MDg3MjMzMjhhMTllNTk3ZjQwODYyZDI3YWQ1YzFkNTQ1NjYzYWMyNDQ2NjU4MmY1NjhkOSJ9fX0="}]}}}'
+      Slot:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+    Sonraki-Sayfa:
+      Tür: 'ARROW'
+      İsim: '&aSonraki sayfa'
+      Açıklama: [ ]
+      Miktar: 1
+      Data-Value: 3
+      Işıltı-Efekti: false
+      NBT: '{}'
+      Slot: 35
+    Önceki-Sayfa:
+      Tür: 'ARROW'
+      İsim: '&aÖnceki sayfa'
+      Açıklama: [ ]
+      Miktar: 1
+      Data-Value: 3
+      Işıltı-Efekti: false
+      NBT: '{}'
+      Slot: 27
+    Kapat:
+      Tür: 'BARRIER'
+      İsim: '&aMenüyü kapat'
+      Açıklama: [ ]
+      Miktar: 1
+      Data-Value: 3
+      Işıltı-Efekti: false
+      NBT: '{}'
+      Slot: 31
+
+GUI-BaltaSeç:
+  Title: '&cBalta Seç'

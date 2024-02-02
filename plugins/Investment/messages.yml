@@ -1,0 +1,76 @@
+GENERAL:
+  PREFIX: '&6&lSunucu&f&lIsmı &8» '
+  HELP-MESSAGE:
+  - '&f&m------------------------------'
+  - '&6Investment Commands:'
+  - ''
+  - ' &7/&finvestment &8- &6Open Main Gui'
+  - ' &7/&finvestment stop &8- &6Abandon your current investment'
+  - ''
+  - '&f&m------------------------------'
+  HELP-MESSAGE-ADMIN:
+  - '&f&m------------------------------'
+  - '&6Investment Commands:'
+  - ''
+  - ' &7/&finvestment &8- &6Open Main Gui'
+  - ' &7/&finvestment stop &8- &6Abandon your current investment'
+  - ' &7/&finvestment create <name> <timeToStay> <toInvest> <reward> <type>&8- &6Create
+    a new investment'
+  - ' &7/&finvestment delete <investment> &8- &6Delete an investment'
+  - ' &7/&finvestment setZone &8- &6Set the main zone'
+  - ' &7/&finvestment players &8- &6Know the number of players in the investment zone'
+  - ' &7/&finvestment reload &8- &6Reload configs'
+  - ''
+  - '&f&m------------------------------'
+COMMAND:
+  ALREADY-INVESTED: '%prefix% &7Mevcut bir &6Yatırım &7işleminiz var zaten!'
+  NONE-ZONE-DEFINED: '%prefix% &7Yatırım alanı belirlenmemiş!'
+  ALREADY-EXIST-INVESTMENT: '%prefix% &7Mevcut bir &6Yatırım &7işleminiz var zaten!'
+  NOT-EXIST-INVESTMENT: '%prefix% &7Mevcut bir &6Yatırım &7işlemi geçersiz!'
+  CREATE-INVESTMENT: '%prefix% &fThe investment &6%investment% &fhas been created
+    !'
+  DELETE-INVESTMENT: '%prefix% &fThe investment &6%investment% &fhas been deleted
+    !'
+  ABANDON-INVESTMENT:
+    MONEY: '%prefix%  &7Mevcut &6Yatırımdan &7vazgeçtiniz. &a%refund% &7geri ödeme
+      aldınız!'
+    EXPERIENCE: '%prefix% &cYou have abandoned your investment! You have been reimbursed
+      &6%refund% &fexperience points !'
+  REFUNDS-DISABLE: '%prefix% §7Geri ödemeler devre dışı bırakıldı!'
+  NOT-CONNECTED: '%prefix% &7Bu oyuncu yatırımda değil!'
+  NOT-INVESTED: '%prefix% &7Henüz herhangi bir &6Yatırım &7yapmadınız!'
+  NO-PERMISSION: '%prefix% &7Böyle bir komut bulunamadı!'
+  INVESTMENT-SET-ZONE: '%prefix% &7Yatırım alanı başarıyla belirlendi!'
+  SELECTION-NOT-EXISTS: '%prefix% &7Lütfen bir &6Yatırım &7seçin!'
+  NOT-A-NUMBER: '%prefix% &6%args% &7bir sayı olmalıdır!'
+  INVALID-ARGUMENTS: '%prefix% &7Geçersiz bir argument girdiniz!'
+  OPEN-GUI: '%prefix% &7Hey! &6Yatırım &7menüsü açılıyor...'
+  CONFIG-RELOADED: '%prefix% &7Ayarlar başarıyla yenilendi!'
+  PLAYERS-IN-AREA: '%prefix% &7Yatırım bölgesindekiler: &6%size%'
+  PLAYER-IN-AREA-INFO: '%prefix% &fThe player &6%target% &fhas invested in the investment
+    &6%investment% &f!'
+  PLAYER-IN-AREA-INFO-NONE: '%prefix% &6%target% &7adlı oyuncu henüz yatırım yapmadı!'
+INVESTMENT:
+  NO-PERMISSION: '%prefix% &7Bu &6Yatırıma &7katılmaya izniniz yok!'
+  ON-INVEST:
+    MONEY: '%prefix% &7Başarıyla &6%invested% &7değerinde yatırım yaptın!'
+    EXPERIENCE: '%prefix% &fYou have invested &6%invested% &fexperience points in
+      the &6%investment% &f !'
+  ON-FINISH:
+    MONEY: '%prefix% &fYatırım yaptığınız &6%invested% &7size &a%reward% &7kazandırdı!'
+    EXPERIENCE: '%prefix% &fYour &6%invested% $ &finvestment has given you &6%reward%
+      &fexperience points !'
+  ON-ENTER-ZONE: '%prefix% &7Hey! Şuan &6Yatırım &7alanındasın!'
+  ON-LEAVE-ZONE: '%prefix% &7Başarıyla &6Yatırım &7alanından ayrıldınız!'
+  NO-ENOUGH:
+    MONEY: '%prefix% &7Maalesef &6Yatırım &7yapmak için yeterli paranız yok!'
+    EXPERIENCE: '%prefix% &cYou do not have enough experience to invest in that !'
+  MOVE-TO-INVESTMENT-ZONE: '%prefix% &7Upss! &6Yatırım &7bölgesine taşındınız!'
+  MAX-ACCOUNT-REACHED: '%prefix% &7Aynı IP adresi üzerinden sadece &61 adet &7hesapla
+    yatırım yapabilirsiniz!'
+REPEATING-MESSAGE:
+  INVESTMENT:
+  - '%title%&9&l- YATIRIM -%subtitle%&8[%progressbar%&8] &e%percentage%%'
+  NOINVESTMENT: '%title%&6&l- VakitNakittir -%subtitle% &fYatırım için &e/vakitnakittir
+    &fyazın!'
+  TIME-LIMIT-EXCEED: '%prefix% &7Bugün daha fazla &6Yatırım &7yapamazsınız!'

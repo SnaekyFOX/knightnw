@@ -1,0 +1,96 @@
+		
+				
+command /adafly:
+    trigger:
+        if player is in "SuperiorWorld":
+            execute console command "fly %player%"
+            send "&6&lSkyBlock &8▶ &aUçuş modu başarıyla açılmıştır."
+        else:
+            send "&6&lSkyBlock &8▶ &cSadece adanızda uçabilirsiniz."
+			
+on world change:
+    if player doesn't have permission "admin.admin":
+        set player's fly mode to false
+       
+on world change:
+    if world is "SuperiorWorld":
+        set player's fly mode to true
+		
+		
+command /çekiliş:
+    trigger:
+        if player has permission "cekilis.admin":
+            loop all players:
+                add loop-player to {oyuncular::*}
+            wait 1 second
+            send players title "&6&lCEKILIS" with subtitle "&a10 saniye kaldı!"
+            wait 7 second
+            send players title "&6&lCEKILIS" with subtitle "&a3 saniye kaldı!"
+            wait 1 second
+            send players title "&6&lCEKILIS" with subtitle "&a2 saniye kaldı!"
+            wait 1 second
+            send players title "&6&lCEKILIS" with subtitle "&a1 saniye kaldı!"
+            wait 3 seconds
+            set {kazanan} to random element of {oyuncular::*}
+            send players title "&6&lKAZANAN" with subtitle "&b%{kazanan}%"
+            clear {oyuncular::*}
+			
+			
+			
+options:
+	sunucuadi: knightnw
+
+command /adakit [<text>] [<offlineplayer>]:
+	trigger:
+		if arg 1 is not set:
+			if {adakit.%player%} is not set:
+				set {adakit.%player%} to true
+				wait 1 second
+				execute console command "hsp give komurcevheri %player% 32"
+				execute console command "hsp give lapiscevheri %player% 32"
+				execute console command "hsp give demircevheri %player% 16"
+				execute console command "hsp give altincevheri %player% 16"
+				execute console command "hsp give elmascevheri %player% 8"
+				execute console command "hsp give zumrutcevheri %player% 4"
+				execute console command "hsp give kiziltascevheri %player% 1"
+				execute console command "hsp give komurblok %player% 8"
+				execute console command "cc give p para 8 %player%"
+				execute console command "cc give p spawner 4 %player%"
+				execute console command "cc give p kit 2 %player%"
+				execute console command "cc give p vote 1 %player%"
+				execute console command "eco give %player% 10000000000"
+				give 256 173 named "&6&lADAKIT" to player
+				give 256 19 named "&6&lADAKIT" to player
+				give 192 121 named "&6&lADAKIT" to player
+				give 192 169 named "&6&lADAKIT" to player
+				give 128 168:2 named "&6&lADAKIT" to player
+				give 64 168 named "&6&lADAKIT" to player
+				give 64 155:1 named "&6&lADAKIT" to player
+				give 32 168:1 named "&6&lADAKIT" to player
+				give 16 112 named "&6&lADAKIT" to player
+				send "&6&lSKYBLOCK &8▶ &aTek seferlik kitinizi başarıyla kullandınız."
+			else:
+				send "&6&lSKYBLOCK &8▶ &cTek seferlik kit hakkınız dolmuştur!"
+		else if arg 1 is "yardım":
+			if player is op:
+				send "&8&l&m--------&r&8&l[ &e{@sunucuadi}&8&l]&8&l&m--------"
+				send "&8► &a/adakit sıfırla &7Kendi adakit hakkını sıfırlar."
+				send "&8► &a/adakit sıfırla <oyuncu> &7Oyuncunun adakit hakkını sıfırlar."
+			else:
+				execute player command "adakit"
+		else if arg 1 is "sıfırla":
+			if player is op:
+				if arg 2 is not set:
+					delete {adakit.%player%}
+					send "&6&lSKYBLOCK &8▶ &7Adakit hakkınızı &abaşarıyla &7sıfırladınız."
+				else:
+					if arg 2 is "%player%":
+						delete {adakit.%player%}
+						send "&6&lSKYBLOCK &8▶ &7Adakit hakkınızı &abaşarıyla &7sıfırladınız."
+					else:
+						delete {adakit.%arg 2%}
+						send "&6&lSKYBLOCK &8▶ &a%arg 2% &7adlı oyuncunun adakit hakkını &abaşarıyla &asıfırladınız." to player
+						send "&6&lSKYBLOCK &8▶ &7Adakit hakkın &ayetkili &7tarafından sıfırlandı." to arg 2
+			else:
+				execute player command "adakit"
+			

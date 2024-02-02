@@ -1,0 +1,806 @@
+
+command /?:
+	trigger:
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın."
+command /ver:
+	trigger:
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın."
+command /version:
+	trigger:
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın."
+on command "/pl":
+	if command sender is a player:
+		send  "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event		
+on command "/essentials:help":
+	if player doesn't have permission "admin.skaadmin":
+		send  "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event		
+on command "/essentials:help":
+	if player doesn't have permission "admin.skaadmin":
+		send  "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/plugins":
+	if player doesn't have permission "admin.skaadmin":
+		send  "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event			
+on command "//calc":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/createhome":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:sethome":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:ehelp":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/esuicide":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/mineOyuncu:tell":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:suicide":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/f autoclaim":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock &e»  &eBu komut yerine &a/f claim &ekomutunu kullanın." to the player
+		cancel event
+on command "/mineOyuncu:me":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/mineOyuncu:say":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/me":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+command /mail:
+	trigger:
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		stop
+on command "/glist":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/suicide":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/warp 1":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/ehelp":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:me":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:plugins":
+	if command sender is a player:
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:help":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/?":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:?":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:ver":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:tell":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/logout":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/etpa":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:etpa":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:tpa":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/call":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/ecall":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:call":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:ecall":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event		
+on command "/etpyes":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:tpyes":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:etpyes":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/tpahere":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/etpahere":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:tpahere":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:etpahere":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/tpask":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/etpask":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:tpask":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:tpask":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/tpo":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/etpo":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:tpo":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:etpo":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/tpohere":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/etpohere":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:tpohere":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:etpohere":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/erepair":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock&fGUARD&e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/erepair hand":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock &e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/erepair all":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock &e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/efix":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock &e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/efix hand":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock &e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/efix all":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock &e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:repair":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock &e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:repair hand":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock &e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:repair all":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock  &e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:erepair":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock &e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:erepair hand":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock&fGUARD&e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:erepair all":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock&fGUARD&e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:fix":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock&fGUARD&e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:fix hand":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock&fGUARD&e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:fix all":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock&fGUARD&e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:efix":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock&fGUARD&e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:efix hand":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock&fGUARD&e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/essentials:efix all":
+	if player doesn't have permission "admin.skaadmin":
+		send "&cSkyBlock&fGUARD&e»  &eBu komut yerine &a/repair&e, &a/repair all &ekomutlarını kullanın." to the player
+		cancel event
+on command "/elist":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/eonline":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/who":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/ewho":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:list":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:elist":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:online":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:eonline":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:who":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:ewho":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/f version":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/eback":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:back":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:eback":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/ci":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/eci":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:ci":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:eci":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/esethome":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:sethome":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:esethome":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:home":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:ehome":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/ehome":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/efly":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:fly":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:efly":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:ewarps":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/reload":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/rl":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/an":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/calc":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "//calc":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/mineOyuncu:deop":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/mineOyuncu:op":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/mineOyuncu:list":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:pl":
+	if command sender is a player:
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/mineOyuncu":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/s":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:stop":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:version":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:ver":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:reload":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:rl":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/say":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/mineOyuncu:say":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/bukkit:say":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/debug":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:me":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/eme":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:eme":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/tell":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/etell":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:tell":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/essentials:etell":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/icanhasbukkit":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/cc":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/cc help":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/cl":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/combatlog":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/server":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/f chat":
+	if player doesn't have permission "admin.skaadmin":
+		send "&3&lSkyBlock&8&L»&r Böyle bir komut bulunamadı. &d/bilgi &rkomudunu kullanın." to the player
+		cancel event
+on command "/ci":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+
+on command "/clearinventory":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+
+on command "/plugins":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+
+ 
+on command "/sauc":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+ 
+on command "/mineOyuncu:me":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+
+on command "/bukkit:me":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+ 
+on command "/announce say":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+
+on command "/announce:say":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+ 
+on command "/bukkitcompat:tell":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+ 
+on command "/bukkit:kill":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+ 
+on command "/bukkit:?":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+ 
+on command "/logout":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+ 
+on command "/aletler":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+ 
+on command "/crash":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+
+on command "/?":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+
+on command "/essentials:crash":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+
+on command "/bukkit:crash":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+
+on command "/ecrash":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+    
+on command "/bukkit:plugins":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."
+	
+on command "/tab":
+    cancel event
+    send "&fSunucumuzda böyle bir kod bulunmamaktadir."	
+
+on command "/sk":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/skript":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/opguard":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/og":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/antiop":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/ag":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/accountguard":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/ng":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/narguard":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/permission":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/ipwhitelist":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/ipwl":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/ppb":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/preventportbypass":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/yourfancycommand":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/bungeeguard":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/bungee":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/bungeecord":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/flamecord":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/aegis":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/waterfall":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/ab":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/2ls":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/antibot":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/2lsab":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/2lsantibot":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/aegis":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/xcord":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/pt":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/ept":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/bc":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/broadcast":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "//sphere":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/sp":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/superpickaxe":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/litebans":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/lb":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "//brush":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "//br":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/eco":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/fill":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+on command "/kickall":
+	if command sender is a player:
+		cancel event
+		send "&cBilinmeyen bir komut girdiniz."
+
+#DEVELOPMENT BY TRXOR
+	

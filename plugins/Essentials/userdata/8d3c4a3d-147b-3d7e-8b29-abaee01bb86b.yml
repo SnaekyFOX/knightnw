@@ -1,0 +1,23 @@
+lastAccountName: Salam62
+timestamps:
+  login: 1684606017683
+  lastteleport: 1684606314522
+  logout: 1684606355081
+  kits:
+    balıkçı: 1684606267900
+ipAddress: 127.0.0.1
+lastlocation:
+  world: trxzort
+  x: 47.35481785773273
+  y: 23.0
+  z: -70.97710026350595
+  yaw: -141.62267
+  pitch: -5.460702
+logoutlocation:
+  world: trxzort
+  x: 1.5340993862251955
+  y: 29.0
+  z: -8.87786952232457
+  yaw: 179.93834
+  pitch: -17.999746
+money: '1001999328930690663.0'

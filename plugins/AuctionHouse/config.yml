@@ -1,0 +1,157 @@
+# 
+# Your database information should go here.# 
+SQLite: true
+sql:
+  host: 127.0.0.1
+  port: '3306'
+  database: database
+  user: user
+  pass: password
+auction:
+  listingPrice: 2
+  listingHours: 48
+  unclaimedHours: 240
+  preventCreativeSale: true
+  maxSellPrice: 10000000000000000
+  taxPercentage: 0.0
+  maxPermissionIncludeExpired: false
+  useAuctionNoAHPermission: true
+blacklist:
+- '1000'
+- '1001:12'
+- '12333:4'
+blacklistLore:
+- Blacklisted Line Of Lore
+language:
+  mainMenuName: Sanal Market
+  currentListingsMenuName: Sattigin esyalarin listesi
+  expiredMenuName: Iptal ettigin esyalarin listesi
+  purchaseItemMenuName: Eminmisiniz?
+  menuItemText:
+    listedItem:
+      lore:
+      - '&7-------------------------'
+      - '&aSatin almak icin tikla'
+      - ''
+      - '&aFiyat: &c$%price%'
+      - '&9Satici: &e%seller%'
+      - '&bSure: &7%time%'
+      - '&7-------------------------'
+    yourListedItem:
+      lore:
+      - '&7-------------------------'
+      - '&cEsyayi iptal etmek icin tikla'
+      - ''
+      - '&aFiyat: &c$%price%'
+      - '&bSure: &7%time%'
+      - '&7-------------------------'
+    yourExpiredItem:
+      lore:
+      - '&7-------------------------'
+      - '&aEsyayi envantere geri almak icin tikla'
+      - '&7-------------------------'
+    yourListedItems:
+      id: '264'
+      name: '&6Sattiginiz urunler'
+      lore:
+      - '&aSattiginiz urunlere goz atmak icin tiklayin'
+      - ''
+      - '&9Satilan: &e%selling%'
+    yourExpiredItems:
+      id: '394'
+      name: '&6Suresi dolan Veya Iptal ettiginiz esyalar'
+      lore:
+      - '&aGoz atmak icin tiklayin'
+      - ''
+      - '&9Sayi: &e%expired%'
+    returnAllItems:
+      id: '390'
+      name: '&6Hepsini geri al'
+      lore:
+      - '&aTum esyalarinizi geri almak icin tiklayin'
+    previousPage:
+      id: '339'
+      name: '&6Onceki sayfa'
+    refreshPage:
+      id: '175'
+      name: '&6Sayfayi yenile'
+    nextPage:
+      id: '339'
+      name: '&6Diger sayfa'
+    backButton:
+      id: '339'
+      name: '&6Geri'
+    howToSell:
+      id: '388'
+      name: '&6Bir esyayi nasil satarim?'
+      lore:
+      - '&aSaticaginiz esyayi elinize alin ve &c/ah sell &e<fiyat> &aYazin'
+      - '&c/ah selling &aYazarak sattiginiz esyalara goz ata bilirsiniz'
+    mainWhatIsThisPage:
+      id: '340'
+      name: '&6Sanal Market ne icindir?'
+      lore:
+      - '&aSanal Market Oyuncularin bir birilerine Kolaylikca esya satabilmesi icindir'
+      - '&aOyuncular bir birilerine esya satarak Para kazanir'
+      - '&aAyri zamanda oyuncularda Kolaylikca Esyayi elde edebilir'
+    yourListedWhatIsThisPage:
+      id: '340'
+      name: '&6Bu sayfa ne icindir'
+      lore:
+      - '&aBu sayfada satisa sundugunuz esyalari kolaylikca gorebilirsiniz'
+      - '&aEger yanlislikla bir esya sattiysaniz burdan iptal ede bilirsiniz'
+      - '&aIptal ettiginiz esyalar &bExpired &aSayfasina gider &c/ah expired'
+    expiredWhatIsThisPage:
+      id: '340'
+      name: '&6Bu sayfa ne icindir'
+      lore:
+      - '&aBu sayfada Suresi dolmus Veya Iptal ettiginiz Esyalari Gorebilirsiniz'
+      - '&aEsyayi Envantere geri almak icin Esyanin uzerine Tiklayin'
+      - '&aBu sayede Esya envanterinize geri doner'
+    purchaseConfirm:
+      name: '&aOnayla'
+    purchaseCancel:
+      name: '&cIptal et'
+    purchaseItem:
+      lore:
+      - ''
+      - '&9Fiyat: &a$%price%'
+      - '&9Satici: &e%seller%'
+    recentSalesLog:
+      id: '266'
+      name: '&6Sattiginiz esyalar'
+      logLineFormat: '&e%buyer% &3Senden &c%item% &3Adet &a%price%&bTL &3Fiyatina
+        satin aldi'
+      noneSoldLore: '&cHenuz hicbir urun satmadiniz'
+  clickFails:
+    notEnoughInventory: Uzgunum envanterinde yeterli yer yok
+    cannotPurchaseSelf: Uzgunum kendi sattigin esyayi alamazsin
+    notExists: Bu esya artik yok
+    cannotAfford: Bunu goze alamiyorsun
+    noListingsToReturn: Geri getirilecek birsey yok
+  chatMessages:
+    itemPurchased: '&aEsya satin alindi!'
+    buyerPurchased: '&6%buyer% &9Senin esyani &c$%taxedPrice% &9Fiyatina satin aldi'
+    listedItem: '&9Esyan satisa Konuldu!'
+    listingCancel: '&9Esya Satisini iptal ettin &eEsyayi envanterine almak icin &c/ah
+      expired'
+    adminRemoveListing: '&eListe silindi'
+    expiredReturned: '&9Item envanterine geri dondu'
+    notEnoughInventory: '&cEnvanterde yeterli alaniniz yok!'
+    returnedAll: '&6Tum Esyalariniz envanterinize geri dondu.'
+    unknownCommand: '&cBilinmeyen komut lutfen &f/ah help &cYaz'
+    notHoldingItem: '&9Uzgunum elinde bir esya olmasi gerek'
+    inCreative: '&cYaratici moddayken Esya satamazsiniz!'
+    noMore: '&cDaha fazla esyayi bir kerede listeleyemezsiniz'
+    max: '&9Bir kerede &c45 &9ten Daha fazla urun listeleyemezsiniz'
+    invalidPrice: '&cBu Gecerli bir fiyat degil'
+    maxMoney: '&c999,999,999 &9Fiyatindan daha Pahali satamazsiniz'
+    maxSetMoney: '&c1000000000000 &9Fiyatindan daha pahali satamazsiniz'
+    notEnoughMoney: '&cSanal Markete esya koymak icin yeterli paran yok'
+    getHelp: '&cKullanim: /ah help'
+    isBlacklisted: '&cBu esyayi Sanal Markete koyamazsin!'
+    help:
+    - '&9/ah - &6Sanal Marketi acar'
+    - '&9/ah sell <fiyat>- &6Elinizdeki itemi satisa koyar'
+    - '&9/ah selling - &6Sattigin esyalari gosterir'
+    - '&9/ah expired - &6Suresi dolmus esyalarinizi gosterir'

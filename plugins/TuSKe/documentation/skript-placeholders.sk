@@ -1,0 +1,69 @@
+Events:
+	On Placeholder Request:
+		ID: placeholder_request
+		Patterns:
+			[on] (placeholder[ ]api|papi) [placeholder] request (for|with) [the] prefix[es] %strings%
+			[on] mvdw[ ](placeholder[ ]api [placeholder]|placeholder) request (for|with) [the] placeholder[s] %strings%
+		Event values:
+			event-player
+			event-offlineplayer
+		Cancellable: false
+Expressions:
+	Placeholder:
+		ID: ExprPlaceholder
+		Description:
+			Returns the placeholder in a placeholder request event.
+		Examples:
+			on placeholderapi placeholder request for the prefix "custom":
+				broadcast "Placeholder: %the placeholder%"
+				broadcast "Prefix: %the placeholder prefix%"
+				broadcast "Identifier: %the placeholder identifier%"
+			on mvdw placeholder request for the placeholder "custom_hey":
+				broadcast "Placeholder: %the placeholder%"
+		Since:
+			1.0, 1.3 (MVdWPlaceholderAPI support)
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] [event(-| )]placeholder
+			[the] [[event(-| )]placeholder] (prefix|identifier)
+	Placeholder Result:
+		ID: ExprPlaceholderResult
+		Description:
+			The value of a placeholder in a placeholder event. Can be set, reset, or deleted.
+		Examples:
+			on placeholderapi placeholder request for the prefix "custom":
+				if the identifier is "hello": # Placeholder is "%custom_hey%"
+					set the result to "Hey there %player%!"
+			on mvdw placeholder request for the placeholder "custom_hey":
+				# Placeholder is "{custom_hey}"
+				set the result to "Hey there %player%!"
+		Since:
+			1.0, 1.3 (MVdWPlaceholderAPI support)
+		Return type: Text
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] [[event(-| )]placeholder] result
+	Value of Placeholder:
+		ID: ExprParsePlaceholder
+		Description:
+			Returns the value of a PlaceholderAPI/MVdWPlaceholderAPI placeholder.
+			Note: The 'without color' option is only applicable for PlaceholderAPI placeholders.
+		Examples:
+			command /ping <player>:
+				trigger:
+					set {_ping} to placeholder "player_ping" from arg-1 # PlaceholderAPI
+					set {_ping} to placeholder "{ping}" from arg-1 # MVdWPlaceholderAPI
+					send "Ping of %arg-1%: %{_ping}%" to player
+		Since:
+			1.0, 1.2 (MVdWPlaceholderAPI support), 1.3 (syntax changes), 1.4 (colorize option)
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] ([value of] placeholder[s]|placeholder [value] [of]) %strings% [(from|of) %-players/offlineplayers%] [(without color)]
+			parse placeholder[s] %strings% [(for|as) %-players/offlineplayers%] [(without color)]

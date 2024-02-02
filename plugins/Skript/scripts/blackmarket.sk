@@ -1,0 +1,207 @@
+command /blackmarket: #Marketi Açar
+	trigger:
+		if {blackbakim} is 0:
+			open chest with 5 rows named "&3Black Market &8► " to player
+			format slot 0 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 1 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 2 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 3 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 4 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 5 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 6 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 7 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 8 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 9 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 10 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 11 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 12 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 13 of player with NETHER_BRICK_BLOCK named "&6Nether Tuğlası &7(&8x64&7)" with lore "&7|| &3Mevcut Fiyat: &a3 Milyar || &7 || &3Toplam Stok: &a%{nethertugla.stok}% || &7 || &8► &7Hafta bir kez stoklar yenilenmektedir.  " to run [execute player command "bntal"]
+			format slot 14 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 15 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 16 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 17 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 18 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 19 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 20 of player with MOB_SPAWNER named "&6Kızıltaş Cevheri Spawner &7(&8x1&7)" with lore "&7|| &3Mevcut Fiyat: &a750 Milyon || &7 || &3Toplam Stok: &a%{kcsp.stok}% || &7 || &8► &7Hafta bir kez stoklar yenilenmektedir.  " to run [execute player command "bkcspal"]
+			format slot 21 of player with MOB_SPAWNER named "&6Zümrüt Cevheri Spawner &7(&8x1&7)" with lore "&7|| &3Mevcut Fiyat: &a400 Milyon || &7 || &3Toplam Stok: &a%{zcsp.stok}% || &7 || &8► &7Hafta bir kez stoklar yenilenmektedir.  " to run [execute player command "bzcspal"]
+			format slot 22 of player with MOB_SPAWNER named "&6Elmas Cevheri Spawner &7(&8x1&7)" with lore "&7|| &3Mevcut Fiyat: &a300 Milyon || &7 || &3Toplam Stok: &a%{ecsp.stok}% || &7 || &8► &7Hafta bir kez stoklar yenilenmektedir.  " to run [execute player command "becspal"]
+			format slot 23 of player with MOB_SPAWNER named "&6Altın Cevheri Spawner &7(&8x1&7)" with lore "&7|| &3Mevcut Fiyat: &a225 Milyon || &7 || &3Toplam Stok: &a%{acsp.stok}% || &7 || &8► &7Hafta bir kez stoklar yenilenmektedir.  " to run [execute player command "bacspal"]
+			format slot 24 of player with MOB_SPAWNER named "&6Demir Cevheri Spawner &7(&8x1&7)" with lore "&7|| &3Mevcut Fiyat: &a150 Milyon || &7 || &3Toplam Stok: &a%{dcsp.stok}% || &7 || &8► &7Hafta bir kez stoklar yenilenmektedir.  " to run [execute player command "bdcspal"]
+			format slot 25 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 26 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 27 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 28 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 29 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 30 of player with MOB_SPAWNER named "&6Koyu Prizmarin Spawner &7(&8x1&7)" with lore "&7|| &3Mevcut Fiyat: &a33 Milyar || &7 || &3Toplam Stok: &a%{kpsp.stok}% || &7 || &8► &7Hafta bir kez stoklar yenilenmektedir.  " to run [execute player command "bkpspal"]
+			format slot 31 of player with MOB_SPAWNER named "&6Deniz Feneri Spawner &7(&8x1&7)" with lore "&7|| &3Mevcut Fiyat: &a22 Milyar || &7 || &3Toplam Stok: &a%{dfsp.stok}% || &7 || &8► &7Hafta bir kez stoklar yenilenmektedir.  " to run [execute player command "bdfspal"]
+			format slot 32 of player with MOB_SPAWNER named "&6End Taşı Spawner &7(&8x1&7)" with lore "&7|| &3Mevcut Fiyat: &a15 Milyar || &7 || &3Toplam Stok: &a%{endsp.stok}%  || &7 || &8► &7Hafta bir kez stoklar yenilenmektedir.  " to run [execute player command "bendspal"]
+			format slot 33 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 34 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 35 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 36 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 37 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 38 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 39 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 40 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 41 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 42 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 43 of player with GLASS_PANE named "&bBlack Market" to close
+			format slot 44 of player with GLASS_PANE named "&bBlack Market" to close
+		else:
+			send "&3BlackMarket &8► &cMaalesef, market şuanda alıma kapalıdır! "
+			
+command /blackmarketbakım <text>: #blackmarketi aktif/deaktif eder.
+	permission: blackmarket.admin
+	permission message: &3BlackMarket &8► &cMaalesef, bunu gerçekleştirmek için yetkiniz yok.
+	trigger:
+		if arg-1 is set:
+			if arg-1 is "aç":
+				set {blackbakim} to 1
+				execute console command "blackmarket tüket"
+				send "&3BlackMarket &8► &aBakım başarıyla aktif edildi."
+			if arg-1 is "kapat":
+				set {blackbakim} to 0
+				execute console command "blackmarketstok üret"
+				send "&3BlackMarket &8► &cBakım başarıyla deaktif edildi."
+				stop
+				
+command /blackmarketstok <text>: #black market alınabilecek maksimum eşya limitini ayarlar.
+	permission: blackmarket.admin
+	permission message: &3BlackMarket &8► &cMaalesef, bunu gerçekleştirmek için yetkiniz yok.
+	trigger:
+		if arg-1 is set:
+			if arg-1 is "üret":
+				set {nethertugla.stok} to 500
+				set {kpsp.stok} to 5
+				set {dfsp.stok} to 10
+				set {endsp.stok} to 15
+				set {kcsp.stok} to 50
+				set {zcsp.stok} to 50
+				set {ecsp.stok} to 50
+				set {acsp.stok} to 50
+				set {dcsp.stok} to 50
+				send "&3BlackMarket &8► &aStoklar başarıyla tekrardan üretildi."
+			if arg-1 is "tüket":
+				set {nethertugla.stok} to 0
+				set {kpsp.stok} to 0
+				set {dfsp.stok} to 0
+				set {endsp.stok} to 0
+				set {kcsp.stok} to 0
+				set {zcsp.stok} to 0
+				set {ecsp.stok} to 0
+				set {acsp.stok} to 0
+				set {dcsp.stok} to 0
+				send "&3BlackMarket &8► &aStoklar başarıyla tüketildi."
+				stop
+		
+#BU AŞAĞIDAKİ KOMUTLAR DİREKT ALIŞVERİŞ SATIN ALIM KOMUTLARIDIR. (ELLEMENIZ TAVSIYE EDILMEZ.)
+		
+command /bntal: 
+	trigger:
+		if {nethertugla.stok} is more than 0:
+			if player's balance is bigger than 2999999999: 
+				remove 3000000000 from player's balance
+				execute console command "give %player% 112 64"
+				add -1 to {nethertugla.stok}
+				send "&3BlackMarket &8► &aBaşarıyla nether tuğlası satın aldınız."
+			else:
+				send "&3BlackMarket &8► &cYeterli paran bulunamadı."
+				stop
+command /bkpspal:
+	trigger:
+		if {kpsp.stok} is more than 0:
+			if player's balance is bigger than 32999999999: 
+				remove 33000000000 from player's balance
+				execute console command "hsp give koyuprizmarin %player% 1"
+				add -1 to {kpsp.stok}
+				send "&3BlackMarket &8► &aBaşarıyla koyu prizmarin spawneri satın aldınız."
+			else:
+				send "&3BlackMarket &8► &cYeterli paran bulunamadı."
+				stop
+command /bdfspal:
+	trigger:
+		if {dfsp.stok} is more than 0:
+			if player's balance is bigger than 21999999999: 
+				remove 22000000000 from player's balance
+				execute console command "hsp give denizfeneri %player% 1"
+				add -1 to {dfsp.stok}
+				send "&3BlackMarket &8► &aBaşarıyla deniz feneri spawneri satın aldınız."
+			else:
+				send "&3BlackMarket &8► &cYeterli paran bulunamadı."
+				stop
+command /bendspal:
+	trigger:
+		if {endsp.stok} is more than 0:
+			if player's balance is bigger than 14999999999: 
+				remove 15000000000 from player's balance
+				execute console command "hsp give endtasi %player% 1"
+				add -1 to {endsp.stok}
+				send "&3BlackMarket &8► &aBaşarıyla end taşı spawneri satın aldınız."
+			else:
+				send "&3BlackMarket &8► &cYeterli paran bulunamadı."
+				stop
+command /bkcspal:
+	trigger:
+		if {kcsp.stok} is more than 0:
+			if player's balance is bigger than 749999999: 
+				remove 750000000 from player's balance
+				execute console command "hsp give kiziltascevheri %player% 1"
+				add -1 to {kcsp.stok}
+				send "&3BlackMarket &8► &aBaşarıyla kızıltaş cevheri spawneri satın aldınız."
+			else:
+				send "&3BlackMarket &8► &cYeterli paran bulunamadı."
+				stop
+command /bzcspal:
+	trigger:
+		if {zcsp.stok} is more than 0:
+			if player's balance is bigger than 399999999: 
+				remove 400000000 from player's balance
+				execute console command "hsp give zumrutcevheri %player% 1"
+				add -1 to {zcsp.stok}
+				send "&3BlackMarket &8► &aBaşarıyla zümrüt cevheri spawneri satın aldınız."
+			else:
+				send "&3BlackMarket &8► &cYeterli paran bulunamadı."
+				stop
+command /becspal:
+	trigger:
+		if {ecsp.stok} is more than 0:
+			if player's balance is bigger than 299999999: 
+				remove 300000000 from player's balance
+				execute console command "hsp give elmascevheri %player% 1"
+				add -1 to {ecsp.stok}
+				send "&3BlackMarket &8► &aBaşarıyla elmas cevheri spawneri satın aldınız."
+			else:
+				send "&3BlackMarket &8► &cYeterli paran bulunamadı."
+				stop
+command /bacspal:
+	trigger:
+		if {acsp.stok} is more than 0:
+			if player's balance is bigger than 224999999: 
+				remove 225000000 from player's balance
+				execute console command "hsp give altincevheri %player% 1"
+				add -1 to {acsp.stok}
+				send "&3BlackMarket &8► &aBaşarıyla altın cevheri spawneri satın aldınız."
+			else:
+				send "&3BlackMarket &8► &cYeterli paran bulunamadı."
+				stop
+command /bdcspal:
+	trigger:
+		if {dcsp.stok} is more than 0:
+			if player's balance is bigger than 149999999: 
+				remove 150000000 from player's balance
+				execute console command "hsp give demircevheri %player% 1"
+				add -1 to {dcsp.stok}
+				send "&3BlackMarket &8► &aBaşarıyla demir cevheri spawneri satın aldınız."
+			else:
+				send "&3BlackMarket &8► &cYeterli paran bulunamadı."
+				stop
+			
+command /blackmarketbilgi:
+	trigger:
+		send "&3BlackMarket &8► &aBu skript sunucuya SnaekyFOX tarafından kodlanmıştır."
+		stop
+			
+			
+# Black Market developer by SnaekyFOX
+# Bu skript trxor tarafından plugin paketi için kodlanmıştır.
+# CopyRight 2023 ©

@@ -1,0 +1,669 @@
+Events:
+	On Anvil GUI:
+		ID: anvil_gui
+		Patterns:
+			[on] (close|confirm|done)[ a[n]] anvil gui name[d] %string%
+			[on] (close|confirm|done)[ a[n]] anvil gui
+		Event values:
+			event-inventory
+			event-player
+			event-string
+		Cancellable: false
+Conditions:
+	CondCooldownFinish:
+		ID: CondCooldownFinish
+		Patterns:
+			cooldown %string% is finish[ed]
+			cooldown %string% of %player% is finish[ed]
+			cooldown %string% is(n't| not) finish[ed]
+			cooldown %string% of %player% is(n't| not) finish[ed]
+	CondEssentialsAFK:
+		ID: CondEssentialsAFK
+		Patterns:
+			%player% is afk
+			%player% is(n't| not) afk
+	CondEssentialsCanBuild:
+		ID: CondEssentialsCanBuild
+		Patterns:
+			essentials %player% can build
+			essentials %player% cannot build
+	CondEssentialsCanInteractVanish:
+		ID: CondEssentialsCanInteractVanish
+		Patterns:
+			%player% can interact vanish
+			%player% cannot interact vanish
+	CondEssentialsGodMode:
+		ID: CondEssentialsGodMode
+		Patterns:
+			%player% is[ in] god[ mode]
+			%player% is(n't| not)[ in] god[ mode]
+	CondEssentialsHasHome:
+		ID: CondEssentialsHasHome
+		Patterns:
+			%player% ha(s|ve)[ a[n]] home
+			%player% does(n't| not) ha(s|ve)[ a[n]] home
+			%player% ha(s|ve)(n't| not)[ a[n]] home
+	CondEssentialsHasPowertools:
+		ID: CondEssentialsHasPowertools
+		Patterns:
+			%player% ha(s|ve) powertool[s]
+			%player% does(n't| not) ha(s|ve) powertool[s]
+			%player% ha(s|ve)(n't| not) powertool[s]
+	CondEssentialsIgnore:
+		ID: CondEssentialsIgnore
+		Patterns:
+			%player% (ignore|is ignoring) %player%
+			%player% does(n't| not) ignore %player%
+	CondEssentialsIsJailed:
+		ID: CondEssentialsIsJailed
+		Patterns:
+			%player% is jail[ed]
+			%player% is(n't| not) jail[ed]
+	CondEssentialsIsMuted:
+		ID: CondEssentialsIsMuted
+		Patterns:
+			%player% is mute[d]
+			%player% is(n't| not) muted
+	CondEssentialsPowerToolsEnabled:
+		ID: CondEssentialsPowerToolsEnabled
+		Patterns:
+			%player% ha(s|ve) powertool[s] enable[d]
+			%player% does(n't| not) ha(s|ve) powertool[s] enable[d]
+			%player% ha(s|ve)(n't| not) powertool[s] enable[d]
+	CondEssentialsSocialSpyEnabled:
+		ID: CondEssentialsSocialSpyEnabled
+		Patterns:
+			%player% ha(s|ve) social spy[ enable[d]]
+			%player% does(n't| not) ha(s|ve) social spy[ enable[d]]
+			%player% ha(s|ve)(n't| not) social spy[ enable[d]]
+	CondEssentialsVanish:
+		ID: CondEssentialsVanish
+		Patterns:
+			%player% is vanish[ed]
+			%player% is(n't| not) vanish[ed]
+	CondEven:
+		ID: CondEven
+		Patterns:
+			%number% is even
+			%number% is(n't| not) even
+	CondInArena:
+		ID: CondInArena
+		Patterns:
+			%player% is in %arena%
+			%player% is(n't| not) in %arena%
+	CondInGame:
+		ID: CondInGame
+		Patterns:
+			%player% is in (a[n] arena|[a ]game)
+			%player% is(n't| not) in (a[n] arena|[a ]game)
+	CondIsStarted:
+		ID: CondIsStarted
+		Patterns:
+			%arena% is started
+			%arena% is(n't| not) started
+	CondOdd:
+		ID: CondOdd
+		Patterns:
+			%number% is odd
+			%number% is(n't| not) odd
+Effects:
+	EffArenaBroadcast:
+		ID: EffArenaBroadcast
+		Patterns:
+			broadcast [message ]%string% in %arena%
+	EffCallMethodWithParams:
+		ID: EffCallMethodWithParams
+		Patterns:
+			call (function|method) %string% with param[meter][s] %objects% in class[ named] %string%
+	EffCallMethodWithoutParams:
+		ID: EffCallMethodWithoutParams
+		Patterns:
+			call (function|method) %string% [without param[meter][s]] in class[ named] %string%
+	EffCreateArena:
+		ID: EffCreateArena
+		Patterns:
+			create[ a[n]] arena[ named] %string% with min[imum][ player[s]] %integer%(,| and) max[imum][ player[s]] %integer% (for|in) %minigame%
+	EffCreateCooldown:
+		ID: EffCreateCooldown
+		Patterns:
+			create cooldown %string% for %timespan%
+			create cooldown %string% (for|of) %player% for %timespan%
+	EffCreateCooldown:
+		ID: EffCreateCooldown
+		Patterns:
+			delete cooldown %string%
+			delete cooldown %string% (for|of) %player%
+	EffCreateMinigame:
+		ID: EffCreateMinigame
+		Patterns:
+			create[ a] (minigame|mg)[ named] %string% with (command|cmd) %string% and prefix %string%
+	EffEssentialsDelHome:
+		ID: EffEssentialsDelHome
+		Patterns:
+			delete home %string% of %player%
+	EffEssentialsMakePlayerBecomeAFK:
+		ID: EffEssentialsMakePlayerBecomeAFK
+		Patterns:
+			make %player% become afk
+			make %player% become (no afk|active)
+	EffEssentialsMakePlayerGod:
+		ID: EffEssentialsMakePlayerGod
+		Patterns:
+			make %player% become god
+			disable god[ mode] for %player%
+	EffEssentialsMakePlayerIgnore:
+		ID: EffEssentialsMakePlayerIgnore
+		Patterns:
+			make %player% ignore %player%
+			make %player% (doesn't ignore|unignore) %player%
+	EffEssentialsMakePlayerJailed:
+		ID: EffEssentialsMakePlayerJailed
+		Patterns:
+			jail %player%
+			unjail %player%
+	EffEssentialsMakePlayerMuted:
+		ID: EffEssentialsMakePlayerMuted
+		Patterns:
+			mute %player%
+			unmute %player%
+	EffEssentialsMakeSocialSpy:
+		ID: EffEssentialsMakeSocialSpy
+		Patterns:
+			enable social spy for %player%
+			disable social spy for %player%
+	EffEssentialsMakeVanish:
+		ID: EffEssentialsMakeVanish
+		Patterns:
+			vanish %player%
+			unvanish %player%
+	EffEssentialsSendMail:
+		ID: EffEssentialsSendMail
+		Patterns:
+			send mail %string% to %player%
+	EffMakeJoinArena:
+		ID: EffMakeJoinArena
+		Patterns:
+			make %player% join %arena%
+	EffMakeLeaveArena:
+		ID: EffMakeLeaveArena
+		Patterns:
+			make %player% leave[ current] arena
+	EffOpenAnvilGUI:
+		ID: EffOpenAnvilGUI
+		Patterns:
+			open[ a[n]] anvil gui name[d] %string% to %player%
+			open[ a[n]] anvil gui name[d] %string% to %player% with[ default] text %string%
+			open[ a[n]] anvil gui name[d] %string% to %player% with item %itemstack%
+			open[ a[n]] anvil gui name[d] %string% to %player% with[ default] text %string% and [with ]item %itemstack%
+	EffSpectate1_8_R3:
+		ID: EffSpectate1_8_R3
+		Patterns:
+			wolvsk make %player% spectate %entity%
+	EffStartArena:
+		ID: EffStartArena
+		Patterns:
+			start %arena%
+	EffStopArena:
+		ID: EffStopArena
+		Patterns:
+			stop %arena%
+	EffUnspectate1_8_R3:
+		ID: EffUnspectate1_8_R3
+		Patterns:
+			wolvsk make %player% stop spectating
+Expressions:
+	ExprAllArenas:
+		ID: ExprAllArenas
+		Return type: arena
+		Changers:
+			none
+		Patterns:
+			[all ]arenas of %minigame%
+			%minigame%['s] arenas
+	ExprAllMinigames:
+		ID: ExprAllMinigames
+		Return type: minigame
+		Changers:
+			none
+		Patterns:
+			[all ]minigames
+	ExprAnvilGUIInputText:
+		ID: ExprAnvilGUIInputText
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[input ]text of anvil( |-)gui
+	ExprAnvilGUIName:
+		ID: ExprAnvilGUIName
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			name of anvil( |-)gui
+	ExprArenaByName:
+		ID: ExprArenaByName
+		Return type: arena
+		Changers:
+			none
+		Patterns:
+			arena %string% in %minigame%
+			%minigame%['s] arena %string%
+	ExprArenaCount:
+		ID: ExprArenaCount
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			([player ]count|number of player[s]) of %arena%
+			%arena%['s] ([player ]count|number of player[s])
+	ExprArenaCurrentCountdown:
+		ID: ExprArenaCurrentCountdown
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			countdown of %arena%
+			%arena%['s] countdown
+	ExprArenaLobby:
+		ID: ExprArenaLobby
+		Return type: Location
+		Changers:
+			set
+			remove
+			reset
+		Patterns:
+			lobby of %arena%
+			%arena%['s] lobby
+	ExprArenaMax:
+		ID: ExprArenaMax
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			max[imum][ of player[s]] of %arena%
+			%arena%['s] max[imum][ of player[s]]
+	ExprArenaMin:
+		ID: ExprArenaMin
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			min[imum][ of player[s]] of %arena%
+			%arena%['s] min[imum][ of player[s]]
+	ExprArenaName:
+		ID: ExprArenaName
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			name of arena %arena%
+			arena %arena%['s] name
+	ExprArenaOfPlayer:
+		ID: ExprArenaOfPlayer
+		Return type: arena
+		Changers:
+			none
+		Patterns:
+			[current ]arena of %player%
+			%player%['s] [current ]arena
+	ExprArenaPlayers:
+		ID: ExprArenaPlayers
+		Return type: Player
+		Changers:
+			add
+			remove
+			remove all
+		Patterns:
+			[all ]players (in|of) %arena%
+	ExprArenaTimer:
+		ID: ExprArenaTimer
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			default (timer|countdown) of %arena%
+			%arena%['s] default (timer|countdown)
+	ExprBlockPower:
+		ID: ExprBlockPower
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			power of %block%
+			%block%['s] power
+	ExprClientVersion:
+		ID: ExprClientVersion
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			(minecraft|mc) version of %player%
+	ExprCooldownLeftTime:
+		ID: ExprCooldownLeftTime
+		Return type: Timespan
+		Changers:
+			add
+			set
+			remove
+			reset
+		Patterns:
+			cooldown[ left][ time] %string%
+			cooldown[ left][ time] %string% of %player%
+	ExprCountServer:
+		ID: ExprCountServer
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			(number of player[s]|player[s] count) (on|in|of) server[ with ip] %string%
+	ExprCountry:
+		ID: ExprCountry
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			country of ip %string%
+			country of %player%
+			country code of ip %string%
+			country code of %player%
+			ip %string%['s] country
+			%player%['s] country
+			ip %string%['s] country code
+			%player%['s] country code
+	ExprEssentialsHome:
+		ID: ExprEssentialsHome
+		Return type: Location
+		Changers:
+			set
+			remove
+		Patterns:
+			home of %player%
+			%player%['s] home
+	ExprEssentialsHome:
+		ID: ExprEssentialsHome
+		Return type: Location
+		Changers:
+			set
+			remove
+		Patterns:
+			home %string% of %player%
+			%player%['s] home %string%
+	ExprEssentialsHomes:
+		ID: ExprEssentialsHomes
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			homes of %player%
+			%player%['s] homes
+	ExprEssentialsJail:
+		ID: ExprEssentialsJail
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			jail of %player%
+			%player%['s] jail
+	ExprEssentialsJailTimeout:
+		ID: ExprEssentialsJailTimeout
+		Return type: long
+		Changers:
+			set
+		Patterns:
+			jail timeout of %player%
+			%player%['s] jail timeout
+	ExprEssentialsLastAccountName:
+		ID: ExprEssentialsLastAccountName
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			last account name of %player%
+			%player%['s] last account name
+	ExprEssentialsLastLoginAddress:
+		ID: ExprEssentialsLastLoginAddress
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			last login address of %player%
+			%player%['s] last login address
+	ExprEssentialsLogoutLocation:
+		ID: ExprEssentialsLogoutLocation
+		Return type: Location
+		Changers:
+			none
+		Patterns:
+			log[ ]out[ location] of %player%
+			%player%['s] log[ ]out[ location]
+	ExprEssentialsMuteTimeout:
+		ID: ExprEssentialsMuteTimeout
+		Return type: long
+		Changers:
+			set
+		Patterns:
+			mute timeout of %player%
+			%player%['s] mute timeout
+	ExprEssentialsNickname:
+		ID: ExprEssentialsNickname
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			essential[s] nick[ ]name %player%
+			%player%['s] essential[s] nick[ ]name
+	ExprListSort:
+		ID: ExprListSort
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			%objects% (sorted|in order)
+	ExprMathsAbsoluteValue:
+		ID: ExprMathsAbsoluteValue
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			abs[olute] [value of ]%number%
+	ExprMathsCubeRoot:
+		ID: ExprMathsCubeRoot
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			cube root of %number%
+			cbrt[ of] %number%
+	ExprMathsDegreesToRad:
+		ID: ExprMathsDegreesToRad
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			%number% deg[ree[s]][ converted] (to|in) rad[ian[s]]
+	ExprMathsExp:
+		ID: ExprMathsExp
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			exp[onential][ of] %number%
+	ExprMathsExpBase:
+		ID: ExprMathsExpBase
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			exp[onential] %number% in base %number%
+			exp[onential] in base %number% of %number%
+	ExprMathsLogBase:
+		ID: ExprMathsLogBase
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			log[arithm] %number% in base %number%
+			log[arithm] in base %number% of %number%
+	ExprMathsPi:
+		ID: ExprMathsPi
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			speed of[ the] light
+			light['s] speed
+	ExprMathsPi:
+		ID: ExprMathsPi
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			pi
+	ExprMathsRadToDegrees:
+		ID: ExprMathsRadToDegrees
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			%number% rad[ian[s]][ converted] (to|in) deg[ree[s]]
+	ExprMathsStatsAverage:
+		ID: ExprMathsStatsAverage
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			average of %numbers%
+	ExprMathsStatsMedian:
+		ID: ExprMathsStatsMedian
+		Return type: double
+		Changers:
+			none
+		Patterns:
+			median of %numbers%
+	ExprMinigameByName:
+		ID: ExprMinigameByName
+		Return type: minigame
+		Changers:
+			none
+		Patterns:
+			minigame %string%
+	ExprMinigameChatFormat:
+		ID: ExprMinigameChatFormat
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			chat format of minigames
+	ExprMinigameCommand:
+		ID: ExprMinigameCommand
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			command of %minigame%
+			%minigame%['s] command
+	ExprMinigameMessageFormat:
+		ID: ExprMinigameMessageFormat
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			message format of minigames
+	ExprMinigameOfArena:
+		ID: ExprMinigameOfArena
+		Return type: minigame
+		Changers:
+			none
+		Patterns:
+			minigame of %arena%
+			%arena%['s] minigame
+	ExprMinigamePlayer:
+		ID: ExprMinigamePlayer
+		Return type: minigame
+		Changers:
+			none
+		Patterns:
+			[current ]minigame of %player%
+			%player%['s] [current ]minigame
+	ExprMinigamePrefix:
+		ID: ExprMinigamePrefix
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			prefix of %minigame%
+			%minigame%['s] prefix
+	ExprNameOfMinigame:
+		ID: ExprNameOfMinigame
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			name of (minigame|mg) %minigame%
+			(minigame|mg) %minigame%['s] name
+	ExprRandomAlphaNumericString:
+		ID: ExprRandomAlphaNumericString
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[a ]random alpha[ ]numeric[al] (text|string) of length %integer%
+	ExprRandomLicenceCode:
+		ID: ExprRandomLicenceCode
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[a ]random license code
+	ExprRandomUUID:
+		ID: ExprRandomUUID
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			[a ]random uuid
+	ExprReturnOfMethodWithParams:
+		ID: ExprReturnOfMethodWithParams
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			return of (function|method) %string% with param[meter][s] %objects% in class[ named] %string%
+	ExprReturnOfMethodWithoutParams:
+		ID: ExprReturnOfMethodWithoutParams
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			return of (function|method) %string% [without param[meter][s]] in class[ named] %string%
+	ExprServerMOTD:
+		ID: ExprServerMOTD
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			motd (of|for) server[ with ip] %string%
+	ExprServerMaxPlayers:
+		ID: ExprServerMaxPlayers
+		Return type: integer
+		Changers:
+			none
+		Patterns:
+			max[imum][ of] player[s] (on|in|of|for) server[ with ip] %string%
+	ExprServerVersion:
+		ID: ExprServerVersion
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			version (of|for) server[ with ip] %string%
+Types:
+	arena:
+		ID: Arena
+		Patterns:
+			arena
+	minigame:
+		ID: Minigame
+		Patterns:
+			minigame

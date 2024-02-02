@@ -1,0 +1,44 @@
+mine:
+  name: svip+
+  timer: 593
+  type: Gradual
+  reset:
+    speed: FAST
+    reset-messages: false
+    broadcast-messages: false
+    delay-messages: false
+    broadcast-delay-messages: false
+  block-placing: false
+  children: []
+  effects: []
+  schematic: false
+  fly: false
+  alerts:
+  - 60
+  - 20
+  - 10
+  - 3
+  - 2
+  - 1
+  hologram: false
+  automessages:
+    radius: 8
+  timedreset:
+    enabled: true
+  percentagereset:
+    enabled: true
+    value: 50.0
+  region:
+    world: kazi
+    min:
+      x: -1711
+      y: 59
+      z: 1988
+    max:
+      x: -1683
+      y: 82
+      z: 2015
+  blocks:
+  - NETHER_BRICK;30.0
+  - PRISMARINE:1;40.0
+  - QUARTZ_BLOCK:1;30.0

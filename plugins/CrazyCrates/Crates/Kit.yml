@@ -1,0 +1,256 @@
+﻿# 
+#         For Cosmic Crates Only
+Crate:
+  CrateType: QuickCrate
+  CrateName: '&6&lKit Kasası'
+  Preview-Name: '&b&l&nKIT KASASI İÇERİĞİ:'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 27
+  OpeningBroadCast: true
+  BroadCast: ''
+  Item: CHEST
+  Glowing: false
+  Name: '&7&lBasic Chest'
+  Lore:
+  - '&7This crate contains strange objects.'
+  - '&7You have &6%Keys% keys &7to open this crate with.'
+  - '&7&l(&e&l!&7&l) Right click to view rewards.'
+  PhysicalKey:
+    Name: '&a&nKit Kasa Anahtarı' #Name of the Key.
+    Lore:
+      - ''
+      - '&7Kasayı açmak için sol, bakmak için sağ tıklayınız.'
+    Item: 288
+    Glowing: true
+  Prizes:  
+    '1':
+      DisplayName: '&3Oyuncu Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a70%'
+      MaxRange: 100
+      Chance: 70
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit oyuncu %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nOyuncu Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '2':
+      DisplayName: '&3SkyLord Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a60%'
+      MaxRange: 100
+      Chance: 60
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit skylord %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSkyLord Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '3':
+      DisplayName: '&3SkyKing Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a50%'
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit skyking %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSkyKing Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '4':
+      DisplayName: '&3SkyMaster Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a40%'
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit skymaster %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSkyMaster Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '5':
+      DisplayName: '&3SkyLegend Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a35%'
+      MaxRange: 100
+      Chance: 35
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit skylegend %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSkyLegend Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '6':
+      DisplayName: '&3SkyKaos Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a30%'
+      MaxRange: 100
+      Chance: 30
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit skykaos %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSkyKaos Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '7':
+      DisplayName: '&3SkySansar Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a25%'
+      MaxRange: 100
+      Chance: 25
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit skysansar %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSkySansar Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '8':
+      DisplayName: '&3IronSky Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a20%'
+      MaxRange: 100
+      Chance: 20
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit ironsky %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nIronSky Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '9':
+      DisplayName: '&3VIP Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a15%'
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit vip %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nVIP Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '10':
+      DisplayName: '&3VIP+ Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a10%'
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit vip+ %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nVIP+ Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'

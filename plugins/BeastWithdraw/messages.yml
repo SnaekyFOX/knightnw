@@ -1,0 +1,41 @@
+Prefix: "&6&lBanka &8- &7"
+Help:
+  - "&6&m==============[&f &4Beast&bWithDraw &eHelp &6&m]============="
+  - "&e/Xpbottle <xp> or <all> &8- &2Withdraw your xp to bottle!"
+  - "&e/bWithdraw <money> or <all> &8- &2Withdraw your money to Cash-Note!"
+  - "&6&m=================[&f &eAdmin Help &6&m]=================="
+  - "&e/Xpbottle <xp> <player> <amount> <enchanter> &8- &2Give XpBottle to the player. (<amount> and <enchanter> are optional!)"
+  - "&e/bWithdraw <money> <player> <amount> <signer> &8- &2Give Cash-Note to the player. (<amount> and <signer> are optional!)"
+  - "&e/Xpbottle giveall <xp> <amount> <enchanter> &8- &2Give XpBottle to all players on server. (<amount> and <enchanter> are optional!)"
+  - "&e/bWithdraw giveall <money> <amount> <signer> &8- &2Give Cash-Note to all players on server. (<amount> and <signer> are optional!)"
+  - "&6&m=============================================="
+Withdraws:
+  XpBottle:
+    NotEnough: '&7Üzgünüm adamım, hesabında yeteri kadar şişelenecek level yok.'
+    Xpb: '&7Hesabında &8(&e%xp%&8) &7bulunmaktadır.'
+    Withdraw: '&8(&c-%value%&8) &7hesabından çekildi.'
+    Redeem: '&8(&a+ %value%&8) &7hesabına eklendi.'
+    Min: '&8(&e%minxp%&8) &7miktarından daha düşük xp çekemezsin.'
+    Max: '&8(&e%maxxp%&8) miktarından daha fazla xp çekemezsin.'
+    BottleReceived: '&7Başarıyla oyuncuya &8(&a+ %value%&8) &7verildi.'
+    RewardReceived: You have received XpBottle with %value% xp
+    GiveAll: '&7Başarıyla herkese &elevel &7gönderildi.'
+  CashNote:
+    NotEnough: '&7Üzgünüm adamım, hesabında yeteri kadar para yok.'
+    Cash: '&7Hesabında &8(&e%balance% ⛁&8) &7bulunmaktadır.'
+    Withdraw: '&8(&c- %value% ⛁&8) &7hesabından çekildi.'
+    Redeem: '&8(&a+ %value% ⛁&8) &7hesabına eklendi.'
+    Min: '&8(&e%mincash% ⛁&8) &7miktarından daha düşük para çekemezsin.'
+    Max: '&8(&e%maxcash% ⛁&8) miktarından daha fazla para çekemezsin.'
+    CashReceived: '&7Başarıyla oyuncuya &8(&a+ %value% ⛁&8) &7verildi.'
+    RewardReceived: '&bYou have received CashNote $%value%'
+    GiveAll: '&7Başarıyla herkese &epara &7gönderildi.'
+  FullInventory: '&7Envanterin de hiç boş yer yok adamım, lütfen yer aç.'
+  CantFind: '&e%player% &7isminde bir oyuncu bulunamadı.'
+  NoPermission: '&7Üzgünüm adamım, yetkin yok.'
+  NoNumber: '&7Para veya level çekmek için sadece rakam kullanmalısın.'
+  CancleCrafting: '&7Bunu çalışma masasında kullanamazsın.'
+  CancleVillagerTrade: '&7Bunu köylülerle ticaret yapmak için kullanamazsın.'
+ConfigVersion: 2.4
+
+ConfigVersion: 2.4

@@ -1,0 +1,148 @@
+# Configuration for Mines
+
+# Having TPS issues with Mines? Search this document for "(POSSIBLE PERFORMANCE BOOST)"
+# to easily locate settings to improve the performance from Mines within' seconds!
+
+# Having information accuracy issues? Data updating to slow? Search this document
+# for "(POSSIBLE ACCURACY BOOST)" to easily locate settings to improve data accuracy!
+
+Tasks:
+    Queues:
+        Timer: 0 # Seconds (POSSIBLE PERFORMANCE BOOST)
+        # Mines resetting causing lag? Enable this! (Suggested to try 3 at 1st, increase if needed)
+        #
+        # Queues allow you to add delays inbetween each mine resetting.
+        # Changing this will require a server reboot to work.
+    Percentage:
+        Timer: 1 # Seconds (POSSIBLE PERFORMANCE BOOST) - (POSSIBLE ACCURACY BOOST)
+        # Are you using Timed Resets or just not using percentages to reset? Disable this! (Set it to 0)
+        #
+        # Changing this affects how many seconds all the mines are checked for their percentages left.
+        #
+        # 50-100 mines: Suggested to set this number to 3-6.
+        # If you have 100+ mines, I'd highly suggest raising this number to 7-10.
+        #
+        # Note: Upping this number will affect "Percentage Mined/Left" & "Percentage to reset" accuracy.
+    Holograms:
+        Timer: 3 # Seconds (POSSIBLE PERFORMANCE BOOST)
+        # Not using Mines built in hologram system? (You... you should be.) Disable this! (Set it to 0)
+        #
+        # Changing this affects how often all the Mines holograms are updated.
+    Signs:
+        Timer: 1 # Seconds (POSSIBLE PERFORMANCE BOOST)
+        # Not using Mine Signs? Disable this!
+        #
+        # This timer affects when Mine Signs are updated.
+        Enable-Reset-Signs-Cooldown: true # Not using any Mine reset signs? Disable this! (POSSIBLE PERFORMANCE BOOST)
+
+Performance-Focused: false # (POSSIBLE PERFORMANCE BOOST)
+# Enabling this makes Mines reset asynchronously. (More efficient)
+#
+# Enabling this will cause Mines to completely ignore both the 'MinePreResetEvent' & 'MinePostResetEvent'
+#
+# If you don't even know what these two events are or what they're used for, it's highly suggested to enable this option.
+# Changing this requires your server to be restarted.
+
+Settings:
+    Check-For-Updates: true # (POSSIBLE ACCURACY BOOST)
+    Mine-Fly-Height: 3
+    # The amount of blocks above a mine that mine fly will cut off at.
+    Mine-Effects-Height: 3
+    # The amount of blocks above a mine that the mines effects will work within'.
+    Broadcast-Mines-Resetting: false
+    # true = All mines will broadcast that they reset & alert players that are teleported out of them.
+    # false = No broadcasts & no player teleport message alerts.
+    Allow-Block-Breaking-While-Mines-Reset: true # (POSSIBLE ACCURACY BOOST)
+    # true = Percentage data for Mines WILL NOT BE accurate if blocks are broken prior to the Mine completely resetting.
+    # false = Recommended for "Percentage to Reset" usage.
+
+Holograms:
+    Default hologram:
+        # PLEASE READ: If you make ANY changes/update to the Holograms, a server reboot is required.
+        Layout:
+        - '&8&m+-----&7( &b%name% &7)&8&m-----+'
+        - '&6♦ &fBlocks broken &7» &e%blocksbroken%{update}'
+        - '&e♦ &fBlocks left &7» &b%blocksleft%{update}'
+        - '%empty%'
+        - '&6• &fPercent broken &7» &e%percentbroken%{update}'
+        - '&e• &fPercent left &7» &b%percentleft%{update}'
+        - '&e• &fResets at &7» &e%percentbrokentoreset%% &8/ &b%percentlefttoreset%%{update}'
+        - '&3&m———&f Percent bar &3&m———'
+        - '%blocksprogressbar%{update}'
+        - '%empty%'
+        - '&e♠ &fResets in &b%timeuntilreset% &e♠{update}'
+        # %name% - Name of the Mine.
+        # %blocksbroken% - Amount of blocks currently broken in the Mine. **
+        # %blocksleft% - Amount of blocks currently left in the Mine. **
+        # %percentbroken% - Percentage of the currently broken blocks in the Mine. **
+        # %percentleft% - Percentage of the currently remaining blocks in the Mine. **
+        # %percentbrokentoreset% - The percentage of the percent broken amount for the Mine to reset. **
+        # %percentlefttoreset% - The percentage of the percent left amount for the Mine to reset. **
+        # %blocksprogressbar% - The progress bar of the percentage for the Mine. **
+        # %timeuntilreset% - The amount of time until the Mine resets.
+        # %empty% - An invisible line in the hologram so you don't see an empty line of text.
+        # {update} - Mines checks for and updates the lines with this placeholder in it.
+        #
+        # ** = Only works when PercentageTask is enabled (NOT A PLACEHOLDER)
+        Resetting:
+        - '&8&m+-----&7( &b%name% &7)&8&m-----+'
+        - '%empty%'
+        - '&fThis mine is'
+        - '&fcurrently resetting...'
+        - '%empty%'
+        - '&8&m+-----&7( &b%name% &7)&8&m-----+'
+        MineQueue:
+        - '&8&m+-----&7( &b%name% &7)&8&m-----+'
+        - '%empty%'
+        - '&fThis mine is currently'
+        - '&fin a queue to reset... &8(&b#%position%&8)'
+        - '%empty%'
+        - '&8&m+-----&7( &b%name% &7)&8&m-----+'
+        Height: 5 # The amount of blocks the hologram is raised above the Mine.
+    PlaceholderAPI:
+        Progress-Bar:
+            Bars:
+                Symbol: ':'
+                Amount: 10
+                Colors:
+                    Empty: '&7'
+                    Full: '&a'
+            Prefix: '&8['
+            Suffix: '&8]'
+        Time-Until-Reset:
+            Use-Shortened-Format: true
+            # Enabled = 42s
+            # Disabled = 0h 0m 42s
+
+# Configuration for Mine signs
+Sign:
+  Messages:
+    Cooldown: "&8(&bMines&8) &fYou must wait &b%cooldown% &fbefore trying to reset &b%mine% &fmine" 
+    Reset: "&8(&bMines&8) &fYou have reset &b%mine% &fmine."
+    Invalid Mine: "&8(&bMines&8) &fSorry, but the mine &b%mine% &fno longer exists."
+  Types:
+    Percentage Mined:
+      1: "&8(&bMines&8)"
+      2: "&9Percentage Mined"
+      3: "&f%placeholder%%"
+      4: "&8(&bMines&8)"
+    Percentage Left:
+      1: "&8(&bMines&8)"
+      2: "&9Percentage Left"
+      3: "&f%placeholder%%"
+      4: "&8(&bMines&8)"
+    Blocks Mined:
+      1: "&8(&bMines&8)"
+      2: "&9Blocks Mined"
+      3: "&f%placeholder%"
+      4: "&8(&bMines&8)"
+    Time Left:
+      1: "&8(&bMines&8)"
+      2: "&9Resetting in"
+      3: "&f%placeholder%"
+      4: "&8(&bMines&8)"
+    Reset Mine:
+      1: "&8(&bMines&8)"
+      2: "&9Click to reset"
+      3: "&9this mine"
+      4: "&8(&bMines&8)"

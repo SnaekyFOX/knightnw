@@ -1,0 +1,56 @@
+﻿command /skylordol:
+    trigger:
+        if player's group is "oyuncu":
+            set {_l} to placeholder "%%superior_island_level_int%%" from player
+            set {_l} to "%{_l}%" parsed as number
+            if {_l} >= 500000000:
+                execute console command "lp user %player% parent set skylord"
+                send "&6&lRutbe &8» &aBaşarıyla skylord rütbesine yükseldiniz."
+command /skykingol:
+    trigger:
+        if player's group is "skylord":
+            set {_l} to placeholder "%%superior_island_level_int%%" from player
+            set {_l} to "%{_l}%" parsed as number
+            if {_l} >= 1000000000:
+                execute console command "lp user %player% parent set skyking"
+                send "&6&lRutbe &8» &aBaşarıyla skyking rütbesine yükseldiniz."
+command /skymasterol:
+    trigger:
+        if player's group is "skyking":
+            set {_l} to placeholder "%%superior_island_level_int%%" from player
+            set {_l} to "%{_l}%" parsed as number
+            if {_l} >= 2000000000:
+                execute console command "lp user %player% parent set skymaster"
+                send "&6&lRutbe &8» &aBaşarıyla skymaster rütbesine yükseldiniz."
+command /skylegendol:
+    trigger:
+        if player's group is "skymaster":
+            set {_l} to placeholder "%%superior_island_level_int%%" from player
+            set {_l} to "%{_l}%" parsed as number
+            if {_l} >= 5000000000:
+                execute console command "lp user %player% parent set skylegend"
+                send "&6&lRutbe &8» &aBaşarıyla skylegend rütbesine yükseldiniz."
+command /skykaosol:
+    trigger:
+        if player's group is "skylegend":
+            set {_l} to placeholder "%%superior_island_level_int%%" from player
+            set {_l} to "%{_l}%" parsed as number
+            if {_l} >= 8000000000:
+                execute console command "lp user %player% parent set skykaos"
+                send "&6&lRutbe &8» &aBaşarıyla skykaos rütbesine yükseldiniz."
+command /skysansarol:
+    trigger:
+        if player's group is "skykaos":
+            set {_l} to placeholder "%%superior_island_level_int%%" from player
+            set {_l} to "%{_l}%" parsed as number
+            if {_l} >= 10000000000:
+                execute console command "lp user %player% parent set skysansar"
+                send "&6&lRutbe &8» &aBaşarıyla skysansar rütbesine yükseldiniz."
+command /ironskyol:
+    trigger:
+        if player's group is "skysansar":
+            set {_l} to placeholder "%%superior_island_level_int%%" from player
+            set {_l} to "%{_l}%" parsed as number
+            if {_l} >= 15000000000:
+                execute console command "lp user %player% parent set ironsky"
+                send "&6&lRutbe &8» &aBaşarıyla ironsky rütbesine yükseldiniz."

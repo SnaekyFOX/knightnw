@@ -1,0 +1,843 @@
+{
+  "Gapple": {
+    "name": "Gapple",
+    "displayed": {
+      "material": "DIAMOND_SWORD",
+      "amount": 1,
+      "data": 0,
+      "displayName": "\u00267\u0026lGapple",
+      "lore": [
+        "\u0026aClick to send",
+        "\u0026aa duel request",
+        "\u0026awith this kit!"
+      ],
+      "unbreakable": false
+    },
+    "usePermission": false,
+    "arenaSpecific": false,
+    "characteristics": [],
+    "items": {
+      "INVENTORY": {
+        "0": {
+          "material": "DIAMOND_SWORD",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 5,
+            "DAMAGE_ALL": 5,
+            "FIRE_ASPECT": 3
+          },
+          "unbreakable": false
+        },
+        "1": {
+          "material": "GOLDEN_APPLE",
+          "amount": 32,
+          "data": 1,
+          "unbreakable": false
+        },
+        "33": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8194,
+          "unbreakable": false
+        },
+        "2": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "34": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        },
+        "3": {
+          "material": "DIAMOND_CHESTPLATE",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "4": {
+          "material": "DIAMOND_LEGGINGS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "5": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "6": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8194,
+          "unbreakable": false
+        },
+        "7": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        },
+        "15": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8194,
+          "unbreakable": false
+        },
+        "16": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        },
+        "24": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8194,
+          "unbreakable": false
+        },
+        "25": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        }
+      },
+      "ARMOR": {
+        "1": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "2": {
+          "material": "DIAMOND_CHESTPLATE",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "3": {
+          "material": "DIAMOND_LEGGINGS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "4": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        }
+      }
+    }
+  },
+  "Potion": {
+    "name": "Potion",
+    "displayed": {
+      "material": "DIAMOND_SWORD",
+      "amount": 1,
+      "data": 0,
+      "displayName": "\u00267\u0026lPotion",
+      "lore": [
+        "\u0026aClick to send",
+        "\u0026aa duel request",
+        "\u0026awith this kit!"
+      ],
+      "unbreakable": false
+    },
+    "usePermission": false,
+    "arenaSpecific": false,
+    "characteristics": [],
+    "items": {
+      "INVENTORY": {
+        "0": {
+          "material": "DIAMOND_SWORD",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DAMAGE_ALL": 5
+          },
+          "unbreakable": false
+        },
+        "1": {
+          "material": "GOLDEN_APPLE",
+          "amount": 3,
+          "data": 0,
+          "unbreakable": false
+        },
+        "2": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "3": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "4": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "5": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "6": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "7": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8226,
+          "unbreakable": false
+        },
+        "8": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        },
+        "9": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "10": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "11": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "12": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "13": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "14": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "15": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "16": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8226,
+          "unbreakable": false
+        },
+        "17": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        },
+        "18": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "19": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "20": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "21": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "22": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "23": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "24": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "25": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8226,
+          "unbreakable": false
+        },
+        "26": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        },
+        "27": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "28": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "29": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "30": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "31": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "32": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "33": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 16421,
+          "unbreakable": false
+        },
+        "34": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8226,
+          "unbreakable": false
+        },
+        "35": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        }
+      },
+      "ARMOR": {
+        "1": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 3
+          },
+          "unbreakable": false
+        },
+        "2": {
+          "material": "DIAMOND_CHESTPLATE",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 3
+          },
+          "unbreakable": false
+        },
+        "3": {
+          "material": "DIAMOND_LEGGINGS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 3
+          },
+          "unbreakable": false
+        },
+        "4": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 3
+          },
+          "unbreakable": false
+        }
+      }
+    }
+  },
+  "FullGapple": {
+    "name": "FullGapple",
+    "displayed": {
+      "material": "DIAMOND_SWORD",
+      "amount": 1,
+      "data": 0,
+      "displayName": "\u00267\u0026lFullGapple",
+      "lore": [
+        "\u0026aClick to send",
+        "\u0026aa duel request",
+        "\u0026awith this kit!"
+      ],
+      "unbreakable": false
+    },
+    "usePermission": false,
+    "arenaSpecific": false,
+    "characteristics": [],
+    "items": {
+      "INVENTORY": {
+        "0": {
+          "material": "DIAMOND_SWORD",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 5,
+            "DAMAGE_ALL": 5,
+            "FIRE_ASPECT": 3
+          },
+          "unbreakable": false
+        },
+        "1": {
+          "material": "GOLDEN_APPLE",
+          "amount": 32,
+          "data": 1,
+          "unbreakable": false
+        },
+        "2": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "3": {
+          "material": "DIAMOND_CHESTPLATE",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "4": {
+          "material": "DIAMOND_LEGGINGS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "5": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "6": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "7": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8194,
+          "unbreakable": false
+        },
+        "8": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        },
+        "9": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "10": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "11": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "12": {
+          "material": "DIAMOND_CHESTPLATE",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "13": {
+          "material": "DIAMOND_LEGGINGS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "14": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "15": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "16": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8194,
+          "unbreakable": false
+        },
+        "17": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        },
+        "18": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "19": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "20": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "21": {
+          "material": "DIAMOND_CHESTPLATE",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "22": {
+          "material": "DIAMOND_LEGGINGS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "23": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "24": {
+          "material": "DIAMOND_CHESTPLATE",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "25": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8194,
+          "unbreakable": false
+        },
+        "26": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        },
+        "27": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "28": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "29": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "30": {
+          "material": "DIAMOND_CHESTPLATE",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "31": {
+          "material": "DIAMOND_LEGGINGS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "32": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "33": {
+          "material": "DIAMOND_LEGGINGS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "34": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8194,
+          "unbreakable": false
+        },
+        "35": {
+          "material": "POTION",
+          "amount": 1,
+          "data": 8233,
+          "unbreakable": false
+        }
+      },
+      "ARMOR": {
+        "1": {
+          "material": "DIAMOND_HELMET",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "2": {
+          "material": "DIAMOND_CHESTPLATE",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "3": {
+          "material": "DIAMOND_LEGGINGS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        },
+        "4": {
+          "material": "DIAMOND_BOOTS",
+          "amount": 1,
+          "data": 0,
+          "enchantments": {
+            "DURABILITY": 3,
+            "PROTECTION_ENVIRONMENTAL": 5
+          },
+          "unbreakable": false
+        }
+      }
+    }
+  }
+}

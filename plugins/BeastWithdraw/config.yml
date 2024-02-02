@@ -1,0 +1,83 @@
+WithdrawItems:
+ XpBottle:
+  Player:
+   Name: "&eLevel"
+   Lore:
+    - ''
+    - "&e&l⌯ &7Miktar: &f%value%"
+    - "&e&l⌯ &7Sahibi: &6%player%"
+    - ''
+    - "&eÇekmek için sağ tıkla!"
+  Server:
+   Name: "&eLevel"
+   Lore:
+    - ''
+    - "&e&l⌯ &7Miktar: &f%value%"
+    - "&e&l⌯ &7Sahibi: &6Sunucu"
+    - ''
+    - "&eÇekmek için sağ tıkla!"
+  NBTLore: "bWithdrawXp"
+  Min: 5
+  Max: 10000000000000
+  PermNotes:
+   Enabled: false
+   Tomato:
+    Min: 20
+    Max: 50000
+   Potato:
+    Min: 10
+    Max: 100000
+  Sounds:
+   Withdraw:
+    Sound: "EXPLODE"
+    Enabled: true  
+   Redeem:
+    Sound: "ORB_PICKUP"
+    Enabled: true
+  DropOnDeath: false
+  DropPercentage: 100
+  Aliases: [şişele, sakla]
+  AutoCollect: true
+ CashNote:
+  Player:
+   Name: "&ePara"
+   Lore:
+    - ''
+    - "&e&l⌯ &7Miktar: &f%value% ⛁"
+    - "&e&l⌯ &7Sahibi: &6%player%"
+    - ''
+    - "&eÇekmek için sağ tıkla!"
+  Server:
+   Name: "&ePara"
+   Lore:
+    - ''
+    - "&e&l⌯ &7Miktar: &f%value% ⛁"
+    - "&e&l⌯ &7Sahibi: &6Sunucu"
+    - ''
+    - "&eÇekmek için sağ tıkla!"
+  NBTLore: "bCashNote"
+  Min: 5
+  Max: 10000000000000
+  PermNotes:
+   Enabled: false
+   Tomato:
+    Min: 20
+    Max: 50000
+   Potato:
+    Min: 10
+    Max: 100000
+  Sounds:
+   Withdraw:
+    Sound: "EXPLODE"
+    Enabled: true  
+   Redeem:
+    Sound: "ORB_PICKUP"
+    Enabled: true
+  Item: "PAPER"
+  Data: 0
+  Glow: true
+  Aliases: [çek, dönüştür]
+ CancleVillagerTrade: true
+ CancleCrafting: true
+ WithdrawDropFloor: true
+ConfigVersion: 2.3

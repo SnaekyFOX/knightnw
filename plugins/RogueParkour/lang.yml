@@ -1,0 +1,9 @@
+version: 0
+PREFIX: '&5&lParkur &8» '
+YOUHAVE: '&aMevcut en yüksek puanınız: &e{points} &apuan'
+YOUSCORED: '&aMevcut puanınız: &e{points} &apuan'
+RECORD: '&aYeni rekor kırdınız. &e{oldpoints}&a rekorundan &e{newpoints} &arekoruna
+  ulaştınız.'
+YOULOSE: '&cMaalesef, yere düştünüz.'
+NOPERM: '&4Bu komutu kullanabilmek için yetkiniz yok!'
+FULL: '&4Mevcut parkur stoğu doludur. Daha sonra tekrar deneyiniz!'

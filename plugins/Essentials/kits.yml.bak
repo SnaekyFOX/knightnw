@@ -1,0 +1,526 @@
+# EssentialsX kit configuration.
+# If you don't have any kits defined in this file, the plugin will try to copy them from the config.yml
+# 
+# Note: All items MUST be followed by a quantity!
+# All kit names should be lower case, and will be treated as lower in permissions/costs.
+# Syntax: - name[:durability] amount [enchantment:level]... [itemmeta:value]...
+# For Item Meta information visit http://wiki.ess3.net/wiki/Item_Meta
+# To make the kit execute a command, add /<command> to the items list. Use {USERNAME} to specify the player receiving the kit.
+# {PLAYER} will show the player's displayname instead of username.
+# 'delay' refers to the cooldown between how often you can use each kit, measured in seconds.
+# Set delay to -1 for a one time kit.
+kits:
+  tools:
+    delay: 10
+    items:
+    - stonesword 1
+    - stoneshovel 1
+    - stonepickaxe 1
+    - stoneaxe 1
+  dtools:
+    delay: 600
+    items:
+    - dpickaxe 1 efficiency:1 durability:1 fortune:1 name:&4Gigadrill lore:The_drill_that_&npierces|the_heavens
+    - dshovel 1 digspeed:3 name:Dwarf lore:Diggy|Diggy|Hole
+    - lhelm 1 color:255,255,255 name:Top_Hat lore:Good_day,_Good_day
+    - daxe:780 1
+    - /broadcast {USERNAME} just got some fancy tools!
+  notch:
+    delay: 6000
+    items:
+    - playerhead 1 player:Notch
+  color:
+    delay: 6000
+    items:
+    - writtenbook 1 title:&4Book_&9o_&6Colors author:KHobbits lore:Ingame_color_codes book:Colors
+  firework:
+    delay: 6000
+    items:
+    - fireworkrocket 1 name:Angry_Creeper color:red fade:green type:creeper power:1
+    - fireworkrocket 1 name:Starry_Night color:yellow,orange fade:blue type:star effect:trail,twinkle power:1
+    - fireworkrocket 2 name:Solar_Wind color:yellow,orange fade:red shape:large effect:twinkle color:yellow,orange fade:red shape:ball effect:trail color:red,purple fade:pink shape:star effect:trail power:1
+  oyuncu:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:5 damage_undead:1 durability:5 fire_aspect:5
+    - diamondpickaxe 1 dig_speed:5 durability:5
+    - diamondaxe 1 dig_speed:5 durability:5
+    - diamondshovel 1 dig_speed:5 durability:5
+    - enchantedgoldenapple:1 4
+    - diamondhelmet 1 protection_environmental:5 durability:5
+    - diamondchestplate 1 protection_environmental:5 durability:5
+    - diamondleggings 1 protection_environmental:5 durability:5
+    - diamondboots 1 protection_environmental:5 durability:5
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+  vip:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:15 damage_undead:2 durability:15 fire_aspect:15
+    - diamondpickaxe 1 dig_speed:15 durability:15
+    - diamondaxe 1 dig_speed:15 durability:15
+    - diamondshovel 1 dig_speed:15 durability:15
+    - enchantedgoldenapple:1 8
+    - diamondhelmet 1 protection_environmental:15 durability:15
+    - diamondchestplate 1 protection_environmental:15 durability:15
+    - diamondleggings 1 protection_environmental:15 durability:15
+    - diamondboots 1 protection_environmental:15 durability:15
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - dpris:2 64
+    - dpris:2 64
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+  vip+:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:20 damage_undead:3 durability:20 fire_aspect:20
+    - diamondpickaxe 1 dig_speed:20 damage_all:20 durability:20
+    - diamondaxe 1 dig_speed:20 damage_all:20 durability:20
+    - diamondshovel 1 dig_speed:20 damage_all:20 durability:20
+    - enchantedgoldenapple:1 16
+    - diamondhelmet 1 protection_environmental:20 durability:20
+    - diamondchestplate 1 protection_environmental:20 durability:20
+    - diamondleggings 1 protection_environmental:20 durability:20
+    - diamondboots 1 protection_environmental:20 durability:20
+    - pris 64
+    - pris 64
+    - pris 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+  svip:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:30 damage_undead:4 durability:30 fire_aspect:30
+    - diamondpickaxe 1 dig_speed:30 durability:30
+    - diamondaxe 1 dig_speed:30 durability:30
+    - diamondshovel 1 dig_speed:30 durability:30
+    - enchantedgoldenapple:1 32
+    - diamondhelmet 1 protection_environmental:30 durability:30
+    - diamondchestplate 1 protection_environmental:30 durability:30
+    - diamondleggings 1 protection_environmental:30 durability:30
+    - diamondboots 1 protection_environmental:30 durability:30
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+  svip+:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:40 damage_undead:5 durability:40 fire_aspect:40
+    - diamondpickaxe 1 dig_speed:40 durability:40
+    - diamondaxe 1 dig_speed:40 durability:40
+    - diamondshovel 1 dig_speed:40 durability:40
+    - enchantedgoldenapple:1 64
+    - diamondhelmet 1 protection_environmental:40 durability:40
+    - diamondchestplate 1 protection_environmental:40 durability:40
+    - diamondleggings 1 protection_environmental:40 durability:40
+    - diamondboots 1 protection_environmental:40 durability:40
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - pbrick:1 64
+    - pbrick:1 64
+    - pbrick:1 64
+    - pbrick:1 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+  rehber:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:8 damage_undead:1 durability:8 fire_aspect:8
+    - diamondpickaxe 1 dig_speed:8 durability:8
+    - diamondaxe 1 dig_speed:8 durability:8
+    - diamondshovel 1 dig_speed:8 durability:8
+    - enchantedgoldenapple:1 16
+    - diamondhelmet 1 protection_environmental:8 durability:8
+    - diamondchestplate 1 protection_environmental:8 durability:8
+    - diamondleggings 1 protection_environmental:8 durability:8
+    - diamondboots 1 protection_environmental:8 durability:8
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+  youtuber:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:10 damage_undead:1 durability:8 fire_aspect:8
+    - diamondpickaxe 1 dig_speed:10 durability:8
+    - diamondaxe 1 dig_speed:10 durability:8
+    - diamondshovel 1 dig_speed:10 durability:8
+    - enchantedgoldenapple:1 16
+    - diamondhelmet 1 protection_environmental:10 durability:8
+    - diamondchestplate 1 protection_environmental:10 durability:8
+    - diamondleggings 1 protection_environmental:10 durability:8
+    - diamondboots 1 protection_environmental:10 durability:8
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+  asistan:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:15 damage_undead:3 durability:15 fire_aspect:15
+    - diamondpickaxe 1 dig_speed:15 durability:15
+    - diamondaxe 1 dig_speed:15 durability:15
+    - diamondshovel 1 dig_speed:15 durability:15
+    - enchantedgoldenapple:1 16
+    - diamondhelmet 1 protection_environmental:15 durability:15
+    - diamondchestplate 1 protection_environmental:15 durability:15
+    - diamondleggings 1 protection_environmental:15 durability:15
+    - diamondboots 1 protection_environmental:15 durability:15
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - lantern 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - pbrick:1 64
+    - pbrick:1 64
+    - pbrick:1 64
+    - pbrick:1 64
+    - netherbrickblock 64
+  skylord:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:6 damage_undead:1 durability:6 fire_aspect:6
+    - diamondpickaxe 1 dig_speed:6 durability:6
+    - diamondaxe 1 dig_speed:6 durability:6
+    - diamondshovel 1 dig_speed:6 durability:6
+    - enchantedgoldenapple:1 5
+    - diamondhelmet 1 protection_environmental:6 durability:6
+    - diamondchestplate 1 protection_environmental:6 durability:6
+    - diamondleggings 1 protection_environmental:6 durability:6
+    - diamondboots 1 protection_environmental:6 durability:6
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+  skyking:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:7 damage_undead:1 durability:7 fire_aspect:7
+    - diamondpickaxe 1 dig_speed:7 durability:7
+    - diamondaxe 1 dig_speed:7 durability:7
+    - diamondshovel 1 dig_speed:7 durability:7
+    - enchantedgoldenapple:1 6
+    - diamondhelmet 1 protection_environmental:7 durability:7
+    - diamondchestplate 1 protection_environmental:7 durability:7
+    - diamondleggings 1 protection_environmental:7 durability:7
+    - diamondboots 1 protection_environmental:7 durability:7
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - enderstone 64
+  skymaster:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:8 damage_undead:1 durability:8 fire_aspect:8
+    - diamondpickaxe 1 dig_speed:8 durability:8
+    - diamondaxe 1 dig_speed:8 durability:8
+    - diamondshovel 1 dig_speed:8 durability:8
+    - enchantedgoldenapple:1 7
+    - diamondhelmet 1 protection_environmental:8 durability:8
+    - diamondchestplate 1 protection_environmental:8 durability:8
+    - diamondleggings 1 protection_environmental:8 durability:8
+    - diamondboots 1 protection_environmental:8 durability:8
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - enderstone 64
+    - enderstone 64
+  skylegend:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:9 damage_undead:1 durability:9 fire_aspect:9
+    - diamondpickaxe 1 dig_speed:9 durability:9
+    - diamondaxe 1 dig_speed:9 durability:9
+    - diamondshovel 1 dig_speed:9 durability:9
+    - enchantedgoldenapple:1 8
+    - diamondhelmet 1 protection_environmental:9 durability:9
+    - diamondchestplate 1 protection_environmental:9 durability:9
+    - diamondleggings 1 protection_environmental:9 durability:9
+    - diamondboots 1 protection_environmental:9 durability:9
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+  skykaos:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:10 damage_undead:1 durability:10 fire_aspect:10
+    - diamondpickaxe 1 dig_speed:10 durability:10
+    - diamondaxe 1 dig_speed:10 durability:10
+    - diamondshovel 1 dig_speed:10 durability:10
+    - enchantedgoldenapple:1 8
+    - diamondhelmet 1 protection_environmental:10 durability:10
+    - diamondchestplate 1 protection_environmental:10 durability:10
+    - diamondleggings 1 protection_environmental:10 durability:10
+    - diamondboots 1 protection_environmental:10 durability:10
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+  skysansar:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:11 damage_undead:1 durability:11 fire_aspect:11
+    - diamondpickaxe 1 dig_speed:11 durability:11
+    - diamondaxe 1 dig_speed:11 durability:11
+    - diamondshovel 1 dig_speed:11 durability:11
+    - enchantedgoldenapple:1 8
+    - diamondhelmet 1 protection_environmental:11 durability:11
+    - diamondchestplate 1 protection_environmental:11 durability:11
+    - diamondleggings 1 protection_environmental:11 durability:11
+    - diamondboots 1 protection_environmental:11 durability:11
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+    - dpris:2 64
+  ironsky:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:12 damage_undead:1 durability:12 fire_aspect:12
+    - diamondpickaxe 1 dig_speed:12 durability:12
+    - diamondaxe 1 dig_speed:12 durability:12
+    - diamondshovel 1 dig_speed:12 durability:12
+    - enchantedgoldenapple:1 10
+    - diamondhelmet 1 protection_environmental:12 durability:12
+    - diamondchestplate 1 protection_environmental:12 durability:12
+    - diamondleggings 1 protection_environmental:12 durability:12
+    - diamondboots 1 protection_environmental:12 durability:12
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - coalblock 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - sponge 64
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+    - enderstone 64
+    - dpris:2 64
+    - dpris:2 64
+    - dpris:2 64
+  balıkçı:
+    delay: 3600
+    items:
+    - fishingrod 1 luck:3 durability:10 lure:3
+  ipeksi:
+    delay: 1800
+    items:
+    - diamondpickaxe 1 dig_speed:5 silk_touch:1 durability:5
+  winter:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:80 damage_undead:5 durability:80 fire_aspect:80
+    - diamondpickaxe 1 dig_speed:80 durability:80
+    - diamondaxe 1 dig_speed:80 durability:80
+    - diamondshovel 1 dig_speed:80 durability:80
+    - enchantedgoldenapple:1 64
+    - diamondhelmet 1 protection_environmental:80 durability:80
+    - diamondchestplate 1 protection_environmental:80 durability:80
+    - diamondleggings 1 protection_environmental:80 durability:80
+    - diamondboots 1 protection_environmental:80 durability:80
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 34
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS  
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+  winter+:
+    delay: 86400
+    items:
+    - diamondsword 1 damage_all:100 damage_undead:5 durability:100 fire_aspect:100
+    - diamondpickaxe 1 dig_speed:100 durability:100
+    - diamondaxe 1 dig_speed:100 durability:100
+    - diamondshovel 1 dig_speed:100 durability:100
+    - enchantedgoldenapple:1 64
+    - diamondhelmet 1 protection_environmental:100 durability:100
+    - diamondchestplate 1 protection_environmental:100 durability:100
+    - diamondleggings 1 protection_environmental:100 durability:100
+    - diamondboots 1 protection_environmental:100 durability:100
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - pris 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - chiseledquartzblock:1 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 64
+    - netherbrickblock 34
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS  
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS
+    - feather 1 name:&a&nVIP_Kasa_Anahtarı lore:|&7Kasayı_açmak_için_sol,_bakmak_için_sağ_tıklayınız. luck:1 itemflags:HIDE_ENCHANTS

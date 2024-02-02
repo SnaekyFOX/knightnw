@@ -1,0 +1,186 @@
+(11:16:55) Matrix Enabled!
+(11:16:55) Version: 6.8.0
+(11:19:03) Matrix Enabled!
+(11:19:03) Version: 6.8.0
+(11:19:57) Matrix Enabled!
+(11:19:57) Version: 6.8.0
+(11:50:46) Matrix Enabled!
+(11:50:46) Version: 6.8.0
+(11:51:53) Matrix Enabled!
+(11:51:53) Version: 6.8.0
+(13:19:59) Matrix Enabled!
+(13:19:59) Version: 6.8.0
+(19:41:50) Matrix Enabled!
+(19:41:50) Version: 6.8.0
+(19:47:11) Matrix Enabled!
+(19:47:11) Version: 6.8.0
+(19:48:16) Matrix Enabled!
+(19:48:16) Version: 6.8.0
+(19:56:44) Matrix Enabled!
+(19:56:44) Version: 6.8.0
+(19:57:50) Matrix Enabled!
+(19:57:50) Version: 6.8.0
+(20:07:16) Matrix Enabled!
+(20:07:16) Version: 6.8.0
+(20:08:27) Matrix Enabled!
+(20:08:27) Version: 6.8.0
+(20:10:34) Matrix Enabled!
+(20:10:34) Version: 6.8.0
+(20:11:29) Matrix Enabled!
+(20:11:29) Version: 6.8.0
+(20:13:55) LAHODEN failed BadPackets check | send too much moving packets: 10.783 (+5) | vl:5 ping:0 tps:19.41 lp:31 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.095 (+5) | vl:10 ping:0 tps:19.41 lp:31 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.05 (+5) | vl:15 ping:0 tps:19.41 lp:31 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.875 (+5) | vl:20 ping:0 tps:19.41 lp:31 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.029 (+5) | vl:25 ping:0 tps:19.41 lp:34 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.024 (+5) | vl:30 ping:0 tps:19.41 lp:34 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.698 (+5) | vl:35 ping:0 tps:19.41 lp:34 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.673 (+5) | vl:40 ping:0 tps:19.41 lp:34 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.148 (+5) | vl:45 ping:0 tps:19.41 lp:34 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.522 (+5) | vl:50 ping:0 tps:19.41 lp:38 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.176 (+5) | vl:55 ping:0 tps:19.41 lp:38 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.05 (+5) | vl:60 ping:0 tps:19.41 lp:40 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.005 (+5) | vl:65 ping:0 tps:19.41 lp:40 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.899 (+5) | vl:70 ping:0 tps:19.41 lp:40 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.894 (+5) | vl:75 ping:0 tps:19.41 lp:40 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.869 (+5) | vl:80 ping:0 tps:19.41 lp:40 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.623 (+5) | vl:85 ping:0 tps:19.41 lp:42 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.218 (+5) | vl:90 ping:0 tps:19.41 lp:42 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.372 (+5) | vl:95 ping:0 tps:19.41 lp:42 component: bp.timer ver: 1.8.x
+(20:13:56) LAHODEN failed BadPackets check | send too much moving packets: 10.087 (+5) | vl:100 ping:0 tps:19.41 lp:42 component: bp.timer ver: 1.8.x
+(20:13:56) Execute command: matrix notify LAHODEN is sending unusual packets to server (BadPackets) #1
+(20:13:57) LAHODEN failed BadPackets check | send too much moving packets: 10.481 (+5) | vl:105 ping:0 tps:19.41 lp:44 component: bp.timer ver: 1.8.x
+(20:13:57) LAHODEN failed BadPackets check | send too much moving packets: 10.456 (+5) | vl:110 ping:0 tps:19.41 lp:44 component: bp.timer ver: 1.8.x
+(20:13:57) LAHODEN failed BadPackets check | send too much moving packets: 10.91 (+5) | vl:115 ping:0 tps:19.41 lp:44 component: bp.timer ver: 1.8.x
+(20:13:57) LAHODEN failed BadPackets check | send too much moving packets: 10.265 (+5) | vl:120 ping:0 tps:19.41 lp:44 component: bp.timer ver: 1.8.x
+(20:13:57) LAHODEN failed BadPackets check | send too much moving packets: 10.759 (+5) | vl:125 ping:0 tps:19.41 lp:44 component: bp.timer ver: 1.8.x
+(20:13:57) LAHODEN failed BadPackets check | send too much moving packets: 10.374 (+5) | vl:130 ping:0 tps:19.41 lp:44 component: bp.timer ver: 1.8.x
+(20:14:08) LAHODEN failed Chat check | chat too fast | delay: 2601 (+1) | vl:1 ping:0 tps:20.0 lp:15 component: chat.delay ver: 1.8.x
+(20:54:23) Matrix Enabled!
+(20:54:23) Version: 6.8.0
+(23:00:00) Matrix Enabled!
+(23:00:00) Version: 6.8.0
+(23:04:55) Matrix Enabled!
+(23:04:55) Version: 6.8.0
+(23:06:02) Matrix Enabled!
+(23:06:02) Version: 6.8.0
+(23:07:30) Matrix Enabled!
+(23:07:30) Version: 6.8.0
+(23:19:26) LAHODEN failed BadPackets check | send too much moving packets: 10.091 (+5) | vl:5 ping:0 tps:19.98 lp:42 component: bp.timer ver: 1.8.x
+(23:19:26) LAHODEN failed BadPackets check | send too much moving packets: 10.885 (+5) | vl:10 ping:0 tps:19.98 lp:42 component: bp.timer ver: 1.8.x
+(23:19:26) LAHODEN failed BadPackets check | send too much moving packets: 10.879 (+5) | vl:15 ping:0 tps:19.98 lp:43 component: bp.timer ver: 1.8.x
+(23:19:26) LAHODEN failed BadPackets check | send too much moving packets: 10.713 (+5) | vl:20 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:26) LAHODEN failed BadPackets check | send too much moving packets: 10.648 (+5) | vl:25 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:26) LAHODEN failed BadPackets check | send too much moving packets: 10.662 (+5) | vl:30 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:26) LAHODEN failed BadPackets check | send too much moving packets: 10.217 (+5) | vl:35 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:26) LAHODEN failed BadPackets check | send too much moving packets: 10.571 (+5) | vl:40 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:26) LAHODEN failed BadPackets check | send too much moving packets: 10.246 (+5) | vl:45 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:26) LAHODEN failed BadPackets check | send too much moving packets: 10.04 (+5) | vl:50 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.674 (+5) | vl:55 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.868 (+5) | vl:60 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.483 (+5) | vl:65 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.478 (+5) | vl:70 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.433 (+5) | vl:75 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.008 (+5) | vl:80 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.902 (+5) | vl:85 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.477 (+5) | vl:90 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.066 (+5) | vl:95 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.991 (+5) | vl:100 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) Execute command: matrix notify LAHODEN is sending unusual packets to server (BadPackets) #1
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.498 (+5) | vl:105 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.033 (+5) | vl:110 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.107 (+5) | vl:115 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.082 (+5) | vl:120 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.716 (+5) | vl:125 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.691 (+5) | vl:130 ping:0 tps:19.98 lp:44 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.366 (+5) | vl:135 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.341 (+5) | vl:140 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.655 (+5) | vl:145 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.31 (+5) | vl:150 ping:0 tps:19.98 lp:45 component: bp.timer ver: 1.8.x
+(23:19:27) Execute command: matrix notify LAHODEN is sending unusual packets to server (BadPackets) #2
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.284 (+5) | vl:155 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.119 (+5) | vl:160 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.094 (+5) | vl:165 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.069 (+5) | vl:170 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.282 (+5) | vl:175 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.257 (+5) | vl:180 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.85 (+5) | vl:185 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.845 (+5) | vl:190 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.02 (+5) | vl:195 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.294 (+5) | vl:200 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.289 (+5) | vl:205 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.284 (+5) | vl:210 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.279 (+5) | vl:215 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.253 (+5) | vl:220 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.248 (+5) | vl:225 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.243 (+5) | vl:230 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.037 (+5) | vl:235 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.591 (+5) | vl:240 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) Execute command: matrix kick LAHODEN KORUMA » Hile kullanımı tespit edildi!
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.566 (+5) | vl:245 ping:0 tps:19.98 lp:46 component: bp.timer ver: 1.8.x
+(23:19:27) LAHODEN failed BadPackets check | send too much moving packets: 10.7 (+5) | vl:250 ping:0 tps:20.0 lp:45 component: bp.timer ver: 1.8.x
+(23:19:49) LAHODEN failed Move check | unexpected horizontal movement (motion: 3.715/0.25, buffer: 6.929/false, vet: 0.0, vec: 0.019, ground: +-, add: 0.13, past: 0.0,0.035, fr: 0.6, setback: +, vel: none, from: 29.0, rv: empty, ptags: collision, tags: collision,hor_fast_setback,gf_speed) (+5) | vl:5 ping:0 tps:19.92 lp:20 component: move.hor ver: 1.8.x
+(23:20:01) LAHODEN failed BadPackets check | send too much moving packets: 10.531 (+5) | vl:5 ping:0 tps:20.0 lp:40 component: bp.timer ver: 1.8.x
+(23:20:01) LAHODEN failed BadPackets check | send too much moving packets: 10.065 (+5) | vl:10 ping:0 tps:20.0 lp:40 component: bp.timer ver: 1.8.x
+(23:20:01) LAHODEN failed BadPackets check | send too much moving packets: 10.02 (+5) | vl:15 ping:0 tps:20.0 lp:40 component: bp.timer ver: 1.8.x
+(23:20:01) LAHODEN failed BadPackets check | send too much moving packets: 10.473 (+5) | vl:20 ping:0 tps:20.0 lp:41 component: bp.timer ver: 1.8.x
+(23:20:01) LAHODEN failed BadPackets check | send too much moving packets: 10.627 (+5) | vl:25 ping:0 tps:20.0 lp:41 component: bp.timer ver: 1.8.x
+(23:20:01) LAHODEN failed BadPackets check | send too much moving packets: 10.342 (+5) | vl:30 ping:0 tps:20.0 lp:41 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.895 (+5) | vl:35 ping:0 tps:20.0 lp:41 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.07 (+5) | vl:40 ping:0 tps:20.0 lp:41 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.264 (+5) | vl:45 ping:0 tps:20.0 lp:41 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.938 (+5) | vl:50 ping:0 tps:20.0 lp:41 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.073 (+5) | vl:55 ping:0 tps:20.0 lp:42 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.706 (+5) | vl:60 ping:0 tps:20.0 lp:42 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.701 (+5) | vl:65 ping:0 tps:20.0 lp:42 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.815 (+5) | vl:70 ping:0 tps:20.0 lp:42 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.529 (+5) | vl:75 ping:0 tps:20.0 lp:42 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.344 (+5) | vl:80 ping:0 tps:20.0 lp:42 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.777 (+5) | vl:85 ping:0 tps:20.0 lp:43 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.692 (+5) | vl:90 ping:0 tps:20.0 lp:43 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.206 (+5) | vl:95 ping:0 tps:20.0 lp:43 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.201 (+5) | vl:100 ping:0 tps:20.0 lp:43 component: bp.timer ver: 1.8.x
+(23:20:02) Execute command: matrix notify LAHODEN is sending unusual packets to server (BadPackets) #1
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.295 (+5) | vl:105 ping:0 tps:20.0 lp:43 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.209 (+5) | vl:110 ping:0 tps:20.0 lp:43 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.204 (+5) | vl:115 ping:0 tps:20.0 lp:43 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.878 (+5) | vl:120 ping:0 tps:20.0 lp:43 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.073 (+5) | vl:125 ping:0 tps:20.0 lp:43 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.487 (+5) | vl:130 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.861 (+5) | vl:135 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.456 (+5) | vl:140 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.431 (+5) | vl:145 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.945 (+5) | vl:150 ping:0 tps:20.0 lp:45 component: bp.timer ver: 1.8.x
+(23:20:02) Execute command: matrix notify LAHODEN is sending unusual packets to server (BadPackets) #2
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.46 (+5) | vl:155 ping:0 tps:20.0 lp:45 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.994 (+5) | vl:160 ping:0 tps:20.0 lp:45 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.569 (+5) | vl:165 ping:0 tps:20.0 lp:45 component: bp.timer ver: 1.8.x
+(23:20:02) LAHODEN failed BadPackets check | send too much moving packets: 10.702 (+5) | vl:170 ping:0 tps:20.0 lp:45 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.816 (+5) | vl:175 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.33 (+5) | vl:180 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.325 (+5) | vl:185 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.738 (+5) | vl:190 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.633 (+5) | vl:195 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.628 (+5) | vl:200 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.603 (+5) | vl:205 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.598 (+5) | vl:210 ping:0 tps:20.0 lp:44 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.612 (+5) | vl:215 ping:0 tps:20.0 lp:47 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.467 (+5) | vl:220 ping:0 tps:20.0 lp:47 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.442 (+5) | vl:225 ping:0 tps:20.0 lp:47 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.437 (+5) | vl:230 ping:0 tps:20.0 lp:47 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.412 (+5) | vl:235 ping:0 tps:20.0 lp:47 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.407 (+5) | vl:240 ping:0 tps:20.0 lp:47 component: bp.timer ver: 1.8.x
+(23:20:03) Execute command: matrix kick LAHODEN KORUMA » Hile kullanımı tespit edildi!
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.402 (+5) | vl:245 ping:0 tps:20.0 lp:47 component: bp.timer ver: 1.8.x
+(23:20:03) LAHODEN failed BadPackets check | send too much moving packets: 10.397 (+5) | vl:250 ping:0 tps:20.0 lp:47 component: bp.timer ver: 1.8.x
+(23:20:45) LAHODEN failed Move check | unexpected vertical movement (motion: -0.334/0.0, hor: 0.0, buffer: 0.661/false, ground: --, setback: -, vel: none, from: 29.0, past: -0.499, tags: collision) (+5) | vl:5 ping:0 tps:20.0 lp:6 component: move.vert ver: 1.8.x
+(23:20:45) LAHODEN failed Move check | unexpected vertical movement (motion: -0.251/0.0, hor: 0.0, buffer: 0.787/false, ground: --, setback: -, vel: none, from: 29.0, past: -0.334, tags: collision) (+5) | vl:10 ping:0 tps:20.0 lp:6 component: move.vert ver: 1.8.x
+(23:20:45) LAHODEN failed Move check | unexpected vertical movement (motion: -0.329/0.0, hor: 0.0, buffer: 0.951/true, ground: --, setback: -, vel: none, from: 29.0, past: -0.251, tags: collision) (+5) | vl:15 ping:0 tps:20.0 lp:6 component: move.vert ver: 1.8.x
+(23:20:45) LAHODEN failed Move check | unexpected vertical movement (motion: -0.484/0.0, hor: 0.0, buffer: 1.194/true, ground: --, setback: -, vel: none, from: 29.0, past: -0.329, tags: collision) (+5) | vl:20 ping:0 tps:20.0 lp:11 component: move.vert ver: 1.8.x
+(23:20:52) LAHODEN failed Move check | unexpected vertical movement (motion: -0.785/-0.304, hor: 1.591, buffer: 0.534/true, ground: --, setback: -, vel: none, from: 29.785, past: -0.231, tags: empty) (+5) | vl:25 ping:0 tps:19.98 lp:23 component: move.vert ver: 1.8.x
+(23:20:52) LAHODEN failed Move check | unexpected horizontal movement (motion: 1.591/0.25, buffer: 5.9/true, vet: -0.785, vec: 0.188, ground: --, add: 0.026, past: -0.231,0.206, fr: 0.6, setback: +, vel: none, from: 29.785, rv: empty, ptags: empty, tags: hor_fast_setback,hor_bst) (+5) | vl:30 ping:0 tps:19.98 lp:23 component: move.hor ver: 1.8.x
+(23:20:53) LAHODEN failed Move check | unexpected horizontal movement (motion: 2.97/0.25, buffer: 6.591/true, vet: 0.0, vec: 0.019, ground: +-, add: 0.13, past: 0.0,0.035, fr: 0.6, setback: +, vel: none, from: 29.0, rv: empty, ptags: collision, tags: collision,hor_fast_setback,gf_speed) (+5) | vl:35 ping:0 tps:19.98 lp:21 component: move.hor ver: 1.8.x
+(23:20:54) LAHODEN failed BadPackets check | send too much moving packets: 10.377 (+5) | vl:5 ping:0 tps:20.0 lp:27 component: bp.timer ver: 1.8.x
+(23:20:55) LAHODEN failed BadPackets check | send too much moving packets: 10.386 (+5) | vl:10 ping:0 tps:20.0 lp:32 component: bp.timer ver: 1.8.x
+(23:22:13) LAHODEN failed Chat check | send the same chat content (+1) | vl:1 ping:78 tps:19.9 lp:12 component: chat.same ver: 1.8.x
+(23:26:14) SnaekyFOX failed Chat check | chat too fast | delay: 2600 (+1) | vl:1 ping:67 tps:20.0 lp:8 component: chat.delay ver: 1.8.x

@@ -1,0 +1,221 @@
+#
+# AYARLAR KISMI
+#
+
+options:
+	prefix: &3Racon &8»
+	hata: &3Racon &8» &7Maksimum 1 beyden racon kesebilirsin!
+#
+# EJDERHA SIFIRLAMA
+#
+
+command /raconkes:
+	trigger:
+		if {dragon.time.%player%} is not set:
+			clear {Ejderha::%player%}
+			execute console command "lp user %player% permission unset gökyüzü.ejderhası"
+			execute console command "lp user %player% permission unset doğa.ejderhası"
+			execute console command "lp user %player% permission unset volkan.ejderhası"
+			execute console command "lp user %player% permission unset ruh.ejderhası"
+			send "{@prefix}  &7Seçtiğin beyden &aRacon&7 kesmeyi bıraktın." to player
+			set {dragon.time.%player%} to 1
+			wait 120 seconds
+			delete {dragon.time.%player%}
+		else:
+			send "{@prefix} &7Racon kesmeyi bırakmadan önce &a120&7 saniye bekle!" to player
+			
+
+command /haracinikes [<player>]:
+	permission: op
+	permission message: {@prefix} &7Böyle bir komut bulunamadı!
+	trigger:
+		clear {Ejderha::%arg-1%}
+		execute console command "lp user %player% permission unset gökyüzü.ejderhası"
+		execute console command "lp user %player% permission unset doğa.ejderhası"
+		execute console command "lp user %player% permission unset volkan.ejderhası"
+		execute console command "lp user %player% permission unset ruh.ejderhası"
+		send "{@prefix} &7Seçtiğiniz beyden &aRacon&7 kesmeyi bıraktınız." to arg-1
+
+#
+# BUG ENGEL
+#
+
+on join:
+	wait 1 seconds
+	delete {dragon.time.%player%}
+		
+#
+# GÖKYÜZÜ EJDERHASI 
+#
+	
+command /mematiraconkes:
+	trigger:
+		{Ejderha::%player%} isn't set:
+			set {Ejderha::%player%} to true
+			player.sendTitle("&3Racon &8»", "&bArtık Mematiden racon kesiyorsunuz.")
+			execute console command "lp user %player% permission set gökyüzü.ejderhası"
+			add 1 to {gokyuzu.ejderhasi}
+			stop
+		else:
+			player.sendTitle("&3Racon &8»", "&cMaksimum 1 beyden racon kesebilirsiniz.")
+
+every 59 minutes:
+    loop all players:
+        if loop-player has permission "gökyüzü.ejderhası":
+            add 1 to {gokyuzuejderhasi::%loop-player%}
+            if {gokyuzuejderhasi::%loop-player%} is greater than or equal to 1:
+                delete {gokyuzuejderhasi::%loop-player%}
+                loop-player.sendTitle("&3Racon &8»", "&bMematiden racon keserek 3 Milyar çarptınız.")
+                execute console command "eco give %loop-player% 3000000000"
+
+#
+# DOĞA EJDERHASI
+#
+
+command /hızırraconkes:
+	trigger:
+		{Ejderha::%player%} isn't set:
+			set {Ejderha::%player%} to true
+			player.sendTitle("&3Racon &8»", "&bArtık Hızırdan racon kesiyorsunuz.")
+			execute console command "lp user %player% permission set doğa.ejderhası"
+			add 1 to {doga.ejderhasi}
+			stop
+		else:
+			player.sendTitle("&3Racon &8»", "&cMaksimum 1 beyden racon kesebilirsiniz.")
+
+every 59 minutes:
+    loop all players:
+        if loop-player has permission "doğa.ejderhası":
+            add 1 to {dogaejderhasi::%loop-player%}
+            if {dogaejderhasi::%loop-player%} is greater than or equal to 1:
+                delete {dogaejderhasi::%loop-player%}
+                loop-player.sendTitle("&3Racon &8»", "&bHızırdan racon keserek 64x NT çarptınız.")
+                execute console command "give %loop-player% 112 64"
+
+#
+# VOLKAN EJDERHASI
+#
+
+command /polatraconkes:
+	trigger:
+		{Ejderha::%player%} isn't set:
+			set {Ejderha::%player%} to true
+			player.sendTitle("&3Racon &8»", "&bArtık Polatdan racon kesiyorsunuz.")
+			execute console command "lp user %player% permission set volkan.ejderhası"
+			add 1 to {volkan.ejderhasi}
+			set {vejderha.%player%} to 1
+			stop
+		else:
+			player.sendTitle("&3Racon &8»", "&cMaksimum 1 beyden racon kesebilirsin!")
+
+every 59 minutes:
+    loop all players:
+        if loop-player has permission "volkan.ejderhası":
+            add 1 to {volkanejderhasi::%loop-player%}
+            if {volkanejderhasi::%loop-player%} is greater than or equal to 1:
+                delete {volkanejderhasi::%loop-player%}
+                loop-player.sendTitle("&3Racon &8»", "&bPolat Alemdardan &33k Coin &b çarptınız.")
+                execute console command "coinekle %loop-player% 3000"
+
+#
+# MENÜ AYARI
+#
+
+command /raconukes:
+	trigger:
+		{Ejderha::%player%} isn't set:
+			execute player command "ffjduwhdsajnchsgd74845"
+		else:		
+			if player has permission "gökyüzü.ejderhası":
+				open chest with 3 rows named "&8Memati" to player
+				wait 1 tick
+				format slot 0 of player with Stained glass pane:15 named "&r" to close
+				format slot 1 of player with Stained glass pane:15 named "&r" to close
+				format slot 2 of player with Stained glass pane:15 named "&r" to close
+				format slot 3 of player with Stained glass pane:15 named "&r" to close
+				format slot 4 of player with Stained glass pane:15 named "&r" to close
+				format slot 5 of player with Stained glass pane:15 named "&r" to close
+				format slot 6 of player with Stained glass pane:15 named "&r" to close
+				format slot 7 of player with Stained glass pane:15 named "&r" to close
+				format slot 8 of player with Stained glass pane:15 named "&r" to close
+				format slot 9 of player with Stained glass pane:15 named "&r" to close
+				format slot 17 of player with Stained glass pane:15 named "&r" to close
+				format slot 18 of player with Stained glass pane:15 named "&r" to close
+				format slot 19 of player with Stained glass pane:15 named "&r" to close
+				format slot 20 of player with Stained glass pane:15 named "&r" to close
+				format slot 21 of player with Stained glass pane:15 named "&r" to close
+				format slot 22 of player with Stained glass pane:15 named "&r" to close
+				format slot 23 of player with Stained glass pane:15 named "&r" to close
+				format slot 24 of player with Stained glass pane:15 named "&r" to close
+				format slot 25 of player with Stained glass pane:15 named "&r" to close
+				format slot 10 of player with Stained glass pane:15 named "&r" to close
+				format slot 11 of player with Stained glass pane:15 named "&r" to close
+				format slot 13 of player with Stained glass pane:15 named "&r" to close
+				format slot 15 of player with Stained glass pane:15 named "&r" to close
+				format slot 16 of player with Stained glass pane:15 named "&r" to close
+				format slot 12 of player with paper named "&6Memati" with lore "||&eRacon Ayrıntıları:|||| &7Seçilen Firma: &aMemati|| &eHaraç Vakti: &f%60 - {gokyuzuejderhasi::%player%}% dakika||&r" to close
+				format slot 14 of player with paper named "&6Bey Değiştir" with lore "&eBey değiştirmek istiyorsan bir kere tıkla." to close then run [execute player command "raconkes"]
+				format slot 26 of player with Stained glass pane:15 named "&r" to close
+			if player has permission "doğa.ejderhası":
+				open chest with 3 rows named "&8Hızır Çakırbeyli" to player
+				wait 1 tick
+				format slot 0 of player with Stained glass pane:15 named "&r" to close
+				format slot 1 of player with Stained glass pane:15 named "&r" to close
+				format slot 2 of player with Stained glass pane:15 named "&r" to close
+				format slot 3 of player with Stained glass pane:15 named "&r" to close
+				format slot 4 of player with Stained glass pane:15 named "&r" to close
+				format slot 5 of player with Stained glass pane:15 named "&r" to close
+				format slot 6 of player with Stained glass pane:15 named "&r" to close
+				format slot 7 of player with Stained glass pane:15 named "&r" to close
+				format slot 8 of player with Stained glass pane:15 named "&r" to close
+				format slot 9 of player with Stained glass pane:15 named "&r" to close
+				format slot 17 of player with Stained glass pane:15 named "&r" to close
+				format slot 18 of player with Stained glass pane:15 named "&r" to close
+				format slot 19 of player with Stained glass pane:15 named "&r" to close
+				format slot 20 of player with Stained glass pane:15 named "&r" to close
+				format slot 21 of player with Stained glass pane:15 named "&r" to close
+				format slot 22 of player with Stained glass pane:15 named "&r" to close
+				format slot 23 of player with Stained glass pane:15 named "&r" to close
+				format slot 24 of player with Stained glass pane:15 named "&r" to close
+				format slot 25 of player with Stained glass pane:15 named "&r" to close
+				format slot 10 of player with Stained glass pane:15 named "&r" to close
+				format slot 11 of player with Stained glass pane:15 named "&r" to close
+				format slot 13 of player with Stained glass pane:15 named "&r" to close
+				format slot 15 of player with Stained glass pane:15 named "&r" to close
+				format slot 16 of player with Stained glass pane:15 named "&r" to close
+				format slot 26 of player with Stained glass pane:15 named "&r" to close
+				format slot 12 of player with skull of "dragons" parsed as offline player named "&6Hızır" with lore "||&eRacon Ayrıntıları:|||| &eSeçilen Bey: &aHızır|| &eRacon Vakti: &f%60 - {dogaejderhasi::%player%}% dakika sonra||&r" to close
+				format slot 14 of player with paper named "&6Bey Değiştir" with lore "&eBey değiştirmek istiyorsan bir kere tıkla." to close then run [execute player command "raconkes"]		
+			if player has permission "volkan.ejderhası":
+				open chest with 3 rows named "&8Polat Alemdar" to player
+				wait 1 tick
+				format slot 0 of player with Stained glass pane:15 named "&r" to close
+				format slot 1 of player with Stained glass pane:15 named "&r" to close
+				format slot 2 of player with Stained glass pane:15 named "&r" to close
+				format slot 3 of player with Stained glass pane:15 named "&r" to close
+				format slot 4 of player with Stained glass pane:15 named "&r" to close
+				format slot 5 of player with Stained glass pane:15 named "&r" to close
+				format slot 6 of player with Stained glass pane:15 named "&r" to close
+				format slot 7 of player with Stained glass pane:15 named "&r" to close
+				format slot 8 of player with Stained glass pane:15 named "&r" to close
+				format slot 9 of player with Stained glass pane:15 named "&r" to close
+				format slot 17 of player with Stained glass pane:15 named "&r" to close
+				format slot 18 of player with Stained glass pane:15 named "&r" to close
+				format slot 19 of player with Stained glass pane:15 named "&r" to close
+				format slot 20 of player with Stained glass pane:15 named "&r" to close
+				format slot 21 of player with Stained glass pane:15 named "&r" to close
+				format slot 22 of player with Stained glass pane:15 named "&r" to close
+				format slot 23 of player with Stained glass pane:15 named "&r" to close
+				format slot 24 of player with Stained glass pane:15 named "&r" to close
+				format slot 25 of player with Stained glass pane:15 named "&r" to close
+				format slot 10 of player with Stained glass pane:15 named "&r" to close
+				format slot 11 of player with Stained glass pane:15 named "&r" to close
+				format slot 13 of player with Stained glass pane:15 named "&r" to close
+				format slot 15 of player with Stained glass pane:15 named "&r" to close
+				format slot 16 of player with Stained glass pane:15 named "&r" to close
+				format slot 26 of player with Stained glass pane:15 named "&r" to close
+				format slot 12 of player with skull of "dragons" parsed as offline player named "&6Polat Alemdar" with lore "||&eRacon Ayrıntıları:|||| &eSeçilen Bey: &aPolat Alemdar|| &eRacon Vakti: &f%60 - {volkanejderhasi::%player%}% dakika sonra||&r" to close
+				format slot 14 of player with paper named "&6Bey Değiştir" with lore "&eBey değiştirmek istiyorsan bir kere tıkla." to close then run [execute player command "raconkes"]
+
+
+#DEVELOPMENT BY TRXOR

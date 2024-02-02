@@ -1,0 +1,21 @@
+ERROR:
+  NO PERM: §cYou do not have permission to do that!
+  BLOCKED INVENTORY: §cNothing in your inventory could be auto blocked!
+  SMELTED INVENTORY: §cNothing in your inventory could be auto smelted!
+  FULL INVENTORY: §eYour inventory is full!
+  BLACKLISTED:
+    WORLD: §cYou are not allowed to do that in this world!
+  NO QUICKSELL: §cSorry, this command requires the plugin QuickSell
+SUCCESS:
+  RELOADED: §aPlugin reloaded!
+  TOGGLE:
+    PICKUP OFF: §aAutoPickup §cDISABLED§a!
+    PICKUP ON: §aAutoPickup ENABLED!
+    BLOCK OFF: §aAutoBlock §cDISABLED§a!
+    BLOCK ON: §aAutoBlock ENABLED!
+    SMELT OFF: §aAutoSmelt §cDISABLED§a!
+    SMELT ON: §aAutoSmelt ENABLED!
+    AUTOSELL ON: §aAutoSell ENABLED!
+    AUTOSELL OFF: §aAutoSell §cDISABLED§a!
+  BLOCKED INVENTORY: §aYour inventory has been auto blocked!
+  SMELTED INVENTORY: §aYour inventory has been auto smelted!

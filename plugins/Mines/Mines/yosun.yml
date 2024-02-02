@@ -1,0 +1,49 @@
+mine:
+  name: yosun
+  timer: 300
+  type: Gradual
+  reset:
+    speed: FAST
+    reset-messages: false
+    broadcast-messages: false
+    delay-messages: false
+    broadcast-delay-messages: false
+  block-placing: false
+  children: []
+  effects: []
+  schematic: false
+  fly: false
+  alerts:
+  - 60
+  - 20
+  - 10
+  - 3
+  - 2
+  - 1
+  hologram: false
+  automessages:
+    radius: 8
+  timedreset:
+    enabled: true
+  percentagereset:
+    enabled: true
+    value: 50.0
+  region:
+    world: kazi
+    min:
+      x: -690
+      y: 216
+      z: 3843
+    max:
+      x: -606
+      y: 230
+      z: 3927
+  teleport:
+    world: kazi
+    x: -647.4644528454851
+    y: 231.0
+    z: 3928.044638589529
+    pitch: -3.2528598
+    yaw: -179.27112
+  blocks:
+  - MOSSY_COBBLESTONE;100.0

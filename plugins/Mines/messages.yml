@@ -1,0 +1,65 @@
+Messages: 
+  Prefix: "&6&lYenileme &8» "
+  No Permission: "%prefix% &fYou do not have permission to execute this command."
+  Update Available: "%prefix% &fAn update was found! Version &b%version% &fis available. &7(Currently running %currentversion%)"
+  Console:
+    Invalid: "You must be a player to execute this sub command."
+  Arguments:
+    Format: "%prefix% &e"
+    Invalid: "%prefix% &fArgument &b%arg% &fis not a sub command."
+  Help:
+    Format: "%prefix% &e/%cmd% &8- &f%desc%"
+    Invalid: "%prefix% &fNot valid help page of Mines."
+  Near:
+    No Mines Within That Radius: "%prefix% &fSorry, but no mines were found within' a &b%radius% &fblock radius of you."
+    Mines Found: "%prefix% &fMines found within' a &b%radius% &fblock radius of you&8: &b%mines%"
+  Conversion:
+    Failed: "%prefix% &c%type% must be installed while doing conversion."
+    Invalid: "%prefix% &cInvalid conversion type."
+    Exists: "%prefix% &fSkipped &b%mine%&f. &7(Already exists)"
+    Successful: "%prefix% &b%mine% &7was converted."
+    Finished: "%prefix% &fConversion &acompleted&f, converted &b%amount% &fmine(s)."
+    Empty: "%prefix% &fConversion &acompleted&f, but there were no mines to convert."
+  Mine:
+    Created: "%prefix% &fCreated mine &b%mine%&f."
+    Deleted: "%prefix% &fDeleted mine &b%mine%&f."
+    Exists: "%prefix% &fMine &b%mine% &falready exists."
+    Invalid: "%prefix% &fMine &b%mine% &fdoesn't exist."
+    Fly-Already-On: "%prefix% &fMine &b%mine% &falready has Mine Fly enabled."
+    Fly-Enabled: "%prefix% &fMine &b%mine% &fnow has Mine Fly enabled."
+    Fly-Already-Off: "%prefix% &fMine &b%mine% &falready has Mine Fly disabled."
+    Fly-Disabled: "%prefix% &fMine &b%mine% &fnow has Mine Fly disabled."
+    List: "%prefix% &fShowing you &b%amount% &fmine(s)"
+    Set Auto Messages Radius: "%prefix% &fMine &b%mine%&f's auto message radius is now &b%radius%&f."
+    Set Allowing To Break Blocks While Resetting: "%prefix% &fMine &b%mine%&f's breaking blocks while resetting status: &b%status%&f."
+    Region Toggled: "%prefix% &fMine &b%mine% &fregion being displayed: &b%status%"
+    Auto Resetting Alerts: "%prefix% &a%mine% &b%seconds% &7saniye içinde yenilenecek."
+    Region: 
+      Selection Invalid: "%prefix% &fYour mine wand selection was invalid. Perhaps it was unfinished / cross-world?"
+      Updated: "%prefix% &b%mine% &fregion updated."
+      Invalid: "%prefix% &b%mine% &fdoesn't have a region."
+    Alerts:
+      Added: "%prefix% &fYou added &b%number% &fas an alert for mine &b%mine%&f."
+      Already Exists: "%prefix% &fSorry, but &b%number% &fis already an alert for mine &b%mine%&f."
+      Removed: "%prefix% &fYou removed &b%number% &fas an alert for mine &b%mine%&f."
+      Not an Alert: "%prefix% &fSorry, but &b%number% &fisn't an alert for mine &b%mine%&f."
+    Speed: 
+      Updated: "%prefix% &b%mine%&f's speed is now &b%speed%&f."
+      Invalid: "%prefix% &b%speed% &fisn't a valid speed."
+    Teleportation:
+      Invalid: "%prefix% &fThe mine &b%mine% &fdoesn't have a teleportation point."
+      Set: "%prefix% &fSet teleportation point of mine &b%mine%&f."
+      Success: "%prefix% &fışınlandınız: &b%mine%&f." 
+    Visualizer:
+      Reset: "%prefix% &fRemoved current selections."
+    Positions: 
+      Set: "%prefix% &fPosition &b%pos% &fhas been set."
+    Fly:
+      Enabled: "%prefix% &fMine fly has been &aenabled&f."
+      Disabled: "%prefix% &fMine fly has been &cdisabled&f."
+    Resetting:
+      Broadcasting:
+        Global: "&b%mine% &fis resetting."
+        Individual:
+          #minename: "&fHey everyone! Just wanted to let you know that the mine %mine% reset."
+      Self: "%prefix% &b%mine% &fyenilendi."

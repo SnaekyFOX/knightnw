@@ -1,0 +1,30 @@
+# XLTournaments Messages
+
+general:
+  prefix: "&3Turnuva &8» "
+  reload: "{PREFIX} &aEklenti başarıyla yeniden yüklendi."
+  no_permission: "&cBu komutu yürütme izniniz yok."
+  help:
+    - ""
+    - "&3&lTURNUVA &fv{VERSION}"
+    - "&7&oBy Trxor x sadecefe"
+    - ""
+    - "&f/tournament help &8- &7&oYardım mesajını göster"
+    - "&f/tournament reload &8- &7&oYapılandırmayı yeniden yükleyin"
+    - "&f/tournament update &8- &7&oTüm turnuvaları güncellemeye zorla"
+    - "&f/tournament list &8- &7&oTüm etkin turnuvaları listele"
+    - "&f/tournament info <tournament> &8- &7&oTurnuva hakkında bilgi görüntüleme"
+    - "&f/tournament clear <tournament> &8- &7&oBir turnuvadaki tüm kullanıcıları temizle"
+    - "&f/tournament clearplayer <player> <tournament> &8- &7&oBelirli bir kullanıcıyı bir turnuvadan temizle"
+    - ""
+
+tournament:
+  force_updated_tournaments: "{PREFIX} &aTüm aktif turnuvaları zorla güncellediniz."
+  already_participating: "{PREFIX} &cZaten bu turnuvaya katılıyorsunuz."
+  not_enough_funds: "{PREFIX} &cBu turnuvaya katılmak için yeterli paranız yok. &a$&f{AMOUNT} ihtiyacın var&c."
+  tournament_no_permission: "{PREFIX} &cBu turnuvaya girme izniniz yok."
+  waiting: "{PREFIX} &cBu turnuva şu anda başlamayı bekliyor."
+  ended: "{PREFIX} &cBu turnuva çoktan sona erdi."
+  cleared: "{PREFIX} &7İçindeki tüm kullanıcıları kaldırdınız. {TOURNAMENT} turnuvası."
+  cleared_player: ""
+  list: "{PREFIX} &7Etkin turnuvalar: &a{LIST}"

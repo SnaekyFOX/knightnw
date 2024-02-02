@@ -1,0 +1,14 @@
+codes:
+ - "/to"
+ - "/targetoffset"
+ - "//to"
+ - "//targetoffset"
+ - "for"
+ - "="
+ - "{"
+ - "}"
+kickmessage: "&cIf you keep doing this, the consequences could be bad"
+logmessage: "[%date%] %player%: wrote %message%"
+staffmessage: "&8[&9TabPacketFixer&8] &3%player%: &7wrote &9%message%"
+sendmessagestaff: true
+log: true

@@ -1,0 +1,52 @@
+#
+# WorldGuard's world configuration file
+#
+# This is a world configuration file. Anything placed into here will only
+# affect this world. If you don't put anything in this file, then the
+# settings will be inherited from the main configuration file.
+#
+# If you see {} below, that means that there are NO entries in this file.
+# Remove the {} and add your own entries.
+#
+
+regions:
+    spawn:
+        min:
+            x: 803.0
+            y: 144.0
+            z: -3816.0
+        max:
+            x: 1332.0
+            y: 212.0
+            z: -3293.0
+        members: {}
+        flags:
+            invincible: allow
+            pvp: deny
+        owners: {}
+        type: cuboid
+        priority: 0
+    arena:
+        min:
+            x: 803.0
+            y: 61.0
+            z: -3815.0
+        max:
+            x: 1391.0
+            y: 116.0
+            z: -3293.0
+        members: {}
+        flags: {}
+        owners: {}
+        type: cuboid
+        priority: 0
+    global:
+        members: {}
+        flags:
+            build: deny
+            use: allow
+            leaf-decay: deny
+            pvp: allow
+        owners: {}
+        type: global
+        priority: 0

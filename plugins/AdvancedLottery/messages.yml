@@ -1,0 +1,30 @@
+lottery_win: '&3Jackpot &8» &B%player% &7adlı oyuncu Jackpottan &a$%money% &7para
+  kazandı.'
+buy_sucess: '&3Jackpot &8» &FTebrikler, başarıyla &B%ticket% &fadet bileti &B$%money%
+  &fpara karşılığında satın aldın'
+not_enough_money: '&3Jackpot &8» &fYeterli paran yok!'
+already_bought: '&3Jackpot &8» &cZaten maksimum sayıda bilet satın aldınız'
+wrong_usage: '&3Jackpot &8» &Fdoğru komutlara bakmak için &b/lottery help &Fkomutunu
+  kullanın!'
+time_to_draw: '&3Jackpot &8» &fBir sonraki çekilişe kalan süre &b%time%'
+broadcast_no_winner: '&3Jackpot &8» &cJackpota yeterli oyuncu katılmadığı için iptal
+  edildi.'
+broadcast_buyer: '&3Jackpot &8» &a%player% &fadlı oyuncu Jackpottan &a%ticket% &fadet
+  bilet satın aldı &B/jackpot'
+winner_title_message: '&b&l%player% &fjackpotu kazandı!'
+winner_subtitle_message: '&b$%money% &fpara hesabına eklendi'
+not_enough_permissions: '&3Jackpot &8» &4You have insufficient permissions!'
+lottery_reminder: '&3Jackpot &8» &dkazananın çekilmesi için kalan süre %time%!'
+lottery_countdown: '&3Jackpot &8» &fJackpot &b%time% &fsaniye sonra çekilicek'
+hover_chat_msg: '&3Jackpot &8» &bBilet almak için Buraya Tıkla'
+click_me_text: '&3Jackpot &8» &b&l[Buraya Tıklayın]'
+click_me_hover_text: '&3Jackpot &8» &b%player% &7adlı oyuncuya mesaj göndermek için
+  buraya tıklayın'
+too_many_tickets: '&3Jackpot &8»&c&lOOPS! &7Bu kadar çok bilet satın alamazsın'
+mysql_not_supported: '&3Jackpot &8» &4Mysql is not supported!'
+retrieving_data: '&3Jackpot &8» &aRetrieving data for player %player%...'
+player_not_found: '&3Jackpot &8» &cBu oyuncu bulunamıyor'
+ticket_money_refunded: '&3Jackpot &8» &aSunucu kapanması nedeniyle bilet satın alan
+  oyunculara para iade edildi!'
+buy_ticket_cooldown: '&3Jackpot &8» &fbir sonraki bilet satın alma işlemi için &c%time%
+  &fsaniye bekleyin!'

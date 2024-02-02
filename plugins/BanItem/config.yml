@@ -1,0 +1,112 @@
+# +———————————————————————————————————————————————————+ #
+# |——————————     BANITEM CONFIGURATION     ——————————| #
+# |——————————————————      v2.1      —————————————————| #
+# +———————————————————————————————————————————————————+ #
+# |                   Documentation:                  | #
+# |             http://banitem.andross.fr/            | #
+# +———————————————————————————————————————————————————+ #
+# For any bugs/suggestions: Andross#5254
+# +——————————————————————————————————————————————————————————————————————————————————————————————+
+# General Informations:
+#  - The blacklist will block the items.
+#  - The whitelist will allow only the items set.
+#    -> The 'message' key represents the message sent to players if they try to use an item which is not in whitelist
+#    -> The 'ignored' key represents all ignored options (they will not being by default banned)
+better-debug: true
+hoppers-block: false
+no-permission: '&cYou do not have permission.'
+use-event-api: false
+priority: place,consume
+sound:
+  enabled: true
+  type: ENCHANT_THORNS_HIT
+  volume: 1
+  pitch: 1
+  worldSound: false
+blacklist:
+  SuperiorWorld:
+    armor_stand:
+      break:
+        message: §cBu eşyanın kullanımı yasaklanmıştır.
+    name_tag:
+      break:
+        message: §cBu eşyanın kullanımı yasaklanmıştır.
+    tnt:
+      break:
+        message: §cBu eşyanın kullanımı yasaklanmıştır.
+    sea_lantern:
+      craft:
+        message: §cTrxor senden daha zeki merak etme xDDD
+    ender_stone:
+      craft:
+        message: §cTrxor senden daha zeki merak etme xDDD
+    sponge:
+      craft:
+        message: §cTrxor senden daha zeki merak etme xDDD
+    nether_brick:
+      craft:
+        message: §cTrxor senden daha zeki merak etme xDDD
+    prismarine:
+      craft:
+        message: §cTrxor senden daha zeki merak etme xDDD
+    coal_block:
+      craft:
+        message: §cTrxor senden daha zeki merak etme xDDD
+    quartz_block:
+      craft:
+        message: §cTrxor daha zeki dememişmiydim ben sana APTAL!
+    vine:
+      break:
+        message: §cLEVEL BUG BANNED ITEM
+    anvil:
+      break: {}
+    mossy_cobblestone:
+      break: {}
+    dispenser:
+      place: {}
+    redstone:
+      place: {}
+    redstone_block:
+      place: {}
+    redstone_torch_on:
+      place: {}
+    redstone_comparator:
+      place: {}
+    diode:
+      place: {}
+    item_frame:
+      place: {}
+    piston_base:
+      place: {}
+    wood_button:
+      place: {}
+    piston_sticky_base:
+      place: {}
+    lever:
+      place: {}
+    minecart:
+      place: {}
+    powered_rail:
+      place: {}
+    detector_rail:
+      place: {}
+    activator_rail:
+      place: {}
+    rails:
+      place: {}
+    storage_minecart:
+      place: {}
+    powered_minecart:
+      place: {}
+    explosive_minecart:
+      place: {}
+    hopper_minecart:
+      place: {}
+    boat:
+      place: {}
+    ender_pearl:
+      click: {}
+  world:
+    prismarine:
+      craft:
+        message: §cBan

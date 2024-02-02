@@ -1,0 +1,227 @@
+﻿Crate:
+  CrateType: QuickCrate #Type of crate (CSGO/QuadCrate/QuickCrate/Roulette/CrateOnTheGo/FireCracker/Wonder/Wheel/War/Cosmic(This requires a additional info to work.)).
+  CrateName: '&6&LEVENT KASASI' #Name of the Inventory if a GUI crate.
+  Preview-Name: '&b&n&lEVENT KASASI İÇERİĞİ:' #The name of the inventory that will be in the preview GUI.
+  StartingKeys: 0 #Starting amount of keys when the player 1st joins.
+  InGUI: true #If the crate shows in the /cc GUI. (If the crate type is QuickCrate/CrateOnTheGo/FireCracker then the Crate will not work. Quick Crate requires a Physical Crate.)
+  Slot: 27 #Slot the item is in the GUI.
+  OpeningBroadCast: true #Enables/Disables the Broadcasts message when they open a crate.
+  BroadCast: '' #Message that is broadcasted when opening the crate.
+  Item: 'CHEST' #Item the crate is in the GUI
+  Glowing: false #If the crate in the main /cc GUI is glowing or not.
+  Name: '&7&lBasic Chest' #Name of the item in the GUI.
+  Lore: #The lore of the item in the GUI.
+    - '&7This crate contains strange objects.' 
+    - '&7You have &6%Keys% keys &7to open this crate with.'
+    - '&7&l(&e&l!&7&l) Right click to view rewards.'
+  PhysicalKey:
+    Name: '&a&nEvent Kasa Anahtarı' #Name of the Key.
+    Lore:
+      - ''
+      - '&7Kasayı açmak için sol, bakmak için sağ tıklayınız.'
+    Item: '288' #The item the key is.
+    Glowing: True #Makes the key look enchanted.
+#         For Cosmic Crates Only
+#############################################
+#  Tiers: #The tiers in the Crate
+#    Basic: #The Config Name for the Crate
+#      Name: '&8Basic Prize' #The in-game name of the Crate
+#      Color: 7 #Use the MetaData for the color of the glass
+#      Chance: 80 #Chance of that item getting picked. It would be 80/100 chance because MaxRange is 100.
+#      MaxRange: 100 #The max range that the chance will go though.
+#    UnCommon:
+#      Name: '&aUnCommon Prize'
+#      Color: 5
+#      Chance: 55
+#      MaxRange: 100
+#    Rare:
+#      Name: '&4Rare Prize'
+#      Color: 14
+#      Chance: 20
+#      MaxRange: 100
+#############################################
+  Prizes: #All the prizes that can be gotten in the Crate.     
+    '1':
+      DisplayName: '&31 Milyar'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a30%'
+      MaxRange: 100
+      Chance: 30
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 1000000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n1 Milyar Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '2':
+      DisplayName: '&33 Milyar'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a%25'
+      MaxRange: 100
+      Chance: 25
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 3000000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n3 Milyar Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'      
+    '3':
+      DisplayName: '&35 Milyar'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a%20'
+      MaxRange: 100
+      Chance: 20
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 5000000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n5 Milyar Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'    
+    '44':
+      DisplayName: '&3Prizmarin &7(&8x128&7)'
+      DisplayItem: '168'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a25%'
+      MaxRange: 100
+      Chance: 25
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'give %player% 168 128'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nPrizmarin &7(&8x128&7)'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'       
+    '4':
+      DisplayName: '&3Keskin Kuvars Bloğu &7(&8x128&7)'
+      DisplayItem: '155:1'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a20%'
+      MaxRange: 100
+      Chance: 20
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'give %player% 155:1 128'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nKeskin Kuvars Bloğu &7(&8x128&7)'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '5':
+      DisplayName: '&3Prizmarin Tuğlası &7(&8x64&7)'
+      DisplayItem: '168:1'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a15%'
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'give %player% 168:1 64'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nPrizmarin Tuğlası &7(&8x64&7)'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '6':
+      DisplayName: '&3Nether Tuğlası &7(&8x32&7)'
+      DisplayItem: '112'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a10%'
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'give %player% 112 32'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nNether Tuğlası &7(&8x32&7)'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '7':
+      DisplayName: '&3Spawner Kasa Anahtarı &7(&8x1&7)'
+      DisplayItem: '288'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a10%'
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'cc give p spawner 1 %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSpawner Kasa Anahtarı'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 

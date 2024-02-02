@@ -1,0 +1,325 @@
+﻿# 
+#         For Cosmic Crates Only
+Crate:
+  CrateType: QuickCrate
+  CrateName: '&6&lVIP KASASI'
+  Preview-Name: '&b&l&nVIP KASASI İÇERİĞİ:'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 27
+  OpeningBroadCast: true
+  BroadCast: ''
+  Item: CHEST
+  Glowing: false
+  Name: '&7&lBasic Chest'
+  Lore:
+  - '&7This crate contains strange objects.'
+  - '&7You have &6%Keys% keys &7to open this crate with.'
+  - '&7&l(&e&l!&7&l) Right click to view rewards.'
+  PhysicalKey:
+    Name: '&a&nVIP Kasa Anahtarı' #Name of the Key.
+    Lore:
+      - ''
+      - '&7Kasayı açmak için sol, bakmak için sağ tıklayınız.'
+    Item: 288
+    Glowing: true
+  Prizes:  
+    '1':
+      DisplayName: '&33 Milyar'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a15%'
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 3000000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n3 Milyar Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '2':
+      DisplayName: '&35 Milyar'
+      DisplayItem: '339'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a10%'
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'eco give %player% 5000000000'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&n5 Milyar Para'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '4':
+      DisplayName: '&3Keskin Kuvars Bloğu &7(&8x128&7)'
+      DisplayItem: '155:1'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a20%'
+      MaxRange: 100
+      Chance: 20
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'give %player% 155:1 128'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nKeskin Kuvars Bloğu &7(&8x128&7)'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '5':
+      DisplayName: '&3Prizmarin Tuğlası &7(&8x128&7)'
+      DisplayItem: '168:1'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a15%'
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'give %player% 168:1 128'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nPrizmarin Tuğlası &7(&8x128&7)'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '6':
+      DisplayName: '&3Nether Tuğlası &7(&8x128&7)'
+      DisplayItem: '112'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a10%'
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'give %player% 112 128'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nNether Tuğlası &7(&8x128&7)'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '7':
+      DisplayName: '&3VIP Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a10%'
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit vip %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nVIP Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '8':
+      DisplayName: '&3VIP+ Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a8%'
+      MaxRange: 100
+      Chance: 8
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit vip+ %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nVIP+ Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '9':
+      DisplayName: '&3SVIP Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a5%'
+      MaxRange: 100
+      Chance: 5
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit svip %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSVIP Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '10':
+      DisplayName: '&3SVIP+ Kiti'
+      DisplayItem: '311'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a3%'
+      MaxRange: 100
+      Chance: 3
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'kit svip+ %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSVIP+ Kiti'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '11':
+      DisplayName: '&3Para Kasa Anahtarı &8x8'
+      DisplayItem: '288'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a8%'
+      MaxRange: 100
+      Chance: 8
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'cc give p para 8 %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nPara Kasa Anahtarı'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '12':
+      DisplayName: '&3Spawner Kasa Anahtarı &8x8'
+      DisplayItem: '288'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a8%'
+      MaxRange: 100
+      Chance: 8
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'cc give p spawner 8 %player%'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSpawner Kasa Anahtarı'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '13':
+      DisplayName: '&3H-Coin &7(&825&7)'
+      DisplayItem: '175'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a5%'
+      MaxRange: 100
+      Chance: 5
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'dogecoinekle %player% 25'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nH-Coin &7(&825&7)'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '14':
+      DisplayName: '&3H-Coin &7(&850&7)'
+      DisplayItem: '175'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a3%'
+      MaxRange: 100
+      Chance: 5
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'dogecoinekle %player% 50'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nH-Coin &7(&850&7)'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'

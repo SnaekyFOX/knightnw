@@ -1,0 +1,349 @@
+﻿# 
+#         For Cosmic Crates Only
+Crate:
+  CrateType: QuickCrate
+  CrateName: '&6&lSpawner Kasası'
+  Preview-Name: '&b&lSPAWNER KASASI İÇERİĞİ:'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 27
+  OpeningBroadCast: true
+  BroadCast: ''
+  Item: CHEST
+  Glowing: false
+  Name: '&7&lBasic Chest'
+  Lore:
+  - '&7This crate contains strange objects.'
+  - '&7You have &6%Keys% keys &7to open this crate with.'
+  - '&7&l(&e&l!&7&l) Right click to view rewards.'
+  PhysicalKey:
+    Name: '&a&nSpawner Kasa Anahtarı' #Name of the Key.
+    Lore:
+      - ''
+      - '&7Kasayı açmak için sol, bakmak için sağ tıklayınız.'
+    Item: 288
+    Glowing: true
+  Prizes:  
+    '1dassdadas':
+      DisplayName: '&3Kömür Cevheri Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a70%'
+      MaxRange: 100
+      Chance: 70
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give komurcevheri %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nKömür Cevheri Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '1dassdwqeeqw23adas':
+      DisplayName: '&3Lapis Cevheri Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a65%'
+      MaxRange: 100
+      Chance: 65
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give lapiscevheri %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nLapis Cevheri Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '1dassdwqsiktireeqw23adas':
+      DisplayName: '&3Demir Cevheri Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a60%'
+      MaxRange: 100
+      Chance: 60
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give demircevheri %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nDemir Cevheri Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '1dassdwqsiktiredddadaseqw23adas':
+      DisplayName: '&3Altın Cevheri Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a55%'
+      MaxRange: 100
+      Chance: 55
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give altincevheri %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nAltın Cevheri Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '1':
+      DisplayName: '&3Elmas Cevheri Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a50%'
+      MaxRange: 100
+      Chance: 50
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give elmascevheri %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nElmas Cevheri Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '2':
+      DisplayName: '&3Zümrüt Cevheri Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a45%'
+      MaxRange: 100
+      Chance: 45
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give zumrutcevheri %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nZümrüt Cevheri Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '3':
+      DisplayName: '&3Kızıltaş Cevheri Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a40%'
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give kiziltascevheri %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nKızıltaş Cevheri Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'      
+    '4':
+      DisplayName: '&3Kömür Blok Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a30%'
+      MaxRange: 100
+      Chance: 30
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give komurblok %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nKömür Blok Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬' 
+    '5':
+      DisplayName: '&3Sünger Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a20%'
+      MaxRange: 100
+      Chance: 20
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give sunger %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nSünger Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    'asdadsasdasdasdadassd':
+      DisplayName: '&3End Taşı Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a15%'
+      MaxRange: 100
+      Chance: 15
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give endtasi %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nEnd Taşı Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    'asdadsasdasd':
+      DisplayName: '&3Deniz Feneri Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a10%'
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give denizfeneri %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nDeniz Feneri Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '6':
+      DisplayName: '&3Koyu Prizmarin Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a8%'
+      MaxRange: 100
+      Chance: 8
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give koyuprizmarin %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nKoyu Prizmarin Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '7':
+      DisplayName: '&3Prizmarin Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a5%'
+      MaxRange: 100
+      Chance: 5
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give prizmarin %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nPrizmarin &eSpawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    '8':
+      DisplayName: '&3Keskin Kuvars Spawner'
+      DisplayItem: '52'
+      DisplayAmount: 1
+      Lore:
+      - ''
+      - ' &7Şans: &a1%'
+      MaxRange: 100
+      Chance: 1
+      Firework: false
+      Glowing: true 
+      Player: ''
+      Unbreakable: false
+      Commands:
+       - 'hsp give keskinkuvars %player% 1'
+      BlackListed-Permissions: {}
+      Messages:
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+      - ''
+      - ' &aKazanılan:'
+      - ' &f* &b&nKeskin Kuvars Spawner'
+      - ''
+      - '&8▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬'
+    

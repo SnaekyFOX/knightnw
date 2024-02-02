@@ -1,0 +1,85 @@
+mainCommand:
+  command: pet
+  noPermission: '&cBu komutu çalıştırmak için gerekli izinlere sahip değilsiniz!'
+  noSuchCommand: '&cGirdiğiniz komut mevcut değil.'
+  aliases:
+  - vippet
+  - pets
+  help:
+    command: help
+    help: Her komutun ne yaptığına dair size kısa bir açıklama gönderir.
+    noHelp: Şu anda bu komut için yardım yok.
+    helpFormat: ' &2%command%&a - %help%'
+    title: '&b-------- &3%maincommand% page %currectPage%/%maxPage% &b--------'
+    notANumber: '&c%input% bir sayı değil!'
+    outOfBound: '&c%input%, %mapPage%den daha büyük!'
+  open:
+    command: open
+    help: Evcil hayvan menüsünü açar.
+  pet:
+    command: pet
+    help: İzin verilirse belirtilen evcil hayvanı doğurur.
+    playerOnly: Bu komut sadece oyuncular tarafından yürütülebilir!
+    noPet: '&cBelirtilen evcil hayvan mevcut değil!'
+    noPermissionPet: '&cBelirtilen evcil hayvanı doğurma izniniz yok!'
+    pet:
+      command: pet
+    noPermission: '&cBu komutu çalıştırmak için gerekli izinlere sahip değilsiniz!'
+    missingArgs: '&cYou are missing arguments! Usage: &b/%maincommand% %petcommand%
+      (petName)'
+  reload:
+    command: reload
+    help: Yapılandırma dosyalarını ve yüklenen evcil hayvanları yeniden yükler.
+    message: '&aEvcil Hayvanlar yeniden yüklendi.'
+  clear:
+    command: clear
+    help: 10 blok yarıçapındaki tüm evcil hayvanları temizler.
+    commandall: clearall
+    helpall: Tüm dünyalardaki tüm evcil hayvanları temizler.
+    consoleMessage: Tüm evcil hayvanlar temizlendi.
+    playerMessage: '&a10 blok &aradiustaki tüm evcil hayvanlar temizlendi.'
+  call:
+    command: call
+    help: Evcil hayvanınızı size ışınlar.
+    teleportMessage: '&aEvcil hayvanınız arandı.'
+    playerOnly: Bu komut sadece oyuncular tarafından yürütülebilir!
+  setname:
+    command: name
+    help: Evcil hayvanın adını ayarlar.
+  remove:
+    command: remove
+    help: Ortaya çıkan evcil hayvanınızı kaldırır.
+  hat:
+    command: hat
+    help: Evcil hayvanınızın şapkaları.
+    playerOnly: Bu komut sadece oyuncular tarafından yürütülebilir!
+    disableHat: '&aArtık evcil hayvanınızı şapka olarak takmıyorsunuz.'
+    enableHat: '&aArtık evcil hayvanınızı şapka olarak takıyorsunuz.'
+    cantUseHatWhileRiding: '&cSürüş sırasında hat komutunu kullanamazsınız.'
+  ride:
+    command: ride
+    help: Evcil hayvanına bin.
+    disguiseInterrupt: '&cKılık değiştirdiğinde evcil hayvanına binemezsin.'
+    hatInterrupt: '&cYou can''t start riding your pet when you''re wearing it as a
+      hat.'
+    ridingMessage: '&aEvcil hayvanınıza biniyorsunuz.'
+    notRidingMessage: '&aArtık evcil hayvanınıza binmiyorsunuz.'
+    notSupportingRide: '&cBelirtilen evcil hayvan, binmeyi desteklemiyor.'
+  disguise:
+    command: disguise
+    help: Evcil hayvanınız gibi görünün.
+    rideInterrupt: '&cBinerken evcil hayvanınızın kılığına giremezsiniz.'
+    toUndisguise: '&aKılık değiştirmeyi durdurmak için komutu tekrar çalıştırın.'
+    disguised: '&aŞimdi kılık değiştirmişsin.'
+    notDisguised: '&aArtık kılık değiştirmiş değilsin.'
+    notSupportingDisuigse: '&cThe pet you are trying to disguise as does not support
+      it.'
+    serverNotAllowingDisguise: '&cBu sunucuda kılık değiştirme devre dışı bırakıldı.'
+  sit:
+    command: sit
+    help: Evcil hayvanınızın oturmasını ve sizi takip etmemesini sağlar
+    staticError: '&cEvcil hayvanınız zaten oturuyor.'
+    petSit: '&aEvcil hayvanınız şimdi oturuyor.'
+    petUnsit: '&cEvcil hayvanınız artık oturmuyor.'
+playerOnly: Bu komut sadece oyuncular tarafından yürütülebilir!
+notSupportingRename: '&cBelirtilen evcil hayvan yeniden adlandırılamaz.'

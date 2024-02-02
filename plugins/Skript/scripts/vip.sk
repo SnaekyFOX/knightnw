@@ -1,0 +1,290 @@
+﻿# VIP Özellikleri
+#
+command /viphız:
+        permission: vip.hız
+        permission message: &6&lVIP &8► &cBunu kullanmak için yetkin yok!
+        trigger:
+                set {_difference} to difference between {vipozellik.%player%} and now
+                if {_difference} is less than 5 minutes:
+                        set  {_difference} to difference between {_difference} and 1 minutes
+                        message "&6&lVIP &8► &cLütfen önceki efektin bitmesini bekle!"
+                        stop
+                set {vipozellik.%player%} to now
+                apply potion of speed 2 to the player for 60 seconds
+                message "&6&lVIP &8► &7Hız &7efekti verildi."
+
+
+command /vipgüç:
+        permission: vip.güç
+        permission message: &6&lVIP &8► &cBunu kullanmak için yetkin yok!
+        trigger:
+                set {_difference} to difference between {vipozellik.%player%} and now
+                if {_difference} is less than 5 minutes:
+                        set  {_difference} to difference between {_difference} and 5 minutes
+                        message "&6&lVIP &8► &cLütfen önceki efektin bitmesini bekle!"
+                        stop
+                set {vipozellik.%player%} to now
+                apply potion of strength 2 to the player for 60 seconds
+                message "&6&lVIP &8► &7Güç &7efekti verildi."
+
+
+command /vipgörüş:
+        permission: vip.görüş
+        permission message: &6&lVIP &8► &cBunu kullanmak için yetkin yok!
+        trigger:
+                set {_difference} to difference between {vipozellik.%player%} and now
+                if {_difference} is less than 5 minutes:
+                        set  {_difference} to difference between {_difference} and 5 minutes
+                        message "&6&lVIP &8► &cLütfen önceki efektin bitmesini bekle!"
+                        stop
+                set {vipozellik.%player%} to now
+                apply potion of night vision 1 to the player for 60 seconds
+                message "&6&lVIP &8► &7Gece Görüşü &7efekti verildi."
+
+
+command /vipgörünmezlik:
+        permission: vip.görünmezlik
+        permission message: &6&lVIP &8► &cBunu kullanmak için yetkin yok!
+        trigger:
+                set {_difference} to difference between {vipozellik.%player%} and now
+                if {_difference} is less than 5 minutes:
+                        set  {_difference} to difference between {_difference} and 5 minutes
+                        message "&6&lVIP &8► &cLütfen önceki efektin bitmesini bekle!"
+                        stop
+                set {vipozellik.%player%} to now
+                apply potion of invisibility 1 to the player for 60 seconds
+                message "&6&lVIP &8► &7Görünmezlik &7efekti verildi."
+
+
+command /vipateş:
+        permission: vip.ateş
+        permission message: &6&lVIP &8► &cBunu kullanmak için yetkin yok!
+        trigger:
+                set {_difference} to difference between {vipozellik.%player%} and now
+                if {_difference} is less than 5 minutes:
+                        set  {_difference} to difference between {_difference} and 5 minutes
+                        message "&6&lVIP &8► &cLütfen önceki efektin bitmesini bekle!"
+                        stop
+                set {vipozellik.%player%} to now
+                apply potion of fire resistance 2 to the player for 60 seconds     
+                message "&6&lVIP &8► &7Ateşe Dayanıklılık &7efekti verildi."
+
+
+command /vipdirenç:
+        permission: vip.direnç
+        permission message: &6&lVIP &8► &cBunu kullanmak için yetkin yok!
+        trigger:
+                set {_difference} to difference between {vipozellik.%player%} and now
+                if {_difference} is less than 5 minutes:
+                        set  {_difference} to difference between {_difference} and 5 minutes
+                        message "&6&lVIP &8► &cLütfen önceki efektin bitmesini bekle!"
+                        stop
+                set {vipozellik.%player%} to now
+                apply potion of resistance 2 to the player for 60 seconds
+                message "&6&lVIP &8► &7Direnç &7efekti verildi."
+
+
+command /vipyenilenme:
+        permission: vip.yenilenme
+        permission message: &6&lVIP &8► &cBunu kullanmak için yetkin yok!
+        trigger:
+                set {_difference} to difference between {vipozellik.%player%} and now
+                if {_difference} is less than 5 minutes:
+                        set  {_difference} to difference between {_difference} and 5 minutes
+                        message "&6&lVIP &8► &cLütfen önceki efektin bitmesini bekle!"
+                        stop
+                set {vipozellik.%player%} to now
+                apply potion of regeneration 2 to the player for 60 seconds
+                message "&6&lVIP &8► &7Yenileme &7efekti verildi."
+
+
+command /vipsu:
+        permission: vip.su
+        permission message: &6&lVIP &8► &cBunu kullanmak için yetkin yok!
+        trigger:
+                set {_difference} to difference between {vipozellik.%player%} and now
+                if {_difference} is less than 5 minutes:
+                        set  {_difference} to difference between {_difference} and 5 minutes
+                        message "&6&lVIP &8► &cLütfen önceki efektin bitmesini bekle!"
+                        stop
+                set {vipozellik.%player%} to now
+                apply potion of water breathing 2 to the player for 60 seconds
+                message "&6&lVIP &8► &7Suda Nefes Alma &7efekti verildi."
+				
+				
+command /viphediye:
+    permission: vip.hediye
+    permission message: Yetkin yok
+    trigger:
+        {viphediyealdi.%player%} isn't set:
+            set {viphediyealdi.%player%} to true
+            execute console command "hsp give endtasi %player% 3"
+            execute console command "hsp give denizfeneri %player% 1"
+            execute console command "hsp give altincevheri %player% 4"
+            execute console command "hsp give demircevheri %player% 8"
+            execute console command "crazycrates give p para 4 %player%"
+            execute console command "crazycrates give p vip 1 %player%"
+            execute console command "crazycrates give p spawner 4 %player%"
+            execute console command "crazycrates give p event 4 %player%"
+            execute console command "eco give %player% 1000000000" 
+            send "&6&lVipHediye &8► &eHediyenizi başarıyla aldınız."
+            wait 30 days
+            set {viphediyealdi.%player%} to false
+        else:
+            send "&6&lVipHediye &8► &cAyda bir defa alabilirsin."
+command /vip+hediye:
+    permission: vip+.hediye
+    permission message: Yetkin yok
+    trigger:
+        {vip+hediyealdi.%player%} isn't set:
+            set {vip+hediyealdi.%player%} to true
+            execute console command "hsp give prizmarin %player% 5"
+            execute console command "hsp give keskinkuvars %player% 1"
+            execute console command "hsp give elmascevheri %player% 1 100"
+            execute console command "hsp give zumrutcevheri %player% 1 50"
+            execute console command "hsp give kiziltascevheri %player% 1 25"
+            execute console command "crazycrates give p para 32 %player%"
+            execute console command "crazycrates give p vip 32 %player%"
+            execute console command "crazycrates give p spawner 32 %player%"
+            execute console command "crazycrates give p event 32 %player%"
+            execute console command "eco give %player% 75000000000" 
+            send "&6&lVipHediye &8► &eHediyenizi başarıyla aldınız."
+            wait 30 days
+            set {vip+hediyealdi.%player%} to false
+        else:
+            send "&6&lVipHediye &8► &cAyda bir defa alabilirsin."
+command /sviphediye:
+    permission: svip.hediye
+    permission message: Yetkin yok
+    trigger:
+        {sviphediyealdi.%player%} isn't set:
+            set {sviphediyealdi.%player%} to true
+            execute console command "hsp give prizmarin %player% 7"
+            execute console command "hsp give prizmarintugla %player% 1"
+            execute console command "hsp give keskinkuvars %player% 3"
+            execute console command "hsp give elmascevheri %player% 2 100"
+            execute console command "hsp give zumrutcevheri %player% 1 100"
+            execute console command "hsp give kiziltascevheri %player% 1 50"
+            execute console command "crazycrates give p para 48 %player%"
+            execute console command "crazycrates give p vip 48 %player%"
+            execute console command "crazycrates give p spawner 48 %player%"
+            execute console command "crazycrates give p event 48 %player%"
+            execute console command "eco give %player% 100000000000" 
+            send "&6&lVipHediye &8► &eHediyenizi başarıyla aldınız."
+            wait 30 days
+            set {sviphediyealdi.%player%} to false
+        else:
+            send "&6&lVipHediye &8► &cAyda bir defa alabilirsin."
+command /svip+hediye:
+    permission: svip+.hediye
+    permission message: Yetkin yok
+    trigger:
+        {svip+hediyealdi.%player%} isn't set:
+            set {svip+hediyealdi.%player%} to true
+            execute console command "hsp give prizmarin %player% 10"
+            execute console command "hsp give nethertugla %player% 1"
+            execute console command "hsp give prizmarintugla %player% 3"
+            execute console command "hsp give keskinkuvars %player% 5"
+            execute console command "hsp give elmascevheri %player% 3 100"
+            execute console command "hsp give zumrutcevheri %player% 2 100"
+            execute console command "hsp give kiziltascevheri %player% 1 100"
+            execute console command "crazycrates give p para 64 %player%"
+            execute console command "crazycrates give p vip 64 %player%"
+            execute console command "crazycrates give p spawner 64 %player%"
+            execute console command "crazycrates give p event 64 %player%"
+            execute console command "eco give %player% 150000000000" 
+            send "&6&lVipHediye &8► &eHediyenizi başarıyla aldınız."
+            wait 30 days
+            set {svip+hediyealdi.%player%} to false
+        else:
+            send "&6&lVipHediye &8► &cAyda bir defa alabilirsin."
+
+command /viphediyesıfırla <player>:
+	permission: admin.sıfırla
+	trigger:
+		delete {viphediyealdi.%arg-1%}
+		send "&6&lVipHediye &8► &e%arg-1% isimli oyuncunun vip hediyesi sıfırlandı."
+command /vip+hediyesıfırla <player>:
+	permission: admin.sıfırla
+	trigger:
+		delete {vip+hediyealdi.%arg-1%}
+		send "&6&lVipHediye &8► &e%arg-1% isimli oyuncunun vip+ hediyesi sıfırlandı."
+command /sviphediyesıfırla <player>:
+	permission: admin.sıfırla
+	trigger:
+		delete {sviphediyealdi.%arg-1%}
+		send "&6&lVipHediye &8► &e%arg-1% isimli oyuncunun avip hediyesi sıfırlandı."
+command /svip+hediyesıfırla <player>:
+	permission: admin.sıfırla
+	trigger:
+		delete {svip+hediyealdi.%arg-1%}
+		send "&6&lVipHediye &8► &e%arg-1% isimli oyuncunun avip+ hediyesi sıfırlandı."
+		
+		
+command /vipver <player>:
+	permission: console.admin
+	trigger:
+		execute console command "lp user %arg-1% parent clear"
+		execute console command "lp user %arg-1% parent addtemp vip 30d"
+		execute console command "lp user %arg-1% parent switchprimarygroup vip"
+		send players title "&6&l%arg-1%" with subtitle "&aVIP Satın Aldı!"
+		set action bar of players to "&6&l%arg-1% &8» &aVIP satın aldı!"
+		send "&6&lMağaza &8» &b%arg-1% &6VIP &ASatın Aldı!" to players
+		
+command /vip+ver <player>:
+	permission: console.admin
+	trigger:
+		execute console command "lp user %arg-1% parent clear"
+		execute console command "lp user %arg-1% parent addtemp vip+ 30d"
+		execute console command "lp user %arg-1% parent switchprimarygroup vip+"
+		send players title "&6&l%arg-1%" with subtitle "&aVIP+ Satın Aldı!"
+		set action bar of players to "&6&l%arg-1% &8» &aVIP+ satın aldı!"
+		send "&6&lMağaza &8» &b%arg-1% &6VIP+ &ASatın Aldı!" to players
+		
+command /svipver <player>:
+	permission: console.admin
+	trigger:
+		execute console command "lp user %arg-1% parent clear"
+		execute console command "lp user %arg-1% parent addtemp svip 30d"
+		execute console command "lp user %arg-1% parent switchprimarygroup svip"
+		send players title "&6&l%arg-1%" with subtitle "&aSVIP Satın Aldı!"
+		set action bar of players to "&6&l%arg-1% &8» &aSVIP satın aldı!"
+		send "&6&lMağaza &8» &b%arg-1% &6SVIP &ASatın Aldı!" to players
+
+command /svip+ver <player>:
+	permission: console.admin
+	trigger:
+		execute console command "lp user %arg-1% parent clear"
+		execute console command "lp user %arg-1% parent addtemp svip+ 30d"
+		execute console command "lp user %arg-1% parent switchprimarygroup svip+"
+		send players title "&6&l%arg-1%" with subtitle "&aSVIP+ Satın Aldı!"
+		set action bar of players to "&6&l%arg-1% &8» &aSVIP+ satın aldı!"
+		send "&6&lMağaza &8» &b%arg-1% &6SVIP+ &ASatın Aldı!" to players
+		
+command /netherspver <player>:
+	permission: console.admin
+	trigger:
+		execute console command "hsp give nethertugla %arg-1% 1"
+		send players title "&6&l%arg-1%" with subtitle "&aNether Tuğlası Spawner Satın Aldı!"
+		set action bar of players to "&6&l%arg-1% &8» &aNether Tuğlası Spawner satın aldı!"
+		send "&6&lMağaza &8» &b%arg-1% &6Nether Tuğlası Spawner &ASatın Aldı!" to players
+		
+command /sitekasaver <player>:
+	permission: console.admin
+	trigger:
+		execute console command "cc give p site 1 %arg-1%"
+		send players title "&6&l%arg-1%" with subtitle "&aSite Kasa Anahtarı Satın Aldı!"
+		set action bar of players to "&6&l%arg-1% &8» &aSite Kasası Anahtarı satın aldı!"
+		send "&6&lMağaza &8» &b%arg-1% &6Site Kasası Anahtarı &ASatın Aldı!" to players
+
+command /wandver <player>:
+	permission: console.admin
+	trigger:
+		execute console command "hwe sürebaltası %arg-1% 3d 1"
+		send players title "&6&l%arg-1%" with subtitle "&a3 günlük wand satın aldı!"
+		set action bar of players to "&6&l%arg-1% &8» &a3 günlük wand satın aldı!"
+		send "&6&lMağaza &8» &b%arg-1% 3 günlük wand satın aldı!" to players
+
+
+
+#DEVELOPMENT BY TRXOR.

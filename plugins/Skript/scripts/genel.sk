@@ -1,0 +1,599 @@
+command /setspawn:
+	permission: admin.spawn
+	permission message: &cAh be koçum olmaz bu iş böyle ama :(
+	trigger:
+		set {spawn} to location of player
+		send "&aSpawn ayarlandı."
+		stop
+		
+command /spawn:
+	trigger:
+		teleport player to {spawn}
+
+on first join:
+	wait 1 seconds
+	teleport player to {spawn}
+	loop 200 times:
+		send ""
+		
+on first join:
+   execute console command "lp user %player% parent set oyuncu"
+   teleport player to {spawn}
+	
+on join:
+	teleport player to {spawn}
+	set join message to "&7[&2+&7] &a%player%"
+	loop 200 times:
+		send ""
+	
+on quit:
+	set quit message to "&7[&4-&7] &c%player%"
+		
+command /sil:
+	permission: sil.admin
+	permission message: &cYetkiniz yok.
+	trigger:
+		loop 200 times:
+			send "" to players
+		send "&6SkyBlock &8► &7Sohbet &b%player% &7tarafından temizlendi." to players
+		stop
+
+on respawn:
+	teleport player to {spawn}
+	
+on command "/market":
+    cancel event
+    execute player command "/shop"	
+	
+on damage:
+    victim is player
+    if y-coordinate of victim is below 0:
+        cancel event
+        teleport victim to {spawn}
+        stop
+		
+command /yazıtura:
+	trigger:
+		execute player command "cf"
+command /günlük:
+	trigger:
+		execute player command "reward"
+		stop
+command /yt:
+	trigger:
+		execute player command "cf"
+		stop
+command /yazitura:
+	trigger:
+		execute player command "cf"
+		stop
+command /jackpot:
+	trigger:
+		execute player command "lottery menu"
+		stop
+command /jp:
+	trigger:
+		execute player command "lottery menu"
+		stop
+	
+command /sustur <player> <text> <text>:
+	permission: essentials.mute
+	permission message: yetkin yok!
+	trigger:
+		execute console command "mute %arg-1% %arg-2%"
+		send "&7----------------- &5&lSUSTURMA &7-----------------" to players
+		send "" to players
+		send "&5&lSusturulan: &d%arg-1%" to players
+		send "&5&lSusturan: &d%player%" to players
+		send "&5&lSüre: &d%arg-2%" to players
+		send "&5&lSebep: &d%arg-3%" to players
+		send "" to players
+		send "&7----------------- &5&lSUSTURMA &7-----------------" to players
+		
+command /mutebilgi:
+	permission: essentials.mute
+	permission message: yetkin yok!
+	trigger:
+		send "&6&lKullanım: &e/sustur <oyuncu> <süre> <sebep>"
+		send "&6&lMute Süre: &eDakika: &em, Saat: h, Gün: d, Yıl: y"
+		
+command /sürem:
+	trigger:
+		execute player command "ptcheck"
+		stop
+		
+command /süretop:
+	trigger:
+		execute player command "pttop"
+		stop
+command /help:
+	trigger:
+		send "&6GRİEF FİX"
+command /vakitnakittir:
+	trigger:
+		execute player command "investment"
+		stop
+
+command /ikramiye:
+	trigger:
+		execute player command "lottery menu"
+		stop
+		
+command /piyango:
+	trigger:
+		execute player command "lottery menu"
+		stop
+		
+command /casino:
+	trigger:
+		execute player command "bilgi"
+		stop
+		
+command /eğlence:
+	trigger:
+		execute player command "bilgi"
+		stop
+		
+command /e:
+	trigger:
+		execute player command "bilgi"
+		stop
+
+on chat:
+	if message is "sa" or "sea" or "s.a" or "<%{chatrengi.%player%}%>sa" or "<%{chatrengi.%player%}%>sea" or "<%{chatrengi.%player%}%>s.a":
+		replace all "sa" or "sea" or "s.a" with "Selamun Aleyküm." in the message
+on chat:
+	if message is "hg" or "hege" or "h.g" or "<%{chatrengi.%player%}%>hg" or "<%{chatrengi.%player%}%>hege" or "<%{chatrengi.%player%}%>h.g":
+		replace all "hg" or "hege" or "h.g" with "Hoşgeldin." in the message	
+on chat:
+	if message is "hb" or "hebe" or "h.b" or "<%{chatrengi.%player%}%>hb" or "<%{chatrengi.%player%}%>hebe" or "<%{chatrengi.%player%}%>h.b":
+		replace all "hb" or "hebe" or "h.b" with "Hoşbuldum." in the message	
+on chat:
+	if message is "as" or "a.s" or "<%{chatrengi.%player%}%>as" or "<%{chatrengi.%player%}%>a.s":
+		replace all "as" or "a.s" with "Aleyküm Selam, Sağolasın." in the message	
+on chat:
+	if message is "ase" or "<%{chatrengi.%player%}%>ase":
+		replace all "ase" with "Aleyküm Selam, Sağolasın." in the message			
+on chat:
+	if message is "eyw" or "<%{chatrengi.%player%}%>eyw":
+		replace all "eyw" with "Eyvallah, Sağolasın." in the message		
+on chat:
+	if message is "ho" or "h.o" or "<%{chatrengi.%player%}%>ho" or "<%{chatrengi.%player%}%>h.o":
+		replace all "ho" or "h.o" with "Hayırlı Olsun." in the message	
+on chat:
+	if message is "kb" or "k.b" or "<%{chatrengi.%player%}%>kb" or "<%{chatrengi.%player%}%>k.b":
+		replace all "kb" or "k.b" with "Kusura Bakma." in the message	
+on chat:
+	if message is "tmm" or "<%{chatrengi.%player%}%>tmm":
+		replace all "tmm" with "Tamam." in the message	
+on chat:
+	if message is "tm" or "<%{chatrengi.%player%}%>tm":
+		replace all "tm" with "Tamam." in the message		
+on chat:
+	if message is "ok" or "<%{chatrengi.%player%}%>ok":
+		replace all "ok" with "Tamam." in the message	
+on chat:
+	if message is "okey" or "<%{chatrengi.%player%}%>okey":
+		replace all "okey" with "Tamam." in the message		
+		
+on weather change to rain or thunder:
+	cancel event
+	
+command /komut [<text>]:
+	trigger:
+		if arg 1 is set:
+			if arg 1 is "aç":
+				player has permission "sohbet.admin":
+					set {komut::%player%} to true
+					send "&6&lSKYBLOCK &8► &aArtık oyuncuların kullandıkları komutları görebilirsin."
+				else:
+					send ""
+			if arg 1 is "kapat":
+				player has permission "sohbet.admin":
+					set {komut::%player%} to false
+					send "&6&lSKYBLOCK &8► &cArtık oyuncuların kullandıkları komutları göremezsin."
+				else:
+					send ""
+		else:
+			send " &e/komut &c<aç>&7, &c<kapat>"
+		
+on chat:
+    if player doesn't have permission "allow.spam":
+        set {_difference} to difference between {chatspam::%player%} and now
+        if {_difference} is less than 2 seconds:
+            set  {_difference} to difference between {_difference} and 2 seconds
+            cancel event
+            send "&6&lSkyBlock &8► &7Lütfen tekrar yazabilmek için &a3 &7saniye bekleyiniz." to player
+        set {chatspam::%player%} to now
+		
+on join:
+    delete {chatspam::%player%}
+    
+on quit:
+    delete {chatspam::%player%}
+    
+on script load:
+    delete {chatspam}
+
+command /sohbet <text>:
+	permission: sohbet.kilit
+	permission message: &6&lSkyBlock &8► &cBu komutu girmek için yetkiniz yok.
+	trigger:
+		if arg 1 is "kapat":
+			set {kilitli} to true
+			send "&6&lSkyBlock &8► &cSohbet &4%player% &ctarafından kapatıldı." to players
+		else:
+			if arg 1 is "aç":
+				set {kilitli} to false
+				send "&6&lSkyBlock &8► &aSohbet &b%player% &atarafından açıldı." to players			
+on chat:
+	{kilitli} is true:
+		if player doesn't have permission "sohbet.bypass":
+			cancel event
+			send "&6&lSkyBlock &8► &cSohbet şuanda kapalıdır, hata olduğunu düşünüyorsan yetkiliye ulaşabilirsin." to player
+		else:
+			uncancel event
+			
+options:
+	prefix: &6&lKELIME OYUNU &8&l►
+command /kelimeoyunu:
+	permission: sk.admin
+	permission message: &6&lKELIME OYUNU &8&l► &cYeterli yetkiye sahip değilsin.
+	trigger:
+		set {EMC::g::ko::k} to a random integer between 1 and 999999999999
+		set {EMC::g::ko::kB} to true
+		wait 2 seconds
+		send "" to players
+		send "                       &6&lKELIME OYUNU" to players
+		send "" to players
+		send "                  &7Kelime oyunu başladı!" to players
+		send "             &7Aşağıdaki kodu yaz, ödülü kap!" to players
+		send "" to players
+		send "              &8&l► &7Kod: &e&n%{EMC::g::ko::k}%" to players
+		send "" to players		
+		send "              &8&l► &7Ödül: &fKızıltaş Cevheri Spawner" to players
+		send "" to players	
+on chat:
+	{EMC::g::ko::kB} is true:
+		message is "%{EMC::g::ko::k}%":
+			wait 5 tick
+			send "{@prefix} &e%player% &7Kelime Oyununu Kazandı." to players
+			set {EMC::g::ko::kB} to false
+			execute console command "hsp give kiziltascevheri %player% 1"
+every 600 seconds:
+	execute console command "/kelimeoyunu"
+	
+	
+command /herkeseparaver [<integer>]:
+    trigger:
+        if player has permission "herkese.paraver":
+            if arg 1 is not set:
+                message "&6&lEVENT &8► &7Bu komutu kullanabilmek icin gerekli yetkiniz yok."
+            else:
+                broadcast "&6&lEVENT &8► &6%player%&7, herkese &6$%arg 1% &7 para verdi!"
+                loop all players:
+                    execute console command "eco give %loop-player% %arg 1%"
+        else:
+            message "&6&lEVENT &8► &7Bu komutu kullanabilmek icin gerekli yetkiniz yok."
+		
+command /büyükeventyap:
+	permission: admin
+	permission message: &6&lEvent &8► &cBuna yetkin yok lanet olası bitches :(
+	trigger:
+		send "&6&lEVENT &8► &aHafta sonu eventi başlıyor, envanterlerde yer açınız." to players
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &EEventin başlamasına son 60 saniye kaldı!" to players
+		wait 50 seconds
+		send "&6&lSKYBLOCK &8► &EEventin başlamasına son 10 saniye kaldı!" to players
+		wait 7 seconds
+		send "&6&lSKYBLOCK &8► &EEventin başlamasına son 3 saniye kaldı!" to players
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &EEventin başlamasına son 2 saniye kaldı!" to players
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &EEventin başlamasına son 1 saniye kaldı!" to players
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &eEvent başlamıştır! Eşyalar veriliyor..." to players
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &eEvent Blokları veriliyor..." to players
+		wait 1 seconds
+		give 256 173 named "&6&lEVENT &8► &EBlok" to players
+		give 256 19 named "&6&lEVENT &8► &EBlok" to players
+		give 256 121 named "&6&lEVENT &8► &EBlok" to players
+		give 256 169:2 named "&6&lEVENT &8► &EBlok" to players
+		give 128 168:2 named "&6&lEVENT &8► &EBlok" to players
+		give 128 168 named "&6&lEVENT &8► &EBlok" to players
+		give 128 155:1 named "&6&lEVENT &8► &EBlok" to players
+		give 96 168:1 named "&6&lEVENT &8► &EBlok" to players
+		give 64 112 named "&6&lEVENT &8► &EBlok" to players
+		send "&6&lSKYBLOCK &8► &eEvent Blokları verilmiştir." to players
+		wait 3 seconds
+		send "&6&lSKYBLOCK &8► &eEvent Spawnerları veriliyor..." to players
+		wait 1 seconds
+		give 1 339 named "&6&lÖzel Spawner Kağıt &8(&eEvent&8)" to players
+		send "&6&lSKYBLOCK &8► &eEvent Spawnerları verilmiştir." to players
+		wait 3 seconds
+		send "&6&lSKYBLOCK &8► &eEvent Kasaları veriliyor..." to players
+		wait 1 seconds
+		execute console command "crazycrates giveall p para 8"
+		execute console command "crazycrates giveall p event 8"
+		execute console command "crazycrates giveall p spawner 8"
+		execute console command "crazycrates giveall p kit 4"
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &eEvent Kasaları verilmiştir." to players
+		wait 3 seconds
+		send "&6&lSKYBLOCK &8► &eEvent bitmiştir. İyi oyunlar dileriz!" to players
+		stop
+		
+on rightclick with paper:
+    if display name of tool is "&6&lSpawner Kağıt &8(&eEvent&8)":
+        execute console command "hsp give komurcevheri %player% 12"
+        execute console command "hsp give lapiscevheri %player% 12"
+        execute console command "hsp give demircevheri %player% 8"
+        execute console command "hsp give altincevheri %player% 8"
+        execute console command "hsp give elmascevheri %player% 4"
+        execute console command "hsp give zumrutcevheri %player% 4"
+        execute console command "hsp give kiziltascevheri %player% 1"
+        send "&6&lEVENT &8► &eSpawner çekini dönüştürdün."
+        remove paper named "&6&lSpawner Kağıt &8(&eEvent&8)" from player		
+		
+on rightclick with paper:
+    if display name of tool is "&6&lÖzel Spawner Kağıt &8(&eEvent&8)":
+        execute console command "hsp give komurcevheri %player% 24"
+        execute console command "hsp give lapiscevheri %player% 24"
+        execute console command "hsp give demircevheri %player% 16"
+        execute console command "hsp give altincevheri %player% 16"
+        execute console command "hsp give elmascevheri %player% 8"
+        execute console command "hsp give zumrutcevheri %player% 8"
+        execute console command "hsp give kiziltascevheri %player% 2"
+        send "&6&lEVENT &8► &eÖzel spawner çekini dönüştürdün."
+        remove paper named "&6&lÖzel Spawner Kağıt &8(&eEvent&8)" from player	
+		
+command /küçükeventyap:
+	permission: admin
+	permission message: &6&lEvent &8► &cBuna yetkin yok lanet olası bitches :(
+	trigger:
+		send "&6&lEVENT &8► &aHafta içi eventi başlıyor, envanterlerde yer açınız." to players
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &EEventin başlamasına son 60 saniye kaldı!" to players
+		wait 50 seconds
+		send "&6&lSKYBLOCK &8► &EEventin başlamasına son 10 saniye kaldı!" to players
+		wait 7 seconds
+		send "&6&lSKYBLOCK &8► &EEventin başlamasına son 3 saniye kaldı!" to players
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &EEventin başlamasına son 2 saniye kaldı!" to players
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &EEventin başlamasına son 1 saniye kaldı!" to players
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &eEvent başlamıştır! Eşyalar veriliyor..." to players
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &eEvent Blokları veriliyor..." to players
+		wait 1 seconds
+		give 128 173 named "&6&lEVENT &8► &EBlok" to players
+		give 128 19 named "&6&lEVENT &8► &EBlok" to players
+		give 128 121 named "&6&lEVENT &8► &EBlok" to players
+		give 128 169:2 named "&6&lEVENT &8► &EBlok" to players
+		give 64 168:2 named "&6&lEVENT &8► &EBlok" to players
+		give 64 168 named "&6&lEVENT &8► &EBlok" to players
+		give 64 155:1 named "&6&lEVENT &8► &EBlok" to players
+		give 48 168:1 named "&6&lEVENT &8► &EBlok" to players
+		give 32 112 named "&6&lEVENT &8► &EBlok" to players
+		send "&6&lSKYBLOCK &8► &eEvent Blokları verilmiştir." to players
+		wait 3 seconds
+		send "&6&lSKYBLOCK &8► &eEvent Spawnerları veriliyor..." to players
+		wait 1 seconds
+		give 1 339 named "&6&lSpawner Kağıt &8(&eEvent&8)" to players
+		send "&6&lSKYBLOCK &8► &eEvent Spawnerları verilmiştir." to players
+		wait 3 seconds
+		send "&6&lSKYBLOCK &8► &eEvent Kasaları veriliyor..." to players
+		wait 1 seconds
+		execute console command "crazycrates giveall p para 4"
+		execute console command "crazycrates giveall p event 4"
+		execute console command "crazycrates giveall p spawner 4"
+		execute console command "crazycrates giveall p kit 2"
+		wait 1 seconds
+		send "&6&lSKYBLOCK &8► &eEvent Kasaları verilmiştir." to players
+		wait 3 seconds
+		send "&6&lSKYBLOCK &8► &eEvent bitmiştir. İyi oyunlar dileriz!" to players
+		stop
+		
+every 1 hour:
+	execute console command "save-all"
+	stop
+	
+command /bukkit:ver:
+	trigger:
+		stop
+command /bukkit:version:
+	trigger:
+		stop
+		
+command /yükseltme:
+	trigger:
+		execute player command "is upgrade"
+		stop
+command /yükseltmeler:
+	trigger:
+		execute player command "is upgrade"
+		stop
+		
+command /discord:
+	trigger:
+		send "&5&lDISCORD: &dhttps://discord.gg/P6kjdQEtVp"
+
+on first join:
+	wait 1 seconds
+	execute player command "spawn"
+	stop
+
+command /ada <text>:
+	usage: /ada oluştur
+	trigger:
+		if arg-1 is set:
+			if arg-1 is "oluştur":
+				execute player command "island create"
+			if arg-1 is "kabul":
+				execute player command "island accept"
+			else:
+				send "&3SkyBlock &8► &cLütfen /is help komudunu kullanınız."
+				stop
+				
+command /adareklam:
+    trigger:
+        set {_beklemesurresi} to difference between {adareklamsure::%player%} and now
+        if {_beklemesurresi} is less than 5 minutes:
+            set {_beklemesurresi} to difference between {_beklemesurresi} and 1 minutes
+            set {_beklemesurresi} to "%{_beklemesurresi}%"
+            replace all "minutes" with "dakika" in {_beklemesurresi}
+            replace all "minute" with "dakika" in {_beklemesurresi}
+            replace all "seconds" with "saniye" in {_beklemesurresi}
+            replace all "second" with "saniye" in {_beklemesurresi}
+            replace all " and " with " " in {_beklemesurresi}
+            send "&6&lSKYBLOCK &8&l► &eAda Reklam için &d%{_beklemesurresi}% &ebeklemelisin."
+        else:
+            player's balance is greater than 10000000000:
+                remove 10000000000 from player's balance
+                set {adareklamsure::%player%} to now
+                send "&8&l&m----------------[&6&lAda Duyuru&8&l&m]----------------" to players
+                send "" to players
+                send " &b➜ &d%player% &eadlı oyuncu sizi adasına davet ediyor" to players
+                send " &b➜ &egitmek için &d/is warp %player%" to players
+                send "" to players
+                send "&8&l&m----------------[&6&lAda Duyuru&8&l&m]----------------" to players
+            else:
+                send "&6&lSKYBLOCK &8&l► &eBakiyen yetersiz &d10 milyar &eparan olması lazım!"
+				
+command /kelimeoyun:
+    permission: perm.kelimeoyunu
+    permission message: &eBuna Yetkin Yok !
+    trigger:
+        set {kelimeoyun} to random integer between 100000000 and 999999999
+        wait 0.1 seconds
+        send players title "&6&lKELIME OYUNU" with subtitle "&d%{kelimeoyun}%" for 5 seconds
+        broadcast "&6&lSKYBLOCK &8&l► &eKelime oyunu başladı, &d%{kelimeoyun}% &ekodunu sohbete &ailk yazan &ekazanır!"
+        wait 1 minutes
+        delete {kelimeoyun}
+        stop
+
+on chat:
+	if message is "%{kelimeoyun}%":
+		delete {kelimeoyun}
+		execute console command "crazycrates give p para 4 %player%"
+		send players title "&6&lKelime Oyunu" with subtitle "&eKodu sohbete &dilk &eyazan kişi &d%player%" for 4 seconds
+		stop
+
+every 32 minute:
+    execute console command "kelimeoyun"
+    stop
+	
+on hunger meter change:
+    set player's hunger meter to 10
+	
+command /sell <text>:
+	trigger:
+		if arg-1 is "all":
+			execute player command "esell all"
+		if arg-1 is "hand":
+			execute player command "esell hand"
+			stop
+
+command /tamir <text>:
+	usage: /tamir <el/hepsi>
+	trigger:
+		if arg-1 is set:
+			if arg-1 is "el" or "hand":
+				if player's held item is tool:
+					if player's balance is bigger than 1000000000:
+						repair tool of player
+						remove 1000000000 from player's balance
+						send "&3Tamirci &8>> &aBaşarıyla elindeki eşyayı tamir ettin."
+					else:
+						send "&3Tamirci &8>> &cYeterli parayı karşılayamıyorsunuz."
+			if arg-1 is "all" or "hepsi":
+				if player's balance is bigger than 4000000000:
+					execute console command "lp user %player% permission set essentials.repair"
+					execute console command "lp user %player% permission set essentials.repair.enchanted"
+					execute console command "lp user %player% permission set essentials.repair.armor"
+					execute console command "lp user %player% permission set essentials.repair.all"
+					execute player command "repair all"
+					execute console command "lp user %player% permission unset essentials.repair"
+					execute console command "lp user %player% permission unset essentials.repair.enchanted"
+					execute console command "lp user %player% permission unset essentials.repair.armor"
+					execute console command "lp user %player% permission unset essentials.repair.all"
+					remove 4000000000 from player's balance
+					send "&3Tamirci &8>> &aBaşarıyla envanterindeki eşyaları tamir ettin."
+				else:
+					send "&3Tamirci &8>> &cYeterli parayı karşılayamıyorsunuz."
+					stop
+
+command /tamirci:
+	trigger:
+		open chest with 3 rows named "&6Tamirci &8►" to player
+		format slot 0 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 1 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 2 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 3 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 4 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 5 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 6 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 7 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 8 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 9 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 10 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 11 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 12 of player with anvil named "&3Tekli Tamir" with lore "&7|| &aFiyat: &61MR || &7|| &8► &7Elinizdeki eşyayı tamir eder. || &7|| &8► &7Elinizde tamir edilecek eşya bulunması gerekmektedir." to run [execute player command "tamir el"]
+		format slot 13 of player with GLASS_PANE named "&2Tamirci" to close	
+		format slot 14 of player with anvil named "&3Çoklu Tamir" with lore "&7|| &aFiyat: &64MR || &7|| &8► &7Tüm envanterinizi tamir eder. || &7|| &8► &7Envanterinizde tamir edilecek eşya bulunması gerekir." to run [execute player command "tamir hepsi"]
+		format slot 15 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 16 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 17 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 18 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 19 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 20 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 21 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 22 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 23 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 24 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 25 of player with GLASS_PANE named "&2Tamirci" to close
+		format slot 26 of player with GLASS_PANE named "&2Tamirci" to close
+		send "&3Tamirci &8► &aTamir etmek için menü açılıyor!"
+
+# Ücretli Tamir developer by SnaekyFOX
+# Bu skript SnaekyFOX tarafından wintertr sunucusuna kodlanmıştır.
+# CopyRight 2023 ©
+
+command /şişele <number>:
+	trigger:
+		execute player command "xpbottle %arg-1%"
+command /çek <number>:
+	trigger:
+		execute player command "bwithdraw %arg-1%"
+		
+		
+command /işlemler:
+	trigger:
+		execute player command "hwe işlemler"
+		stop
+		
+command /site:
+	trigger:
+		send "&5&lWEBSITE: &dhttps://knightnw.com.tr"
+command /sosyalmedya:
+	trigger:
+		send "&4&lSOSYAL MEDYA: &cYakında resmi youtube kanalımız açılacaktır."
+		
+command /yanhesap:
+  permission: admim.admin
+  trigger:
+    set {_yancar} to 0
+    loop all players:
+      if {_ips::%loop-player's ip%} is true:
+        add 1 to {_yancar}
+      set {_ips::%loop-player's ip%} to true
+    message "&3Skyblock &8» &eŞuan sunucuda aktif &6%{_yancar}% adet &eyan hesap var!" to player    
+	
+import:
+    org.bukkit.event.inventory.InventoryClickEvent
+on InventoryClickEvent:
+    event.getClick().toString() is "UNKNOWN":
+        cancel event
+	

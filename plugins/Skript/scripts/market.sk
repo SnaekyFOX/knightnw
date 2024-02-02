@@ -1,0 +1,431 @@
+﻿command /komurcevherisp:
+    trigger:
+        if player's balance is bigger than 50000000:
+            message "&6Spawner&fMarket &8► &aKömür cevheri spawner satın aldınız. &7(&81x&7)"
+            remove 50000000 from player's balance
+            execute console command "hsp give komurcevheri %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+			
+command /komurcevherisp32:
+    trigger:
+        if player's balance is bigger than 1600000000:
+            message "&6Spawner&fMarket &8► &aKömür cevheri spawner satın aldınız. &7(&832x&7)"
+            remove 1600000000 from player's balance
+            execute console command "hsp give komurcevheri %player% 32"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /komurcevherisp64:
+    trigger:
+        if player's balance is bigger than 3200000000:
+            message "&6Spawner&fMarket &8► &aKömür cevheri spawner satın aldınız. &7(&864x&7)"
+            remove 3200000000 from player's balance
+            execute console command "hsp give komurcevheri %player% 64"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /komurcevherisp100:
+    trigger:
+        if player's balance is bigger than 5000000000:
+            message "&6Spawner&fMarket &8► &aKömür cevheri spawner satın aldınız. &7(&8x100&7)"
+            remove 5000000000 from player's balance
+            execute console command "hsp give komurcevheri %player% 1 100"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /lapiscevherisp:
+    trigger:
+        if player's balance is bigger than 100000000:
+            message "&6Spawner&fMarket &8► &aLapis cevheri spawner satın aldınız. &7(&81x&7)"
+            remove 100000000 from player's balance
+            execute console command "hsp give lapiscevheri %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /lapiscevherisp32:
+    trigger:
+        if player's balance is bigger than 3200000000:
+            message "&6Spawner&fMarket &8► &aLapis cevheri spawner satın aldınız. &7(&832x&7)"
+            remove 3200000000 from player's balance
+            execute console command "hsp give lapiscevheri %player% 32"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /lapiscevherisp64:
+    trigger:
+        if player's balance is bigger than 6400000000:
+            message "&6Spawner&fMarket &8► &aLapis cevheri spawner satın aldınız. &7(&864x&7)"
+            remove 6400000000 from player's balance
+            execute console command "hsp give lapiscevheri %player% 64"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /lapiscevherisp100:
+    trigger:
+        if player's balance is bigger than 10000000000:
+            message "&6Spawner&fMarket &8► &aLapis cevheri spawner satın aldınız. &7(&8100x&7)"
+            remove 10000000000  from player's balance
+            execute console command "hsp give lapiscevheri %player% 1 100"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /demircevherisp:
+    trigger:
+        if player's balance is bigger than 200000000:
+            message "&6Spawner&fMarket &8► &aDemir cevheri spawner satın aldınız. &7(&81x&7)"
+            remove 200000000 from player's balance
+            execute console command "hsp give demircevheri %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /demircevherisp32:
+    trigger:
+        if player's balance is bigger than 6400000000:
+            message "&6Spawner&fMarket &8► &aDemir cevheri spawner satın aldınız. &7(&832x&7)"
+            remove 6400000000 from player's balance
+            execute console command "hsp give demircevheri %player% 32"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /demircevherisp64:
+    trigger:
+        if player's balance is bigger than 112800000000:
+            message "&6Spawner&fMarket &8► &aDemir cevheri spawner satın aldınız. &7(&864x&7)"
+            remove 12800000000 from player's balance
+            execute console command "hsp give demircevheri %player% 64"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /demircevherisp100:
+    trigger:
+        if player's balance is bigger than 20000000000:
+            message "&6Spawner&fMarket &8► &aDemir cevheri spawner satın aldınız. &7(&8100x&7)"
+            remove 20000000000 from player's balance
+            execute console command "hsp give demircevheri %player% 1 100"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /altincevherisp:
+    trigger:
+        if player's balance is bigger than 400000000:
+            message "&6Spawner&fMarket &8► &aAltın cevheri spawner satın aldınız. &7(&81x&7)"
+            remove 400000000 from player's balance
+            execute console command "hsp give altincevheri %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /altincevherisp32:
+    trigger:
+        if player's balance is bigger than 12800000000:
+            message "&6Spawner&fMarket &8► &aAltın cevheri spawner satın aldınız. &7(&832x&7)"
+            remove 12800000000 from player's balance
+            execute console command "hsp give altincevheri %player% 32"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /altincevherisp64:
+    trigger:
+        if player's balance is bigger than 25600000000:
+            message "&6Spawner&fMarket &8► &aAltın cevheri spawner satın aldınız. &7(&864x&7)"
+            remove 25600000000 from player's balance
+            execute console command "hsp give altincevheri %player% 64"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /altincevherisp100:
+    trigger:
+        if player's balance is bigger than 40000000000:
+            message "&6Spawner&fMarket &8► &aAltın cevheri spawner satın aldınız. &7(&8100x&7)"
+            remove 40000000000 from player's balance
+            execute console command "hsp give altincevheri %player% 1 100"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /elmascevherisp:
+    trigger:
+        if player's balance is bigger than 800000000:
+            message "&6Spawner&fMarket &8► &aElmas cevheri spawner satın aldınız. &7(&81x&7)"
+            remove 800000000 from player's balance
+            execute console command "hsp give elmascevheri %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /elmascevherisp32:
+    trigger:
+        if player's balance is bigger than 25600000000:
+            message "&6Spawner&fMarket &8► &aElmas cevheri spawner satın aldınız. &7(&832x&7)"
+            remove 25600000000 from player's balance
+            execute console command "hsp give elmascevheri %player% 32"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /elmascevherisp64:
+    trigger:
+        if player's balance is bigger than 51200000000:
+            message "&6Spawner&fMarket &8► &aElmas cevheri spawner satın aldınız. &7(&864x&7)"
+            remove 51200000000 from player's balance
+            execute console command "hsp give elmascevheri %player% 64"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /elmascevherisp100:
+    trigger:
+        if player's balance is bigger than 80000000000:
+            message "&6Spawner&fMarket &8► &aElmas cevheri spawner satın aldınız. &7(&8100x&7)"
+            remove 80000000000 from player's balance
+            execute console command "hsp give elmascevheri %player% 1 100"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /zumrutcevherisp:
+    trigger:
+        if player's balance is bigger than 1600000000:
+            message "&6Spawner&fMarket &8► &aZümrüt cevheri spawner satın aldınız. &7(&81x&7)"
+            remove 1600000000 from player's balance
+            execute console command "hsp give zumrutcevheri %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /zumrutcevherisp32:
+    trigger:
+        if player's balance is bigger than 51200000000:
+            message "&6Spawner&fMarket &8► &aZümrüt cevheri spawner satın aldınız. &7(&832x&7)"
+            remove 51200000000 from player's balance
+            execute console command "hsp give zumrutcevheri %player% 32"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /zumrutcevherisp64:
+    trigger:
+        if player's balance is bigger than 102400000000:
+            message "&6Spawner&fMarket &8► &aZümrüt cevheri spawner satın aldınız. &7(&864x&7)"
+            remove 102400000000 from player's balance
+            execute console command "hsp give zumrutcevheri %player% 64"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /zumrutcevherisp100:
+    trigger:
+        if player's balance is bigger than 160000000000:
+            message "&6Spawner&fMarket &8► &aZümrüt cevheri spawner satın aldınız. &7(&8100x&7)"
+            remove 160000000000 from player's balance
+            execute console command "hsp give zumrutcevheri %player% 1 100"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /kiziltascevherisp:
+    trigger:
+        if player's balance is bigger than 3200000000:
+            message "&6Spawner&fMarket &8► &aKızıltaş cevheri spawner satın aldınız."
+            send "&7(&81x&7)" to player
+            remove 3200000000 from player's balance
+            execute console command "hsp give kiziltascevheri %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /kiziltascevherisp32:
+    trigger:
+        if player's balance is bigger than 102400000000:
+            message "&6Spawner&fMarket &8► &aKızıltaş cevheri spawner satın aldınız."
+            send "&7(&832x&7)" to player
+            remove 102400000000 from player's balance
+            execute console command "hsp give kiziltascevheri %player% 32"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /kiziltascevherisp64:
+    trigger:
+        if player's balance is bigger than 204800000000:
+            message "&6Spawner&fMarket &8► &aKızıltaş cevheri spawner satın aldınız."
+            send "&7(&864x&7)" to player
+            remove 204800000000 from player's balance
+            execute console command "hsp give kiziltascevheri %player% 64"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+command /kiziltascevherisp100:
+    trigger:
+        if player's balance is bigger than 320000000000:
+            message "&6Spawner&fMarket &8► &aKızıltaş cevheri spawner satın aldınız."
+            send "&7(&8100x&7)" to player
+            remove 320000000000 from player's balance
+            execute console command "hsp give kiziltascevheri %player% 1 100"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"
+			
+			
+
+command /komurblokal:
+    trigger:
+        if player's balance is bigger than 20000000:
+            message "&6SkyBlock &8► &aKömür bloğu satın aldınız."
+            remove 20000000 from player's balance
+            give 64 173 to player
+        else:
+            message "&6SkyBlock &8► &cBunu yapabilmek için yeterli paranız yok!"
+			
+command /sungerblokal:
+    trigger:
+        if player's balance is bigger than 40000000:
+            message "&6SkyBlock &8► &aSünger satın aldınız."
+            remove 40000000 from player's balance
+            give 64 19 to player
+        else:
+            message "&6SkyBlock &8► &cBunu yapabilmek için yeterli paranız yok!"
+command /endtasial:
+    trigger:
+        if player's balance is bigger than 80000000:
+            message "&6SkyBlock &8► &aEnd taşı satın aldınız."
+            remove 80000000 from player's balance
+            give 64 121 to player
+        else:
+            message "&6SkyBlock &8► &cBunu yapabilmek için yeterli paranız yok!"
+command /dfal:
+    trigger:
+        if player's balance is bigger than 160000000:
+            message "&6SkyBlock &8► &aDeniz feneri satın aldınız."
+            remove 160000000  from player's balance
+            give 64 169 to player
+        else:
+            message "&6SkyBlock &8► &cBunu yapabilmek için yeterli paranız yok!"
+command /koyuprizmarinal:
+    trigger:
+        if player's balance is bigger than 320000000:
+            message "&6SkyBlock &8► &aKoyu Prizmarin satın aldınız."
+            remove 320000000 from player's balance
+            give 64 168:2 to player
+        else:
+            message "&6SkyBlock &8► &cBunu yapabilmek için yeterli paranız yok!"
+command /prizmarinal:
+    trigger:
+        if player's balance is bigger than 640000000:
+            message "&6SkyBlock &8► &aPrizmarin satın aldınız."
+            remove 640000000 from player's balance
+            give 64 168 to player
+        else:
+            message "&6SkyBlock &8► &cBunu yapabilmek için yeterli paranız yok!"
+command /keskinkuvarsal:
+    trigger:
+        if player's balance is bigger than 1280000000:
+            message "&6SkyBlock &8► &aKeskin kuvars satın aldınız."
+            remove 1280000000 from player's balance
+            give 64 155:1 to player
+        else:
+            message "&6SkyBlock &8► &cBunu yapabilmek için yeterli paranız yok!"
+command /prizmarintuglal:
+    trigger:
+        if player's balance is bigger than 2560000000:
+            message "&6SkyBlock &8► &aPrizmarin tuğlası satın aldınız."
+            remove 2560000000 from player's balance
+            give 64 168:1 to player
+        else:
+            message "&6SkyBlock &8► &cBunu yapabilmek için yeterli paranız yok!"
+command /nethertuglal:
+    trigger:
+        if player's balance is bigger than 5120000000:
+            message "&6SkyBlock &8► &aNether tuğlası satın aldınız."
+            remove 5120000000 from player's balance
+            give 64 112 to player
+        else:
+            message "&6SkyBlock &8► &cBunu yapabilmek için yeterli paranız yok!"
+
+command /komurbloksp:
+    trigger:
+        if player's balance is bigger than 1000000000:
+            message "&6Spawner&fMarket &8► &aKömür blok spawner satın aldınız."
+            remove 1000000000 from player's balance
+            execute console command "hsp give komurblok %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"	
+				
+command /sungersp:
+    trigger:
+        if player's balance is bigger than 2000000000:
+            message "&6Spawner&fMarket &8► &aSünger spawner satın aldınız."
+            remove 2000000000 from player's balance
+            execute console command "hsp give sunger %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"	
+command /endsp:
+    trigger:
+        if player's balance is bigger than 4000000000:
+            message "&6Spawner&fMarket &8► &aEnd taşı spawner satın aldınız."
+            remove 4000000000 from player's balance
+            execute console command "hsp give endtasi %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"	
+command /dfsp:
+    trigger:
+        if player's balance is bigger than 8000000000:
+            message "&6Spawner&fMarket &8► &aDeniz feneri spawner satın aldınız."
+            remove 8000000000 from player's balance
+            execute console command "hsp give denizfeneri %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"	
+command /kpsp:
+    trigger:
+        if player's balance is bigger than 16000000000:
+            message "&6Spawner&fMarket &8► &aKoyu prizmarin spawner satın aldınız."
+            remove 16000000000 from player's balance
+            execute console command "hsp give koyuprizmarin %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"	
+command /prizsp:
+    trigger:
+        if player's balance is bigger than 32000000000:
+            message "&6Spawner&fMarket &8► &aPrizmarin spawner satın aldınız."
+            remove 32000000000 from player's balance
+            execute console command "hsp give prizmarin %player% 1"
+        else:
+            message "&6Spawner&fMarket &8► &cYeterli para miktarınız yok!"		
+			
+command /depoup1:
+    trigger:
+        if player's balance is bigger than 999999999:
+            message "&6Depo &8► &aBaşarıyla 1. depoyu açtınız."
+            remove 1000000000 from player's balance
+            execute console command "lp user %player% permission set cosmicvaults.pv.1"
+        else:
+            message "&6Depo &8► &cYükseltmek için yeterli para bulunamadı."
+			
+command /depoup2:
+    trigger:
+        if player's balance is bigger than 1999999999:
+            message "&6Depo &8► &aBaşarıyla 2. depoyu açtınız."
+            remove 2000000000 from player's balance
+            execute console command "lp user %player% permission set cosmicvaults.pv.2"
+        else:
+            message "&6Depo &8► &cYükseltmek için yeterli para bulunamadı."
+			
+command /depoup3:
+    trigger:
+        if player's balance is bigger than 2999999999:
+            message "&6Depo &8► &aBaşarıyla 3. depoyu açtınız."
+            remove 3000000000 from player's balance
+            execute console command "lp user %player% permission set cosmicvaults.pv.3"
+        else:
+            message "&6Depo &8► &cYükseltmek için yeterli para bulunamadı."				
+			
+command /depoup4:
+    trigger:
+        if player's balance is bigger than 3999999999:
+            message "&6Depo &8► &aBaşarıyla 4. depoyu açtınız."
+            remove 4000000000 from player's balance
+            execute console command "lp user %player% permission set cosmicvaults.pv.4"
+        else:
+            message "&6Depo &8► &cYükseltmek için yeterli para bulunamadı."
+			
+command /depoup5:
+    trigger:
+        if player's balance is bigger than 4999999999:
+            message "&6Depo &8► &aBaşarıyla 5. depoyu açtınız."
+            remove 5000000000 from player's balance
+            execute console command "lp user %player% permission set cosmicvaults.pv.5"
+        else:
+            message "&6Depo &8► &cYükseltmek için yeterli para bulunamadı."
+command /depoup6:
+    trigger:
+        if player's balance is bigger than 5999999999:
+            message "&6Depo &8► &aBaşarıyla 6. depoyu açtınız."
+            remove 6000000000 from player's balance
+            execute console command "lp user %player% permission set cosmicvaults.pv.6"
+        else:
+            message "&6Depo &8► &cYükseltmek için yeterli para bulunamadı."
+
+
+command /fpver <player>:
+	permission: console.admin
+	permission message: &cCoin kasasını açarsan bu komutu uygular sana kasmayana ekmek yokkk!!!
+	trigger:
+		execute console command "lp user %arg-1% permission set fastplace.use" 
+		execute console command "lp user %arg-1% permission set fastplace.level.1" 
+		stop
+command /fpver2 <player>:
+	permission: console.admin
+	permission message: &cCoin kasasını açarsan bu komutu uygular sana kasmayana ekmek yokkk!!!
+	trigger:
+		execute console command "lp user %arg-1% permission set fastplace.use" 
+		execute console command "lp user %arg-1% permission set fastplace.level.2" 
+		stop
+command /fpver3 <player>:
+	permission: console.admin
+	permission message: &cCoin kasasını açarsan bu komutu uygular sana kasmayana ekmek yokkk!!!
+	trigger:
+		execute console command "lp user %arg-1% permission set fastplace.use" 
+		execute console command "lp user %arg-1% permission set fastplace.level.3" 
+		stop

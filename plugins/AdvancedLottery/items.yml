@@ -1,0 +1,77 @@
+# Lottery items configuration file - this file will load the items in guis
+# Warning: if any errors are detected, this file will automatically reset to default
+time_preview:
+  name: '&d&lÇekme Zamanı'
+  lore:
+  - '&7Bir sonraki çekilişe kalan süre &2%time%'
+  material: WATCH
+money_pot:
+  name: '&e&lpottaki Para'
+  lore:
+  - '&7Şuanda JackPotta &b$%money% &7para var'
+  material: BUCKET
+help_menu:
+  instructions_name: '&e&lKomutlar'
+  instructions_lore:
+  - '&7Bu sayfa piyango için komutları gösterir'
+  instructions_material: BOOK_AND_QUILL
+  help_tutorial_name: '&e&lFiyat'
+  help_tutorial_lore:
+  - '&7Kazanan olarak yalnızca bir oyuncu seçilecek'
+  - '&7Bu oyuncu pottaki toplam para miktarını kazanır'
+  help_tutorial_material: EMERALD
+  command_intro_name: '&1&lKomutlar'
+  command_intro_lore:
+  - '&a/lottery -&2 main command'
+  - '&a/lottery help -&2 shows help menu'
+  - '&a/lottery menu -&2 opens the menu gui'
+  - '&a/lottery time -&2 shows countdown time left to draw'
+  - '&a/lottery buy -&2 buys a ticket'
+  - '&a/lottery stats <player> -&2 shows stats (Player is optional)'
+  command_intro_material: BOOK
+  background_material:
+  - YELLOW_STAINED_GLASS_PANE
+lottery_menu:
+  next_page_name: '&d&lSonraki Sayfa'
+  next_page_lore:
+  - '&7sonraki sayfayı görüntülemek için tıklayın'
+  next_page_material: ARROW
+  previous_page_name: '&d&lÖnceki Sayfa'
+  previous_page_lore:
+  - '&7önceki sayfayı görüntülemek için tıklayın'
+  previous_page_material: ARROW
+  buy_ticket_name: '&b&lBilet Satın Alın'
+  buy_ticket_lore:
+  - '&7Bilet satın almak için buraya tıklayın'
+  buy_ticket_material: COMPASS
+  menu_pane_material:
+  - GREEN_STAINED_GLASS_PANE
+confirm_menu:
+  confirm_info_name: '&6&lSatın Almayı Onaylayın'
+  confirm_info_lore:
+  - '&7Bir bilet satın almayı  işlemini onaylayın'
+  confirm_info_material: BOOK
+  confirm_block_name: '&a&lOnayla'
+  confirm_block_material: EMERALD_BLOCK
+  cancel_block_name: '&c&lİptal Et'
+  cancel_block_material: REDSTONE_BLOCK
+  ticket_amount_name: '&e&l%ticket% &bBilet satın alanacak'
+  ticket_amount_lore:
+  - '&e%ticket% &7Bilet &e$%money% &7paraya satın alınacak'
+  ticket_amount_material: PAPER
+  add_ticket_name: '&a&lEkle'
+  add_ticket_lore:
+  - '&7Satın alınacak bir bilet ekleyin'
+  add_ticket_material: ARROW
+  minus_ticket_name: '&c&lAzalt'
+  minus_ticket_lore:
+  - '&7Bilet azaltmak için tıklayın'
+  minus_ticket_material: ARROW
+player_stats_menu:
+  send_message_name: '&6&lBir mesaj göndermek'
+  send_message_material: PAPER
+  send_message_lore: '&e%player% &7adlı kişiye mesja gönder'
+  tickets_bought_name: '&1&lSatın Alınan Biletler'
+  tickets_bought_material: EMERALD
+  tickets_bought_lore:
+  - '&7%player% &b%ticket% &71 adet bilete sahip'

@@ -1,0 +1,42 @@
+lisans: MGJW-XVK1-UC0F-LZ2X
+Ayarlar:
+  CanlanmaSuresi: 30
+  IsimSilinmeSuresi: 8
+  Mesajlar:
+    Prefix: '&6&lSUNUCU&f&lISMI &8»'
+    YetkinYok: '&eYetkin bulunmuyor.'
+    MetineVuramazsin: '&eBu metine sadece &b%player% &evurabilir!'
+    MetinAdiGir: '&eLütfen geçerli bir metin adı girin! Iptal etmek için iptal yazabilirsiniz.'
+    MetinYaziIptal: '&eMetin taşı oluşturmayı iptal ettiniz!'
+    MetinOlusturuldu: '&b%tas% &eoluşturuldu!'
+    MetinSilindi: '&eMetin silindi!'
+    BaskaMetin: '&eAynı anda sadece 1 metin taşına vurabilirsin!'
+  Taslar:
+    Sunger:
+      Can: 300
+      Blok: SPONGE
+      Isim: '&8▪ &6&lSünger Taşı &8▪'
+      Droplar:
+        - 'eco give %player% 2000000000 / 100'
+        - 'crazycrates give p spawner 1 %player% / 100'
+        - 'crazycrates give p para 1 %player% / 100'
+        - 'crazycrates give p event 1 %player% / 100'
+        - 'crazycrates give p kit 1 %player% / 100'
+  CanliHologram:
+    - '%isim%'
+    - ''
+    - ' &8▪ &fBu taşın &a%can% &fcanı var! &8▪ '
+    - ' &8▪ &fBu taşın içinde büyük bir ödül olabilir! &8▪ '
+    - ''
+    - ' &8&m---\\---------------//---&6'
+    - ' &fSadece &e%player% &fvurabilir.'
+    - ' &8&m---\\---------------//---&6'
+  OluHologram:
+    - '%isim%'
+    - ''
+    - ' &8▪ &fBu metin &c%player% &ftarafından kırıldı! &8▪ '
+    - ' &8▪ &fMetin şu anda güç topluyor! &8▪ '
+    - ''
+    - ' &8&m---\\---------------//---&6'
+    - ' &fBu taşa &e%sure% &fsonra vurabilirsin.'
+    - ' &8&m---\\---------------//---&6'

@@ -1,0 +1,148 @@
+options:
+	fabrikaüretim2: 5000000000 # saatlik getiri (1x)
+	fabrikafiyat2: 150000000000  # Fabrika alma fiyatı
+	p: &3Holding &8»
+	
+on join:
+	if {ciftlik2::hayvanlar::%player%::fabrikasayısı} is not set:
+		set {ciftlik2::hayvanlar::%player%::fabrikasayısı} to 0
+		
+command /holdingkur:
+	trigger:
+		if player's money is greater than 50000000000:
+			if {ciftlik2::hayvanlar::%player%::fabrikasayısı} is not greater than 0:
+				remove 50000000000 from player's balance
+				add 1 to {ciftlik2::hayvanlar::%player%::fabrikasayısı}
+				set {ciftlik2::alanlar::%player%} to true
+				send "{@p} &eBaşarıyla holding kurdun!"
+			else if {ciftlik2::hayvanlar::%player%::fabrikasayısı} is not greater than 1:
+				if player's money is greater than 50000000000 :
+					remove 50000000000  from player's balance
+					add 1 to {ciftlik2::hayvanlar::%player%::fabrikasayısı}
+					send "{@p} &eBaşarıyla holding kurdun!"
+				else:	
+					send "{@p} &cMaalesef yeterince paran yok!"
+			else if {ciftlik2::hayvanlar::%player%::fabrikasayısı} is greater than 1:
+				send "{@p} &cDaha fazla holding kuramazsın"
+		else:
+			send "{@p} &cMaalesef yeterince paran yok!"
+			
+command /fabrikaset <offlineplayer> <text>:
+	permission: op
+	trigger:
+		set {ciftlik2::hayvanlar::%arg-1%::fabrikasayısı} to arg-2
+		send "&aBaşarılı"
+		
+command /holdingbilgisayaral:
+	trigger:
+		if {ciftlik2::alanlar::%player%} is set:
+			if {fabrikabacasi2::%player%} is not set:
+				if player's money is greater than 50000000000:
+					remove 50000000000 from player's balance
+					set {fabrikabacasi2::%player%} to 1
+					execute console command "lp user %player% permission set fabrika.bacasi"
+					send "{@p} &aHoldinge bilgisayarlar getirildi!"
+				else:
+					send "{@p} &cMaalesef yeterince paran yok!"
+			else:
+				send "{@p} &cHoldingte zaten bilgisayar önceden getirilmiş."
+		else:
+			send "{@p} &cHoldinge bilgisayar almadan önce bir şirket kurmalısın."
+		
+command /holdingiscial:
+	permission: fabrika.bacasi
+	permission message: &cHoldinge işçi getirebilmen için önce şirkete bilgisayar satın alman gerekiyor!
+	trigger:
+		if {fabrikaisci2::%player%} is not set:
+			if player's money is greater than 50000000000:
+				remove 50000000000 from player's balance
+				set {fabrikaisci2::%player%} to 1
+				execute console command "lp user %player% permission set fabrika.isci"
+				send "{@p} &aHoldinge işçiler başarıyla geldi!"
+			else:
+				send "{@p} &cMaalesef yeterince paran yok!"
+		else:
+			send "{@p} &cHoldinge daha fazla işçi alamazsın."		
+			
+command /fabrikasifirla:
+	permission: op
+	trigger:
+		delete {fabrikaisci2::%player%}
+		delete {fabrikabacasi2::%player%}
+		set {ciftlik2::hayvanlar::%player%::fabrikasayısı} to 0
+		delete {ciftlik2::alanlar::%player%}
+		
+command /fabrikayap:
+	permission: op
+	trigger:
+		set {lsater} to 60 minutes later
+		send "&aBaşarılı"
+		
+command /holdingparasiniver [<player>]:
+	permission: op
+	trigger:
+		if {ciftlik2::alanlar::%arg-1%} is true:
+			if arg-1 have permission "fabrika.bacasi":
+				if arg-1 have permission "fabrika.isci":
+					set {toplamfabrika2::%arg-1%} to {ciftlik2::hayvanlar::%arg-1%::fabrikasayısı}*{@fabrikaüretim2}
+					set {saatlikgelir2::%arg-1%} to {toplamfabrika2::%arg-1%}+{toplamfabrika2::%arg-1%}*20/100+{toplamfabrika2::%arg-1%}*20/100
+					if {ciftlik2::hayvanlar::%arg-1%::fabrikasayısı} is greater than 5:
+						add {saatlikgelir2::%arg-1%} to arg-1's balance
+						send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%arg-1%}%" to arg-1
+					else:
+						add {saatlikgelir2::%arg-1%} to arg-1's balance
+						send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%arg-1%}%" to arg-1
+				else:
+					set {toplamfabrika2::%arg-1%} to {ciftlik2::hayvanlar::%arg-1%::fabrikasayısı}*{@fabrikaüretim2}
+					set {saatlikgelir2::%arg-1%} to {toplamfabrika2::%arg-1%}+{toplamfabrika2::%arg-1%}*20/100
+					add {saatlikgelir2::%arg-1%} to arg-1's balance
+					if {ciftlik2::hayvanlar::%arg-1%::fabrikasayısı} is greater than 5:
+						add {saatlikgelir2::%arg-1%} to arg-1's balance
+						send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%arg-1%}%" to arg-1
+					else:
+						add {saatlikgelir2::%arg-1%} to arg-1's balance
+						send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%arg-1%}%" to arg-1
+			else:
+				set {toplamfabrika2::%arg-1%} to {ciftlik2::hayvanlar::%arg-1%::fabrikasayısı}*{@fabrikaüretim2}
+				set {saatlikgelir2::%arg-1%} to {toplamfabrika2::%arg-1%}
+				if {ciftlik2::hayvanlar::%arg-1%::fabrikasayısı} is greater than 5:
+					add {saatlikgelir2::%arg-1%} to arg-1's balance
+					send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%arg-1%}%" to arg-1
+				else:
+					add {saatlikgelir2::%arg-1%} to arg-1's balance
+					send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%arg-1%}%" to arg-1
+every 1 hour:
+	delete {lsater}
+	set {lsater} to 60 minutes later
+	loop all players:
+		if {ciftlik2::alanlar::%loop-player%} is true:
+			if loop-player have permission "fabrika.bacasi":
+				if loop-player have permission "fabrika.isci":
+					set {toplamfabrika2::%loop-player%} to {ciftlik2::hayvanlar::%loop-player%::fabrikasayısı}*{@fabrikaüretim2}
+					set {saatlikgelir2::%loop-player%} to {toplamfabrika2::%loop-player%}+{toplamfabrika2::%loop-player%}*20/100+{toplamfabrika2::%loop-player%}*20/100
+					if {ciftlik2::hayvanlar::%loop-player%::fabrikasayısı} is greater than 5:
+						add {saatlikgelir2::%loop-player%} to loop-player's balance
+						send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%loop-player%}%" to loop-player
+					else:
+						add {saatlikgelir2::%loop-player%} to loop-player's balance
+						send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%loop-player%}%" to loop-player
+				else:
+					set {toplamfabrika2::%loop-player%} to {ciftlik2::hayvanlar::%loop-player%::fabrikasayısı}*{@fabrikaüretim2}
+					set {saatlikgelir2::%loop-player%} to {toplamfabrika2::%loop-player%}+{toplamfabrika2::%loop-player%}*20/100
+					add {saatlikgelir2::%loop-player%} to loop-player's balance
+					if {ciftlik2::hayvanlar::%loop-player%::fabrikasayısı} is greater than 5:
+						add {saatlikgelir2::%loop-player%} to loop-player's balance
+						send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%loop-player%}%" to loop-player
+					else:
+						add {saatlikgelir2::%loop-player%} to loop-player's balance
+						send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%loop-player%}%" to loop-player
+			else:
+				set {toplamfabrika2::%loop-player%} to {ciftlik2::hayvanlar::%loop-player%::fabrikasayısı}*{@fabrikaüretim2}
+				set {saatlikgelir2::%loop-player%} to {toplamfabrika2::%loop-player%}
+				if {ciftlik2::hayvanlar::%loop-player%::fabrikasayısı} is greater than 5:
+					add {saatlikgelir2::%loop-player%} to loop-player's balance
+					send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%loop-player%}%" to loop-player
+				else:
+					add {saatlikgelir2::%loop-player%} to loop-player's balance
+					send "{@p} &7Holdinginin saatlik gelirleri başarıyla eline ulaştı! Kazandığın Gelir:  &a%{saatlikgelir2::%loop-player%}%" to loop-player
+					

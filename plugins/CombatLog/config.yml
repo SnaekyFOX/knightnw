@@ -1,0 +1,78 @@
+############################################################
+# +-------- Designed and Developed by JackProehl --------+ #
+# +---------- Updated and Managed by iiSnipez -----------+ #
+# +----- Consider donating: http://bit.ly/CL-Donate -----+ #
+############################################################
+
+# Please open a ticket to report all bugs and glitches.
+
+UpdateCheck: true
+AutoDownload: false
+Metrics: true
+MOTD: true
+
+Disabled-Worlds:
+  - gungame
+  - csffa
+  - duel
+# Set Broadcast to true to broadcast when a player CombatLogs.
+Broadcast: true
+
+Tag-Duration: 25
+Block-Teleportation: true
+Remove-Invis-Potion: true
+
+# Use an ActionBar to display a CombatTag. (Supports 1.8+)
+ActionBar: true
+
+# Add modes you want removed during Combat under Remove-Modes.
+# Available Modes: fly, disguise.
+Remove-Modes:
+  - fly
+  - disguise
+
+# onKick: if true, remove Tags when players are kicked.
+# onLagout: if true, remove Tags when players lag out.
+# inSafeZone if true, remove Tags when players enter SafeZone (Factions support)
+# inPvPDisabledArea: if true, remove Tags when players enter areas with PvP disabled (WorldGuard support) 
+Remove-Tag:
+  onKick: false
+  onLagout: false
+  inSafeZone: true
+  inPvPDisabledArea: true
+
+# Block commands from being used, or allow only certain commands to be used (aka whitelist mode)
+# Only one of the two should be true
+Block-Commands: false
+Whitelist-Mode: true
+Commands:
+  - msg
+
+# Kill players when they CombatLog.
+Kill: true
+
+# Execute commands when player CombatLogs
+Execute-Commands: false
+ExecutedCommands:
+  - jail <name> jail 10
+
+############################################################
+# +-----------------------Messages-----------------------+ #
+############################################################
+
+# TO DISABLE A MESSAGE, SET IT AS 'false'!
+UpdateCheckMessage: ''
+MOTDMessage: '&6&lSavaş &8▶ &eKodlayıcılarım; &6SandraEfsanesi,RobertSPT.'
+BroadcastMessage: '&6&lSavaş &8▶ &6<name> &eBlock Bugu Olduğu İçin Işınlandınız.'
+TaggerMessage: '&6&lSavaş &8▶ &6<name>&e. Savaşı Başlattınız.'
+TaggedMessage: '&6&lSavaş &8▶ &eSavaş Başladı: &6<name>&e. &eSana Güveniyoruz.'
+UntagMessage: '&6&lSavaş &8▶ &eSavaş Süreniz Bitmiştir.'
+InCombatMessage: '&6&lSavaş &8▶ &eSavaşın Bitmesine &6<time> &eSaniye Kaldı!'
+NotInCombatMessage: 'Artık Savaşta Değilsin.'
+ActionBarInCombatMessage: 'Savaşın Bitmesine Son <time> Saniye Kaldı.'
+ActionBarUntagMessage: 'Artık Savaşta Değilsin.'
+RemoveModesMessage: '&6&lSavaş &8▶ &6<mode> &eÖzelliğin Silindi.'
+RemoveInvisMessage: '&6&lSavaş &8▶ &eGörünmezlik Devredışı Bırakıldı.'
+BlockCommandsMessage: '&6&lSavaş &8▶ &eSavaştan Kaçamazsınız.'
+BlockTeleportationMessage: '&6&lSavaş &8▶ &eBlock Bugu Olduğu İçin Işınlandınız.'
+KillMessage: '&6&lSavaş &8▶ &eAferin! Savaşı Sen Kazandın.'

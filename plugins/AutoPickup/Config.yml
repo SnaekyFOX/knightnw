@@ -1,0 +1,12 @@
+Infinity Pick: false
+Gui:
+  Contact Info: true
+Full Inventory:
+  Delete Item: true
+  Warn: true
+AutoSmelt Compat Mode: true
+AutoBlock Quartz: true
+Mob:
+  AutoPickup: true
+  AutoXP: true
+Block AutoXP: true

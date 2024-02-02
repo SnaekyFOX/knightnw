@@ -1,0 +1,95 @@
+options:
+    adminperm: moderatör.yetkisi
+    prefix: &6&lSkyBlock &8|
+    doğmasüre: 123123123
+    ejderha: &6BAKIM!
+    can: 500 # Ejderha Canı
+    dünyaadı: world_the_end
+    
+# Olaylar
+on load:
+    send "&6&lWinter &8| &aEjderha etkinliği V1.0 aktifleşti" to console   
+on unload:
+    send "&6&lWinter &8| &aEjderha etkinliği V1.0 aktifleştirilemedi." to console
+    
+on skript load:
+    set {doğma::süre::ejderha} to {@doğmasüre}
+    set {süre::ejderha} to {doğma::süre::ejderha}
+
+on load:
+    set {doğma::süre::ejderha} to {@doğmasüre}
+    set {süre::ejderha} to {doğma::süre::ejderha}
+    
+    
+    
+every second:
+    subtract 1 from {süre::ejderha}
+    if {süre::ejderha} is 0:
+        set {süre::ejderha} to "Yapılıyor.."
+        broadcast "{@prefix} &a{@ejderha} &eadlı ejderha doğdu &eHemen onu katlet!"
+        if {etkinlik::doğma::ejderha} is set:
+            spawn ender dragon at {etkinlik::doğma::ejderha}
+            set name of last spawned ender dragon to "{@ejderha}"
+            set maximum health of last spawned ender dragon to {@can}
+            set health of last spawned ender dragon to {@can}
+            set {ejderiya} to true
+on death:
+    if victim is ender dragon:
+        if ender dragon's name is "{@ejderha}":
+            if attacker is set:
+                send "{@prefix} &6{@ejderha} &eadlı ejderhayı &b%attacker% &eadlı kişi öldürdü" to all players
+                set {süre::ejderha} to "Bitti"
+                set {etkinlik::ejderha::sonöldüren} to "%player%"
+                wait 4 ticks
+                loop all players:
+                    if "%region at loop-player%" contains "end":
+                    teleport loop-player to {etkinlik::spawn::oyuncu}
+                    delete {ejderiya}
+            
+            
+# Komutlar:
+
+command /ejderha [<text>] [<text>] [<text>] [<text>]:
+    trigger:
+        if player has the permission "{@adminperm}":
+            if arg 1 is "ejderha":
+                if arg 2 is "dünya" or "dunya":
+                    if arg 3 is "ayarla":
+                        if arg 4 is a world:
+                            set {etkinlik::dünya::ejderha} to "%arg 4%"
+                            send "{@prefix} &a%arg 4% &7adlı Dünyasını &aEjderha Etkinliği &7dünyası olarak ayarladın."
+        if player has the permission "{@adminperm}":
+            if arg 1 is "ejderha":
+                if arg 2 is "doğmayeri" or "dogmayeri":
+                    if arg 3 is "ayarla":
+                        if arg 4 is not set:
+                            set {etkinlik::doğma::ejderha} to player's location
+                            send "{@prefix} &7Ejderha Doğma Yeri Ayarlandı."
+        if player has the permission "{@adminperm}":
+            if arg 1 is "ejderha":
+                if arg 2 is "spawn" or "spawn":
+                    if arg 3 is "ayarla":
+                        if arg 4 is not set:
+                            set {etkinlik::spawn::oyuncu} to player's location
+                            send "{@prefix} &7Oyuncuların Spawn Yeri Ayarlandı."
+        if player has the permission "{@adminperm}":
+            if arg 1 is not set:
+                if arg 2 is not set:
+                    if arg 3 is not set:
+                        if arg 4 is not set:
+                            send "&a&m----{@prefix}&a&m----"
+                            send ""
+                            send "&b/etkinlik ejderha dünya ayarla (dünya adı)"
+                            send "Ejderha Etkinliği Dünyasını ayarlar"
+                            send ""
+                            send "&b/etkinlik ejderha spawn ayarla"
+                            send "Oyuncuların Spawn Bölgesi /spawn kısmı"
+                            send ""
+                            send "&b/etkinlik ejderha doğmayeri ayarla"
+                            send "Ejderha Doğma Yeri Ayarlar"
+                            send ""
+                            send "&a&m----{@prefix}&a&m----"
+
+on step on end portal:
+    if {ejderiya} is set:
+        teleport the player to {etkinlik::doğma::ejderha}

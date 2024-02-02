@@ -1,0 +1,385 @@
+Spawners:
+  nethertugla:
+    Item:
+      Type: NETHER_BRICK:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 0
+    Spawner:
+      Type: ITEM
+      Countdown: 4
+      Player-Range: 10
+      Max-Spawner: 1
+      Max-Level: 25
+      Drop-Range: 1
+      Spawner-Name: '&bNether Tuğlası &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  prizmarintugla:
+    Item:
+      Type: PRISMARINE:1
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 0
+    Spawner:
+      Type: ITEM
+      Countdown: 3
+      Player-Range: 10
+      Max-Spawner: 10
+      Max-Level: 10
+      Drop-Range: 1
+      Spawner-Name: '&bPrizmarin Tuğlası &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  keskinkuvars:
+    Item:
+      Type: QUARTZ_BLOCK:1
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 0
+    Spawner:
+      Type: ITEM
+      Countdown: 3
+      Player-Range: 10
+      Max-Spawner: 10
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bKeskin Kuvars &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  prizmarin:
+    Item:
+      Type: PRISMARINE:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 0
+    Spawner:
+      Type: ITEM
+      Countdown: 3
+      Player-Range: 10
+      Max-Spawner: 10
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bPrizmarin &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  koyuprizmarin:
+    Item:
+      Type: PRISMARINE:2
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 0
+    Spawner:
+      Type: ITEM
+      Countdown: 3
+      Player-Range: 10
+      Max-Spawner: 10
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bKoyu Prizmarin &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  denizfeneri:
+    Item:
+      Type: SEA_LANTERN:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 0
+    Spawner:
+      Type: ITEM
+      Countdown: 3
+      Player-Range: 10
+      Max-Spawner: 10
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bDeniz Feneri &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  endtasi:
+    Item:
+      Type: ENDER_STONE:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 0
+    Spawner:
+      Type: ITEM
+      Countdown: 3
+      Player-Range: 10
+      Max-Spawner: 10
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bEnd Taşı &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  sunger:
+    Item:
+      Type: SPONGE:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 0
+    Spawner:
+      Type: ITEM
+      Countdown: 3
+      Player-Range: 10
+      Max-Spawner: 10
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bSünger &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  komurblok:
+    Item:
+      Type: COAL_BLOCK:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 0
+    Spawner:
+      Type: ITEM
+      Countdown: 5
+      Player-Range: 10
+      Max-Spawner: 10
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bKömür Blok &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  komurcevheri:
+    Item:
+      Type: COAL_ORE:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 2000
+    Spawner:
+      Type: ITEM
+      Countdown: 5
+      Player-Range: 100
+      Max-Spawner: 100
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bKömür Cevheri &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  lapiscevheri:
+    Item:
+      Type: LAPIS_ORE:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 4000
+    Spawner:
+      Type: ITEM
+      Countdown: 5
+      Player-Range: 100
+      Max-Spawner: 100
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bLapis Cevheri &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  demircevheri:
+    Item:
+      Type: IRON_ORE:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 8000
+    Spawner:
+      Type: ITEM
+      Countdown: 5
+      Player-Range: 100
+      Max-Spawner: 100
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bDemir Cevheri &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  altincevheri:
+    Item:
+      Type: GOLD_ORE:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 16000
+    Spawner:
+      Type: ITEM
+      Countdown: 5
+      Player-Range: 100
+      Max-Spawner: 100
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bAltın Cevheri &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  elmascevheri:
+    Item:
+      Type: DIAMOND_ORE:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 32000
+    Spawner:
+      Type: ITEM
+      Countdown: 5
+      Player-Range: 100
+      Max-Spawner: 100
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bElmas Cevheri &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  zumrutcevheri:
+    Item:
+      Type: EMERALD_ORE:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 64000
+    Spawner:
+      Type: ITEM
+      Countdown: 5
+      Player-Range: 100
+      Max-Spawner: 100
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bZümrüt Cevheri &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'
+  kiziltascevheri:
+    Item:
+      Type: REDSTONE_ORE:0
+      Name: ''
+      Glow: false
+      Dropped-Xp: 0
+      Price: 128000
+    Spawner:
+      Type: ITEM
+      Countdown: 5
+      Player-Range: 100
+      Max-Spawner: 100
+      Max-Level: 100
+      Drop-Range: 1
+      Spawner-Name: '&bKızıltaş Cevheri &8(&7Spawner&8)'
+      Spawner-Lore:
+      - ''
+      - '&7→ &fSunucuda kaybolan veya çalınan'
+      - '&7→ &fspawnerlardan sunucu sorumlu değildir!'
+      - ''
+      - '&7→ &fSpawnerları sadece &a/kit ipeksi ile'
+      - '&7→ &fkırabilirsiniz.'
+      - ''
+      - '&7→Level: &a%level%'

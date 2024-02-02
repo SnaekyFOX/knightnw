@@ -1,0 +1,86 @@
+options:
+	prefix: &3SkyBlock &8»
+	max valuee: 7000000000
+	min valuee: 1000000000
+	daily buy right: 10
+
+command /ethereumver [<text>] <number>:
+    permission: op
+    trigger:
+        add arg 2 to {borsaa::ethereum::%arg 1%}
+        send "{@prefix} &e%arg 1% &7adlı kişiye &c%arg 2% &7ethereum verildi!"
+
+on join:
+    execute console command "ethereumgör %player%"
+	
+command /ethereumgör [<text>]:
+    trigger:
+        if arg 1 is not set:
+            message "{@prefix} &7Lütfen bir oyuncu adı gir."
+        else:
+            add 0 to {borsaa::ethereum::%arg 1%}
+            send "{@prefix} &e%arg 1% &7adlı kişinin ethereum miktarı; &c%{borsaa::ethereum::%player%}%"
+
+command /ethereumresetrutin:
+	trigger:
+		delete {borsaa::bought::*}
+
+command /ethereum [<text>]:
+	trigger:
+		arg 1 is not set:
+			execute player command "borsaa"
+		else if arg 1 is "sat":
+			open anvil gui named "ethereum sat" to player with text "Miktar belirtin." and with item paper
+
+		else if arg 1 is "al":
+			open anvil gui named "ethereum satın al" to player with text "Miktar belirtin." and with item paper
+
+function buyethereum(p:player, amount:int):
+	set {_x} to ({borsaa::bought::%{_p}%} otherwise 0)
+	({_x}+{_amount}) < {@daily buy right}:
+		{_p}'s money >= {_amount}*{borsaa::pricee}:
+			add {_amount} to {borsaa::bought::%{_p}%}
+			remove {_amount}*{borsaa::pricee} from {_p}'s money
+			add {_amount} to {borsaa::ethereum::%{_p}%}
+			send "{@prefix} &7Başarıyla &6%{_amount}% &7adet &fethereum &7satın aldınız." to {_p}
+		else:
+			send "{@prefix} &cMaalesef, yeterince paran yok!" to {_p}
+	else:
+		send "{@prefix} &7Günde sadece &e25 ethereum &7satın alabilirsiniz. &8(&c%{borsaa::bought::%{_p}%}%&8/&a25&8)" to {_p}
+		
+function sellethereum(p:player, amount:int):
+	{_amount} = -1:
+		set {_amount} to {borsaa::ethereum::%{_p}%}
+
+	{borsaa::ethereum::%{_p}%} otherwise 0 >= {_amount}:
+		add {_amount}*{borsaa::pricee} to {_p}'s money
+		remove {_amount} from {borsaa::ethereum::%{_p}%}
+		send "{@prefix} &7Başarıyla &a%{_amount}%&7 adet &fethereum&7 sattınız." to {_p}
+	else:
+		send "{@prefix} &cBu kadar ethereum'iniz bulunmamakta!" to {_p}
+	
+every 59 minutes:
+	set {_newStatee} to random integer between {@min valuee} and {@max valuee}
+	{_newStatee} > {borsaa::pricee}:
+		set {borsaa::lastStatee} to "&aYükselişte"
+	else if {_newStatee} < {borsaa::pricee}:
+		set {borsaa::lastStatee} to "&cDüşüşte"
+	else:
+		set {borsaa::lastStatee} to ""
+		
+	set {borsaa::pricee} to {_newStatee}
+
+	
+on confirm anvil gui named "ethereum satın al":
+	set {_amount} to event-string parsed as integer
+	{_amount} > 0:
+		buyethereum(player, {_amount})
+	else:
+		send "{@prefix} &cYazdığınız şey bir sayı değil sadece sayı girebilirsiniz."
+		
+on confirm anvil gui named "ethereum sat":
+	set {_amount} to event-string parsed as integer
+	{_amount} > 0:
+		sellethereum(player, {_amount})
+	else:
+		send "{@prefix} &cYazdığınız şey bir sayı değil sadece sayı girebilirsiniz."

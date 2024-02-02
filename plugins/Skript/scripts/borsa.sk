@@ -1,0 +1,86 @@
+options:
+	prefix: &3SkyBlock &8»
+	max value: 10000000000
+	min value: 1000000000
+	daily buy right: 8
+
+command /bitcoinver [<text>] <number>:
+    permission: op
+    trigger:
+        add arg 2 to {borsa::bitcoin::%arg 1%}
+        send "{@prefix} &e%arg 1% &7adlı kişiye &c%arg 2% &7bitcoin verildi!"
+
+on join:
+    execute console command "bitcoingör %player%"
+	
+command /bitcoingör [<text>]:
+    trigger:
+        if arg 1 is not set:
+            message "{@prefix} &7Lütfen bir oyuncu adı gir."
+        else:
+            add 0 to {borsa::bitcoin::%arg 1%}
+            send "{@prefix} &e%arg 1% &7adlı kişinin Bitcoin miktarı; &c%{borsa::bitcoin::%player%}%"
+
+command /bitcoinresetrutin:
+	trigger:
+		delete {borsa::bought::*}
+
+command /bitcoin [<text>]:
+	trigger:
+		arg 1 is not set:
+			execute player command "borsa"
+		else if arg 1 is "sat":
+			open anvil gui named "Bitcoin sat" to player with text "Miktar belirtin." and with item paper
+
+		else if arg 1 is "al":
+			open anvil gui named "Bitcoin satın al" to player with text "Miktar belirtin." and with item paper
+
+function buyBitcoin(p:player, amount:int):
+	set {_x} to ({borsa::bought::%{_p}%} otherwise 0)
+	({_x}+{_amount}) < {@daily buy right}:
+		{_p}'s money >= {_amount}*{borsa::price}:
+			add {_amount} to {borsa::bought::%{_p}%}
+			remove {_amount}*{borsa::price} from {_p}'s money
+			add {_amount} to {borsa::bitcoin::%{_p}%}
+			send "{@prefix} &7Başarıyla &6%{_amount}% &7adet &fBitcoin &7satın aldınız." to {_p}
+		else:
+			send "{@prefix} &cMaalesef, yeterince paran yok!" to {_p}
+	else:
+		send "{@prefix} &7Günde sadece &e25 Bitcoin &7satın alabilirsiniz. &8(&c%{borsa::bought::%{_p}%}%&8/&a25&8)" to {_p}
+		
+function sellBitcoin(p:player, amount:int):
+	{_amount} = -1:
+		set {_amount} to {borsa::bitcoin::%{_p}%}
+
+	{borsa::bitcoin::%{_p}%} otherwise 0 >= {_amount}:
+		add {_amount}*{borsa::price} to {_p}'s money
+		remove {_amount} from {borsa::bitcoin::%{_p}%}
+		send "{@prefix} &7Başarıyla &a%{_amount}%&7 adet &fBitcoin&7 sattınız." to {_p}
+	else:
+		send "{@prefix} &cBu kadar Bitcoin'iniz bulunmamakta!" to {_p}
+	
+every 59 minutes:
+	set {_newState} to random integer between {@min value} and {@max value}
+	{_newState} > {borsa::price}:
+		set {borsa::lastState} to "&aYükselişte"
+	else if {_newState} < {borsa::price}:
+		set {borsa::lastState} to "&cDüşüşte"
+	else:
+		set {borsa::lastState} to ""
+		
+	set {borsa::price} to {_newState}
+
+	
+on confirm anvil gui named "Bitcoin satın al":
+	set {_amount} to event-string parsed as integer
+	{_amount} > 0:
+		buyBitcoin(player, {_amount})
+	else:
+		send "{@prefix} &cYazdığınız şey bir sayı değil sadece sayı girebilirsiniz."
+		
+on confirm anvil gui named "Bitcoin sat":
+	set {_amount} to event-string parsed as integer
+	{_amount} > 0:
+		sellBitcoin(player, {_amount})
+	else:
+		send "{@prefix} &cYazdığınız şey bir sayı değil sadece sayı girebilirsiniz."

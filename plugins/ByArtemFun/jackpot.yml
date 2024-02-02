@@ -1,0 +1,36 @@
+jackpot:
+  low:
+    firstbet: 1.0E7
+    secondbet: 1.5E7
+    thirdbet: 2.0E7
+    fourthbet: 2.5E7
+    maxbet: 3.0E7
+  medium:
+    firstbet: 5.0E7
+    secondbet: 7.5E7
+    thirdbet: 1.0E8
+    fourthbet: 2.0E8
+    maxbet: 3.0E7
+  high:
+    firstbet: 5.0E8
+    secondbet: 7.5E8
+    thirdbet: 1.0E9
+    fourthbet: 5.0E9
+    maxbet: 1.0E10
+jackpot-threshold: 2
+pot-timer: 60
+chooseWinnerSpinRate: 5
+gamesAvailableRefreshRate: 10
+chooseWinnerRefreshRate: 1
+tax: 5.0
+jackpot-games-available-title: '&8&l%type% Jackpot'
+jackpot-title: '&8&lJackpot'
+messages:
+  pot-limit-reached: '&cError: The maximum bet for this pot is %maxbet%!'
+  winning-message: '&6You have won a jackpot worth &e%winning% &6with %an% &e%chance%&6
+    chance, congratulations!'
+  winning-message-tax: '&6You have won a jackpot worth &e%winning%&6, and got &e%tax%
+    &6with %an% &e%chance%&6 chance, congratulations!'
+  announce-win-message: '&e%name% &6has won a jackpot worth &e%winning% &6with %an%
+    &e%chance% chance&6!'
+  insufficient-funds: '&cError: You have insufficient funds to place this bet.'

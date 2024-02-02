@@ -1,0 +1,45 @@
+# PlayerTime 1.0.7-RELEASE
+
+# Do not change this
+config-version: 2
+
+plugin-prefix: "&6&lZamanlayıcı &8>"
+
+# Supports YML or MySQL
+database:
+  type: YML
+# Uncomment when using MySQL
+#  host: "localhost"
+#  port: 3306
+#  username: "root"
+#  password: "password"
+#  database: "playertime"
+#  pool-size: 10
+
+format: "&6&lZamanlayıcı &8► &b{name} &eSunucuda toplam geçirdiği zaman: {days} gün, {hours} saat, {minutes} dakika, {seconds} saniye!"
+
+# This will either be gui or text, if it's neither, this won't work.
+leaderboard-type: "gui"
+
+# The "time-format" option also applies to the text based version of the leaderboard.
+gui:
+  title: "&6&lEn çok aktifler:"
+  time-format: "{days} gün, {hours} saat, {minutes} dakika, {seconds} saniye!"
+  item:
+    name: "&6{player} İstatistik:"
+    material: "PAPER"
+    lore:
+    - "&aSıralama: &a#{slot}"
+    - "&aGeçirilen süre: &a{format}"
+
+text-top:
+  title: "&7------------------------"
+  footer: "&7------------------------"
+  content: "&7{place}, &a{name} &f{time}"
+
+
+messages:
+  incorrect-usage: "&cYanlış kullanım /zaman <oyuncu>"
+  never-played-before: "Bu oyuncu bulunamadı! Hiç oyuna girmemiş?"
+  no-playtime-data: "Veri kaydedilemedi."
+  config-reload: "&cAyarlar yeniden yüklendi!"

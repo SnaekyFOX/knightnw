@@ -1,0 +1,72 @@
+name: "&8             &nVakit Nakittir"
+size: 45
+items:
+  idle-items:
+    black-glasses:
+      type: BLACK_STAINED_GLASS_PANE
+      data: 0
+      name: ""
+      amount: 1
+      slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 17
+        - 18
+        - 26
+        - 27
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+  # The name of the section must be the same as the name of the investment
+  investments-items:
+    investment1:
+      type: iron_ingot
+      data: 0
+      name: "&e4 Saat"
+      lore:
+        - ""
+        - " &7Yatırım: &6%toInvest% ⛃"
+        - " &7Kazanç: &6%reward% ⛃"
+        - ""
+        - "&eYatırım yapmak için tıkla!"
+      amount: 1
+      slot: 20
+    investment2:
+      type: gold_ingot
+      data: 0
+      name: "&e8 Saat"
+      lore:
+        - ""
+        - " &7Yatırım: &6%toInvest% ⛃"
+        - " &7Kazanç: &6%reward% ⛃"
+        - ""
+        - "&eYatırım yapmak için tıkla!"
+      amount: 1
+      slot: 22
+    investment3:
+      type: diamond
+      data: 0
+      name: "&e12 Saat"
+      lore:
+        - ""
+        - " &7Yatırım: &6%toInvest% ⛃"
+        - " &7Kazanç: &6%reward% ⛃"
+        - ""
+        - "&eYatırım yapmak için tıkla!"
+      amount: 1
+      slot: 24      

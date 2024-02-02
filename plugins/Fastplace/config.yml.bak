@@ -1,0 +1,107 @@
+##############################
+#                            #
+#     OVERALL SETTINGS       #
+#                            #
+##############################
+WhitelistedBlockDisable: true
+WhitelistedBlocks: 
+
+BlacklistBlocks: #This will only count when you have turned whitelistedblocks off
+ MOB_SPAWNER:
+  Data: 1
+ SIGN:
+  Data: 1
+
+
+Level:
+  1: #Create unlimited fastplace levels. This will also be used in the fastplace command 
+   Amount: 3 #This is the amount of blocks 
+   Permission: 'fastplace.level.1' #The permission that is requird to use the this level
+  2:
+   Amount: 6
+   Permission: 'fastplace.level.2'
+  3:
+   Amount: 9
+   Permission: 'fastplace.level.3'
+
+
+
+############################################################
+# This can enable or disable Horizontal Placing
+###############################################################
+Horizontal_Placing: true 
+
+
+####################################
+#                                  #
+#          MESSAGES                #
+#                                  #
+####################################
+
+###########################
+# Change the prefix for the plugin here
+###########################
+Prefix: "&6&lFP &8» "
+
+############################################################
+# This message will show when you execute /fastplace command
+###############################################################
+EnabledFastplace: '&7You have &aEnabled &7Fastplace &f(Level: %level%)'
+DisabledFastplace: '&7You have &cDisabled &7Fastplace'
+
+
+#################################################################
+# Set this to false if you dont want to see the blockplaced message
+##################################################################
+EnableMessageOnPlace: false
+
+#################################################################
+# This message will show when you place blocks using fastplace mode
+# %tier% is replaced by what tier they are so if they are tier 3 it will say you need  9 blocks
+# %block% is replaced by what block they place 
+# Color codes are supported
+##################################################################
+BlockPlaced: '&7You have placed &f%Tier% %block% &7using fastplace'
+
+################################################################################
+#This message will show when you dont have enough blocks to place
+# %tier% is replaced by what tier they are so if they are tier 3 it will say you need  9 blocks
+# %block% is replaced by what block they place 
+# Color codes are supported
+################################################################################
+NotEnoughBlocks: '&7You need &f%Tier% %block% &7before you can start placing blocks'
+
+###############################################################
+# This message will show when a player place a block listed item
+###############################################################
+BlackListMessage: '&cThis block is blacklisted'
+
+###################################################
+# This message will show when blocks are in the way
+###################################################
+Blocks_In_The_Way: '&cBlocks is in the way'
+
+
+
+###################################################
+# This message will show a player uses fastplace in a blocked area
+###################################################
+NotAllowed: '&cYou are not allowed to use fastplace here'
+
+###################################################################
+# This message will show when you dont have a permission for the spefic command 
+###################################################################
+NoPermission: '&cYou dont have permission to do this command'
+
+###################################################################
+# This message will show when a player execute /fastplace <set> <Number>
+# %number% is replaced by the number the player set
+###################################################################
+SetBlocksMessage: '&7You have set your blocks to &f%number%'
+
+########################################################
+# This message will show when you execute /Fastplace help or just /Fastplace without args
+########################################################
+Help-Message:
+- '&a/fp 1,2,3 &8» &eİstediğiniz seviyeyi seçebilirsiniz.'
+- '&b/fp disable &8» &cDevre dışı bırakmak için kullanılır.' 

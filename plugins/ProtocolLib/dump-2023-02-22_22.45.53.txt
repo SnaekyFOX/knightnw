@@ -1,0 +1,110 @@
+ProtocolLib Dump
+Timestamp: 02/22/23 22:45:53
+
+ProtocolLib Version: ProtocolLib v5.0.0-SNAPSHOT-b612
+Bukkit Version: 1.8.8-R0.1-SNAPSHOT
+Server Version: 1.8.8-R0.1-SNAPSHOT (MC: 1.8.8)
+Java Version: 1.8.0_362
+
+ProtocolLib: com.comphenix.protocol.ProtocolLib@3c67ea20[
+  statistics=com.comphenix.protocol.metrics.Statistics@6628b03f
+  packetTask=7
+  tickCounter=95256
+  configExpectedMod=1
+  updater=com.comphenix.protocol.updater.SpigotUpdater@6136a339
+  redirectHandler=com.comphenix.protocol.ProtocolLib$2@68eece17
+  commandProtocol=com.comphenix.protocol.CommandProtocol@6bdb0fc0
+  commandPacket=com.comphenix.protocol.CommandPacket@4851f3cc
+  commandFilter=com.comphenix.protocol.CommandFilter@1caaae94
+  packetLogging=com.comphenix.protocol.PacketLogging@2aa4560
+  skipDisable=false
+  isEnabled=true
+  loader=org.bukkit.plugin.java.JavaPluginLoader@313cfffa
+  server=CraftServer{serverName=FoxSpigot,serverVersion=1.8.8-R0.1-SNAPSHOT,minecraftVersion=1.8.8}
+  file=plugins\ProtocolLib-5.0.0-SNAPSHOT.jar
+  description=org.bukkit.plugin.PluginDescriptionFile@3f237bce
+  dataFolder=plugins\ProtocolLib
+  classLoader=org.bukkit.plugin.java.PluginClassLoader@708678fd
+  naggable=true
+  ebean=<null>
+  newConfig=YamlConfiguration[path='', root='YamlConfiguration']
+  configFile=plugins\ProtocolLib\config.yml
+  logger=org.bukkit.plugin.PluginLogger@39e74934
+]
+Manager: com.comphenix.protocol.injector.PacketFilterManager@4ef508bf[
+  plugin=ProtocolLib v5.0.0-SNAPSHOT-b612
+  server=CraftServer{serverName=FoxSpigot,serverVersion=1.8.8-R0.1-SNAPSHOT,minecraftVersion=1.8.8}
+  reporter=com.comphenix.protocol.ProtocolLib$1@343df3be
+  minecraftVersion=(MC: 1.19.3)
+  asyncFilterManager=com.comphenix.protocol.async.AsyncFilterManager@3790b2e4
+  pluginVerifier=com.comphenix.protocol.injector.PluginVerifier@3aa80ab2
+  inboundListeners=com.comphenix.protocol.injector.SortedPacketListenerList@5c7e4da8
+  outboundListeners=com.comphenix.protocol.injector.SortedPacketListenerList@705e59a
+  registeredListeners=[PacketAdapter[plugin=AntiCommandTab, sending=EMPTY_WHITELIST, receiving=ListeningWhitelist[priority=NORMAL, packets=[TAB_COMPLETE[class=PacketPlayInTabComplete, id=8]], gamephase=PLAYING, options=[]]], PacketAdapter[plugin=IllegalStack, sending=EMPTY_WHITELIST, receiving=ListeningWhitelist[priority=NORMAL, packets=[USE_ENTITY[class=PacketPlayInUseEntity, id=15]], gamephase=PLAYING, options=[]]], PacketAdapter[plugin=HolographicExtension, sending=ListeningWhitelist[priority=NORMAL, packets=[ENTITY_METADATA[class=PacketPlayOutEntityMetadata, id=78]], gamephase=PLAYING, options=[]], receiving=EMPTY_WHITELIST], PacketAdapter[plugin=Matrix, sending=ListeningWhitelist[priority=HIGH, packets=[OPEN_WINDOW[class=PacketPlayOutOpenWindow, id=44], TRANSACTION[class=PacketPlayInTransaction, id=255], FLYING[class=PacketPlayInFlying, id=254], CUSTOM_PAYLOAD[class=PacketPlayInCustomPayload, id=12], CLOSE_WINDOW[class=PacketPlayInCloseWindow, id=11], WINDOW_CLICK[class=PacketPlayInWindowClick, id=10], SETTINGS[class=PacketPlayInSettings, id=7], CLIENT_COMMAND[class=PacketPlayInClientCommand, id=6], CHAT[class=PacketPlayInChat, id=5], BLOCK_PLACE[class=PacketPlayInBlockPlace, id=50], EXPLOSION[class=PacketPlayOutExplosion, id=26], ARM_ANIMATION[class=PacketPlayInArmAnimation, id=47], NAMED_SOUND_EFFECT[class=PacketPlayOutNamedSoundEffect, id=94], WINDOW_ITEMS[class=PacketPlayOutWindowItems, id=16], ENTITY_VELOCITY[class=PacketPlayOutEntityVelocity, id=80], WINDOW_DATA[class=PacketPlayOutWindowData, id=17], ENTITY_ACTION[class=PacketPlayInEntityAction, id=29], CLOSE_WINDOW[class=PacketPlayOutCloseWindow, id=15], ANIMATION[class=PacketPlayOutAnimation, id=3], HELD_ITEM_SLOT[class=PacketPlayInHeldItemSlot, id=40], BLOCK_CHANGE[class=PacketPlayOutBlockChange, id=9], POSITION_LOOK[class=PacketPlayInPositionLook, id=20], POSITION[class=PacketPlayInPosition, id=19], REMOVE_ENTITY_EFFECT[class=PacketPlayOutRemoveEntityEffect, id=59], USE_ENTITY[class=PacketPlayInUseEntity, id=15], MULTI_BLOCK_CHANGE[class=PacketPlayOutMultiBlockChange, id=63], BLOCK_DIG[class=PacketPlayInBlockDig, id=28], ABILITIES[class=PacketPlayInAbilities, id=27], POSITION[class=PacketPlayOutPosition, id=56], TRANSACTION[class=PacketPlayOutTransaction, id=246], LOOK[class=PacketPlayInLook, id=21]], gamephase=PLAYING, options=[ASYNC]], receiving=ListeningWhitelist[priority=HIGH, packets=[OPEN_WINDOW[class=PacketPlayOutOpenWindow, id=44], TRANSACTION[class=PacketPlayInTransaction, id=255], FLYING[class=PacketPlayInFlying, id=254], CUSTOM_PAYLOAD[class=PacketPlayInCustomPayload, id=12], CLOSE_WINDOW[class=PacketPlayInCloseWindow, id=11], WINDOW_CLICK[class=PacketPlayInWindowClick, id=10], SETTINGS[class=PacketPlayInSettings, id=7], CLIENT_COMMAND[class=PacketPlayInClientCommand, id=6], CHAT[class=PacketPlayInChat, id=5], BLOCK_PLACE[class=PacketPlayInBlockPlace, id=50], EXPLOSION[class=PacketPlayOutExplosion, id=26], ARM_ANIMATION[class=PacketPlayInArmAnimation, id=47], NAMED_SOUND_EFFECT[class=PacketPlayOutNamedSoundEffect, id=94], WINDOW_ITEMS[class=PacketPlayOutWindowItems, id=16], ENTITY_VELOCITY[class=PacketPlayOutEntityVelocity, id=80], WINDOW_DATA[class=PacketPlayOutWindowData, id=17], ENTITY_ACTION[class=PacketPlayInEntityAction, id=29], CLOSE_WINDOW[class=PacketPlayOutCloseWindow, id=15], ANIMATION[class=PacketPlayOutAnimation, id=3], HELD_ITEM_SLOT[class=PacketPlayInHeldItemSlot, id=40], BLOCK_CHANGE[class=PacketPlayOutBlockChange, id=9], POSITION_LOOK[class=PacketPlayInPositionLook, id=20], POSITION[class=PacketPlayInPosition, id=19], REMOVE_ENTITY_EFFECT[class=PacketPlayOutRemoveEntityEffect, id=59], USE_ENTITY[class=PacketPlayInUseEntity, id=15], MULTI_BLOCK_CHANGE[class=PacketPlayOutMultiBlockChange, id=63], BLOCK_DIG[class=PacketPlayInBlockDig, id=28], ABILITIES[class=PacketPlayInAbilities, id=27], POSITION[class=PacketPlayOutPosition, id=56], TRANSACTION[class=PacketPlayOutTransaction, id=246], LOOK[class=PacketPlayInLook, id=21]], gamephase=PLAYING, options=[ASYNC]]], PacketAdapter[plugin=SuperiorSkyblock2, sending=EMPTY_WHITELIST, receiving=ListeningWhitelist[priority=NORMAL, packets=[SETTINGS[class=PacketPlayInSettings, id=7]], gamephase=PLAYING, options=[]]], PacketAdapter[plugin=WolvSK, sending=EMPTY_WHITELIST, receiving=ListeningWhitelist[priority=NORMAL, packets=[STEER_VEHICLE[class=PacketPlayInSteerVehicle, id=30]], gamephase=PLAYING, options=[]]], PacketAdapter[plugin=WolvSK, sending=EMPTY_WHITELIST, receiving=ListeningWhitelist[priority=NORMAL, packets=[SET_PROTOCOL[class=PacketHandshakingInSetProtocol, id=0]], gamephase=PLAYING, options=[]]], PacketAdapter[plugin=MyCommand, sending=EMPTY_WHITELIST, receiving=ListeningWhitelist[priority=NORMAL, packets=[UPDATE_SIGN[class=PacketPlayInUpdateSign, id=46]], gamephase=PLAYING, options=[]]]]
+  packetInjector=com.comphenix.protocol.injector.netty.manager.NetworkManagerPacketInjector@35b0600c
+  playerInjectionHandler=com.comphenix.protocol.injector.netty.manager.NetworkManagerPlayerInjector@4f370192
+  networkManagerInjector=com.comphenix.protocol.injector.netty.manager.NetworkManagerInjector@618a16d1
+  debug=false
+  closed=false
+  injected=true
+]
+
+Listeners:
+cc.playmc.anticommandtab.AntiCommandTab$1@572d04ec[
+  plugin=AntiCommandTab v3.8
+  connectionSide=CLIENT_SIDE
+  receivingWhitelist=ListeningWhitelist[priority=NORMAL, packets=[TAB_COMPLETE[class=PacketPlayInTabComplete, id=8]], gamephase=PLAYING, options=[]]
+  sendingWhitelist=EMPTY_WHITELIST
+]
+main.java.me.dniym.listeners.pLisbListener$2@654aa7dc[
+  plugin=IllegalStack v2.6.1
+  connectionSide=CLIENT_SIDE
+  receivingWhitelist=ListeningWhitelist[priority=NORMAL, packets=[USE_ENTITY[class=PacketPlayInUseEntity, id=15]], gamephase=PLAYING, options=[]]
+  sendingWhitelist=EMPTY_WHITELIST
+]
+net.kitesoftware.holograms.listener.PacketPlaceholderListener@718e5db9[
+  useOptional=false
+  plugin=HolographicExtension v1.10.9
+  connectionSide=SERVER_SIDE
+  receivingWhitelist=EMPTY_WHITELIST
+  sendingWhitelist=ListeningWhitelist[priority=NORMAL, packets=[ENTITY_METADATA[class=PacketPlayOutEntityMetadata, id=78]], gamephase=PLAYING, options=[]]
+]
+me.rerere.matrix.internal.yk@64a0836a[
+  plugin=Matrix v6.8.0
+  connectionSide=BOTH
+  receivingWhitelist=ListeningWhitelist[priority=HIGH, packets=[OPEN_WINDOW[class=PacketPlayOutOpenWindow, id=44], TRANSACTION[class=PacketPlayInTransaction, id=255], FLYING[class=PacketPlayInFlying, id=254], CUSTOM_PAYLOAD[class=PacketPlayInCustomPayload, id=12], CLOSE_WINDOW[class=PacketPlayInCloseWindow, id=11], WINDOW_CLICK[class=PacketPlayInWindowClick, id=10], SETTINGS[class=PacketPlayInSettings, id=7], CLIENT_COMMAND[class=PacketPlayInClientCommand, id=6], CHAT[class=PacketPlayInChat, id=5], BLOCK_PLACE[class=PacketPlayInBlockPlace, id=50], EXPLOSION[class=PacketPlayOutExplosion, id=26], ARM_ANIMATION[class=PacketPlayInArmAnimation, id=47], NAMED_SOUND_EFFECT[class=PacketPlayOutNamedSoundEffect, id=94], WINDOW_ITEMS[class=PacketPlayOutWindowItems, id=16], ENTITY_VELOCITY[class=PacketPlayOutEntityVelocity, id=80], WINDOW_DATA[class=PacketPlayOutWindowData, id=17], ENTITY_ACTION[class=PacketPlayInEntityAction, id=29], CLOSE_WINDOW[class=PacketPlayOutCloseWindow, id=15], ANIMATION[class=PacketPlayOutAnimation, id=3], HELD_ITEM_SLOT[class=PacketPlayInHeldItemSlot, id=40], BLOCK_CHANGE[class=PacketPlayOutBlockChange, id=9], POSITION_LOOK[class=PacketPlayInPositionLook, id=20], POSITION[class=PacketPlayInPosition, id=19], REMOVE_ENTITY_EFFECT[class=PacketPlayOutRemoveEntityEffect, id=59], USE_ENTITY[class=PacketPlayInUseEntity, id=15], MULTI_BLOCK_CHANGE[class=PacketPlayOutMultiBlockChange, id=63], BLOCK_DIG[class=PacketPlayInBlockDig, id=28], ABILITIES[class=PacketPlayInAbilities, id=27], POSITION[class=PacketPlayOutPosition, id=56], TRANSACTION[class=PacketPlayOutTransaction, id=246], LOOK[class=PacketPlayInLook, id=21]], gamephase=PLAYING, options=[ASYNC]]
+  sendingWhitelist=ListeningWhitelist[priority=HIGH, packets=[OPEN_WINDOW[class=PacketPlayOutOpenWindow, id=44], TRANSACTION[class=PacketPlayInTransaction, id=255], FLYING[class=PacketPlayInFlying, id=254], CUSTOM_PAYLOAD[class=PacketPlayInCustomPayload, id=12], CLOSE_WINDOW[class=PacketPlayInCloseWindow, id=11], WINDOW_CLICK[class=PacketPlayInWindowClick, id=10], SETTINGS[class=PacketPlayInSettings, id=7], CLIENT_COMMAND[class=PacketPlayInClientCommand, id=6], CHAT[class=PacketPlayInChat, id=5], BLOCK_PLACE[class=PacketPlayInBlockPlace, id=50], EXPLOSION[class=PacketPlayOutExplosion, id=26], ARM_ANIMATION[class=PacketPlayInArmAnimation, id=47], NAMED_SOUND_EFFECT[class=PacketPlayOutNamedSoundEffect, id=94], WINDOW_ITEMS[class=PacketPlayOutWindowItems, id=16], ENTITY_VELOCITY[class=PacketPlayOutEntityVelocity, id=80], WINDOW_DATA[class=PacketPlayOutWindowData, id=17], ENTITY_ACTION[class=PacketPlayInEntityAction, id=29], CLOSE_WINDOW[class=PacketPlayOutCloseWindow, id=15], ANIMATION[class=PacketPlayOutAnimation, id=3], HELD_ITEM_SLOT[class=PacketPlayInHeldItemSlot, id=40], BLOCK_CHANGE[class=PacketPlayOutBlockChange, id=9], POSITION_LOOK[class=PacketPlayInPositionLook, id=20], POSITION[class=PacketPlayInPosition, id=19], REMOVE_ENTITY_EFFECT[class=PacketPlayOutRemoveEntityEffect, id=59], USE_ENTITY[class=PacketPlayInUseEntity, id=15], MULTI_BLOCK_CHANGE[class=PacketPlayOutMultiBlockChange, id=63], BLOCK_DIG[class=PacketPlayInBlockDig, id=28], ABILITIES[class=PacketPlayInAbilities, id=27], POSITION[class=PacketPlayOutPosition, id=56], TRANSACTION[class=PacketPlayOutTransaction, id=246], LOOK[class=PacketPlayInLook, id=21]], gamephase=PLAYING, options=[ASYNC]]
+]
+com.bgsoftware.superiorskyblock.hooks.support.ProtocolLibHook$ChangePlayerLanguageListener@68d49e98[
+  plugin=SuperiorSkyblock2 v1.10.2
+  connectionSide=CLIENT_SIDE
+  receivingWhitelist=ListeningWhitelist[priority=NORMAL, packets=[SETTINGS[class=PacketPlayInSettings, id=7]], gamephase=PLAYING, options=[]]
+  sendingWhitelist=EMPTY_WHITELIST
+]
+fr.nashoba24.wolvsk.misc.WolvSKSteer$1@e27cc18[
+  plugin=WolvSK v1.6.2
+  connectionSide=CLIENT_SIDE
+  receivingWhitelist=ListeningWhitelist[priority=NORMAL, packets=[STEER_VEHICLE[class=PacketPlayInSteerVehicle, id=30]], gamephase=PLAYING, options=[]]
+  sendingWhitelist=EMPTY_WHITELIST
+]
+fr.nashoba24.wolvsk.misc.ExprClientVersion$1@4688d237[
+  plugin=WolvSK v1.6.2
+  connectionSide=CLIENT_SIDE
+  receivingWhitelist=ListeningWhitelist[priority=NORMAL, packets=[SET_PROTOCOL[class=PacketHandshakingInSetProtocol, id=0]], gamephase=PLAYING, options=[]]
+  sendingWhitelist=EMPTY_WHITELIST
+]
+it.emmerrei.mycommand.signmenu.SignMenuFactory$1@6c50c2ff[
+  plugin=MyCommand v5.7.2
+  connectionSide=CLIENT_SIDE
+  receivingWhitelist=ListeningWhitelist[priority=NORMAL, packets=[UPDATE_SIGN[class=PacketPlayInUpdateSign, id=46]], gamephase=PLAYING, options=[]]
+  sendingWhitelist=EMPTY_WHITELIST
+]
+
+Plugins Using ProtocolLib:
+Matrix by [RE]
+AntiCommandTab by [libraryaddict, sgtcaze]
+IllegalStack by [dNiym]
+SuperiorSkyblock2 by [Ome_R]
+HolographicExtension by [Niall7459]
+MyCommand by [emmerrei (ivanfromitaly)]
+WolvSK by [Nashoba24]

@@ -1,0 +1,1468 @@
+[07:14:27] [Server thread/INFO]: Starting minecraft server version 1.8.8
+[07:14:27] [Server thread/INFO]: Loading properties
+[07:14:27] [Server thread/WARN]: You have used the Spigot command line EULA agreement flag.
+[07:14:27] [Server thread/WARN]: By using this setting you are indicating your agreement to Mojang's EULA (https://account.mojang.com/documents/minecraft_eula).
+[07:14:27] [Server thread/WARN]: If you do not agree to the above EULA please stop your server and remove this flag immediately.
+[07:14:27] [Server thread/INFO]: Default game type: SURVIVAL
+[07:14:27] [Server thread/INFO]: This server is running CraftBukkit version git-PaperSpigot-445 (MC: 1.8.8) (Implementing API version 1.8.8-R0.1-SNAPSHOT)
+[07:14:27] [Server thread/INFO]: Spigot Timings: true - Verbose: true - Interval: 5m - Length: 60m
+[07:14:27] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[07:14:27] [Server thread/INFO]: Using 4 threads for Netty based IO
+[07:14:27] [Server thread/INFO]: Debug logging is disabled
+[07:14:27] [Server thread/INFO]: Data value allowed items: 
+[07:14:27] [Server thread/INFO]: Generating keypair
+[07:14:27] [Server thread/INFO]: Starting Minecraft server on 0.0.0.0:27861
+[07:14:28] [Server thread/INFO]: Set PluginClassLoader as parallel capable
+[07:14:30] [Server thread/INFO]: (Matrix) | Injecting server connection handler...
+[07:14:30] [Server thread/INFO]: (Matrix) | Java version: 8 (1.8)
+[07:14:30] [Server thread/INFO]: (Matrix) | Java 8 or lower, gives up hacking
+[07:14:30] [Server thread/INFO]: (Matrix) | Injecting into net.minecraft.server.v1_8_R3.PlayerConnection
+[07:14:30] [Server thread/INFO]: (Matrix) | Found NMS class loader: sun.misc.Launcher$AppClassLoader@70dea4e
+[07:14:30] [Server thread/INFO]: (Matrix) | <MV> Modified the movement delta value check
+[07:14:30] [Server thread/INFO]: (Matrix) | <MV> Modified the rotation delta value check
+[07:14:30] [Server thread/INFO]: (Matrix) | Injected server connection handler
+[07:14:30] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22m[0;32;1mLog4j2 seems safe, skipping Log4j2 fixes[m
+[07:14:32] [Server thread/INFO]: [UnioAntiCrash] Loading UnioAntiCrash v2.1
+[07:14:32] [Server thread/INFO]: [PlaceholderAPI] Loading PlaceholderAPI v2.9.2
+[07:14:32] [Server thread/INFO]: [PlugMan] Loading PlugMan v1.0-SNAPSHOT
+[07:14:32] [Server thread/INFO]: [HolographicDisplays] Loading HolographicDisplays v3.0.0-SNAPSHOT-b205
+[07:14:32] [Server thread/INFO]: [hWorldEdit] Loading hWorldEdit v26.0.0
+[07:14:32] [Server thread/INFO]: [CoinFlip] Loading CoinFlip v1.0
+[07:14:32] [Server thread/INFO]: [RogueParkour] Loading RogueParkour v4.3
+[07:14:32] [Server thread/INFO]: [MetinTasi] Loading MetinTasi v1.0-SNAPSHOT
+[07:14:32] [Server thread/INFO]: [BanItem] Loading BanItem v2.2
+[07:14:32] [Server thread/INFO]: [ParticleNativeAPI] Loading ParticleNativeAPI v3.0.0
+[07:14:32] [Server thread/INFO]: [LuckPerms] Loading LuckPerms v5.4.9
+[07:14:33] [Server thread/INFO]: [Fastplace] Loading Fastplace v1.0
+[07:14:33] [Server thread/INFO]: [FastCraft] Loading FastCraft v3.2.10
+[07:14:33] [Server thread/INFO]: [Skript] Loading Skript v2.2-dev37c
+[07:14:33] [Server thread/INFO]: [CombatLog] Loading CombatLog v2.3.0
+[07:14:33] [Server thread/INFO]: [ClearLag] Loading ClearLag v3.2.2
+[07:14:33] [Server thread/INFO]: [PlayerTime] Loading PlayerTime v1.0.7-RELEASE
+[07:14:33] [Server thread/INFO]: [SkQuery] Loading SkQuery v3.6.0-Lime
+[07:14:33] [Server thread/INFO]: [Votifier] Loading Votifier v1.9
+[07:14:33] [Server thread/INFO]: [UUIDGuardian] Loading UUIDGuardian v1.0
+[07:14:33] [Server thread/INFO]: [ProtocolLib] Loading ProtocolLib v5.0.0-SNAPSHOT-b612
+[07:14:33] [Server thread/WARN]: [ProtocolLib] [ProtocolLib] Unable to retrieve current Minecraft version. Assuming (MC: 1.19.3)
+java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+	at com.comphenix.protocol.ProtocolConfig.getIgnoreVersionCheck(ProtocolConfig.java:297) ~[ProtocolLib-5.0.0-SNAPSHOT.jar:5.0.0-SNAPSHOT-b612]
+	at com.comphenix.protocol.ProtocolLib.verifyMinecraftVersion(ProtocolLib.java:391) [ProtocolLib-5.0.0-SNAPSHOT.jar:5.0.0-SNAPSHOT-b612]
+	at com.comphenix.protocol.ProtocolLib.onLoad(ProtocolLib.java:164) [ProtocolLib-5.0.0-SNAPSHOT.jar:5.0.0-SNAPSHOT-b612]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugins(CraftServer.java:298) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:202) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_312]
+[07:14:35] [Server thread/INFO]: [eZProtector] Loading eZProtector v4.4.2
+[07:14:35] [Server thread/INFO]: [MVdWPlaceholderAPI] Loading MVdWPlaceholderAPI v3.1.1
+[07:14:35] [Server thread/INFO]: [FastAsyncWorldEdit] Loading FastAsyncWorldEdit v19.07.12-5cc5ce5-1277-22.3.0
+[07:14:35] [Server thread/INFO]: [AutoPickup] Loading AutoPickup v3.6
+[07:14:35] [Server thread/INFO]: [DeluxeMenus] Loading DeluxeMenus v1.10.5
+[07:14:35] [Server thread/INFO]: [skript-placeholders] Loading skript-placeholders v1.5.2
+[07:14:35] [Server thread/INFO]: [skUtilities] Loading skUtilities v0.9.2
+[07:14:35] [Server thread/INFO]: [skript-mirror] Loading skript-mirror v1.0.0
+[07:14:35] [Server thread/INFO]: [PlugManX] Loading PlugManX v2.3.0
+[07:14:35] [Server thread/INFO]: false
+[07:14:35] [Server thread/INFO]: [Vault] Loading Vault v1.7.3-b131
+[07:14:35] [Server thread/INFO]: [ChairStairs] Loading ChairStairs v1.1
+[07:14:35] [Server thread/INFO]: [HolographicExtension] Loading HolographicExtension v1.10.9
+[07:14:35] [Server thread/INFO]: [CrazyCrates] Loading CrazyCrates v1.9.11
+[07:14:35] [Server thread/INFO]: [Mines] Loading Mines v6.2.1
+[07:14:35] [Server thread/INFO]: [Matrix] Loading Matrix v6.8.0
+[07:14:35] [Server thread/INFO]: [AntiCommandTab] Loading AntiCommandTab v3.8
+[07:14:35] [Server thread/INFO]: [Trading] Loading Trading v3.2
+[07:14:35] [Server thread/INFO]: [TuSKe] Loading TuSKe v1.9.1-SZPatch
+[07:14:35] [Server thread/INFO]: [VoteParty] Loading VoteParty v2.19
+[07:14:35] [Server thread/INFO]: [skript-holo] Loading skript-holo v1.0.2
+[07:14:35] [Server thread/INFO]: [WolvSK] Loading WolvSK v1.6.2
+[07:14:35] [Server thread/INFO]: [SkinsRestorer] Loading SkinsRestorer v15.0.6
+[07:14:35] [Server thread/INFO]: [AuctionHouse] Loading AuctionHouse v3.2
+[07:14:35] [Server thread/INFO]: [hSpawner] Loading hSpawner v1.8.2-rs
+[07:14:35] [Server thread/INFO]: [PlayerVaults] Loading PlayerVaults v3.6.0-bSNAPSHOT
+[07:14:35] [Server thread/INFO]: [RandomSK] Loading RandomSK v1.3
+[07:14:35] [Server thread/INFO]: [MyCommand] Loading MyCommand v5.7.2
+[07:14:35] [Server thread/INFO]: [skript-yaml] Loading skript-yaml v1.2.5
+[07:14:35] [Server thread/INFO]: [WorldEdit] Loading WorldEdit v6.1.7;dd00bb1
+[07:14:35] [Server thread/INFO]: [Essentials] Loading Essentials v2.16.1.0
+[07:14:35] [Server thread/INFO]: [XLTournaments] Loading XLTournaments v3.6.1-DEV-1
+[07:14:35] [Server thread/INFO]: [LPX] Loading LPX v3.1.10
+[07:14:35] [Server thread/INFO]: [IllegalStack] Loading IllegalStack v2.6.1
+[07:14:35] [Server thread/INFO]: [Rewards] Loading Rewards v1.3.0
+[07:14:35] [Server thread/INFO]: [HeadDatabase] Loading HeadDatabase v4.12.6
+[07:14:35] [Server thread/INFO]: [HFactory] Loading HFactory v16.0.0
+[07:14:35] [Server thread/INFO]: [ByArtemFun] Loading ByArtemFun v1.7
+[07:14:35] [Server thread/INFO]: [MovingDevApi] Loading MovingDevApi v1.1.10
+[07:14:35] [Server thread/INFO]: [EssentialsChat] Loading EssentialsChat v2.17.0.0
+[07:14:35] [Server thread/INFO]: [TAB] Loading TAB v3.1.1
+[07:14:35] [Server thread/INFO]: [WorldGuard] Loading WorldGuard v6.1.3-SNAPSHOT;c904242
+[07:14:35] [Server thread/INFO]: [LockettePro] Loading LockettePro v2.4.1
+[07:14:35] [Server thread/INFO]: [AdvancedLottery] Loading AdvancedLottery v9.2
+[07:14:35] [Server thread/INFO]: [BeastWithdraw] Loading BeastWithdraw v2.8.3
+[07:14:35] [Server thread/INFO]: [Investment] Loading Investment v1.5.3
+[07:14:35] [Server thread/INFO]: [ShopGUIPlus] Loading ShopGUIPlus v1.60.0
+[07:14:35] [Server thread/INFO]: [MiniaturePets] Loading MiniaturePets v2.7.7
+[07:14:35] [Server thread/INFO]: [SuperiorSkyblock2] Loading SuperiorSkyblock2 v1.10.2
+[07:14:35] [Server thread/INFO]: [ChestShop] Loading ChestShop v3.9.0 (build #52)
+[07:14:35] [Server thread/INFO]: [Multiverse-Core] Loading Multiverse-Core v2.5.0-b727
+[07:14:35] [Server thread/INFO]: [Citizens] Loading Citizens v2.0.29-SNAPSHOT (build 2448)
+[07:14:35] [Server thread/INFO]: [Shopkeepers] Loading Shopkeepers v2.2.2
+[07:14:35] [Server thread/INFO]: [CrazyEnvoy] Loading CrazyEnvoy v1.3.10-RELEASE
+[07:14:35] [Server thread/INFO]: [AuthMe] Loading AuthMe v5.6.0-beta2-b2453
+[07:14:35] [Server thread/INFO]: [Multiverse-Patches] Loading Multiverse-Patches v1.0.0-SNAPSHOT
+[07:14:35] [Server thread/INFO]: [skRayFall] Loading skRayFall v1.9.15
+[07:14:35] [Server thread/INFO]: [Duels] Loading Duels v3.5.2
+[07:14:35] [Server thread/INFO]: [CommandNPC] Loading CommandNPC v1.9.1
+[07:14:35] [Server thread/INFO]: [ParticleNativeAPI] Enabling ParticleNativeAPI v3.0.0
+[07:14:35] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.9
+[07:14:36] [Server thread/INFO]: [0;36;1m       [0;36;22m __    [m
+[07:14:36] [Server thread/INFO]: [0;36;1m  |    [0;36;22m|__)   [0;32;22mLuckPerms[m [0;36;1mv5.4.9[m
+[07:14:36] [Server thread/INFO]: [0;36;1m  |___ [0;36;22m|      [0;30;1mRunning on Bukkit - CraftBukkit[m
+[07:14:36] [Server thread/INFO]: [m
+[07:14:36] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[07:14:36] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[07:14:36] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[07:14:36] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[07:14:37] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 1489ms)
+[07:14:37] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.0.0-SNAPSHOT-b612
+[07:14:37] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v19.07.12-5cc5ce5-1277-22.3.0
+[07:14:38] [Server thread/INFO]: [PlugManX] Enabling PlugManX v2.3.0
+[07:14:38] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[07:14:38] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[07:14:38] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[07:14:38] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[07:14:38] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[07:14:38] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.0.6
+[07:14:39] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1mRunning on Minecraft [33;1m1.8.8[32;1m.[0;39m[m
+[07:14:39] [Server thread/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39mPlaceholderAPI expansion registered![0;39m[m
+[07:14:39] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1mYour Java version "1.8" is not recommended! SkinsRestorer now uses Java 17 primarily.[0;39m
+[07:14:39] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1mThe plugin was "downgraded" to Java 1.8 (Java 8) to ensure compatibility with your server, but it may cause issues.[0;39m
+[07:14:39] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1mThe plugin still works, but it may have Java version related issues.[0;39m
+[07:14:39] [Server thread/WARN]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[33;1mPlease update your server Java version to 17 or higher to get the best performance, security and to avoid issues with SkinsRestorer.[0;39m
+[07:14:39] [Server thread/INFO]: [Rewards] Enabling Rewards v1.3.0
+[07:14:39] [Server thread/WARN]: [Rewards] Could not save config.yml to plugins/Rewards/config.yml because config.yml already exists.
+[07:14:39] [Server thread/INFO]: [Rewards]  -----------------------------
+[07:14:39] [Server thread/INFO]: [Rewards]  Rewards v 1.3.0
+[07:14:39] [Server thread/INFO]: [Rewards]  Created by Sneklingame
+[07:14:39] [Server thread/INFO]: [Rewards] 
+[07:14:39] [Server thread/INFO]: [Rewards]  Storage method: YAML
+[07:14:39] [Server thread/INFO]: [Rewards] 
+[07:14:39] [Server thread/INFO]: [Rewards]  Plugin loaded successfully!
+[07:14:39] [Server thread/INFO]: [Rewards]  -----------------------------
+[07:14:39] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[07:14:39] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[07:14:39] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[07:14:39] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[07:14:39] [Server thread/INFO]: **** Beginning UUID conversion, this may take A LONG time ****
+[07:14:39] [Server thread/INFO]: Preparing level "trxzort"
+[07:14:39] [Server thread/INFO]: -------- World Settings For [trxzort] --------
+[07:14:39] [Server thread/INFO]: Sending up to 10 chunks per packet
+[07:14:39] [Server thread/INFO]: Max Entity Collisions: 1
+[07:14:39] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[07:14:39] [Server thread/INFO]: Max TNT Explosions: 10
+[07:14:39] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[07:14:39] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[07:14:39] [Server thread/INFO]: Anti X-Ray: false
+[07:14:39] [Server thread/INFO]: 	Engine Mode: 1
+[07:14:39] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[07:14:39] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[07:14:39] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Cane Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Melon Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 24 / Mi 8
+[07:14:39] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[07:14:39] [Server thread/INFO]: Hopper Transfer: 30 Hopper Check: 30 Hopper Amount: 64
+[07:14:39] [Server thread/INFO]: Random Lighting Updates: false
+[07:14:39] [Server thread/INFO]: Structure Info Saving: true
+[07:14:39] [Server thread/INFO]: Mob Spawn Range: 6
+[07:14:39] [Server thread/INFO]: Item Despawn Rate: 1200
+[07:14:39] [Server thread/INFO]: Item Merge Radius: 4.0
+[07:14:39] [Server thread/INFO]: Arrow Despawn Rate: 300
+[07:14:39] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[07:14:39] [Server thread/INFO]: View Distance: 12
+[07:14:39] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[07:14:39] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[07:14:39] [Server thread/INFO]: Clear tick list: false
+[07:14:39] [Server thread/INFO]: Experience Merge Radius: 6.0
+[07:14:39] [Server thread/INFO]: -------- World Settings For [trxzort] --------
+[07:14:39] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[07:14:39] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[07:14:39] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[07:14:39] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[07:14:39] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 28 Hard: 96
+[07:14:39] [Server thread/INFO]: Water over lava flow speed: 5
+[07:14:39] [Server thread/INFO]: Fix TNT cannons: false
+[07:14:39] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[07:14:39] [Server thread/INFO]: Keep spawn chunk loaded: true
+[07:14:39] [Server thread/INFO]: WorldServer TickNextTick cap set at 1215752192
+[07:14:39] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[07:14:39] [Server thread/INFO]: World async lighting: false
+[07:14:39] [Server thread/INFO]: -------- World Settings For [trxzort_the_end] --------
+[07:14:39] [Server thread/INFO]: Sending up to 10 chunks per packet
+[07:14:39] [Server thread/INFO]: Max Entity Collisions: 1
+[07:14:39] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[07:14:39] [Server thread/INFO]: Max TNT Explosions: 10
+[07:14:39] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[07:14:39] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[07:14:39] [Server thread/INFO]: Anti X-Ray: false
+[07:14:39] [Server thread/INFO]: 	Engine Mode: 1
+[07:14:39] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[07:14:39] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[07:14:39] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Cane Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Melon Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[07:14:39] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 24 / Mi 8
+[07:14:39] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[07:14:39] [Server thread/INFO]: Hopper Transfer: 30 Hopper Check: 30 Hopper Amount: 64
+[07:14:39] [Server thread/INFO]: Random Lighting Updates: false
+[07:14:39] [Server thread/INFO]: Structure Info Saving: true
+[07:14:39] [Server thread/INFO]: Mob Spawn Range: 6
+[07:14:39] [Server thread/INFO]: Item Despawn Rate: 1200
+[07:14:39] [Server thread/INFO]: Item Merge Radius: 4.0
+[07:14:39] [Server thread/INFO]: Arrow Despawn Rate: 300
+[07:14:39] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[07:14:39] [Server thread/INFO]: View Distance: 12
+[07:14:39] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[07:14:39] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[07:14:39] [Server thread/INFO]: Clear tick list: false
+[07:14:39] [Server thread/INFO]: Experience Merge Radius: 6.0
+[07:14:40] [Server thread/INFO]: -------- World Settings For [trxzort_the_end] --------
+[07:14:40] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[07:14:40] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[07:14:40] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[07:14:40] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[07:14:40] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 28 Hard: 96
+[07:14:40] [Server thread/INFO]: Water over lava flow speed: 5
+[07:14:40] [Server thread/INFO]: Fix TNT cannons: false
+[07:14:40] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[07:14:40] [Server thread/INFO]: Keep spawn chunk loaded: true
+[07:14:40] [Server thread/INFO]: WorldServer TickNextTick cap set at 1215752192
+[07:14:40] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[07:14:40] [Server thread/INFO]: World async lighting: false
+[07:14:40] [Server thread/INFO]: Preparing start region for level 0 (Seed: 3252802345381253057)
+[07:14:40] [Server thread/INFO]: Preparing start region for level 1 (Seed: -6217107501618839373)
+[07:14:40] [Server thread/INFO]: [UnioAntiCrash] Enabling UnioAntiCrash v2.1
+[07:14:40] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.9.2
+[07:14:40] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: vault
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] %javascript_permissionscore% has been loaded!
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] %javascript_üye% has been loaded!
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] %javascript_sınır% has been loaded!
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] %javascript_ev% has been loaded!
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] %javascript_hoppers% has been loaded!
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] %javascript_farming% has been loaded!
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] %javascript_gerisayim% has been loaded!
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: javascript
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: progress
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: luckperms
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: world
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: pinger
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: math
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: checkitem
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: localtime
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: bungee
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mines
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: essentials
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: multiverse
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: statistic
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: skript
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: player
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: Animations
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: mvdw
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: sound
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Successfully registered expansion: server
+[07:14:42] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[07:14:42] [Server thread/INFO]: [PlugMan] Enabling PlugMan v1.0-SNAPSHOT
+[07:14:42] [Server thread/INFO]: [HolographicDisplays] Enabling HolographicDisplays v3.0.0-SNAPSHOT-b205
+[07:14:42] [Server thread/INFO]: [hWorldEdit] Enabling hWorldEdit v26.0.0
+[07:14:42] [Server thread/INFO]: --------------------------------------
+[07:14:42] [Server thread/INFO]:                                       
+[07:14:42] [Server thread/INFO]:           hWorldEdit Aktif !          
+[07:14:42] [Server thread/INFO]:      Lisans bulundu. Plugin aktif     
+[07:14:42] [Server thread/INFO]:                                       
+[07:14:42] [Server thread/INFO]: --------------------------------------
+[07:14:42] [Server thread/WARN]: [hWorldEdit] Could not save messages.yml to plugins/hWorldEdit/messages.yml because messages.yml already exists.
+[07:14:42] [Server thread/INFO]: Version: org.bukkit.craftbukkit.v1_8_R3
+[07:14:42] [Server thread/INFO]: [CoinFlip] Enabling CoinFlip v1.0
+[07:14:42] [Server thread/INFO]: [RogueParkour] Enabling RogueParkour v4.3
+[07:14:42] [Server thread/INFO]: [0;32;1m--------------------------------------[m
+[07:14:42] [Server thread/INFO]: [0;35;22mRogueParkour 4.3 [0;32;1menabling[m
+[07:14:42] [Server thread/INFO]: [0;36;22mMade by: [0;36;1mKledioz [0;30;1m(omegacraft.cl)[m
+[07:14:42] [Server thread/INFO]: [0;33;1mAny feedbacks on Spigot PM: Kledioz[m
+[07:14:42] [Server thread/INFO]: [0;32;1m--------------------------------------[m
+[07:14:42] [Server thread/INFO]: [0;35;22mRP[0;37;22m> [0;32;1mUsing players.yml flatfile..[m
+[07:14:42] [Server thread/INFO]: [MetinTasi] Enabling MetinTasi v1.0-SNAPSHOT
+[07:14:42] [Server thread/INFO]: Metin Taşı plugini aktif ediliyor![m
+[07:14:42] [Server thread/INFO]: Komutlar yüklendi!![m
+[07:14:42] [Server thread/INFO]: Eventler kaydedildi![m
+[07:14:42] [Server thread/INFO]: Data dosyası yüklendi![m
+[07:14:42] [Server thread/INFO]: [BanItem] Enabling BanItem v2.2
+[07:14:42] [Server thread/INFO]: [Fastplace] Enabling Fastplace v1.0
+[07:14:42] [Server thread/INFO]: [FastCraft] Enabling FastCraft v3.2.10
+[07:14:43] [Server thread/INFO]: [Skript] Enabling Skript v2.2-dev37c
+[07:14:43] [Server thread/WARN]: [Skript] Using this version of Skript on 1.8 is highly discouraged.
+[07:14:43] [Server thread/WARN]: [Skript] Some features have been disabled; use older Skript to restore them.
+[07:14:43] [Server thread/WARN]: [Skript] Also, there are probably bugs. And since 1.8 is not supported, they will not be fixed
+[07:14:43] [Server thread/INFO]: [Skript] Starting updater thread
+[07:14:59] [Server thread/INFO]: [Skript] Loaded a total of 782074 english aliases
+[07:14:59] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[07:14:59] [Server thread/INFO]: [CombatLog] Enabling CombatLog v2.3.0
+[07:14:59] [Server thread/INFO]: [CombatLog] WorldGuard plugin found! PvP regions are now detected.
+[07:14:59] [Server thread/INFO]: [CombatLog] Loading config.yml
+[07:14:59] [Server thread/INFO]: [CombatLog] v2.3.0 has been enabled.
+[07:14:59] [Server thread/INFO]: [ClearLag] Enabling ClearLag v3.2.2
+[07:14:59] [Server thread/INFO]: [ClearLag] Using version-adapter: LegacyVersionAdapter
+[07:14:59] [Server thread/INFO]: [ClearLag] Loading modules...
+[07:14:59] [Server thread/INFO]: [ClearLag] Modules enabed, loading config values
+[07:14:59] [Server thread/INFO]: [ClearLag] Modules have been loaded!
+[07:14:59] [Server thread/INFO]: [ClearLag] Clearlag is now enabled!
+[07:14:59] [Thread-14/INFO]: [ClearLag] Checking for updates compatible with your bukkit version [1.8]...
+[07:14:59] [Server thread/INFO]: [PlayerTime] Enabling PlayerTime v1.0.7-RELEASE
+[07:14:59] [Thread-14/INFO]: [ClearLag] No updates found!
+[07:14:59] [Server thread/INFO]: Initializing PlayerTime storage file...
+[07:15:00] [Server thread/INFO]: [SkQuery] Enabling SkQuery v3.6.0-Lime
+[07:15:00] [Server thread/INFO]: [skQuery] Snooping enabled from com.w00tmast3r.skquery.SkQuery
+[07:15:00] [Server thread/INFO]: [skQuery] Locating classes from SkQuery...
+[07:15:00] [Server thread/INFO]: [skQuery] Finished snooping of SkQuery with 148 classes.
+[07:15:00] [Server thread/INFO]: [skQuery] Beginning to process a total of 148 from SkQuery
+[07:15:00] [Server thread/INFO]: [skQuery] Out of 148 classes, 144 classes were loaded from SkQuery
+[07:15:00] [Server thread/INFO]: [Votifier] Enabling Votifier v1.9
+[07:15:00] [Server thread/ERROR]: [Votifier] Error reading configuration file or RSA keys
+java.io.FileNotFoundException: plugins/Votifier/rsa/private.key (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_312]
+	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_312]
+	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_312]
+	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[?:1.8.0_312]
+	at com.vexsoftware.votifier.crypto.RSAIO.load(RSAIO.java:93) ~[votifier-1.9.jar:?]
+	at com.vexsoftware.votifier.Votifier.onEnable(Votifier.java:151) [votifier-1.9.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:321) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:332) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:407) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.loadPlugin(CraftServer.java:359) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at org.bukkit.craftbukkit.v1_8_R3.CraftServer.enablePlugins(CraftServer.java:318) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.s(MinecraftServer.java:408) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.k(MinecraftServer.java:372) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.a(MinecraftServer.java:327) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.DedicatedServer.init(DedicatedServer.java:267) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:563) [patched_1.8.8.jar:git-PaperSpigot-445]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_312]
+[07:15:00] [Server thread/ERROR]: [Votifier] Votifier did not initialize properly!
+[07:15:00] [Server thread/INFO]: [UUIDGuardian] Enabling UUIDGuardian v1.0
+[07:15:00] [Server thread/INFO]: [m
+[07:15:00] [Server thread/INFO]: [0;36;22m            __    [m
+[07:15:00] [Server thread/INFO]: [0;36;22m  |  ||  |||  \    [0;31;1mUUIDGuardian [0;33;1mBuild [0;32;22mv1.3[m
+[07:15:00] [Server thread/INFO]: [0;36;22m  |__||__|||__/    [0;35;1mDeveloped by [4m@Acco[m[m
+[07:15:00] [Server thread/INFO]: [m
+[07:15:00] [Server thread/INFO]: [eZProtector] Enabling eZProtector v4.4.2
+[07:15:00] [Server thread/ERROR]: [eZProtector] Plugin eZProtector v4.4.2 has failed to register events for class com.github.donotspampls.ezprotector.listeners.TabCompletionListener because org/bukkit/event/server/TabCompleteEvent does not exist.
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] Enabling MVdWPlaceholderAPI v3.1.1
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] Initializing placeholders ...
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] Sending metrics ...
+[07:15:00] [Server thread/INFO]: [AutoPickup] Enabling AutoPickup v3.6
+[07:15:00] [Server thread/INFO]: [DeluxeMenus] Enabling DeluxeMenus v1.10.5
+[07:15:00] [Server thread/INFO]: [DeluxeMenus] Hooked into PlaceholderAPI!
+[07:15:00] [Server thread/INFO]: [DeluxeMenus] 44 GUI menus loaded!
+[07:15:00] [Server thread/INFO]: [DeluxeMenus] Successfully hooked into Vault for economy requirement!
+[07:15:00] [Server thread/INFO]: [DeluxeMenus] NMS hook has been setup
+[07:15:00] [Server thread/INFO]: [skript-placeholders] Enabling skript-placeholders v1.5.2
+[07:15:00] [Server thread/INFO]: [skUtilities] Enabling skUtilities v0.9.2
+[07:15:00] [Server thread/INFO]: [skUtilities] v0.9.2: loaded modules (Conversions, Files, Yaml, Urls, Utilities) in 39ms
+[07:15:00] [Server thread/INFO]: [skript-mirror] Enabling skript-mirror v1.0.0
+[07:15:00] [Server thread/INFO]: [ChairStairs] Enabling ChairStairs v1.1
+[07:15:00] [Server thread/INFO]: [HolographicExtension] Enabling HolographicExtension v1.10.9
+[07:15:00] [Server thread/INFO]: [0;33;1m[HolographicExtension] [0;37;1mStarting HolographicExtension v1.10.9[m
+[07:15:00] [Server thread/INFO]: [0;33;1m[HolographicExtension] [0;37;22mRegistering placeholder 'example' from config.[m
+[07:15:00] [Server thread/WARN]: [HolographicDisplays] The plugin HolographicExtension registered the placeholder {ext:example} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{ext:example}} instead.
+[07:15:00] [Server thread/INFO]: [0;33;1m[HolographicExtension] [0;37;22mRegistering placeholder 'scroller' from config.[m
+[07:15:00] [Server thread/WARN]: [HolographicDisplays] The plugin HolographicExtension registered the placeholder {ext:scroller} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{ext:scroller}} instead.
+[07:15:00] [Server thread/INFO]: [0;33;1m[HolographicExtension] [0;37;22mRegistering placeholder 'typing' from config.[m
+[07:15:00] [Server thread/WARN]: [HolographicDisplays] The plugin HolographicExtension registered the placeholder {ext:typing} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{ext:typing}} instead.
+[07:15:00] [Server thread/INFO]: [0;33;1m[HolographicExtension] [0;37;22mRegistering placeholder 'rainbow' from config.[m
+[07:15:00] [Server thread/WARN]: [HolographicDisplays] The plugin HolographicExtension registered the placeholder {ext:rainbow} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{ext:rainbow}} instead.
+[07:15:00] [Server thread/WARN]: [HolographicDisplays] The plugin HolographicExtension registered the placeholder {fastest} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{fastest}} instead.
+[07:15:00] [Server thread/WARN]: [HolographicDisplays] The plugin HolographicExtension registered the placeholder {fast} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{fast}} instead.
+[07:15:00] [Server thread/WARN]: [HolographicDisplays] The plugin HolographicExtension registered the placeholder {medium} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{medium}} instead.
+[07:15:00] [Server thread/WARN]: [HolographicDisplays] The plugin HolographicExtension registered the placeholder {slow} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{slow}} instead.
+[07:15:00] [Server thread/WARN]: [HolographicDisplays] The plugin HolographicExtension registered the placeholder {slowest} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{slowest}} instead.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Enabling CrazyCrates v1.9.11
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loading the config.yml
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Successfully loaded config.yml
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loading the Messages.yml
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Successfully loaded Messages.yml
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loading the Locations.yml
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Successfully loaded Locations.yml
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loading the data.yml
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Successfully loaded data.yml
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loading custom files.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/Event.yml.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/Spawner.yml.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/Kit.yml.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/Site.yml.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/Vote.yml.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/Para.yml.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/zaman.yml.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/Vip.yml.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loaded new custom file: /Crates/Coin.yml.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Finished loading custom files.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loading all crate information...
+[07:15:00] [Server thread/INFO]: [NBTAPI] Found Spigot: v1_8_R3! Trying to find NMS support
+[07:15:00] [Server thread/INFO]: [NBTAPI] NMS support 'MC1_8_R3' loaded!
+[07:15:00] [Server thread/INFO]: [CrazyCrates] All crate information has been loaded.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Loading all the physical crate locations.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] All physical crate locations have been loaded.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Searching for schematics to load.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] outdoors.schematic was successfully found and loaded.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] wooden.schematic was successfully found and loaded.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] sea.schematic was successfully found and loaded.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] soul.schematic was successfully found and loaded.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] classic.schematic was successfully found and loaded.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] nether.schematic was successfully found and loaded.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] All schematics were found and loaded.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] Cleaning up the data.yml file.
+[07:15:00] [Server thread/INFO]: [CrazyCrates] The data.yml file has been cleaned.
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_event}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_event_physical}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_event_total}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_spawner}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_spawner_physical}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_spawner_total}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_kit}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_kit_physical}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_kit_total}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_site}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_site_physical}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_site_total}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_vote}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_vote_physical}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_vote_total}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_para}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_para_physical}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_para_total}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_zaman}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_zaman_physical}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_zaman_total}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_vip}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_vip_physical}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_vip_total}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_coin}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_coin_physical}
+[07:15:00] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyCrates added custom placeholder {crazycrates_coin_total}
+[07:15:00] [Server thread/INFO]: [Mines] Enabling Mines v6.2.1
+[07:15:00] [Server thread/INFO]: [0;33;1m [0;32;1m [0;36;1m__ [0;36;1m [0;36;1m__[m
+[07:15:00] [Server thread/INFO]: [0;36;1m|  \ /  [0;37;1m [0;36;1m| (_)  [0;36;1m_ [0;36;1m__  [0;36;1m   [0;36;1m___ [0;36;1m  [0;36;1m___[m
+[07:15:00] [Server thread/INFO]: [0;36;1m| |\/ | [0;36;1m| | | | '_ \  [0;36;1m/ _ \ / __|  [0;37;22mMines [0;36;1m6.2.1[m
+[07:15:00] [Server thread/INFO]: [0;36;1m| |  | | | | | | | | | [0;36;1m __/ \__ \  [0;37;22mRunning on Bukkit: [0;36;1mCraftBukkit[m
+[07:15:00] [Server thread/INFO]: [0;36;1m|_| [0;31;1m [0;36;1m|_| |_| |_| |_|  [0;36;1m\___| [0;36;1m|___/   [m
+[07:15:00] [Server thread/INFO]: [m
+[07:15:00] [Server thread/INFO]: [Mines] Loading libraries...
+[07:15:01] [Server thread/INFO]: [Mines] Registered PlaceholderAPI hook.
+[07:15:01] [Server thread/INFO]: [Mines] Successfully enabled. (Took 61ms)
+[07:15:01] [Server thread/INFO]: [Matrix] Enabling Matrix v6.8.0
+[07:15:01] [Server thread/INFO]: [0;35;22m        __  ______  __________  _____  __[m
+[07:15:01] [Server thread/INFO]: [0;35;22m       /  |/  /   |/_  __/ __ \/  _/ |/ /[m
+[07:15:01] [Server thread/INFO]: [0;35;22m      / /|_/ / /| | / / / /_/ // / |   / [m
+[07:15:01] [Server thread/INFO]: [0;35;22m     / /  / / ___ |/ / / _, _// / /   |  [m
+[07:15:01] [Server thread/INFO]: [0;35;22m    /_/  /_/_/  |_/_/ /_/ |_/___//_/|_|  [m
+[07:15:01] [Server thread/INFO]: [m
+[07:15:01] [Server thread/INFO]: [0;33;22m* [0;32;22mMatrix AntiCheat [0;32;1mv6.8.0 [0;30;1m| [0;37;1mgit-PaperSpigot-445 (MC: 1.8.8) [0;30;1m| [0;37;1mUNKNOWN[m
+[07:15:01] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22mChecking Environment...[m
+[07:15:01] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22mPassed all environment checks[m
+[07:15:01] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22mLoaded 0 global placeholders[m
+[07:15:01] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22mEnabled 16 checks, Disabled 0 checks[m
+[07:15:01] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22mLoaded all configuration files[m
+[07:15:01] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22mScanning outdated log files....[m
+[07:15:01] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22mDeleted 0 outdated log files![m
+[07:15:01] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22mHooked with PlaceholderAPI[m
+[07:15:01] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22mWelcome to Matrix![m
+[07:15:01] [Server thread/INFO]: [AntiCommandTab] Enabling AntiCommandTab v3.8
+[07:15:01] [Server thread/INFO]: [Trading] Enabling Trading v3.2
+[07:15:01] [Server thread/INFO]: [Trading] Trading has been enabled
+[07:15:01] [Server thread/INFO]: [Trading] Vault and Economy have been found!
+[07:15:01] [Server thread/INFO]: [TuSKe] Enabling TuSKe v1.9.1-SZPatch
+[07:15:01] [Server thread/INFO]: [TuSKe] Enabling Metrics... Done!
+[07:15:01] [Server thread/INFO]: [TuSKe] Check for updates enabled. It will check in some seconds.
+[07:15:01] [Server thread/INFO]: [TuSKe] Documentation enabled. Some files containing all syntax of all addons will be generated.
+[07:15:01] [Server thread/INFO]: [TuSKe] Loaded 8 events, 12 conditions, 20 effects, 60 expressions and 0 types. Have fun!
+[07:15:01] [Server thread/INFO]: [VoteParty] Enabling VoteParty v2.19
+[07:15:02] [Server thread/INFO]: 
+[0;33;22m _  _ [0;35;1m ____
+[0;33;22m/ )( \[0;35;1m(  _ \
+[0;33;22m\ \/ /[0;35;1m ) __/ [0;36;22mVoteParty [0;30;1mv2.19
+[0;33;22m \__/ [0;35;1m(__)   [0;36;22mServer Version: [0;30;1mgit-PaperSpigot-445 (MC: 1.8.8)
+[m
+[07:15:02] [Server thread/INFO]: [skript-holo] Enabling skript-holo v1.0.2
+[07:15:02] [Server thread/INFO]: [skript-holo] Started metrics!
+[07:15:02] [Server thread/INFO]: [skript-holo] Finished loading!
+[07:15:02] [Server thread/INFO]: [WolvSK] Enabling WolvSK v1.6.2
+[07:15:02] [Server thread/INFO]: [AuctionHouse] Enabling AuctionHouse v3.2
+[07:15:02] [Server thread/INFO]: [hSpawner] Enabling hSpawner v1.8.2-rs
+[07:15:02] [Server thread/INFO]: --------------------------------------
+[07:15:02] [Server thread/INFO]:                                       
+[07:15:02] [Server thread/INFO]:            hSpawner Aktif !           
+[07:15:02] [Server thread/INFO]:      Lisans bulundu. Plugin aktif     
+[07:15:02] [Server thread/INFO]:                                       
+[07:15:02] [Server thread/INFO]: --------------------------------------
+[07:15:02] [Server thread/INFO]: [PlayerVaults] Enabling PlayerVaults v3.6.0-bSNAPSHOT
+[07:15:02] [Server thread/INFO]: [RandomSK] Enabling RandomSK v1.3
+[07:15:02] [Server thread/INFO]: [MyCommand] Enabling MyCommand v5.7.2
+[07:15:02] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-* MyCommand v.5.7.2*-=-=-=-=-=-=-=-=-=-*
+[07:15:02] [Server thread/INFO]: | You're using a not fully supported server version. (v1_8_R3)
+[07:15:02] [Server thread/INFO]: | Hooked on Vault 1.7.3-b131
+[07:15:02] [Server thread/INFO]: | Command file(s) found : 1
+[07:15:02] [Server thread/INFO]: | Config : Ready.
+[07:15:02] [Server thread/INFO]: | ProtocolLib found, features availables (SignMenu)
+[07:15:02] [Server thread/INFO]: [MyCmd] RIGHT_CLICK_INTERACTION Block set item is null, check config.yml
+[07:15:02] [Server thread/INFO]: [MyCmd] RIGHT_CLICK_INTERACTION Block set item is null, check config.yml
+[07:15:02] [Server thread/INFO]: [MyCmd] PHYSICAL_INTERACTION Block set item is null, check config.yml
+[07:15:02] [Server thread/INFO]: [MyCmd] PHYSICAL_INTERACTION Block set item is null, check config.yml
+[07:15:02] [Server thread/INFO]: | Placeholder_API : Hooked, Ok.
+[07:15:02] [Server thread/INFO]: | Custom commands loaded : 1
+[07:15:02] [Server thread/INFO]: | New update available : MyCommand v5.7.4
+[07:15:02] [Server thread/INFO]: |          by emmerrei a.k.a. ivanfromitaly.           
+[07:15:02] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-*   Done!   *-=-=-=-=-=-=-=-=-=-=-*
+[07:15:02] [Server thread/INFO]: [skript-yaml] Enabling skript-yaml v1.2.5
+[07:15:02] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v6.1.7;dd00bb1
+[07:15:03] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[07:15:03] [Server thread/INFO]: [WorldEdit] Using com.sk89q.worldedit.bukkit.adapter.impl.Spigot_v1_8_R3 as the Bukkit adapter
+[07:15:03] [Server thread/INFO]: [Essentials] Enabling Essentials v2.16.1.0
+[07:15:03] [Server thread/WARN]: [Essentials] §4Version mismatch! Please update EssentialsChat to the same version.
+[07:15:03] [Server thread/INFO]: Attempting to convert old kits in config.yml to new kits.yml
+[07:15:03] [Server thread/INFO]: No kits found to migrate.
+[07:15:03] [Server thread/INFO]: [Essentials] Using legacy item data provider as mob spawner provider.
+[07:15:03] [Server thread/INFO]: [Essentials] Using legacy item data provider as spawn egg provider.
+[07:15:03] [Server thread/INFO]: [Essentials] Using legacy potion meta provider as potion meta provider.
+[07:15:03] [Server thread/INFO]: Loaded 852 items from items.csv.
+[07:15:03] [Server thread/INFO]: Using locale en_US
+[07:15:03] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[07:15:03] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[07:15:03] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[07:15:03] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[07:15:03] [Server thread/INFO]: [XLTournaments] Enabling XLTournaments v3.6.1-DEV-1
+[07:15:03] [Server thread/INFO]: [XLTournaments] Leaked by YOURNAME @ BlackSpigot.com
+[07:15:03] [Server thread/INFO]: [XLTournaments] 
+[07:15:03] [Server thread/INFO]: [XLTournaments] \/|      XLTournaments v3.6.1-DEV-1
+[07:15:03] [Server thread/INFO]: [XLTournaments] /\|_     Author: [ItsLewizzz]
+[07:15:03] [Server thread/INFO]: [XLTournaments]          Copyright (c) Lewis D 2021. All Rights Reserved.
+[07:15:03] [Server thread/INFO]: [XLTournaments] 
+[07:15:03] [Server thread/INFO]: [XLTournaments] Loading plugin..
+[07:15:03] [Server thread/INFO]: [XLTournaments] Hooked into Vault
+[07:15:03] [Server thread/INFO]: [XLTournaments] 
+[07:15:03] [Server thread/INFO]: [LPX] Enabling LPX v3.1.10
+[07:15:04] [Server thread/ERROR]: [LPX] Unable to verify your license!
+[07:15:04] [Server thread/INFO]: [LPX] Disabling LPX v3.1.10
+[07:15:04] [Server thread/INFO]: [IllegalStack] Enabling IllegalStack v2.6.1
+[07:15:04] [Server thread/INFO]: The following materials are allowed to have stacks larger than the vanilla size: POTION 
+[07:15:04] [Server thread/INFO]: Found a missing configuration value UserRequested.Obscure.HackedShulker.CheckGroundForBadShulkerAtLogin it has been added to the config with the default value of: false
+[07:15:04] [Server thread/INFO]: Chat Components found! Enabling clickable commands in /istack
+[07:15:04] [Server thread/INFO]: Spigot chat components NOT found! disabling chat components.
+[07:15:04] [Server thread/INFO]: MC Version < 1.13 detected!
+[07:15:04] [Server thread/INFO]: Minecraft 1.8 detected not checking offhand slot for overstacked items.
+[07:15:04] [Server thread/INFO]: Version < 1.11 found, not checking for shulker boxes
+[07:15:04] [Server thread/INFO]: [HeadDatabase] Enabling HeadDatabase v4.12.6
+[07:15:04] [Server thread/INFO]: [HeadDatabase] §bUsing default §3"en_US.lang" §bcreated by §6Arcaniax
+[07:15:04] [Server thread/INFO]: [HeadDatabase] Economy succesfully setup!
+[07:15:04] [Server thread/INFO]: [HFactory] Enabling HFactory v16.0.0
+[07:15:04] [Server thread/INFO]: [ByArtemFun] Enabling ByArtemFun v1.7
+[07:15:04] [Server thread/INFO]: ByArtemFun aktif edildi!
+[07:15:04] [Server thread/INFO]: [MovingDevApi] Enabling MovingDevApi v1.1.10
+[07:15:04] [Server thread/INFO]: MovingDevApiAPI is enabled![m
+[07:15:04] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.17.0.0
+[07:15:04] [Server thread/WARN]: [EssentialsChat] §3SkyBlock §8§l» §9Versiyon Uyuşmazlığı! Lütfen Tüm Essentials Eklentilerini Aynı Sürüme Güncelleyin.
+[07:15:04] [Server thread/INFO]: [TAB] Enabling TAB v3.1.1
+[07:15:04] [Server thread/INFO]: [TAB] §7Server version: 1.8.8 (v1_8_R3)
+[07:15:04] [Server thread/INFO]: [TAB] §7Loaded NMS hook in 12ms
+[07:15:04] [Server thread/INFO]: [TAB] §aEnabled in 63ms
+[07:15:04] [Server thread/INFO]: [WorldGuard] Enabling WorldGuard v6.1.3-SNAPSHOT;c904242
+[07:15:04] [Server thread/INFO]: [WorldGuard] (trxzort) TNT ignition is PERMITTED.
+[07:15:04] [Server thread/INFO]: [WorldGuard] (trxzort) Lighters are PERMITTED.
+[07:15:04] [Server thread/INFO]: [WorldGuard] (trxzort) Lava fire is blocked.
+[07:15:04] [Server thread/INFO]: [WorldGuard] (trxzort) Fire spread is UNRESTRICTED.
+[07:15:04] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'trxzort'
+[07:15:04] [Server thread/INFO]: [WorldGuard] (trxzort_the_end) TNT ignition is PERMITTED.
+[07:15:04] [Server thread/INFO]: [WorldGuard] (trxzort_the_end) Lighters are PERMITTED.
+[07:15:04] [Server thread/INFO]: [WorldGuard] (trxzort_the_end) Lava fire is blocked.
+[07:15:04] [Server thread/INFO]: [WorldGuard] (trxzort_the_end) Fire spread is UNRESTRICTED.
+[07:15:04] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'trxzort_the_end'
+[07:15:04] [Server thread/INFO]: [WorldGuard] Loading region data...
+[07:15:04] [Server thread/INFO]: [LockettePro] Enabling LockettePro v2.4.1
+[07:15:04] [Server thread/INFO]: [AdvancedLottery] Enabling AdvancedLottery v9.2
+[07:15:04] [Server thread/INFO]: [AdvancedLottery] Detected server running on older version. Implementing legacy skull manager...
+[07:15:04] [Server thread/INFO]: [AdvancedLottery] Hooked into vault!
+[07:15:04] [Server thread/INFO]: [AdvancedLottery] Successfully hooked into PlaceholderAPI!
+[07:15:04] [Server thread/INFO]: [AdvancedLottery] You are not using mysql, mysql functions will be disabled
+[07:15:04] [Server thread/INFO]: [BeastWithdraw] Enabling BeastWithdraw v2.8.3
+[07:15:04] [Server thread/INFO]: [0;37;22m[[0;31;22mBeast[0;36;1mWithdraw[0;37;22m] [0;32;22m/XpBottle command aliases [0;33;1m[şişele, sakla] [0;32;22mare registered.[m
+[07:15:04] [Server thread/INFO]: [0;37;22m[[0;31;22mBeast[0;36;1mWithdraw[0;37;22m] [0;32;22m/bWithdraw command aliases [0;33;1m[çek, dönüştür] [0;32;22mare registered.[m
+[07:15:04] [Server thread/INFO]: [0;37;22m[[0;31;22mBeast[0;36;1mWithdraw[0;37;22m] [0;32;22mVersion 2.8.3 : has been enabled![m
+[07:15:04] [Server thread/INFO]: [Investment] Enabling Investment v1.5.3
+[07:15:04] [Server thread/INFO]: [Investment] Checking Vault provider...
+[07:15:04] [Server thread/INFO]: [Investment] Vault provider found !
+[07:15:04] [Server thread/INFO]: [Investment] Checking WorldEdit integration...
+[07:15:04] [Server thread/INFO]: [Investment] WorldEdit found !
+[07:15:04] [Server thread/INFO]: [Investment] Checking AntiAfk integration...
+[07:15:04] [Server thread/INFO]: [0;33;22m[9m------------------------------[m
+[07:15:04] [Server thread/INFO]:         [0;37;1mInvestment [0;33;22m- [0;32;1mEnabled[m
+[07:15:04] [Server thread/INFO]: [0;33;22mAuthor: [0;37;1mCustomEntity[m
+[07:15:04] [Server thread/INFO]: [0;33;22mVersion: [0;37;1m1.5.3[m
+[07:15:04] [Server thread/INFO]: [0;33;22mDescription: [0;37;1mTime is money[m
+[07:15:04] [Server thread/INFO]: [0;33;22m[9m------------------------------[m
+[07:15:04] [Server thread/INFO]:  [m
+[07:15:04] [Server thread/INFO]: [Investment] Connection to H2
+[07:15:04] [Server thread/INFO]: [Investment] Connection in 195ms !
+[07:15:04] [Server thread/INFO]: [Investment] Setup of the investment configuration...
+[07:15:04] [Server thread/INFO]: [Investment] Setup of the investment configuration finished !
+[07:15:04] [Server thread/INFO]: [Investment] Loading investments...
+[07:15:04] [Server thread/INFO]: [Investment] Investments loaded !
+[07:15:04] [Server thread/INFO]: [Investment] Setup of the investment gui configuration...
+[07:15:04] [Server thread/INFO]: [Investment] Setup of the investment gui configuration finished !
+[07:15:04] [Server thread/INFO]: [Investment] Setup of the investment messages configuration...
+[07:15:04] [Server thread/INFO]: [Investment] Setup of the investment messages configuration finished !
+[07:15:04] [Server thread/INFO]: [Investment] Essentials hooked !
+[07:15:04] [Server thread/INFO]: [ShopGUIPlus] Enabling ShopGUIPlus v1.60.0
+[07:15:05] [Server thread/WARN]: [ShopGUIPlus] Error occurred when loading itemStackSizeCappedAt > 1 (config.yml), item not loaded: Invalid or no material name specified
+[07:15:05] [Server thread/WARN]: [ShopGUIPlus] Error occurred when loading shopMenuFillItem (config.yml), item not loaded: No item specified
+[07:15:05] [Server thread/WARN]: [ShopGUIPlus] Error occurred when loading sounds (config.yml), no sounds loaded
+[07:15:05] [Server thread/INFO]: [MiniaturePets] Enabling MiniaturePets v2.7.7
+[07:15:05] [Server thread/INFO]: [MiniaturePets] Loading reflections.
+[07:15:05] [Server thread/ERROR]: [MiniaturePets] It appears that even though WorldGuard is installed you are using an old unsupported version of it. Please upgrade to enjoy the World Guard integration.
+[07:15:05] [Server thread/INFO]: [SuperiorSkyblock2] Enabling SuperiorSkyblock2 v1.10.2
+[07:15:06] [Server thread/INFO]: -------- World Settings For [SuperiorWorld] --------
+[07:15:06] [Server thread/INFO]: Sending up to 10 chunks per packet
+[07:15:06] [Server thread/INFO]: Max Entity Collisions: 1
+[07:15:06] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[07:15:06] [Server thread/INFO]: Max TNT Explosions: 10
+[07:15:06] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[07:15:06] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[07:15:06] [Server thread/INFO]: Anti X-Ray: false
+[07:15:06] [Server thread/INFO]: 	Engine Mode: 1
+[07:15:06] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[07:15:06] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[07:15:06] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[07:15:06] [Server thread/INFO]: Cane Growth Modifier: 100%
+[07:15:06] [Server thread/INFO]: Melon Growth Modifier: 100%
+[07:15:06] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[07:15:06] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[07:15:06] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[07:15:06] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[07:15:06] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[07:15:06] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 24 / Mi 8
+[07:15:06] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[07:15:06] [Server thread/INFO]: Hopper Transfer: 30 Hopper Check: 30 Hopper Amount: 64
+[07:15:06] [Server thread/INFO]: Random Lighting Updates: false
+[07:15:06] [Server thread/INFO]: Structure Info Saving: true
+[07:15:06] [Server thread/INFO]: Mob Spawn Range: 6
+[07:15:06] [Server thread/INFO]: Item Despawn Rate: 1200
+[07:15:06] [Server thread/INFO]: Item Merge Radius: 4.0
+[07:15:06] [Server thread/INFO]: Arrow Despawn Rate: 300
+[07:15:06] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[07:15:06] [Server thread/INFO]: View Distance: 12
+[07:15:06] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[07:15:06] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[07:15:06] [Server thread/INFO]: Clear tick list: false
+[07:15:06] [Server thread/INFO]: Experience Merge Radius: 6.0
+[07:15:06] [Server thread/INFO]: -------- World Settings For [SuperiorWorld] --------
+[07:15:06] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[07:15:06] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[07:15:06] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[07:15:06] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[07:15:06] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 28 Hard: 96
+[07:15:06] [Server thread/INFO]: Water over lava flow speed: 5
+[07:15:06] [Server thread/INFO]: Fix TNT cannons: false
+[07:15:06] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[07:15:06] [Server thread/INFO]: Keep spawn chunk loaded: true
+[07:15:06] [Server thread/INFO]: WorldServer TickNextTick cap set at 1215752192
+[07:15:06] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[07:15:06] [Server thread/INFO]: World async lighting: false
+[07:15:06] [Server thread/INFO]: Preparing start region for level 2 (Seed: -9051516507385826673)
+[07:15:06] [Server thread/INFO]: [WorldGuard] (SuperiorWorld) TNT ignition is PERMITTED.
+[07:15:06] [Server thread/INFO]: [WorldGuard] (SuperiorWorld) Lighters are PERMITTED.
+[07:15:06] [Server thread/INFO]: [WorldGuard] (SuperiorWorld) Lava fire is blocked.
+[07:15:06] [Server thread/INFO]: [WorldGuard] (SuperiorWorld) Fire spread is UNRESTRICTED.
+[07:15:06] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'SuperiorWorld'
+[07:15:06] [Server thread/INFO]: [0;32;1m[SuperiorSkyblock2] [0;32;1mEnabling the module bank...[m
+[07:15:06] [Server thread/INFO]: [0;33;1m[SuperiorSkyblock2] [0;33;1mFinished enabling the module bank (Took 5ms)[m
+[07:15:06] [Server thread/INFO]: [0;32;1m[SuperiorSkyblock2] [0;32;1mEnabling the module missions...[m
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission miner_1
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission miner_2
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission miner_5
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission miner_3
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission miner_4
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission slayer_2
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission slayer_3
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission slayer_1
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission slayer_4
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission farmer_5
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission farmer_2
+[07:15:06] [Server thread/INFO]: [0;31;1m[SuperiorSkyblock2] [0;31;1m[config.yml] Couldn't convert rewards.items.1 into an itemstack. Check type & data sections![m
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission farmer_1
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission farmer_3
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission farmer_4
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission fisherman_1
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission fisherman_3
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission fisherman_2
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission explorer_1
+[07:15:06] [Server thread/INFO]: [SuperiorSkyblock2] Registered mission explorer_2
+[07:15:06] [Server thread/INFO]: [0;33;1m[SuperiorSkyblock2] [0;33;1mFinished enabling the module missions (Took 184ms)[m
+[07:15:06] [Server thread/INFO]: [0;32;1m[SuperiorSkyblock2] [0;32;1mEnabling the module generators...[m
+[07:15:06] [Server thread/INFO]: [0;33;1m[SuperiorSkyblock2] [0;33;1mFinished enabling the module generators (Took 10ms)[m
+[07:15:06] [Server thread/INFO]: [0;32;1m[SuperiorSkyblock2] [0;32;1mEnabling the module upgrades...[m
+[07:15:06] [Server thread/INFO]: [0;33;1m[SuperiorSkyblock2] [0;33;1mFinished enabling the module upgrades (Took 8ms)[m
+[07:15:07] [Server thread/INFO]: [SuperiorSkyblock2] Loading messages started...
+[07:15:07] [Server thread/INFO]: [SuperiorSkyblock2]  - Found 682 messages in the language files.
+[07:15:07] [Server thread/INFO]: [SuperiorSkyblock2] Loading messages done (Took 188ms)
+[07:15:07] [Server thread/INFO]: [SuperiorSkyblock2] Successfully loaded schematic mycel_nether.schematic (DefaultSchematicParser)
+[07:15:08] [Server thread/INFO]: [SuperiorSkyblock2] Successfully loaded schematic desert.schematic (DefaultSchematicParser)
+[07:15:08] [Server thread/INFO]: [SuperiorSkyblock2] Successfully loaded schematic normal_nether.schematic (DefaultSchematicParser)
+[07:15:08] [Server thread/INFO]: [SuperiorSkyblock2] Successfully loaded schematic desert_the_end.schematic (DefaultSchematicParser)
+[07:15:08] [Server thread/INFO]: [SuperiorSkyblock2] Successfully loaded schematic desert_nether.schematic (DefaultSchematicParser)
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Successfully loaded schematic normal.schematic (DefaultSchematicParser)
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Successfully loaded schematic mycel_the_end.schematic (DefaultSchematicParser)
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Successfully loaded schematic normal_the_end.schematic (DefaultSchematicParser)
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Successfully loaded schematic mycel.schematic (DefaultSchematicParser)
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Trying to connect to local database (SQLite)...
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Successfully established connection with local database!
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Starting to load players...
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Finished loading 3 players (Took 10ms)
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Starting to load islands...
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Finished loading 2 islands (Took 51ms)
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Starting to load grid...
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Finished grid!
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Starting to load stacked blocks...
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Finished stacked blocks!
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] 
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] A new version is available (v2023.3)!
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] Version's description: "Added support for 1.20.2"
+[07:15:09] [Server thread/INFO]: [SuperiorSkyblock2] 
+[07:15:10] [Server thread/INFO]: [ChestShop] Enabling ChestShop v3.9.0 (build #52)
+[07:15:10] [Server thread/WARN]: SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+[07:15:10] [Server thread/WARN]: SLF4J: Defaulting to no-operation (NOP) logger implementation
+[07:15:10] [Server thread/WARN]: SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[07:15:10] [Server thread/INFO]: [ChestShop] Vault loaded! Found an economy plugin!
+[07:15:10] [Server thread/INFO]: [Multiverse-Core] Enabling Multiverse-Core v2.5.0-b727
+[07:15:10] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: world_the_end
+[07:15:10] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:15:10] [Server thread/INFO]: -------- World Settings For [world] --------
+[07:15:10] [Server thread/INFO]: Sending up to 10 chunks per packet
+[07:15:10] [Server thread/INFO]: Max Entity Collisions: 1
+[07:15:10] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[07:15:10] [Server thread/INFO]: Max TNT Explosions: 10
+[07:15:10] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[07:15:10] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[07:15:10] [Server thread/INFO]: Anti X-Ray: false
+[07:15:10] [Server thread/INFO]: 	Engine Mode: 1
+[07:15:10] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[07:15:10] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[07:15:10] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Cane Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Melon Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 24 / Mi 8
+[07:15:10] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[07:15:10] [Server thread/INFO]: Hopper Transfer: 30 Hopper Check: 30 Hopper Amount: 64
+[07:15:10] [Server thread/INFO]: Random Lighting Updates: false
+[07:15:10] [Server thread/INFO]: Structure Info Saving: true
+[07:15:10] [Server thread/INFO]: Mob Spawn Range: 6
+[07:15:10] [Server thread/INFO]: Item Despawn Rate: 1200
+[07:15:10] [Server thread/INFO]: Item Merge Radius: 4.0
+[07:15:10] [Server thread/INFO]: Arrow Despawn Rate: 300
+[07:15:10] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[07:15:10] [Server thread/INFO]: View Distance: 12
+[07:15:10] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[07:15:10] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[07:15:10] [Server thread/INFO]: Clear tick list: false
+[07:15:10] [Server thread/INFO]: Experience Merge Radius: 6.0
+[07:15:10] [Server thread/INFO]: -------- World Settings For [world] --------
+[07:15:10] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[07:15:10] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[07:15:10] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[07:15:10] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[07:15:10] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 28 Hard: 96
+[07:15:10] [Server thread/INFO]: Water over lava flow speed: 5
+[07:15:10] [Server thread/INFO]: Fix TNT cannons: false
+[07:15:10] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[07:15:10] [Server thread/INFO]: Keep spawn chunk loaded: true
+[07:15:10] [Server thread/INFO]: WorldServer TickNextTick cap set at 1215752192
+[07:15:10] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[07:15:10] [Server thread/INFO]: World async lighting: false
+[07:15:10] [Server thread/INFO]: Preparing start region for level 3 (Seed: -2211571612848131851)
+[07:15:10] [Server thread/INFO]: [WorldGuard] (world) TNT ignition is PERMITTED.
+[07:15:10] [Server thread/INFO]: [WorldGuard] (world) Lighters are PERMITTED.
+[07:15:10] [Server thread/INFO]: [WorldGuard] (world) Lava fire is blocked.
+[07:15:10] [Server thread/INFO]: [WorldGuard] (world) Fire spread is UNRESTRICTED.
+[07:15:10] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'world'
+[07:15:10] [Server thread/WARN]: [Multiverse-Core] WorldManager: Can't load this world because the folder was deleted/moved: world_nether
+[07:15:10] [Server thread/WARN]: [Multiverse-Core] Use '/mv remove' to remove it from the config!
+[07:15:10] [Server thread/INFO]: -------- World Settings For [kazi] --------
+[07:15:10] [Server thread/INFO]: Sending up to 10 chunks per packet
+[07:15:10] [Server thread/INFO]: Max Entity Collisions: 1
+[07:15:10] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[07:15:10] [Server thread/INFO]: Max TNT Explosions: 10
+[07:15:10] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[07:15:10] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[07:15:10] [Server thread/INFO]: Anti X-Ray: false
+[07:15:10] [Server thread/INFO]: 	Engine Mode: 1
+[07:15:10] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[07:15:10] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[07:15:10] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Cane Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Melon Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 24 / Mi 8
+[07:15:10] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[07:15:10] [Server thread/INFO]: Hopper Transfer: 30 Hopper Check: 30 Hopper Amount: 64
+[07:15:10] [Server thread/INFO]: Random Lighting Updates: false
+[07:15:10] [Server thread/INFO]: Structure Info Saving: true
+[07:15:10] [Server thread/INFO]: Mob Spawn Range: 6
+[07:15:10] [Server thread/INFO]: Item Despawn Rate: 1200
+[07:15:10] [Server thread/INFO]: Item Merge Radius: 4.0
+[07:15:10] [Server thread/INFO]: Arrow Despawn Rate: 300
+[07:15:10] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[07:15:10] [Server thread/INFO]: View Distance: 12
+[07:15:10] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[07:15:10] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[07:15:10] [Server thread/INFO]: Clear tick list: false
+[07:15:10] [Server thread/INFO]: Experience Merge Radius: 6.0
+[07:15:10] [Server thread/INFO]: -------- World Settings For [kazi] --------
+[07:15:10] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[07:15:10] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[07:15:10] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[07:15:10] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[07:15:10] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 28 Hard: 96
+[07:15:10] [Server thread/INFO]: Water over lava flow speed: 5
+[07:15:10] [Server thread/INFO]: Fix TNT cannons: false
+[07:15:10] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[07:15:10] [Server thread/INFO]: Keep spawn chunk loaded: true
+[07:15:10] [Server thread/INFO]: WorldServer TickNextTick cap set at 1215752192
+[07:15:10] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[07:15:10] [Server thread/INFO]: World async lighting: false
+[07:15:10] [Server thread/INFO]: Preparing start region for level 4 (Seed: 8393219218697788274)
+[07:15:10] [Server thread/INFO]: [WorldGuard] (kazi) TNT ignition is PERMITTED.
+[07:15:10] [Server thread/INFO]: [WorldGuard] (kazi) Lighters are PERMITTED.
+[07:15:10] [Server thread/INFO]: [WorldGuard] (kazi) Lava fire is blocked.
+[07:15:10] [Server thread/INFO]: [WorldGuard] (kazi) Fire spread is UNRESTRICTED.
+[07:15:10] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'kazi'
+[07:15:10] [Server thread/INFO]: -------- World Settings For [duel] --------
+[07:15:10] [Server thread/INFO]: Sending up to 10 chunks per packet
+[07:15:10] [Server thread/INFO]: Max Entity Collisions: 1
+[07:15:10] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[07:15:10] [Server thread/INFO]: Max TNT Explosions: 10
+[07:15:10] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[07:15:10] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[07:15:10] [Server thread/INFO]: Anti X-Ray: false
+[07:15:10] [Server thread/INFO]: 	Engine Mode: 1
+[07:15:10] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[07:15:10] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[07:15:10] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Cane Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Melon Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 24 / Mi 8
+[07:15:10] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[07:15:10] [Server thread/INFO]: Hopper Transfer: 30 Hopper Check: 30 Hopper Amount: 64
+[07:15:10] [Server thread/INFO]: Random Lighting Updates: false
+[07:15:10] [Server thread/INFO]: Structure Info Saving: true
+[07:15:10] [Server thread/INFO]: Mob Spawn Range: 6
+[07:15:10] [Server thread/INFO]: Item Despawn Rate: 1200
+[07:15:10] [Server thread/INFO]: Item Merge Radius: 4.0
+[07:15:10] [Server thread/INFO]: Arrow Despawn Rate: 300
+[07:15:10] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[07:15:10] [Server thread/INFO]: View Distance: 12
+[07:15:10] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[07:15:10] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[07:15:10] [Server thread/INFO]: Clear tick list: false
+[07:15:10] [Server thread/INFO]: Experience Merge Radius: 6.0
+[07:15:10] [Server thread/INFO]: -------- World Settings For [duel] --------
+[07:15:10] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[07:15:10] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[07:15:10] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[07:15:10] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[07:15:10] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 28 Hard: 96
+[07:15:10] [Server thread/INFO]: Water over lava flow speed: 5
+[07:15:10] [Server thread/INFO]: Fix TNT cannons: false
+[07:15:10] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[07:15:10] [Server thread/INFO]: Keep spawn chunk loaded: true
+[07:15:10] [Server thread/INFO]: WorldServer TickNextTick cap set at 1215752192
+[07:15:10] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[07:15:10] [Server thread/INFO]: World async lighting: false
+[07:15:10] [Server thread/INFO]: Preparing start region for level 5 (Seed: -3341212946602433631)
+[07:15:10] [Server thread/INFO]: [WorldGuard] (duel) TNT ignition is PERMITTED.
+[07:15:10] [Server thread/INFO]: [WorldGuard] (duel) Lighters are PERMITTED.
+[07:15:10] [Server thread/INFO]: [WorldGuard] (duel) Lava fire is blocked.
+[07:15:10] [Server thread/INFO]: [WorldGuard] (duel) Fire spread is UNRESTRICTED.
+[07:15:10] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'duel'
+[07:15:10] [Server thread/INFO]: -------- World Settings For [ox] --------
+[07:15:10] [Server thread/INFO]: Sending up to 10 chunks per packet
+[07:15:10] [Server thread/INFO]: Max Entity Collisions: 1
+[07:15:10] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[07:15:10] [Server thread/INFO]: Max TNT Explosions: 10
+[07:15:10] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[07:15:10] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[07:15:10] [Server thread/INFO]: Anti X-Ray: false
+[07:15:10] [Server thread/INFO]: 	Engine Mode: 1
+[07:15:10] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[07:15:10] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[07:15:10] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Cane Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Melon Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[07:15:10] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 24 / Mi 8
+[07:15:10] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[07:15:10] [Server thread/INFO]: Hopper Transfer: 30 Hopper Check: 30 Hopper Amount: 64
+[07:15:10] [Server thread/INFO]: Random Lighting Updates: false
+[07:15:10] [Server thread/INFO]: Structure Info Saving: true
+[07:15:10] [Server thread/INFO]: Mob Spawn Range: 6
+[07:15:10] [Server thread/INFO]: Item Despawn Rate: 1200
+[07:15:10] [Server thread/INFO]: Item Merge Radius: 4.0
+[07:15:10] [Server thread/INFO]: Arrow Despawn Rate: 300
+[07:15:10] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[07:15:10] [Server thread/INFO]: View Distance: 12
+[07:15:10] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[07:15:10] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[07:15:10] [Server thread/INFO]: Clear tick list: false
+[07:15:10] [Server thread/INFO]: Experience Merge Radius: 6.0
+[07:15:10] [Server thread/INFO]: -------- World Settings For [ox] --------
+[07:15:10] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[07:15:10] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[07:15:10] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[07:15:10] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[07:15:10] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 28 Hard: 96
+[07:15:10] [Server thread/INFO]: Water over lava flow speed: 5
+[07:15:10] [Server thread/INFO]: Fix TNT cannons: false
+[07:15:10] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[07:15:10] [Server thread/INFO]: Keep spawn chunk loaded: true
+[07:15:10] [Server thread/INFO]: WorldServer TickNextTick cap set at 1215752192
+[07:15:10] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[07:15:10] [Server thread/INFO]: World async lighting: false
+[07:15:10] [Server thread/INFO]: Preparing start region for level 6 (Seed: -3771539461992053409)
+[07:15:11] [Server thread/INFO]: [WorldGuard] (ox) TNT ignition is PERMITTED.
+[07:15:11] [Server thread/INFO]: [WorldGuard] (ox) Lighters are PERMITTED.
+[07:15:11] [Server thread/INFO]: [WorldGuard] (ox) Lava fire is blocked.
+[07:15:11] [Server thread/INFO]: [WorldGuard] (ox) Fire spread is UNRESTRICTED.
+[07:15:11] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'ox'
+[07:15:11] [Server thread/INFO]: -------- World Settings For [event] --------
+[07:15:11] [Server thread/INFO]: Sending up to 10 chunks per packet
+[07:15:11] [Server thread/INFO]: Max Entity Collisions: 1
+[07:15:11] [Server thread/INFO]: Custom Map Seeds:  Village: 10387312 Feature: 14357617
+[07:15:11] [Server thread/INFO]: Max TNT Explosions: 10
+[07:15:11] [Server thread/INFO]: Tile Max Tick Time: 1000ms Entity max Tick Time: 1000ms
+[07:15:11] [Server thread/INFO]: Nerfing mobs spawned from spawners: true
+[07:15:11] [Server thread/INFO]: Anti X-Ray: false
+[07:15:11] [Server thread/INFO]: 	Engine Mode: 1
+[07:15:11] [Server thread/INFO]: 	Hidden Blocks: [14, 15, 16, 21, 48, 49, 54, 56, 73, 74, 82, 129, 130]
+[07:15:11] [Server thread/INFO]: 	Replace Blocks: [1, 5]
+[07:15:11] [Server thread/INFO]: Cactus Growth Modifier: 100%
+[07:15:11] [Server thread/INFO]: Cane Growth Modifier: 100%
+[07:15:11] [Server thread/INFO]: Melon Growth Modifier: 100%
+[07:15:11] [Server thread/INFO]: Mushroom Growth Modifier: 100%
+[07:15:11] [Server thread/INFO]: Pumpkin Growth Modifier: 100%
+[07:15:11] [Server thread/INFO]: Sapling Growth Modifier: 100%
+[07:15:11] [Server thread/INFO]: Wheat Growth Modifier: 100%
+[07:15:11] [Server thread/INFO]: NetherWart Growth Modifier: 100%
+[07:15:11] [Server thread/INFO]: Entity Activation Range: An 16 / Mo 24 / Mi 8
+[07:15:11] [Server thread/INFO]: Entity Tracking Range: Pl 48 / An 48 / Mo 48 / Mi 32 / Other 64
+[07:15:11] [Server thread/INFO]: Hopper Transfer: 30 Hopper Check: 30 Hopper Amount: 64
+[07:15:11] [Server thread/INFO]: Random Lighting Updates: false
+[07:15:11] [Server thread/INFO]: Structure Info Saving: true
+[07:15:11] [Server thread/INFO]: Mob Spawn Range: 6
+[07:15:11] [Server thread/INFO]: Item Despawn Rate: 1200
+[07:15:11] [Server thread/INFO]: Item Merge Radius: 4.0
+[07:15:11] [Server thread/INFO]: Arrow Despawn Rate: 300
+[07:15:11] [Server thread/INFO]: Allow Zombie Pigmen to spawn from portal blocks: true
+[07:15:11] [Server thread/INFO]: View Distance: 12
+[07:15:11] [Server thread/INFO]: Zombie Aggressive Towards Villager: true
+[07:15:11] [Server thread/INFO]: Chunks to Grow per Tick: 650
+[07:15:11] [Server thread/INFO]: Clear tick list: false
+[07:15:11] [Server thread/INFO]: Experience Merge Radius: 6.0
+[07:15:11] [Server thread/INFO]: -------- World Settings For [event] --------
+[07:15:11] [Server thread/INFO]: Remove invalid mob spawner tile entities: true
+[07:15:11] [Server thread/INFO]: Player blocking damage multiplier set to 0.5
+[07:15:11] [Server thread/INFO]: Squids will spawn between Y: 45.0 and Y: 63.0
+[07:15:11] [Server thread/INFO]: Max height for cactus growth 3. Max height for reed growth 3
+[07:15:11] [Server thread/INFO]: Living Entity Despawn Ranges:  Soft: 28 Hard: 96
+[07:15:11] [Server thread/INFO]: Water over lava flow speed: 5
+[07:15:11] [Server thread/INFO]: Fix TNT cannons: false
+[07:15:11] [Server thread/INFO]: Allow undead horse types to be leashed: false
+[07:15:11] [Server thread/INFO]: Keep spawn chunk loaded: true
+[07:15:11] [Server thread/INFO]: WorldServer TickNextTick cap set at 1215752192
+[07:15:11] [Server thread/INFO]: WorldServer TickNextTickList cap always processes redstone: false
+[07:15:11] [Server thread/INFO]: World async lighting: false
+[07:15:11] [Server thread/INFO]: Preparing start region for level 7 (Seed: 3278229187918336632)
+[07:15:11] [Server thread/INFO]: [WorldGuard] (event) TNT ignition is PERMITTED.
+[07:15:11] [Server thread/INFO]: [WorldGuard] (event) Lighters are PERMITTED.
+[07:15:11] [Server thread/INFO]: [WorldGuard] (event) Lava fire is blocked.
+[07:15:11] [Server thread/INFO]: [WorldGuard] (event) Fire spread is UNRESTRICTED.
+[07:15:12] [Server thread/INFO]: [WorldGuard] Loaded configuration for world 'event'
+[07:15:12] [Server thread/INFO]: [Multiverse-Core] 8 - World(s) loaded.
+[07:15:12] [Server thread/INFO]: [Multiverse-Core] Version 2.5.0-b727 (API v20) Enabled - By Rigby, fernferret, lithium3141, main-- and dumptruckman
+[07:15:12] [Server thread/INFO]: [Citizens] Enabling Citizens v2.0.29-SNAPSHOT (build 2448)
+[07:15:12] [Server thread/INFO]: [Shopkeepers] Enabling Shopkeepers v2.2.2
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': POLAR_BEAR
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': STRAY
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': WITHER_SKELETON
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': ZOMBIE_VILLAGER
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': HUSK
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': EVOKER
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': VEX
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': VINDICATOR
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': ILLUSIONER
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: Invalid living entity type name in 'enabled-living-shops': PARROT
+[07:15:12] [Server thread/WARN]: [Shopkeepers] Config: All existing entity type names can be found here: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+[07:15:12] [Server thread/INFO]: [Shopkeepers] Loading data of 2 shopkeepers..
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Enabling CrazyEnvoy v1.3.10-RELEASE
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Loading the Config.yml
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Successfully loaded Config.yml
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Loading the Messages.yml
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Successfully loaded Messages.yml
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Loading the Data.yml
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Successfully loaded Data.yml
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Loading custom files.
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Loaded new custom file: /Tiers/Titan.yml.
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Loaded new custom file: /Tiers/Lucky.yml.
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Loaded new custom file: /Tiers/Basic.yml.
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Finished loading custom files.
+[07:15:20] [Server thread/INFO]: [CrazyEnvoy] Loaded HolographicDisplays hologram hook.
+[07:15:20] [Server thread/WARN]: [HolographicDisplays] The plugin CrazyEnvoy registered the placeholder {crazyenvoy_cooldown} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{crazyenvoy_cooldown}} instead.
+[07:15:20] [Server thread/WARN]: [HolographicDisplays] The plugin CrazyEnvoy registered the placeholder {crazyenvoy_time_left} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{crazyenvoy_time_left}} instead.
+[07:15:20] [Server thread/WARN]: [HolographicDisplays] The plugin CrazyEnvoy registered the placeholder {crazyenvoy_crates_left} with the old v2 API, but it doesn't comply with the new format. In order to display it, you must use {{crazyenvoy_crates_left}} instead.
+[07:15:20] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyEnvoy added custom placeholder {crazyenvoy_cooldown}
+[07:15:20] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyEnvoy added custom placeholder {crazyenvoy_time_left}
+[07:15:20] [Server thread/INFO]: [MVdWPlaceholderAPI] CrazyEnvoy added custom placeholder {crazyenvoy_crates_left}
+[07:15:20] [Server thread/INFO]: [AuthMe] Enabling AuthMe v5.6.0-beta2-b2453
+[07:15:20] [Server thread/INFO]: [AuthMe] SQLite Setup finished
+[07:15:21] [Server thread/INFO]: [AuthMe] Hooked into LuckPerms!
+[07:15:21] [Server thread/INFO]: [AuthMe] Hooked successfully into Essentials
+[07:15:21] [Server thread/INFO]: [AuthMe] Hooked successfully into Multiverse-Core
+[07:15:21] [Server thread/INFO]: [AuthMe] Essentials spawn file not found: '/home/container/plugins/Essentials/spawn.yml'
+[07:15:21] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-beta2 build n.2453 successfully enabled!
+[07:15:21] [Server thread/INFO]: [Multiverse-Patches] Enabling Multiverse-Patches v1.0.0-SNAPSHOT
+[07:15:21] [Server thread/INFO]: [skRayFall] Enabling skRayFall v1.9.15
+[07:15:21] [Server thread/INFO]: [skRayFall] Yay! You are running skRayFall 1.9.15!
+[07:15:21] [Server thread/INFO]: [skRayFall] Nathan and Lewis <3 you.
+[07:15:21] [Server thread/INFO]: [skRayFall] Cooking Bacon...
+[07:15:21] [Server thread/INFO]: [skRayFall] Getting more bacon for the army of citizens...
+[07:15:21] [Server thread/INFO]: [skRayFall] Got bacon for the EffectLib particle ninjas!
+[07:15:21] [Server thread/INFO]: [skRayFall] Getting more bacon for the Votifier runners!
+[07:15:21] [Server thread/INFO]: [skRayFall] Bacon holograms found
+[07:15:21] [Server thread/INFO]: [skRayFall] Client Side bacon holograms enabled
+[07:15:21] [Server thread/INFO]: [skRayFall] Enabling general 1.8+ bacon!
+[07:15:21] [Server thread/INFO]: [skRayFall] Getting the extra special 1.8.4 - 1.8.8 bacon!
+[07:15:21] [Server thread/INFO]: [[0;36;22mskRayFall[m] [0;31;1mAn update for skRayFall is available![m
+[07:15:21] [Server thread/INFO]: [skRayFall] Bacon is ready!
+[07:15:21] [Server thread/INFO]: [Duels] Enabling Duels v3.5.2
+[07:15:21] [Server thread/INFO]: [Duels] Successfully hooked into 'Essentials'!
+[07:15:21] [Server thread/INFO]: [MVdWPlaceholderAPI] Duels added custom placeholder {duels_wins}
+[07:15:21] [Server thread/INFO]: [MVdWPlaceholderAPI] Duels added custom placeholder {duels_losses}
+[07:15:21] [Server thread/INFO]: [MVdWPlaceholderAPI] Duels added custom placeholder {duels_can_request}
+[07:15:21] [Server thread/INFO]: [Duels] Successfully hooked into 'MVdWPlaceholderAPI'!
+[07:15:21] [Server thread/INFO]: [Duels] Successfully hooked into 'PlaceholderAPI'!
+[07:15:21] [Server thread/INFO]: [Duels] Using Economy Provider: net.milkbowl.vault.economy.plugins.Economy_Essentials
+[07:15:21] [Server thread/INFO]: [Duels] Successfully hooked into 'Vault'!
+[07:15:21] [Server thread/INFO]: [Duels] Successfully hooked into 'WorldGuard'!
+[07:15:22] [Server thread/INFO]: [Duels] KitManagerImpl: Loaded 3 kit(s).
+[07:15:22] [Server thread/INFO]: [Duels] ArenaManagerImpl: Loaded 8 arena(s).
+[07:15:22] [Server thread/INFO]: [Duels] [0;31;1mPlayerInfoManager: Lobby location was not set, using trxzort's spawn location as default. Use the command /duels setlobby in-game to set the lobby location.[m
+[07:15:22] [Server thread/INFO]: [Duels] QueueManager: Loaded 0 queue(s).
+[07:15:22] [Server thread/INFO]: [Duels] QueueSignManagerImpl: Loaded 0 queue sign(s).
+[07:15:22] [Server thread/INFO]: [CommandNPC] Enabling CommandNPC v1.9.1
+[07:15:22] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mVault compatible economy found! Economy support for CommandNPC has been enabled.[m
+[07:15:22] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mInitiating Database[m
+[07:15:22] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mInjecting command info into Citizens.[m
+[07:15:22] [Server thread/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mCommandNPC successfully loaded![m
+[07:15:22] [Thread-24/INFO]: [0;30;1m[[0;32;22mCommandNPC[0;30;1m] [0;33;22mLoading commands complete![m
+[07:15:22] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[07:15:22] [Server thread/INFO]: Done (42.612s)! For help, type "help" or "?"
+[07:15:22] [Server thread/INFO]: Starting GS4 status listener
+[07:15:22] [Query Listener #1/INFO]: Query running on 0.0.0.0:27861
+[07:15:22] [Server thread/INFO]: Using default channel type
+[07:15:22] [Server thread/INFO]: Timings Reset
+[07:15:22] [Server thread/INFO]: [0;30;1m([0;31;22m[21mFAWE[0;30;1m)[m[0;37;22m Detected class org.bukkit.event.block.BlockExplodeEvent[m
+[07:15:22] [Craft Scheduler Thread - 1/INFO]: [AuthMe] Downloading GEO IP database, because the old database is older than 30 days or doesn't exist
+[07:15:22] [Craft Scheduler Thread - 1/WARN]: [AuthMe] No MaxMind credentials found in the configuration file! GeoIp protections will be disabled.
+[07:15:22] [Craft Scheduler Thread - 1/INFO]: [AuthMe] There is no newer GEO IP database uploaded to MaxMind. Using the old one for now.
+[07:15:22] [Craft Scheduler Thread - 1/WARN]: [AuthMe] Could not download GeoLiteAPI database [FileNotFoundException]: plugins/AuthMe/GeoLite2-Country.mmdb (No such file or directory)
+[07:15:23] [Craft Scheduler Thread - 0/INFO]: [Duels] ===============================================
+[07:15:23] [Craft Scheduler Thread - 0/INFO]: [Duels] An update for Duels is available!
+[07:15:23] [Craft Scheduler Thread - 0/INFO]: [Duels] Download Duels v3.5.3 here:
+[07:15:23] [Craft Scheduler Thread - 0/INFO]: [Duels] https://www.spigotmc.org/resources/duels.20171/
+[07:15:23] [Craft Scheduler Thread - 0/INFO]: [Duels] ===============================================
+[07:15:23] [Craft Scheduler Thread - 5/INFO]: [0;33;22m[Matrix] [0;37;22mStart checking update....[m
+[07:15:23] [Craft Scheduler Thread - 15/INFO]: [VoteParty] There is an update available: 2.37
+[07:15:23] [Server thread/INFO]: [SuperiorSkyblock2] Using LuckPerms as a permissions provider.
+[07:15:23] [Server thread/INFO]: [SuperiorSkyblock2] Using ShopGUIPlus as a prices provider.
+[07:15:23] [Server thread/INFO]: [SuperiorSkyblock2] Hooked into Essentials for support of vanish status of players.
+[07:15:23] [Server thread/INFO]: [SuperiorSkyblock2] Hooked into Essentials for support of afk status of players.
+[07:15:23] [Server thread/INFO]: [SuperiorSkyblock2] Using Vault as an economy provider.
+[07:15:23] [Server thread/INFO]: [SuperiorSkyblock2] Using MVdWPlaceholderAPI for placeholders support.
+[07:15:23] [Server thread/INFO]: [MVdWPlaceholderAPI] SuperiorSkyblock2 added custom placeholder {superior_*}
+[07:15:23] [Server thread/INFO]: [SuperiorSkyblock2] Using PlaceholderAPI for placeholders support.
+[07:15:23] [Server thread/INFO]: [Skript] Loading variables...
+[07:15:23] [Server thread/INFO]: [Skript] Loaded 58 variables in 0.0 seconds
+[07:15:23] [Server thread/WARN]: [Skript] Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section. (as.sk, line 37: if "%region at loop-player%" contains "arenaic":')
+[07:15:23] [Server thread/WARN]: [Skript] Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section. (goejderha.sk, line 45: if "%region at loop-player%" contains "end":')
+[07:15:23] [Craft Scheduler Thread - 20/INFO]: [0;37;22m[[0;33;22mSkript[0;37;22m][m You're currently running custom Skript version. No updates will be automatically installed.[m
+[07:15:24] [Craft Scheduler Thread - 5/INFO]: [0;32;1m> Matrix Updater:[m
+[07:15:24] [Craft Scheduler Thread - 5/INFO]:     [0;31;1mMatrix has an update: [0;37;1m6.9.1  [0;31;1mcurrent version: [0;32;22m6.8.0[m
+[07:15:24] [Craft Scheduler Thread - 5/INFO]:     [0;31;1mDownload link: [0;36;1mhttps://www.mc-market.org/resources/13999/[m
+[07:15:24] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '322:1' with e.g. 'notchapple'. (Turnuva.sk, line 112: give 3 322:1 named "&6&lTurnuva Gapple" to arg-1')
+[07:15:24] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '373:8233' with e.g. 'potion of:8233'. (Turnuva.sk, line 113: give 2 373:8233 named "&6&lGüç İksiri" to arg-1')
+[07:15:24] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '373:8226' with e.g. 'potion of:8226'. (Turnuva.sk, line 114: give 2 373:8226 named "&6&lHız İksiri" to arg-1')
+[07:15:25] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '173' with e.g. 'coal_block'. (ada.sk, line 62: give 256 173 named "&6&lADAKIT" to player')
+[07:15:25] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '19' with e.g. 'sponge'. (ada.sk, line 63: give 256 19 named "&6&lADAKIT" to player')
+[07:15:25] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '121' with e.g. 'ender_stone'. (ada.sk, line 64: give 192 121 named "&6&lADAKIT" to player')
+[07:15:25] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '169' with e.g. 'sea_lantern'. (ada.sk, line 65: give 192 169 named "&6&lADAKIT" to player')
+[07:15:25] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:2' with e.g. 'darkprismarine'. (ada.sk, line 66: give 128 168:2 named "&6&lADAKIT" to player')
+[07:15:25] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168' with e.g. 'prismarine'. (ada.sk, line 67: give 64 168 named "&6&lADAKIT" to player')
+[07:15:25] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '155:1' with e.g. 'chiselledquarzblock'. (ada.sk, line 68: give 64 155:1 named "&6&lADAKIT" to player')
+[07:15:25] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:1' with e.g. 'prismarinebricks'. (ada.sk, line 69: give 32 168:1 named "&6&lADAKIT" to player')
+[07:15:25] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '112' with e.g. 'nether_brick_block'. (ada.sk, line 70: give 16 112 named "&6&lADAKIT" to player')
+[07:15:25] [Server thread/ERROR]: [Skript] Can't understand this condition/effect: send action bar "&aAda savaşı lideri: &2%{as::first} ? {nq}%" to player (as.sk, line 63: send action bar "&aAda savaşı lideri: &2%{as::first} ? {nq}%" to player')
+[07:15:25] [Server thread/WARN]: [Skript] Possible name conflict of variables {jokey::%player%} and {jokey::*} (there might be more conflicts). (atyarisi.sk, line 10: delete {jokey::%player%}')
+[07:15:25] [Server thread/WARN]: [Skript] Possible name conflict of variables {green::%player%} and {green::*} (there might be more conflicts). (atyarisi.sk, line 11: delete {green::%player%}')
+[07:15:25] [Server thread/WARN]: [Skript] Possible name conflict of variables {blue::%player%} and {blue::*} (there might be more conflicts). (atyarisi.sk, line 12: delete {blue::%player%}')
+[07:15:25] [Server thread/WARN]: [Skript] Possible name conflict of variables {red::%player%} and {red::*} (there might be more conflicts). (atyarisi.sk, line 13: delete {red::%player%}')
+[07:15:25] [Server thread/WARN]: [Skript] Possible name conflict of variables {black::%player%} and {black::*} (there might be more conflicts). (atyarisi.sk, line 14: delete {black::%player%}')
+[07:15:25] [Server thread/WARN]: [Skript] Possible name conflict of variables {apara::%player%} and {apara::*} (there might be more conflicts). (atyarisi.sk, line 15: delete {apara::%player%}')
+[07:15:26] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '35:5' with e.g. 'limewool'. (atyarisi.sk, line 166: make gui slot {green::%{_p}%} of {_p} with 35:5 named "&aYeşil Jokey" to nothing')
+[07:15:26] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '35:11' with e.g. 'blue lazuliwool'. (atyarisi.sk, line 168: make gui slot {blue::%{_p}%} of {_p} with 35:11 named "&bMavi Jokey" to nothing')
+[07:15:26] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '35:14' with e.g. 'redwool'. (atyarisi.sk, line 170: make gui slot {red::%{_p}%} of {_p} with 35:14 named "&cKırmızı Jokey" to nothing')
+[07:15:26] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '35:4' with e.g. 'yellowwool'. (atyarisi.sk, line 172: make gui slot {yellow::%{_p}%} of {_p} with 35:4 named "&eSarı Jokey" to nothing')
+[07:15:26] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '35:15' with e.g. 'ink sacwool'. (atyarisi.sk, line 174: make gui slot {black::%{_p}%} of {_p} with 35:15 named "&8Siyah Jokey" to nothing')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 178: if player has 128 49:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 179: remove 128 49 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 183: if player has 128 49:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 184: remove 128 49 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 188: if player has 128 49:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 189: remove 128 49 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 193: if player has 128 49:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 194: remove 128 49 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 198: if player has 128 49:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 199: remove 128 49 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 203: if player has 128 49:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 204: remove 128 49 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 208: if player has 128 49:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '49' with e.g. 'obsidian'. (coin.sk, line 209: remove 128 49 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 214: on break 48:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 216: if player has 128 48:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 217: remove 128 48 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 221: if player has 128 48:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 222: remove 128 48 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 226: if player has 128 48:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 227: remove 128 48 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 231: if player has 128 48:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 232: remove 128 48 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 236: if player has 128 48:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 237: remove 128 48 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 241: if player has 128 48:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 242: remove 128 48 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 246: if player has 128 48:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '48' with e.g. 'mossy_cobble_stone'. (coin.sk, line 247: remove 128 48 from player')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '86' with e.g. 'pumpkin'. (coin.sk, line 437: on break 86:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '86' with e.g. 'pumpkin'. (coin.sk, line 438: if player has 128 86:')
+[07:15:27] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '86' with e.g. 'pumpkin'. (coin.sk, line 439: remove 128 86 from player')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '173' with e.g. 'coal_block'. (genel.sk, line 299: give 256 173 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '19' with e.g. 'sponge'. (genel.sk, line 300: give 256 19 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '121' with e.g. 'ender_stone'. (genel.sk, line 301: give 256 121 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '169:2' with e.g. 'sea_lantern:2'. (genel.sk, line 302: give 256 169:2 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:2' with e.g. 'darkprismarine'. (genel.sk, line 303: give 128 168:2 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168' with e.g. 'prismarine'. (genel.sk, line 304: give 128 168 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '155:1' with e.g. 'chiselledquarzblock'. (genel.sk, line 305: give 128 155:1 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:1' with e.g. 'prismarinebricks'. (genel.sk, line 306: give 96 168:1 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '112' with e.g. 'nether_brick_block'. (genel.sk, line 307: give 64 112 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '339' with e.g. 'paper'. (genel.sk, line 312: give 1 339 named "&6&lÖzel Spawner Kağıt &8(&eEvent&8)" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '173' with e.g. 'coal_block'. (genel.sk, line 371: give 128 173 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '19' with e.g. 'sponge'. (genel.sk, line 372: give 128 19 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '121' with e.g. 'ender_stone'. (genel.sk, line 373: give 128 121 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '169:2' with e.g. 'sea_lantern:2'. (genel.sk, line 374: give 128 169:2 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:2' with e.g. 'darkprismarine'. (genel.sk, line 375: give 64 168:2 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168' with e.g. 'prismarine'. (genel.sk, line 376: give 64 168 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '155:1' with e.g. 'chiselledquarzblock'. (genel.sk, line 377: give 64 155:1 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:1' with e.g. 'prismarinebricks'. (genel.sk, line 378: give 48 168:1 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '112' with e.g. 'nether_brick_block'. (genel.sk, line 379: give 32 112 named "&6&lEVENT &8► &EBlok" to players')
+[07:15:28] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '339' with e.g. 'paper'. (genel.sk, line 384: give 1 339 named "&6&lSpawner Kağıt &8(&eEvent&8)" to players')
+[07:15:29] [Server thread/WARN]: [Skript] the 4th argument is already a text, so you should not put it in one (e.g. the 4th argument instead of "%the 4th argument%") (goejderha.sk, line 59: set {etkinlik::dünya::ejderha} to "%arg 4%"')
+[07:15:29] [Server thread/INFO]: [0;33;22m[21mWinter [0;30;1m| [0;32;1mEjderha etkinliği V1.0 aktifleşti[m
+[07:15:29] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please create an alias for '350' (COOKED_FISH) in aliases-english.sk or the script's aliases section and use that instead. (kedi.sk, line 25: give 8 350 named "&bKedi Maması" to player')
+[07:15:29] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please create an alias for '350' (COOKED_FISH) in aliases-english.sk or the script's aliases section and use that instead. (kedi.sk, line 94: give 8 350 named "&bKedi Maması" to players')
+[07:15:30] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '173' with e.g. 'coal_block'. (market.sk, line 238: give 64 173 to player')
+[07:15:30] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '19' with e.g. 'sponge'. (market.sk, line 247: give 64 19 to player')
+[07:15:30] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '121' with e.g. 'ender_stone'. (market.sk, line 255: give 64 121 to player')
+[07:15:30] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '169' with e.g. 'sea_lantern'. (market.sk, line 263: give 64 169 to player')
+[07:15:30] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:2' with e.g. 'darkprismarine'. (market.sk, line 271: give 64 168:2 to player')
+[07:15:30] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168' with e.g. 'prismarine'. (market.sk, line 279: give 64 168 to player')
+[07:15:30] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '155:1' with e.g. 'chiselledquarzblock'. (market.sk, line 287: give 64 155:1 to player')
+[07:15:30] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:1' with e.g. 'prismarinebricks'. (market.sk, line 295: give 64 168:1 to player')
+[07:15:30] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '112' with e.g. 'nether_brick_block'. (market.sk, line 303: give 64 112 to player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '173' with e.g. 'coal_block'. (takas.sk, line 3: if player has 128 173 in inventory:')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '173' with e.g. 'coal_block'. (takas.sk, line 4: remove 128 173 from player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '19' with e.g. 'sponge'. (takas.sk, line 5: give 64 19 to player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '19' with e.g. 'sponge'. (takas.sk, line 11: if player has 128 19 in inventory:')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '19' with e.g. 'sponge'. (takas.sk, line 12: remove 128 19 from player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '121' with e.g. 'ender_stone'. (takas.sk, line 13: give 64 121 to player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '121' with e.g. 'ender_stone'. (takas.sk, line 19: if player has 128 121 in inventory:')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '121' with e.g. 'ender_stone'. (takas.sk, line 20: remove 128 121 from player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '169' with e.g. 'sea_lantern'. (takas.sk, line 21: give 64 169 to player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '169' with e.g. 'sea_lantern'. (takas.sk, line 27: if player has 128 169 in inventory:')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '169' with e.g. 'sea_lantern'. (takas.sk, line 28: remove 128 169 from player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:2' with e.g. 'darkprismarine'. (takas.sk, line 29: give 64 168:2 to player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:2' with e.g. 'darkprismarine'. (takas.sk, line 35: if player has 128 168:2 in inventory:')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:2' with e.g. 'darkprismarine'. (takas.sk, line 36: remove 128 168:2 from player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:0' with e.g. 'prismarine'. (takas.sk, line 37: give 64 168:0 to player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:0' with e.g. 'prismarine'. (takas.sk, line 43: if player has 128 168:0 in inventory:')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:0' with e.g. 'prismarine'. (takas.sk, line 44: remove 128 168:0 from player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '155:1' with e.g. 'chiselledquarzblock'. (takas.sk, line 45: give 64 155:1 to player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '155:1' with e.g. 'chiselledquarzblock'. (takas.sk, line 54: if player has 128 155:1 in inventory:')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '155:1' with e.g. 'chiselledquarzblock'. (takas.sk, line 55: remove 128 155:1 from player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:1' with e.g. 'prismarinebricks'. (takas.sk, line 56: give 32 168:1 to player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:1' with e.g. 'prismarinebricks'. (takas.sk, line 64: if player has 128 168:1 in inventory:')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '168:1' with e.g. 'prismarinebricks'. (takas.sk, line 65: remove 128 168:1 from player')
+[07:15:31] [Server thread/WARN]: [Skript] Using an ID instead of an alias is discouraged and will likely not be supported in future versions of Skript anymore. Please replace '112' with e.g. 'nether_brick_block'. (takas.sk, line 66: give 16 112 to player')
+[07:15:31] [Server thread/INFO]: [Skript] Loaded 18 scripts with a total of 275 triggers and 238 commands in 8.54 seconds
+[07:15:31] [Server thread/INFO]: [Skript] Finished loading.
+[07:15:32] [Server thread/INFO]: [hSpawner] Data update started.
+[07:15:32] [Server thread/INFO]: [PlayerVaults] ** Vaults have already been converted to UUIDs. If this is incorrect, shutdown your server and rename the plugins/PlayerVaults/uuidvaults directory.
+[07:15:32] [Craft Scheduler Thread - 5/INFO]: [PlayerVaults] We didn't find an update!
+[07:15:32] [Server thread/INFO]: [XLTournaments] Registered external objective CRAZYCRATES_OPEN using CrazyCrates plugin.
+[07:15:32] [Server thread/INFO]: [XLTournaments] Registered external objective NUVOTIFIER_VOTES using Votifier plugin.
+[07:15:32] [Server thread/INFO]: [XLTournaments] Registered external objective CRAZYENVOY_OPEN using CrazyEnvoy plugin.
+[07:15:32] [Server thread/INFO]: [XLTournaments] Registered external objective DUELS_WINS using Duels plugin.
+[07:15:32] [Server thread/INFO]: [XLTournaments] Registered external objective PLACEHOLDERAPI using PlaceholderAPI plugin.
+[07:15:32] [Server thread/INFO]: [XLTournaments] Registered external objective ESSENTIALS_BALANCE_RECEIVE using Essentials plugin.
+[07:15:32] [Server thread/INFO]: [XLTournaments] Registered external objective ESSENTIALS_BALANCE_SPEND using Essentials plugin.
+[07:15:32] [Server thread/INFO]: [XLTournaments] Loaded 14 tournament objectives (PLACEHOLDERAPI, CRAZYCRATES_OPEN, BLOCK_BREAK, CRAZYENVOY_OPEN, NUVOTIFIER_VOTES, DUELS_WINS, PLAYTIME, PLAYER_FISH, ESSENTIALS_BALANCE_RECEIVE, MOB_KILLS, ITEM_CRAFT, BLOCK_PLACE, PLAYER_KILLS, ESSENTIALS_BALANCE_SPEND).
+[07:15:32] [Server thread/INFO]: [XLTournaments] Loaded 'block_break_tournament' tournament.
+[07:15:32] [Server thread/INFO]: [XLTournaments] Loaded 'player_kills_tournament' tournament.
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m[m
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m[m
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |   SkinsRestorer  |[0;39m[m
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |------------------|[0;39m[m
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    |  [34;1m[4m[21mStandalone Mode[0;39m[32;1m |[0;39m[m
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    +==================+[0;39m[m
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m[m
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Version: [32;1m15.0.6[0;39m[m
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[36;1m    Commit: [32;1m3b21903[0;39m[m
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m    This is the latest version![0;39m[m
+[07:15:32] [Craft Scheduler Thread - 12/INFO]: [33;1m[[32;22mSkinsRestorer[33;1m] [0;39m[32;1m----------------------------------------------[0;39m[m
+[07:15:33] [Server thread/INFO]: [XLTournaments] Loaded 'item_craft_challenge_tournament' tournament.
+[07:15:33] [Server thread/INFO]: [0;30;1m([0;31;22m[21mFAWE[0;30;1m)[m[0;37;22m Plugin 'WorldGuard' found. Using it now.[m
+[07:15:33] [Craft Scheduler Thread - 12/INFO]: [0;37;22m[[0;31;22mBeast[0;36;1mWithdraw[0;37;22m] [0;31;22mThere is a new update available.[m
+[07:15:33] [Craft Scheduler Thread - 11/INFO]: [HeadDatabase] Could not download database, Attempting to use the backup database!
+[07:15:33] [Craft Scheduler Thread - 9/INFO]: [PlaceholderAPI] 149 placeholder expansions are available on the cloud.
+[07:15:33] [Craft Scheduler Thread - 9/INFO]: [PlaceholderAPI] 11 installed expansions have updates available.
+[07:15:33] [Server thread/INFO]: [Citizens] Loaded 26 NPCs.
+[07:15:33] [Craft Scheduler Thread - 9/INFO]: [Vault] Checking for Updates ... 
+[07:15:33] [Craft Scheduler Thread - 9/INFO]: [Vault] No new version available
+[07:15:33] [Server thread/INFO]: --------------------------------------
+[07:15:33] [Server thread/INFO]:                                       
+[07:15:33] [Server thread/INFO]:            hFactory Aktif !           
+[07:15:33] [Server thread/INFO]:      Lisans bulundu. Plugin aktif     
+[07:15:33] [Server thread/INFO]:                                       
+[07:15:33] [Server thread/INFO]: --------------------------------------
+[07:15:33] [Server thread/INFO]: [HolographicDisplays] Found a new version available: v3.0.4
+[07:15:33] [Server thread/INFO]: [HolographicDisplays] Download it on Bukkit Dev:
+[07:15:33] [Server thread/INFO]: [HolographicDisplays] https://dev.bukkit.org/projects/holographic-displays
+[07:15:33] [Server thread/INFO]: [hSpawner] Data update completed.
+[07:15:34] [Craft Scheduler Thread - 4/INFO]: [TuSKe] Checking for latest update...
+[07:15:34] [Craft Scheduler Thread - 4/INFO]: [TuSKe] New update available: v1.10.2
+[07:15:34] [Craft Scheduler Thread - 4/INFO]: [TuSKe] Check what's new in: https://github.com/szumielxd/TuSKe/releases/tag/v1.10.2
+[07:15:34] [Craft Scheduler Thread - 4/INFO]: [TuSKe] You can download and update it with /tuske update.
+[07:15:34] [Server thread/INFO]: [0;31;1m[[0;33;1m[21mBanItem[0;31;1m] [0;31;1mInvalid sound parameters set in config.yml.[m
+[07:15:34] [Server thread/INFO]: [0;31;1m[[0;33;1m[21mBanItem[0;31;1m] [0;32;22mActivated [0;33;1m4[0;32;22m listener(s).[m
+[07:15:34] [Server thread/INFO]: [0;31;1m[[0;33;1m[21mBanItem[0;31;1m] [0;32;22mSuccessfully loaded [0;33;1m36[0;32;22m blacklisted & [0;33;1m0[0;32;22m whitelisted item(s).[m
+[07:15:36] [Craft Scheduler Thread - 4/INFO]: [TuSKe] Generating documentation of Skript & Addons.
+[07:15:36] [Craft Scheduler Thread - 4/INFO]: [TuSKe] Documentation was generated successfully.
+[07:15:38] [Craft Scheduler Thread - 11/INFO]: [HeadDatabase] Succesfully loaded 62337 heads!
+[07:15:39] [Craft Scheduler Thread - 11/INFO]: [HeadDatabase] Successfully loaded 18 featured tags!
+[07:15:39] [Craft Scheduler Thread - 11/WARN]: [HeadDatabase] §cYou are using a outdated version!
+[07:15:39] [Craft Scheduler Thread - 11/WARN]: [HeadDatabase] Latest version: §a4.19.0§e. You are on version: §c4.12.6§e.
+[07:15:39] [Craft Scheduler Thread - 11/WARN]: [HeadDatabase] Update here: §bhttps://www.spigotmc.org/resources/head-database.14280/
+[07:15:40] [Server thread/INFO]: [MyCommand] found an update for MyCommand. Type /mycommand for more infos.
+[07:15:54] [Craft Scheduler Thread - 3/INFO]: [0;33;22m[Matrix] [0;37;22mPlugin Enabled[m
+[07:16:23] [Server thread/INFO]: [m
+[07:16:23] [Server thread/INFO]: [0;33;22m[21mSunucuISMI [0;30;1m| [0;33;1mAda savaşları etkinliği başladı. [0;32;1m[/adasavaşları][m
+[07:16:23] [Server thread/INFO]: [m
+[07:16:33] [Thread-28/INFO]: UUID of player SnaekyFOX is 3d39a953-f1f1-3325-a1e6-5ffa72dfd6df
+[07:16:33] [Server thread/INFO]: Alpanumerico
+[07:16:33] [Server thread/INFO]: [0;36;22mSkyBlock [0;30;1m» [0;33;1mSnaekyFOX [0;37;22madlı kişinin Bitcoin miktarı; [0;31;1m<none>[m
+[07:16:33] [Server thread/INFO]: [0;36;22mSkyBlock [0;30;1m» [0;33;1mSnaekyFOX [0;37;22madlı kişinin ethereum miktarı; [0;31;1m<none>[m
+[07:16:33] [Server thread/INFO]: SnaekyFOX[/31.223.61.122:16706] logged in with entity id 103 at ([trxzort]1.5024849968946248, 29.0, -2.2972960437272456)
+[07:16:52] [Craft Scheduler Thread - 22/INFO]: [AuthMe] SnaekyFOX logged in 31.223.61.122
+[07:17:01] [Server thread/INFO]: SnaekyFOX issued server command: /lp user SnaekyFOX parent set admin
+[07:17:01] [luckperms-command-executor/INFO]: [0;37;22m[[0;36;1m[21mL[0;36;22m[21mP[0;37;22m][m [0;36;22mLOG[m [0;36;22m[21m>[m [0;30;1m([0;33;1mSnaekyFOX[0;30;1m)[m [0;30;1m[[0;32;1mU[0;30;1m][m [0;30;1m([0;36;1msnaekyfox[0;30;1m)[m
+[07:17:01] [luckperms-command-executor/INFO]: [0;37;22m[[0;36;1m[21mL[0;36;22m[21mP[0;37;22m][m [0;36;22mLOG[m [0;36;22m[21m>[m [0;37;1mparent set admin[m
+[07:21:06] [Server thread/INFO]: SnaekyFOX lost connection: Disconnected
+[07:21:06] [Server thread/INFO]: [-] SnaekyFOX
+[07:21:22] [Server thread/INFO]: [m
+[07:21:22] [Server thread/INFO]: [0;33;22m[21mSunucuISMI [0;30;1m| [0;33;1mAda savaşları etkinliği bitti. [0;35;1m[<none>][m
+[07:21:22] [Server thread/INFO]: [m
+[07:25:22] [Server thread/INFO]: [hSpawner] Automatic save starting...
+[07:25:22] [Craft Scheduler Thread - 25/INFO]: [hSpawner] Automatic save finished.
+[07:28:26] [Server thread/INFO]: Stopping the server
+[07:28:26] [Server thread/INFO]: Stopping server
+[07:28:26] [Server thread/INFO]: [CommandNPC] Disabling CommandNPC v1.9.1
+[07:28:26] [Server thread/INFO]: [Duels] Disabling Duels v3.5.2
+[07:28:26] [Server thread/INFO]: [Duels] Disable process took 4ms.
+[07:28:26] [Server thread/INFO]: [skRayFall] Disabling skRayFall v1.9.15
+[07:28:26] [Server thread/INFO]: [skRayFall] Bacon has been eaten. Make some more soon!
+[07:28:26] [Server thread/INFO]: [Multiverse-Patches] Disabling Multiverse-Patches v1.0.0-SNAPSHOT
+[07:28:26] [Server thread/INFO]: [AuthMe] Disabling AuthMe v5.6.0-beta2-b2453
+[07:28:27] [Server thread/INFO]: [AuthMe] Waiting for 0 tasks to finish
+[07:28:27] [Server thread/INFO]: [AuthMe] AuthMe 5.6.0-beta2-b2453 disabled!
+[07:28:27] [Server thread/INFO]: [CrazyEnvoy] Disabling CrazyEnvoy v1.3.10-RELEASE
+[07:28:27] [Server thread/INFO]: [Shopkeepers] Disabling Shopkeepers v2.2.2
+[07:28:27] [Server thread/INFO]: [Citizens] Disabling Citizens v2.0.29-SNAPSHOT (build 2448)
+[07:28:27] [Server thread/INFO]: [Multiverse-Core] Disabling Multiverse-Core v2.5.0-b727
+[07:28:27] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: multiverse
+[07:28:27] [Server thread/INFO]: [ChestShop] Disabling ChestShop v3.9.0 (build #52)
+[07:28:27] [Server thread/INFO]: [SuperiorSkyblock2] Disabling SuperiorSkyblock2 v1.10.2
+[07:28:27] [Server thread/INFO]: [0;31;1m[SuperiorSkyblock2] [0;31;1mDisabling the module bank...[m
+[07:28:27] [Server thread/INFO]: [0;31;1m[SuperiorSkyblock2] [0;31;1mDisabling the module missions...[m
+[07:28:27] [Server thread/INFO]: [0;31;1m[SuperiorSkyblock2] [0;31;1mDisabling the module generators...[m
+[07:28:27] [Server thread/INFO]: [0;31;1m[SuperiorSkyblock2] [0;31;1mDisabling the module upgrades...[m
+[07:28:27] [Server thread/INFO]: [SuperiorSkyblock2] Shutting down calculation task...
+[07:28:27] [Server thread/INFO]: [SuperiorSkyblock2] Shutting down executor
+[07:28:27] [Server thread/INFO]: [SuperiorSkyblock2] Shutting down database executor
+[07:28:27] [Server thread/INFO]: [SuperiorSkyblock2] Closing database. This may hang the server. Do not shut it down, or data may get lost.
+[07:28:27] [Server thread/INFO]: [MiniaturePets] Disabling MiniaturePets v2.7.7
+[07:28:27] [Server thread/INFO]: [Investment] Disabling Investment v1.5.3
+[07:28:27] [Server thread/INFO]: [0;33;22m[9m------------------------------[m
+[07:28:27] [Server thread/INFO]:         [0;37;1mInvestment [0;33;22m- [0;31;1mDisabled[m
+[07:28:27] [Server thread/INFO]: [0;33;22mAuthor: [0;37;1mCustomEntity[m
+[07:28:27] [Server thread/INFO]: [0;33;22mVersion: [0;37;1m1.5.3[m
+[07:28:27] [Server thread/INFO]: [0;33;22mDescription: [0;37;1mTime is money[m
+[07:28:27] [Server thread/INFO]: [0;33;22m[9m------------------------------[m
+[07:28:27] [Server thread/INFO]:  [m
+[07:28:27] [Server thread/INFO]: [BeastWithdraw] Disabling BeastWithdraw v2.8.3
+[07:28:27] [Server thread/INFO]: [AdvancedLottery] Disabling AdvancedLottery v9.2
+[07:28:27] [Server thread/INFO]: [0;36;22mJackpot [0;30;1m» [0;32;1mSunucu kapanması nedeniyle bilet satın alan oyunculara para iade edildi![m
+[07:28:27] [Server thread/INFO]: [LockettePro] Disabling LockettePro v2.4.1
+[07:28:27] [Server thread/INFO]: [WorldGuard] Disabling WorldGuard v6.1.3-SNAPSHOT;c904242
+[07:28:27] [Server thread/INFO]: [WorldGuard] Shutting down executor and waiting for any pending tasks...
+[07:28:27] [Server thread/INFO]: [TAB] Disabling TAB v3.1.1
+[07:28:27] [Server thread/INFO]: [TAB] §aDisabled in 1ms
+[07:28:27] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.17.0.0
+[07:28:27] [Server thread/INFO]: [MovingDevApi] Disabling MovingDevApi v1.1.10
+[07:28:27] [Server thread/INFO]: MovingDevApiAPI is diabled![m
+[07:28:27] [Server thread/INFO]: [ByArtemFun] Disabling ByArtemFun v1.7
+[07:28:27] [Server thread/INFO]: ByArtemFun kapatıldı!
+[07:28:27] [Server thread/INFO]: [HFactory] Disabling HFactory v16.0.0
+[07:28:27] [Server thread/INFO]: [HeadDatabase] Disabling HeadDatabase v4.12.6
+[07:28:27] [Server thread/INFO]: [Rewards] Disabling Rewards v1.3.0
+[07:28:27] [Server thread/INFO]: [IllegalStack] Disabling IllegalStack v2.6.1
+[07:28:27] [Server thread/INFO]: Found a protection in the config that was not relevant to your server version: CheckGroundForBadShulkerAtLogin (  + ) it has been removed.
+[07:28:27] [Server thread/INFO]: [XLTournaments] Disabling XLTournaments v3.6.1-DEV-1
+[07:28:27] [Server thread/INFO]: [XLTournaments] Saving player data to database..
+[07:28:27] [Server thread/INFO]: [Essentials] Disabling Essentials v2.16.1.0
+[07:28:27] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[07:28:27] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v6.1.7;dd00bb1
+[07:28:27] [Server thread/INFO]: [skript-yaml] Disabling skript-yaml v1.2.5
+[07:28:27] [Server thread/INFO]: [MyCommand] Disabling MyCommand v5.7.2
+[07:28:27] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-* MyCommand v.5.7.2*-=-=-=-=-=-=-=-=-=-*
+[07:28:27] [Server thread/INFO]: | Tasks : Stopped all tasks.
+[07:28:27] [Server thread/INFO]: *-=-=-=-=-=-=-=-=-=-*    Bye!   *-=-=-=-=-=-=-=-=-=-=-*
+[07:28:27] [Server thread/INFO]: [RandomSK] Disabling RandomSK v1.3
+[07:28:27] [Server thread/INFO]: [PlayerVaults] Disabling PlayerVaults v3.6.0-bSNAPSHOT
+[07:28:27] [Server thread/INFO]: [hSpawner] Disabling hSpawner v1.8.2-rs
+[07:28:27] [Server thread/INFO]: [AuctionHouse] Disabling AuctionHouse v3.2
+[07:28:27] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.0.6
+[07:28:27] [Server thread/INFO]: [WolvSK] Disabling WolvSK v1.6.2
+[07:28:27] [Server thread/INFO]: [skript-holo] Disabling skript-holo v1.0.2
+[07:28:27] [Server thread/INFO]: [VoteParty] Disabling VoteParty v2.19
+[07:28:27] [Server thread/INFO]: [TuSKe] Disabling TuSKe v1.9.1-SZPatch
+[07:28:27] [Server thread/INFO]: [Trading] Disabling Trading v3.2
+[07:28:27] [Server thread/INFO]: [AntiCommandTab] Disabling AntiCommandTab v3.8
+[07:28:27] [Server thread/INFO]: [Matrix] Disabling Matrix v6.8.0
+[07:28:27] [Server thread/INFO]: [0;33;22m[Matrix] [0;37;22mDisabled Matrix AntiCheat.[m
+[07:28:27] [Server thread/INFO]: [Mines] Disabling Mines v6.2.1
+[07:28:27] [Server thread/INFO]: [CrazyCrates] Disabling CrazyCrates v1.9.11
+[07:28:27] [Server thread/INFO]: [HolographicExtension] Disabling HolographicExtension v1.10.9
+[07:28:27] [Server thread/INFO]: [0;33;1m[HolographicExtension] [0;37;1mDisabling HolographicExtension v1.10.9[m
+[07:28:27] [Server thread/INFO]: [ChairStairs] Disabling ChairStairs v1.1
+[07:28:27] [Server thread/INFO]: [ChairStairs] has been disabled.
+[07:28:27] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[07:28:27] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: vault
+[07:28:27] [Server thread/INFO]: [PlugManX] Disabling PlugManX v2.3.0
+[07:28:27] [Server thread/INFO]: [skript-mirror] Disabling skript-mirror v1.0.0
+[07:28:27] [Server thread/INFO]: [skUtilities] Disabling skUtilities v0.9.2
+[07:28:27] [Server thread/INFO]: [skript-placeholders] Disabling skript-placeholders v1.5.2
+[07:28:27] [Server thread/INFO]: [DeluxeMenus] Disabling DeluxeMenus v1.10.5
+[07:28:27] [Server thread/INFO]: [AutoPickup] Disabling AutoPickup v3.6
+[07:28:27] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v19.07.12-5cc5ce5-1277-22.3.0
+[07:28:27] [Server thread/INFO]: [MVdWPlaceholderAPI] Disabling MVdWPlaceholderAPI v3.1.1
+[07:28:27] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: mvdw
+[07:28:27] [Server thread/INFO]: [eZProtector] Disabling eZProtector v4.4.2
+[07:28:27] [Server thread/INFO]: [ProtocolLib] Disabling ProtocolLib v5.0.0-SNAPSHOT-b612
+[07:28:27] [Server thread/INFO]: [UUIDGuardian] Disabling UUIDGuardian v1.0
+[07:28:27] [Server thread/INFO]: [m
+[07:28:27] [Server thread/INFO]: [0;36;22m            __    [m
+[07:28:27] [Server thread/INFO]: [0;36;22m  |  ||  |||  \    [0;31;1mUUIDGuardian [0;33;1mBuild [0;32;22mv1.2[m
+[07:28:27] [Server thread/INFO]: [0;36;22m  |__||__|||__/    [0;35;1mDeveloped by [4m@Acco[m[m
+[07:28:27] [Server thread/INFO]: [m
+[07:28:27] [Server thread/INFO]: [Votifier] Disabling Votifier v1.9
+[07:28:27] [Server thread/INFO]: [Votifier] Votifier disabled.
+[07:28:27] [Server thread/INFO]: [SkQuery] Disabling SkQuery v3.6.0-Lime
+[07:28:27] [Server thread/INFO]: [PlayerTime] Disabling PlayerTime v1.0.7-RELEASE
+[07:28:27] [Server thread/INFO]: [ClearLag] Disabling ClearLag v3.2.2
+[07:28:27] [Server thread/INFO]: [ClearLag] Clearlag is now disabled!
+[07:28:27] [Server thread/INFO]: [CombatLog] Disabling CombatLog v2.3.0
+[07:28:27] [Server thread/INFO]: [CombatLog] Disabled.
+[07:28:27] [Server thread/INFO]: [Skript] Disabling Skript v2.2-dev37c
+[07:28:27] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: skript
+[07:28:27] [Server thread/INFO]: [0;33;22m[21mWinter [0;30;1m| [0;32;1mEjderha etkinliği V1.0 aktifleştirilemedi.[m
+[07:28:27] [Server thread/INFO]: [FastCraft] Disabling FastCraft v3.2.10
+[07:28:27] [Server thread/INFO]: [Fastplace] Disabling Fastplace v1.0
+[07:28:27] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.9
+[07:28:27] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion: luckperms
+[07:28:27] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[07:28:27] [Server thread/INFO]: [LuckPerms] Closing storage...
+[07:28:27] [Server thread/INFO]: [LuckPerms] Goodbye!
+[07:28:27] [Server thread/INFO]: [ParticleNativeAPI] Disabling ParticleNativeAPI v3.0.0
+[07:28:27] [Server thread/INFO]: [BanItem] Disabling BanItem v2.2
+[07:28:27] [Server thread/INFO]: [MetinTasi] Disabling MetinTasi v1.0-SNAPSHOT
+[07:28:27] [Server thread/INFO]: Metin Taşı plugini devredışı![m
+[07:28:27] [Server thread/INFO]: [RogueParkour] Disabling RogueParkour v4.3
+[07:28:27] [Server thread/INFO]: [0;32;1m--------------------------------------[m
+[07:28:27] [Server thread/INFO]: [0;35;22mRogueParkour 4.3[0;31;1m disabling[m
+[07:28:27] [Server thread/INFO]: [0;36;22mMade by: [0;36;1mKledioz [0;30;1m(omegacraft.cl)[m
+[07:28:27] [Server thread/INFO]: [0;36;1mSee you soon.[m
+[07:28:27] [Server thread/INFO]: [0;32;1m--------------------------------------[m
+[07:28:27] [Server thread/INFO]: [CoinFlip] Disabling CoinFlip v1.0
+[07:28:27] [Server thread/INFO]: [hWorldEdit] Disabling hWorldEdit v26.0.0
+[07:28:27] [Server thread/INFO]: [HolographicDisplays] Disabling HolographicDisplays v3.0.0-SNAPSHOT-b205
+[07:28:27] [Server thread/INFO]: [PlugMan] Disabling PlugMan v1.0-SNAPSHOT
+[07:28:27] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.9.2
+[07:28:27] [Server thread/INFO]: [UnioAntiCrash] Disabling UnioAntiCrash v2.1
+[07:28:27] [Server thread/INFO]: Saving players
+[07:28:27] [Server thread/INFO]: Saving worlds
+[07:28:27] [Server thread/INFO]: Saving chunks for level 'trxzort'/Overworld
+[07:28:27] [Server thread/INFO]: Saving chunks for level 'trxzort_the_end'/The End
+[07:28:27] [Server thread/INFO]: Saving chunks for level 'SuperiorWorld'/Overworld
+[07:28:27] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[07:28:27] [Server thread/INFO]: Saving chunks for level 'kazi'/Overworld
+[07:28:27] [Server thread/INFO]: Saving chunks for level 'duel'/Overworld
+[07:28:27] [Server thread/INFO]: Saving chunks for level 'ox'/Overworld
+[07:28:27] [Server thread/INFO]: Saving chunks for level 'event'/Overworld
+[07:28:27] [Server thread/INFO]: Saving usercache.json

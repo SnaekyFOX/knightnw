@@ -1,0 +1,226 @@
+Ayarlar:
+  Saatlik-Fabrika-Kazancı: 2500000000
+  Günlük-Vergi: 250000000
+  Max-Para: 2000000000
+  İşçi-Sayısı: # Fabrika kaç levelken kaç tane işçi alabilir.
+    1: 4
+    2: 6
+    3: 8
+    4: 10
+    5: 12
+  Fabrika-Geliştirme: #Fabrika yükseltmek için para
+    1: 50000000000 #(Fabrika kurma parası)
+    2: 60000000000
+    3: 70000000000
+    4: 80000000000
+    5: 90000000000
+
+GUI:
+  Title: '&6&lFabrika'
+  Size: 1
+  Items:
+    Fabrika-Kur:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aFabrika kur'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Fabrika kurarak işçi'
+        - '&7alabilir ve gerçekçi'
+        - '&7bir patron olma deneyimi'
+        - '&7yaşayabilirsiniz.'
+        - ''
+        - ' &fFiyat: &b25MR TL'
+      NBT: '{SkullOwner:{Id:"9e25711f-c926-40ba-9051-1248b2ccd714",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOWQ3MTRiYWZiMGI1YWI5Y2ZhN2RiMDJlZmM4OTI3YWVkMWVmMjk3OTdhNTk1ZGEwNjZlZmM1YzNlZmRjOSJ9fX0="}]}}}'
+      Slot: 2
+    Fabrika-Listesi:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aFabrika Listesi'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Fabrika listelerine bakarak'
+        - '&7yeni bir iş yerine girebilir'
+        - '&7ve çalışmanın zorluklarını'
+        - '&7hissederek yaşayabilirsiniz.'
+      NBT: '{SkullOwner:{Id:"b27b05c6-0840-42e4-ad86-377fd690f7a2",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTYyOGQ1Y2MyODY5YTU3ZWQ0MzE1Nzk5NGE0MDM4ZDFhOWVmOWIyODZmYWI5Yzg5OTYxN2M0NjhlYTE4MGIifX19"}]}}}'
+      Slot: 6
+
+GUI2:
+  Title: '&6&lFabrika'
+  Size: 3
+  Items:
+    Fabrika-Ayarları:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aFabrika Ayarları'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Fabrika ayarlarını açarak'
+        - '&7işçilerin günde kaç saat'
+        - '&7çalışacağı / ne kadar para'
+        - '&7alacağı gibi ayarları buradan.'
+        - '&7yapabilirsiniz.'
+      NBT: '{SkullOwner:{Id:"3979b007-eecd-4e69-b3fd-69d1b84fd402",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTRkNDliYWU5NWM3OTBjM2IxZmY1YjJmMDEwNTJhNzE0ZDYxODU0ODFkNWIxYzg1OTMwYjNmOTlkMjMyMTY3NCJ9fX0="}]}}}'
+      Slot: 10
+    Fabrika-İşçileri:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aFabrika İşçilerin'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Fabrikanda çalışan işçilerin'
+        - '&7listesini açabilir. Az çalışan'
+        - '&7işçileri kovabilirsiniz.'
+      NBT: '{SkullOwner:{Id:"b27b05c6-0840-42e4-ad86-377fd690f7a2",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTYyOGQ1Y2MyODY5YTU3ZWQ0MzE1Nzk5NGE0MDM4ZDFhOWVmOWIyODZmYWI5Yzg5OTYxN2M0NjhlYTE4MGIifX19"}]}}}'
+      Slot: 12
+    Fabrika-İstekleri:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aFabrika Giriş İstekleri'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - ' &7Fabrikanda çalışmak istiyen'
+        - ' &7insanları bu menüden seçebilir'
+        - ' &7veya reddedebilirsin.'
+      NBT: '{SkullOwner:{Id:"aa389d5a-26e3-4b94-b181-a65b9e43f26e",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWU3N2FlNGYzNjUyZjY3MTIwM2NmNDVmZjNjN2Y3ZTYzMjhlOTIxYzM3NGE3YTMxMWIzZTQ4NDQ0ZmQ4OTIifX19"}]}}}'
+      Slot: 14
+    Fabrika-Bilgileri:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aFabrika Bilgileri'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - ' &fİşçi sayın: &b%işçisayısı%/%totalsayı%'
+        - ' &fOnline işçi sayın: &b%onlineişçi%'
+        - ' &fGünlük max giderin: &b%günlükgider%'
+        - ' &fGünlük max gelirin: &b%günlükgelir%'
+        - ' &fFabrika levelin: &b%fabrikalevel%'
+      NBT: '{SkullOwner:{Id:"4800431a-9635-4316-8820-d5ed1cb15590",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDIzZWFlZmJkNTgxMTU5Mzg0Mjc0Y2RiYmQ1NzZjZWQ4MmViNzI0MjNmMmVhODg3MTI0ZjllZDMzYTY4NzJjIn19fQ=="}]}}}'
+      Slot: 16
+
+GUI3:
+  Title: '&6&lFabrika'
+  Size: 4
+  Items:
+    Fabrika-Para:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aPara ayarla'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Oyuncuların çalıştıkları saat'
+        - '&7başına kazanacakları parayı'
+        - '&7buradan belirle !'
+      NBT: '{SkullOwner:{Id:"da608428-e220-435c-9669-2fe3c0575458",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTM2ZTk0ZjZjMzRhMzU0NjVmY2U0YTkwZjJlMjU5NzYzODllYjk3MDlhMTIyNzM1NzRmZjcwZmQ0ZGFhNjg1MiJ9fX0="}]}}}'
+      Slot: 9
+    Fabrika-Saat:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aSaat Ayarla'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Oyuncuların günlük kaç'
+        - '&7saat fabrikada çalışması'
+        - '&7gerektiğini ayarlayabilirsin.'
+      NBT: '{SkullOwner:{Id:"a0221485-0d78-47df-9dcd-773eaec45dbd",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzZjMGQwNDU5YzY3ZjJiZTgyZmJlNTQwNmFiOGQxMzc4ZGExZjI4ZjdhM2Y4MmYxZGZjNDc2MTVhOTU1YTcifX19"}]}}}'
+      Slot: 11
+    Fabrika-Karaliste:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aFabrika Karalistesi'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Fabrikanıza girmesini isteme-'
+        - '&7diğiniz oyuncuları buraya'
+        - '&7eklerseniz bir daha fabrikanızın'
+        - '&7yanından bile geçemezler.'
+      NBT: '{SkullOwner:{Id:"8550f058-2ca8-4d34-97c1-fb7ec5508542",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWE2ZWM4NWEzMDQzZTkwZGQ3YzhlZTUwZmQ0NDE0ZTMwOWYwY2U4ZjFiNmEwYmMwMjcxNDk4ZWI4MDllYWIyIn19fQ=="}]}}}'
+      Slot: 15
+    Fabrika-Geliştir:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aFabrika Geliştir'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Fabrika geliştirerek yeni'
+        - '&7çalışan alma sayınızı, diğer'
+        - '&7bir değişle iş gücünüzü'
+        - '&7arttırırsınız.'
+        - ''
+        - ' &fFabrika leveli: &c%fabrikalevel% lvl.'
+        - ' &fFabrika kontenjan: &c%fabrikakontenjan% kişi'
+      NBT: '{SkullOwner:{Id:"fb271319-5c42-4f5d-9389-e89ca7caf96a",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjIyMWRhNDQxOGJkM2JmYjQyZWI2NGQyYWI0MjljNjFkZWNiOGY0YmY3ZDRjZmI3N2ExNjJiZTNkY2IwYjkyNyJ9fX0="}]}}}'
+      Slot: 17
+    Fabrika-Sil:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aFabrika Sil'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Buraya tıkladıktan sonra'
+        - '&7karşınıza bir onay menüsü'
+        - '&7açılır ve bu menüde onaya'
+        - '&7tıklarsanız fabrikanız silinir'
+        - ''
+        - '&4Not: &fFabrika silme işleminin'
+        - '&fgeri dönüşü yoktur. Ve fabrika'
+        - '&fkurma parası miktarında parayı'
+        - '&fgeri alırsınız.'
+      NBT: '{SkullOwner:{Id:"5ecfabf0-5253-47b0-a44d-9a0c924081b9",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmViNTg4YjIxYTZmOThhZDFmZjRlMDg1YzU1MmRjYjA1MGVmYzljYWI0MjdmNDYwNDhmMThmYzgwMzQ3NWY3In19fQ=="}]}}}'
+      Slot: 13
+
+GUI4:
+  Title: '&6&lFabrika'
+  Size: 3
+  Items:
+    Fabrika-Çalış:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aÇalışmaya başla'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Tıklayarak çalışmaya'
+        - '&7başlayabilirsin. Çalışarak'
+        - '&7saat başına para kazanabilir'
+        - '&7aynı zamanda fabrikanıza'
+        - '&7para kazandırabilirsiniz.'
+      NBT: '{SkullOwner:{Id:"08929f2f-76ef-4d03-b06e-2ea615d80273",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTRlNDM1OGQ3MzRhNmUwNjhlYjA3Y2I4ZmM1ZmZkZThiOTQ4MDBlYjM5Njc3NzQyOGE0ZjU1OTMxNWExZmY0ZCJ9fX0="}]}}}'
+      Slot: 12
+    Fabrika-Çık:
+      Tür: 'SKULL_ITEM'
+      Data-Value: 3
+      İsim: '&aFabrikadan çık'
+      Işıltı-Efekti: false
+      Adet: 1
+      Açıklama:
+        - ''
+        - '&7Eğer çalışma ortamını'
+        - '&7sevmediysen buraya tıklayarak'
+        - '&7fabrikadan çıkabilirsin.'
+      NBT: '{SkullOwner:{Id:"f360ac56-14a6-40de-a3af-0ff07c1d28bb",Properties:{textures:[{Value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkMjQwMDAwMmFkOWZiYmJkMDA2Njk0MWViNWIxYTM4NGFiOWIwZTQ4YTE3OGVlOTZlNGQxMjlhNTIwODY1NCJ9fX0="}]}}}'
+      Slot: 14

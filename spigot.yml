@@ -1,0 +1,275 @@
+# This is the main configuration file for Spigot.
+# As you can see, there's tons to configure. Some options may impact gameplay, so use
+# with caution, and make sure you know what each option does before configuring.
+# For a reference for any variable inside this file, check out the Spigot wiki at
+# http://www.spigotmc.org/wiki/spigot-configuration/
+# 
+# If you need help with the configuration or have any questions related to Spigot,
+# join us at the IRC or drop by our forums and leave a post.
+# 
+# IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
+# Forums: http://www.spigotmc.org/
+
+config-version: 8
+settings:
+  save-user-cache-on-stop-only: true
+  bungeecord: false
+  late-bind: true
+  sample-count: 12
+  player-shuffle: 0
+  filter-creative-items: true
+  user-cache-size: 1000
+  int-cache-limit: 1024
+  moved-wrongly-threshold: 0.0625
+  moved-too-quickly-threshold: 100.0
+  timeout-time: 60
+  restart-on-crash: false
+  restart-script: ./baslat.bat
+  netty-threads: 4
+  attribute:
+    maxHealth:
+      max: 2048.0
+    movementSpeed:
+      max: 2048.0
+    attackDamage:
+      max: 2048.0
+  debug: false
+  limit-player-interactions: true
+  baby-zombie-movement-speed: 0.5
+timings:
+  enabled: true
+  verbose: true
+  server-name-privacy: false
+  hidden-config-entries:
+  - database
+  - settings.bungeecord-addresses
+  history-interval: 300
+  history-length: 3600
+commands:
+  tab-complete: -1
+  log: true
+  spam-exclusions:
+  - /skill
+  silent-commandblock-console: false
+  replace-commands:
+  - setblock
+  - summon
+  - testforblock
+  - tellraw
+messages:
+  whitelist: |2-
+
+    §cSunucu bakımda!
+
+    §7Sunucuda bir yapım çalışması var.
+    §7Çok kısa bir süre içinde tekrar aktif olacağız
+
+    §aSosyal medya
+    §7Discord daveti: §f/sunucudavet
+    §ewww.sunucuismi.com
+  unknown-command: |-
+    §1   §2    §3
+    §8  §6SkyBlock §8§lᄿ §cBilinmeyen komut girdiniz.
+    §4   §5    §6
+    §8  §7Sunucu hakkında  bilgi almak için: §f/bilgi
+    §7   §8    §9
+    §e   play.sunucuismi.com§8§l⋯§e www.sunucuismi.com
+    §a   §b    §c
+  server-full: |2-
+
+    §cSunucu dolu!
+
+    §7Oyuncular sunucuyu maksimum
+    §7slota kadar doldurmuş. Girmek
+    §7için başka bir zamanı bekle.
+
+    §aSosyal medya
+    §7Discord daveti: §f/sunucudavet
+
+    §ewww.sunucuismi.com
+  outdated-client: |2-
+
+    §cYanlış sürüm!
+
+    §7Geçersiz sürümle girmeyi denediniz.
+    §7Lütfen §f{0} §7sürümüyle giriş yapın!
+
+    §aSosyal medya
+    §7Discord daveti: §f/sunucudavet
+
+    §ewww.sunucuismi.com
+  outdated-server: |2-
+
+    §cYanlış sürüm!
+
+    §7Geçersiz sürümle girmeyi denediniz.
+    §7Lütfen §f{0} §7sürümüyle giriş yapın!
+
+    §aSosyal medya
+    §7Discord daveti: §f/sunucudavet
+
+    §ewww.sunucuismi.com
+  restart: §cSunucu yeniden başlatılıyor!
+stats:
+  disable-saving: false
+  forced-stats: {}
+world-settings:
+  default:
+    verbose: true
+    max-bulk-chunks: 10
+    max-entity-collisions: 1
+    dragon-death-sound-radius: 0
+    seed-village: 10387312
+    seed-feature: 14357617
+    hunger:
+      walk-exhaustion: 0.2
+      sprint-exhaustion: 0.8
+      combat-exhaustion: 0.3
+      regen-exhaustion: 3.0
+    max-tnt-per-tick: 10
+    max-tick-time:
+      tile: 1000
+      entity: 1000
+    nerf-spawner-mobs: true
+    anti-xray:
+      enabled: false
+      engine-mode: 1
+      hide-blocks:
+      - 14
+      - 15
+      - 16
+      - 21
+      - 48
+      - 49
+      - 54
+      - 56
+      - 73
+      - 74
+      - 82
+      - 129
+      - 130
+      replace-blocks:
+      - 1
+      - 5
+    growth:
+      cactus-modifier: 100
+      cane-modifier: 100
+      melon-modifier: 100
+      mushroom-modifier: 100
+      pumpkin-modifier: 100
+      sapling-modifier: 100
+      wheat-modifier: 100
+      netherwart-modifier: 100
+    entity-activation-range:
+      animals: 16
+      monsters: 24
+      misc: 8
+      raiders: 48
+    entity-tracking-range:
+      players: 48
+      animals: 48
+      monsters: 48
+      misc: 32
+      other: 64
+    ticks-per:
+      hopper-transfer: 30
+      hopper-check: 30
+    hopper-amount: 64
+    random-light-updates: false
+    save-structure-info: true
+    mob-spawn-range: 6
+    wither-spawn-sound-radius: 0
+    item-despawn-rate: 1200
+    merge-radius:
+      item: 4.0
+      exp: 6.0
+    arrow-despawn-rate: 300
+    enable-zombie-pigmen-portal-spawns: true
+    view-distance: 12
+    hanging-tick-frequency: 100
+    zombie-aggressive-towards-villager: true
+    chunks-per-tick: 650
+    clear-tick-list: false
+    water-over-lava-flow-speed: 5
+    tnt-entity-height-nerf: 0
+    disable-explosion-knockback: false
+    all-chunks-are-slime-chunks: false
+    allow-undead-horse-leashing: false
+    player-exhaustion:
+      block-break: 0.02500000037252903
+      swimming: 0.014999999664723873
+    fishing-time-range:
+      MinimumTicks: 100
+      MaximumTicks: 900
+    game-mechanics:
+      boats-drop-boats: false
+      disable-player-crits: false
+      disable-chest-cat-detection: false
+      disable-end-credits: false
+    lava-flow-speed:
+      normal: 30
+      nether: 10
+    squid-spawn-height:
+      minimum: 45.0
+      maximum: 63.0
+    despawn-ranges:
+      soft: 32
+      hard: 128
+    remove-unloaded:
+      enderpearls: true
+      tnt-entities: true
+      falling-blocks: true
+    fast-drain:
+      lava: false
+      water: false
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
+    fix-cannons: false
+    container-update-tick-rate: 1
+    keep-spawn-loaded: true
+    falling-blocks-collide-with-signs: false
+    disable-mood-sounds: false
+    portal-search-radius: 128
+    disable-ice-and-snow: false
+    use-async-lighting: false
+    disable-thunder: false
+    tick-next-tick-list-cap: 10000
+    tick-next-tick-list-cap-ignores-redstone: false
+    remove-invalid-mob-spawner-tile-entities: true
+    use-hopper-check: false
+    generator-settings:
+      canyon: true
+      caves: true
+      dungeon: true
+      fortress: true
+      mineshaft: true
+      monument: true
+      stronghold: true
+      temple: true
+      village: true
+      flat-bedrock: false
+    allow-block-location-tab-completion: true
+    cache-chunk-maps: false
+    tnt-explosion-volume: 4.0
+    optimize-explosions: true
+    player-blocking-damage-multiplier: 0.5
+    max-growth-height:
+      cactus: 3
+      reeds: 3
+    mob-spawner-tick-rate: 1
+    falling-block-height-nerf: 0
+    nether-ceiling-void-damage: false
+    disable-teleportation-suffocation-check: false
+effect-modifiers:
+  strength: 1.3
+  weakness: -0.5
+stackable-buckets:
+  lava: false
+  water: false
+  milk: false
+data-value-allowed-items: []
+warnWhenSettingExcessiveVelocity: true
+mobAi: true
+tick-inactive-villagers: false

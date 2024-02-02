@@ -1,0 +1,100 @@
+﻿options:
+    prefix: &6Skyblock &8»
+on load:
+    if {Kurt} isn't set:
+        set {Kurt} to 0
+command /kedi:
+    permission: op
+    trigger:
+        send ""
+        send "&8                          &6&lKEDI ETKİNLİĞİ"
+        send ""
+        send "&e/kedi-sıfırla &7- &fKedinin mevcut gelişimini tamamen sıfırlar."
+        send "&e/kedi-kemik &7- &fKedinin tek yiyeceğinden 8 adet alırsınız."
+        send "&e/kedi-besle &7- &fKedinin besleyebilirsiniz."
+        send "&e/kedi-iscoming &7- &fKedinin etkinliğini direkt olarak başlatırsınız."
+command /kedi-sıfırla:
+    permission: op
+    trigger:
+        set {Kurt} to 0
+        send "&aKedi mevcut gelişimi tamamen sıfırlandı. &7(0/750)"
+        stop
+command /kedi-balık:
+    permission: op
+    trigger:
+        give 8 350 named "&bKedi Maması" to player
+command /kedi-besle:
+    trigger:
+        if name of tool of player is "&bKedi Maması":
+            set {_miktar} to 1
+            if "%player's tool%" contains " ":
+                set {_m::*} to split "%player's tool%" at " "
+                set {_miktar} to {_m::1} parsed as int
+                if {_miktar} isn't set:
+                    set {_miktar} to 1
+                if {Kurt} + {_miktar} is greater than 750:
+                    set {_miktar} to ({_miktar} - (({Kurt} + {_miktar}) - 750))
+            if {Kurt} is less than 750:          
+                if {Kurt} + {_miktar} is 750:
+                    remove {_miktar} of bone from player's tool
+                    add {_miktar} to {Kurt}
+                    broadcast "{@prefix} &eKedi, tamamen doyuruldu! Kedi etkinliğinin başlamasına &b5 dakika &ekaldı."
+                    execute console command "hologram setline kurtetkinligi 7 &7Açlık durumu: &eEtkinliğe son 5 dakika kaldı."
+                    wait 60 seconds
+                    broadcast "{@prefix} &eKedi, tamamen doyuruldu! Kedi etkinliğinin başlamasına &b4 dakika &ekaldı."
+                    execute console command "hologram setline kurtetkinligi 7 &7Açlık durumu: &eEtkinliğe son 4 dakika kaldı."          
+                    wait 60 seconds
+                    broadcast "{@prefix} &eKedi, tamamen doyuruldu! Kedi etkinliğinin başlamasına &b3 dakika &ekaldı."
+                    execute console command "hologram setline kurtetkinligi 7 &7Açlık durumu: &eEtkinliğe son 3 dakika kaldı."
+                    wait 60 seconds
+                    broadcast "{@prefix} &eKedi, tamamen doyuruldu! Kedi etkinliğinin başlamasına &b2 dakika &ekaldı."
+                    execute console command "hologram setline kurtetkinligi 7 &7Açlık durumu: &eEtkinliğe son 2 dakika kaldı."
+                    wait 60 seconds
+                    execute console command "hologram setline kurtetkinligi 7 &7Açlık durumu: &eEtkinliğe son 1 dakika kaldı."
+                    broadcast "{@prefix} &eKedi etkinliğinin başlamasına &b1 dakika &ekaldı."
+                    wait 60 seconds
+                    broadcast "{@prefix} &aKedi etkinliği başlıyor. Envanterinde biraz yer açmayı sakın unutma!"
+                    execute console command "hologram setline kurtetkinligi 7 &7Açlık durumu: &aEtkinlik devam ediyor..."
+                    wait 3 seconds
+                    execute console command "kedi-iscoming"
+                    wait 10 seconds
+                    execute console command "hologram setline kurtetkinligi 7 &7Açlık durumu: &bKarnı aç!"
+                    set {Kurt} to 0
+                    stop
+                else:
+                    remove {_miktar} of player's tool from player's inventory
+                    add {_miktar} to {Kurt}
+                    send "{@prefix} &aKarnımı doyurduğun için teşekkür ediyorum."
+                    execute console command "hologram reload"
+                    stop
+            else:
+                send "{@prefix} &cBiraz yavaş olur musun? Kediyi daha fazla besleyemezsin, yoksa açlıktan ölecek."
+        else:
+            send "{@prefix} &cBu hareketin ile kedi sinirlenmeye başlıyor. Kedinin mevcut gelişimini arttırmak için kemik ile tıklamak yeterli olacaktır!"
+command /kedi-iscoming:
+    permission: kurtetkinligi.baslat
+    trigger:
+        wait 5 seconds
+        execute console command "crazycrates giveall p event 4"
+        execute console command "crazycrates giveall p spawner 4"
+        execute console command "crazycrates giveall p para 4"
+        wait 5 seconds
+        broadcast "{@prefix} &cEvent sona ermiştir, iyi oyunlar!"
+        stop
+		
+command /key:
+	permission: admin
+	permission message: Buna yetkin yok!
+	trigger:
+		send "&6&lKEDI EVENT &8▶ &eHerkese &68 &eadet kedi maması verilecektir." to players
+		wait 1 seconds
+		send "&6&lKEDI EVENT &8▶ &eEnvanterlerinizde yer açınız. &7Kediyi beslemek için; &a/warp kedi" to players
+		wait 10 seconds
+		send "&6&lKEDI EVENT &8▶ &eHerkese 8 adet mama verilmiştir. İyi oyunlar dileriz!" to players
+		give 8 350 named "&bKedi Maması" to players
+		stop
+		
+		
+every 3 hour:
+	execute console command "key"
+	stop

@@ -1,0 +1,127 @@
+command /tsetkırmızı:
+    permission: turnuva.admin
+    permission message: &6&lTurnuva&8» &cMaalesef, Bunu yapamazsın!
+    usage: /turnuvabilgi
+    trigger:
+        set {turnuva.kırmızı} to location of player
+        send "&6&lTurnuva&8» &aBaşarıyla kırmızı takım alanı oluşturuldu" to player
+        stop
+        
+command /tsetmavi:
+    permission: turnuva.admin
+    permission message: &6&lTurnuva&8» &cMaalesef, Bunu yapamazsın!
+    usage: /turnuvabilgi
+    trigger:
+        set {turnuva.mavi} to location of player
+        send "&6&lTurnuva&8» &aBaşarıyla mavi takım alanı oluşturuldu." to player
+        stop
+        
+command /tsetkick:
+    permission: turnuva.admin
+    permission message: &6&lTurnuva&8» &cMaalesef, Bunu yapamazsın!
+    usage: /turnuvabilgi
+    trigger:
+        set {turnuva.kick} to location of player
+        send "&6&lTurnuva&8» &aBaşarıyla kick alanı oluşturuldu." to player
+        stop
+        
+command /teklekırmızı <player> <text>:
+    permission: turnuva.admin
+    permission message: &6&lTurnuva&8» &cMaalesef, Bunu yapamazsın!
+    usage: /turnuvabilgi
+    trigger:
+        arg-1 is set:
+            send "&6&lTurnuva&8» &a%arg-1% oyuncusunu kırmızı takıma eklediniz. &8(&2&l%arg-2%&8)" to player
+            send "&6&lTurnuva&8» &aTurnuva yetkilisi seni kırmızı takıma ekledi! &8(&2&l%arg-2%&8)" to arg-1
+            wait 1 second
+            send "&6&lTurnuva&8» &aSeni turnuva alanına ışınlıyorum. Envanterin silinecek!" to arg-1
+            wait 8 second
+            clear arg-1's inventory
+            heal arg-1
+            teleport arg-1 to {turnuva.kırmızı}
+            wait 1 seconds
+            execute console command "turnuvaitem %arg-1%"
+            send "&6&lTurnuva&8» &aTurnuva alanına başarıyla ışınlandınız." to arg-1
+        arg-1 is not set:
+            send "&6&lTurnuva&8» &cLütfen oyuncu ismi giriniz." to player
+             
+command /teklemavi <player> <text>:
+    permission: turnuva.admin
+    permission message: &6&lTurnuva&8» &cMaalesef, Bunu yapamazsın!
+    usage: /turnuvabilgi
+    trigger:
+        arg-1 is set:
+            send "&6&lTurnuva&8» &a%arg-1% oyuncusunu mavi takıma eklediniz. &8(&2&l%arg-2%&8)" to player
+            send "&6&lTurnuva&8» &aTurnuva yetkilisi seni mavi takıma ekledi! &8(&2&l%arg-2%&8)" to arg-1
+            wait 1 second
+            send "&6&lTurnuva&8» &aSeni turnuva alanına ışınlıyorum. Envanterin silinecek!" to arg-1
+            wait 8 second
+            clear arg-1's inventory
+            heal arg-1
+            teleport arg-1 to {turnuva.mavi}
+            wait 1 seconds
+            execute console command "turnuvaitem %arg-1%"
+            send "&6&lTurnuva&8» &aTurnuva alanına başarıyla ışınlandınız." to arg-1
+        arg-1 is not set:
+            send "&6&lTurnuva&8» &cLütfen oyuncu ismi giriniz." to player
+            
+command /tkick <player>:
+    permission: turnuva.admin
+    permission message: &6&lTurnuva&8» &cMaalesef, Bunu yapamazsın!
+    usage: /turnuvabilgi
+    trigger:
+        arg-1 is set:
+            send "&6&lTurnuva&8» &a%arg-1% öldüğü için turnuvadan çıkarıldı." 
+            send "&6&lTurnuva&8» &cYetkili seni öldüğün için turnuvadan çıkardı!" to arg-1
+            heal arg-1
+            clear arg-1's inventory
+            teleport arg-1 to {turnuva.kick}
+            stop
+            
+command /treload:
+    permission: turnuva.admin
+    permission message: &cMaalesef, Bunu yapamazsın!
+    usage: /turnuvabilgi
+    trigger:
+        execute console command "sk reload turnuva"
+        wait 1 second
+        send "&6&lTurnuva&8» &aTurnuva skripti başarıyla yeniden yüklendi." 
+     
+command /turnuvabilgi:
+    permission: turnuva.admin
+    permission message: &cMaalesef, Bunu yapamazsın!
+    trigger:
+        send ""
+        send "      &6&lTURNUVA MENU" to player
+        send "&8" to player
+        send "&8 » &6/tsetkırmızı &8| &eKırmızı takımın spawn noktasını ayarlar." to player
+        send "&8 » &6/tsetmavi &8| &eMavi takımın spawn noktasını ayarlar." to player
+        send "&8 » &6/tsetkick &8| &eKick spawn noktasını ayarlar." to player
+        send "&8 » &6/teklemavi (oyuncu) (klan) &8| &eMavi takıma eklenecek oyuncuyu ve klanı bildirir." to player
+        send "&8 » &6/teklekırmızı (oyuncu) (klan) &8| &eKırmızı takıma eklenecek oyuncuyu ve klanı bildirir." to player
+        send "&8 » &6/tkick (oyuncu) &8| &eOyuncuyu turnuvadan çıkarır." to player
+        send "&8 » &6/treload &8| &eTurnuva skriptini yeniden başlatır." to player
+        send "&8" to player
+        
+command /turnuvaitem <player>:
+    permission: turnuva.admin
+    permission message: &cMaalesef, Bunu yapamazsın!
+    usage: /turnuvaitem oyuncu
+    trigger:
+        give 1 276 of sharpness 6 and smite 5 and unbreaking 3 named "&6&lTurnuva Kılıç" to arg-1
+        give 3 322:1 named "&6&lTurnuva Gapple" to arg-1
+        give 2 373:8233 named "&6&lGüç İksiri" to arg-1
+        give 2 373:8226 named "&6&lHız İksiri" to arg-1
+        equip arg-1 with diamond chestplate of protection 6 and unbreaking 3 named "&6&lTurnuva Zırh"
+        equip arg-1 with diamond helmet of protection 6 and unbreaking 3 named "&6&lTurnuva Zırh"
+        equip arg-1 with diamond leggings of protection 6 and unbreaking 3 named "&6&lTurnuva Zırh"
+        equip arg-1 with diamond boots of protection 6 and unbreaking 3 named "&6&lTurnuva Zırh"
+		
+command /turnuva:
+	trigger:
+		execute player command "tournaments"
+		
+		
+        
+#BU SKRİPT TRXOR TARAFINDAN YAZILDI. PAYLAŞILMASI KESİNLİKLE YASAKTIR!
+        

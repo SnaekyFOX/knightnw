@@ -1,0 +1,41 @@
+# Lottery version: 9.2
+# Configuration file: change desired values here, kindly pm me on spigot if you have questions @Ean224
+check_for_updates: false
+count_down_time: 30
+buy_price: 750000000
+max_ticket:
+  default: 15
+  donor: 65
+allow_broadcast: true
+play_out_title_when_win: true
+sounds:
+  anvil_cancel_sound: true
+  player_win_sound: true
+starting_money_in_pot: 0
+time:
+  seconds: saniye
+  minutes: dakika
+  hours: saat
+  days: gün
+gui_name:
+  help_gui_name: '&3Jackpot &7yardım menüsü'
+  menu_gui_name: '&3Jackpot &8#&c%number%'
+  confirm_gui_name: '&a&lEmin Misiniz'
+  player_gui_name: '&e&lOyuncu İstatistiği'
+mysql:
+  enabled: false
+  ip: 0.0.0.0
+  port: 3306
+  username: root
+  password: password
+  database-name: lotterydb
+  stats_message:
+  - '&a%player% İstatistiği:'
+  - '&7Kazanma: &e%wins%'
+  - '&7Satın Alınan Biletler: &e%tickets%'
+  - '&7Harcanan Para: &e%money%'
+save_lottery_progress_on_stop: false
+buy_tickets_cooldown_in_seconds: 0
+open_help_menu_on_base_cmd: true
+lottery_tax_in_percentage: 0
+open_confirm_menu_on_buy: true

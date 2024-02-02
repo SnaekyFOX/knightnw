@@ -1,0 +1,49 @@
+mine:
+  name: obsi
+  timer: 300
+  type: Gradual
+  reset:
+    speed: FAST
+    reset-messages: false
+    broadcast-messages: false
+    delay-messages: false
+    broadcast-delay-messages: false
+  block-placing: false
+  children: []
+  effects: []
+  schematic: false
+  fly: false
+  alerts:
+  - 60
+  - 20
+  - 10
+  - 3
+  - 2
+  - 1
+  hologram: false
+  automessages:
+    radius: 8
+  timedreset:
+    enabled: true
+  percentagereset:
+    enabled: true
+    value: 50.0
+  region:
+    world: kazi
+    min:
+      x: -1761
+      y: 72
+      z: 2622
+    max:
+      x: -1677
+      y: 86
+      z: 2706
+  teleport:
+    world: kazi
+    x: -1718.5633400731815
+    y: 88.0
+    z: 2707.090076236778
+    pitch: -7.0205503
+    yaw: 178.97527
+  blocks:
+  - OBSIDIAN;100.0

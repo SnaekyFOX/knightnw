@@ -1,0 +1,349 @@
+on load:
+    delete {jokey::*}
+    delete {green::*}
+    delete {blue::*}
+    delete {red::*}
+    delete {black::*}
+    delete {apara::*}
+ 
+on quit:
+    delete {jokey::%player%}
+    delete {green::%player%}
+    delete {blue::%player%}
+    delete {red::%player%}
+    delete {black::%player%}
+    delete {apara::%player%}
+
+function openmenu(p: Player):
+
+    open virtual chest inventory with size 5 named "&8At Yarışı | Giriş" to {_p}
+             
+    make gui slot 8 of {_p} with hopper named "&aTıkla ve para yatır." to run function applydeposit({_p})
+ 
+    make gui slot 17 of {_p} with redstone named "&aTıkla ve yatırılan parayı sıfırla." to run function applymoney({_p})
+ 
+    make gui slot 21 of {_p} with paper named "&aYeşil jokey seç" to run function applygreen({_p})
+ 
+    make gui slot 22 of {_p} with paper named "&bMavi jokey seç" to run function applyblue({_p})
+ 
+    make gui slot 23 of {_p} with paper named "&cKırmızı jokey seç" to run function applyred({_p})
+ 
+    make gui slot 30 of {_p} with paper named "&eSarı jokey seç" to run function applyyellow({_p})
+ 
+    make gui slot 31 of {_p} with paper named "&8Siyah jokey seç" to run function applyblack({_p})
+ 
+    if {jokey::%{_p}%} is not set:
+     
+        if {apara::%{_p}%} is not set:
+ 
+            make gui slot 4 of {_p} with lever named "&aBaşlat." with lore "&4||&aSeçilen: seçilmedi||&aYatırılan para: 0 &b||&c||&aTıkla ve başlat." to nothing
+     
+        else:
+     
+            make gui slot 4 of {_p} with lever named "&aBaşlat." with lore "&4||&aSeçilen: seçilmedi||&aYatırılan para: %{apara::%{_p}%}% &b||&c||&aTıkla ve başlat." to nothing
+     
+    else:
+ 
+        if {apara::%{_p}%} is not set:
+ 
+            make gui slot 4 of {_p} with lever named "&aBaşlat." with lore "&4||&aSeçilen: %{jokey::%{_p}%}%||&aYatırılan para: 0 &b||&c||&aTıkla ve başlat." to nothing
+     
+        else:
+     
+            make gui slot 4 of {_p} with lever named "&aBaşlat." with lore "&4||&aSeçilen: %{jokey::%{_p}%}%||&aYatırılan para: %{apara::%{_p}%}% &b||&c||&aTıkla ve başlat." to run function applygame({_p})
+     
+     
+function applygreen(p: Player):
+
+    set {jokey::%{_p}%} to "Yeşil"
+ 
+    openmenu({_p})
+ 
+function applyblue(p: Player):
+
+    set {jokey::%{_p}%} to "Mavi"
+ 
+    openmenu({_p})
+
+function applyred(p: Player):
+
+    set {jokey::%{_p}%} to "Kırmızı"
+ 
+    openmenu({_p})
+
+function applyyellow(p: Player):
+
+    set {jokey::%{_p}%} to "Sarı"
+ 
+    openmenu({_p})
+
+function applyblack(p: Player):
+
+    set {jokey::%{_p}%} to "Siyah"
+ 
+    openmenu({_p})
+ 
+command /atyarışı:
+    trigger:
+        openmenu(player)
+     
+function applydeposit(p: Player):
+ 
+    if {apara::%{_p}%} is not set:
+     
+        open an anvil gui named "At Yarışı | Para Yatır" to {_p} with default text "Miktar gir!"
+ 
+    else:
+     
+        send "&cZaten para yatırmışsın parayı çekmek için tekrar menüyü aç!" to {_p}    
+ 
+on close anvil gui named "At Yarışı | Para Yatır":
+
+    if event-text is not "Miktar gir!":
+     
+        if {apara::%player%} is not set:
+     
+            set {_price} to event-text parsed as number
+                     
+            if player's balance is greater than or equal to {_price}:
+         
+                execute console command "eco take %player% %{_price}%"
+             
+                set {apara::%player%} to {_price}
+             
+                wait 2 tick
+             
+                openmenu(player)
+                             
+            else:
+         
+                send "&cYeterli paran bulunmuyor!" to player
+         
+on close anvil gui named "&8At Yarışı | Giriş":
+
+    delete {jokey::%{_p}%}
+ 
+    delete {apara::%{_p}%}
+     
+function applymoney(p: Player):
+ 
+    if {apara::%{_p}%} is set:
+ 
+        execute console command "eco give %{_p}% %{apara::%{_p}%}%"
+     
+        delete {apara::%{_p}%}
+     
+        openmenu({_p})
+     
+    else:
+ 
+        send "&cZaten para yatırmamışsın!" to {_p}
+     
+function applygame(p: Player):
+
+    if {green::%{_p}%} is not set:
+ 
+        set {green::%{_p}%} to 0
+ 
+    if {blue::%{_p}%} is not set:
+ 
+        set {blue::%{_p}%} to 9
+     
+    if {red::%{_p}%} is not set:
+ 
+        set {red::%{_p}%} to 18
+     
+    if {yellow::%{_p}%} is not set:
+ 
+        set {yellow::%{_p}%} to 27
+
+    if {black::%{_p}%} is not set:
+ 
+        set {black::%{_p}%} to 36
+
+    open virtual chest inventory with size 5 named "&8At Yarışı (%{jokey::%{_p}%}%)" to {_p}
+ 
+    make gui slot {green::%{_p}%} of {_p} with 35:5 named "&aYeşil Jokey" to nothing
+ 
+    make gui slot {blue::%{_p}%} of {_p} with 35:11 named "&bMavi Jokey" to nothing
+ 
+    make gui slot {red::%{_p}%} of {_p} with 35:14 named "&cKırmızı Jokey" to nothing
+ 
+    make gui slot {yellow::%{_p}%} of {_p} with 35:4 named "&eSarı Jokey" to nothing
+ 
+    make gui slot {black::%{_p}%} of {_p} with 35:15 named "&8Siyah Jokey" to nothing
+ 
+    wait 1 seconds    
+ 
+    if chance of 50%:
+     
+        add 1 to {green::%{_p}%}
+     
+    if chance of 50%:
+     
+        add 1 to {blue::%{_p}%}
+
+    if chance of 50%:
+     
+        add 1 to {red::%{_p}%}
+
+    if chance of 50%:
+     
+        add 1 to {yellow::%{_p}%}
+
+    if chance of 50%:
+     
+        add 1 to {black::%{_p}%}
+     
+     
+    if {green::%{_p}%} is greater than 8:
+     
+        close {_p}'s inventory
+             
+        delete {green::%{_p}%}
+        delete {blue::%{_p}%}
+        delete {red::%{_p}%}
+        delete {yellow::%{_p}%}
+        delete {black::%{_p}%}
+
+        if {jokey::%{_p}%} is "Yeşil":
+         
+            send {_p} title "&a✔" with subtitle "&aKazandın." for 3 seconds
+         
+            delete {jokey::%{_p}%}
+         
+            set {_x} to ({apara::%{_p}%} * 2)
+                     
+            execute console command "eco give %{_p}% %{_x}%"
+         
+            delete {apara::%{_p}%}    
+         
+        else:
+     
+            send {_p} title "&c❌" with subtitle "&cKaybettin." for 3 seconds
+         
+            delete {jokey::%{_p}%}
+
+            delete {apara::%{_p}%}
+     
+    else if {blue::%{_p}%} is greater than 17:
+     
+        close {_p}'s inventory
+         
+        delete {green::%{_p}%}
+        delete {blue::%{_p}%}
+        delete {red::%{_p}%}
+        delete {yellow::%{_p}%}
+        delete {black::%{_p}%}
+     
+        if {jokey::%{_p}%} is "Mavi":
+         
+            send {_p} title "&a✔" with subtitle "&aKazandın." for 3 seconds
+         
+            delete {jokey::%{_p}%}
+         
+            set {_x} to ({apara::%{_p}%} * 2)
+                                 
+            execute console command "eco give %{_p}% %{_x}%"
+         
+            delete {apara::%{_p}%}
+         
+        else:
+     
+            send {_p} title "&c❌" with subtitle "&cKaybettin." for 3 seconds
+         
+            delete {jokey::%{_p}%}
+         
+            delete {apara::%{_p}%}
+
+    else if {red::%{_p}%} is greater than 26:
+     
+        close {_p}'s inventory
+             
+        delete {green::%{_p}%}
+        delete {blue::%{_p}%}
+        delete {red::%{_p}%}
+        delete {yellow::%{_p}%}
+        delete {black::%{_p}%}
+     
+        if {jokey::%{_p}%} is "Kırmızı":
+         
+            send {_p} title "&a✔" with subtitle "&aKazandın." for 3 seconds
+         
+            delete {jokey::%{_p}%}
+         
+            set {_x} to ({apara::%{_p}%} * 2)
+                     
+            execute console command "eco give %{_p}% %{_x}%"
+         
+            delete {apara::%{_p}%}
+         
+        else:
+     
+            send {_p} title "&c❌" with subtitle "&cKaybettin." for 3 seconds
+         
+            delete {jokey::%{_p}%}
+         
+            delete {apara::%{_p}%}
+     
+    else if {yellow::%{_p}%} is greater than 35:
+     
+        close {_p}'s inventory
+             
+        delete {green::%{_p}%}
+        delete {blue::%{_p}%}
+        delete {red::%{_p}%}
+        delete {yellow::%{_p}%}
+        delete {black::%{_p}%}
+     
+        if {jokey::%{_p}%} is "Sarı":
+         
+            send {_p} title "&a✔" with subtitle "&aKazandın." for 3 seconds
+         
+            delete {jokey::%{_p}%}
+         
+            set {_x} to ({apara::%{_p}%} * 2)
+                     
+            execute console command "eco give %{_p}% %{_x}%"
+         
+            delete {apara::%{_p}%}    
+         
+        else:
+     
+            send {_p} title "&c❌" with subtitle "&cKaybettin." for 3 seconds
+         
+            delete {jokey::%{_p}%}
+         
+            delete {apara::%{_p}%}
+     
+    else if {black::%{_p}%} is greater than 44:
+     
+        close {_p}'s inventory
+     
+        delete {green::%{_p}%}
+        delete {blue::%{_p}%}
+        delete {red::%{_p}%}
+        delete {yellow::%{_p}%}
+        delete {black::%{_p}%}
+     
+        if {jokey::%{_p}%} is "Siyah":
+         
+            send {_p} title "&a✔" with subtitle "&aKazandın." for 3 seconds
+         
+            delete {jokey::%{_p}%}
+         
+            set {_x} to ({apara::%{_p}%} * 2)
+                     
+            execute console command "eco give %{_p}% %{_x}%"
+         
+            delete {apara::%{_p}%}
+         
+        else:
+     
+            send {_p} title "&c❌" with subtitle "&cKaybettin." for 3 seconds
+         
+            delete {jokey::%{_p}%}
+         
+            delete {apara::%{_p}%}
+    else:
+        applygame({_p})

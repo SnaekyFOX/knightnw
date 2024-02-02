@@ -1,0 +1,205 @@
+# XLTournaments Menu
+
+# Title of the menu
+title: "&3Turnuva &8>>"
+# Min rows: 1, Max rows: 6
+rows: 3
+
+# These are static items and serve no click purpose
+filler_items:
+  glass:
+    material: GRAY_STAINED_GLASS_PANE
+    amount: 1
+    display_name: "&r"
+    slot: -1 # -1 will fill all empty slots
+
+# This is where you list all your tournaments
+# Placeholders:
+#   {START_DAY} - Tournament start day
+#   {END_DAY} - Tournament end day
+#   {START_MONTH} - Tournament start month
+#   {START_MONTH_NUMBER} - Tournament start month number
+#   {END_MONTH} - Tournament end month
+#   {END_MONTH_NUMBER} - Tournament end month number
+#   {TIME_REMAINING} - Tournament time remaining
+#   {PLAYER_POSITION} - Player position number
+#   {PLAYER_POSITION_FORMATTED} - Player position number (with comma separation)
+#   {PLAYER_SCORE} - Raw player score
+#   {PLAYER_SCORE_FORMATTED} - Player score with comma separation
+#   {PLAYER_SCORE_TIME_FORMATTED} - Player score formatted to a time (for time related objectives)
+#   {LEADER_NAME_<position>} - Player name at position
+#   {LEADER_SCORE_<position>} - Raw score at position
+#   {LEADER_SCORE_FORMATTED_<position>} - Score at position formatted with comma separation
+#   {LEADER_SCORE_TIME_FORMATTED_<position>} - Score at position formatted to a time (for time related objectives)
+#
+tournament_items:
+  block_break_tournament: # ID of the tournament
+    slot: 10 # Slot for any one of the items
+    active: # Active: when the tournament is running
+      material: DIAMOND_PICKAXE
+      glow: true
+      item_flags:
+        - HIDE_ATTRIBUTES
+      display_name: "&b&lBLOK KIRMA TURNUVASI"
+      lore:
+        - "&8{START_DAY} {START_MONTH} - {END_DAY} {END_MONTH}"
+        - ""
+        - "&b&lİSTATİSTİKLERİN:"
+        - "  &7Kırılan Blok: &f{PLAYER_SCORE}"
+        - "  &7Durum: &f#{PLAYER_POSITION}"
+        - ""
+        - "&b&lKALAN SÜRE:"
+        - "  &f{TIME_REMAINING}"
+        - ""
+        - "&4&l#1: &f{LEADER_NAME_1} &7({LEADER_SCORE_FORMATTED_1})"
+        - "&c&l#2: &f{LEADER_NAME_2} &7({LEADER_SCORE_FORMATTED_2})"
+        - "&6&l#3: &f{LEADER_NAME_3} &7({LEADER_SCORE_FORMATTED_3})"
+        - "&e&l#4: &f{LEADER_NAME_4} &7({LEADER_SCORE_FORMATTED_4})"
+        - "&7&l#5: &f{LEADER_NAME_5} &7({LEADER_SCORE_FORMATTED_5})"
+        - ""
+        - "&4&lUYARI: &CHer dakikada sıralama güncellenir!"
+    waiting: # Waiting for the tournament to start
+      material: ORANGE_STAINED_GLASS_PANE
+      display_name: "&cBLOK KIRMA TURNUVASI"
+      lore:
+        - "&8{START_DAY} {START_MONTH} - {END_DAY} {END_MONTH}"
+        - ""
+        - "&b&lÖDÜLLER:"
+        - "  &fExample Reward #1"
+        - "  &fExample Reward #2"
+        - "  &fExample Reward #3"
+        - ""
+        - "&b&lBAŞLAMASINA:"
+        - "  &f{TIME_REMAINING}"
+    ended: # Ended: when the tournament has ended
+      material: BARRIER
+      display_name: "&c&lBLOK KIRMA TURNUVASI"
+      lore:
+        - "&8{START_DAY} {START_MONTH} - {END_DAY} {END_MONTH}"
+        - ""
+        - "&b&lİSTATİSTİKLERİN:"
+        - "  &7Kırılan Blok: &f{PLAYER_SCORE}"
+        - "  &7Durum: &f#{PLAYER_POSITION}"
+        - ""
+        - "&6&lKAZANAN OYUNCULAR:"
+        - "&4&l#1: &f{LEADER_NAME_1} &7({LEADER_SCORE_FORMATTED_1})"
+        - "&c&l#2: &f{LEADER_NAME_2} &7({LEADER_SCORE_FORMATTED_2})"
+        - "&6&l#3: &f{LEADER_NAME_3} &7({LEADER_SCORE_FORMATTED_3})"
+        - "&e&l#4: &f{LEADER_NAME_4} &7({LEADER_SCORE_FORMATTED_4})"
+        - "&7&l#5: &f{LEADER_NAME_5} &7({LEADER_SCORE_FORMATTED_5})"
+        - ""
+        - "&cBu turnuva sona erdi."
+  item_craft_challenge_tournament:
+    slot: 13
+    active:
+      material: CRAFTING_TABLE
+      display_name: "&e&lZANAAT YARIŞMASI"
+      lore:
+        - "&8{START_DAY} {START_MONTH} - {END_DAY} {END_MONTH}"
+        - ""
+        - "&7Bitirmek için 20 &b&lFENER &7 yapın!"
+        - ""
+        - "&e&lİSTATİSTİKLERİN:"
+        - "  &7Hazırlanmış Fenerler: &f{PLAYER_SCORE}"
+        - "  &7Durum: &f#{PLAYER_POSITION}"
+        - ""
+        - "&e&lKALAN SÜRE:"
+        - "  &f{TIME_REMAINING}"
+        - ""
+        - "&4&l#1: &f{LEADER_NAME_1} &7({LEADER_SCORE_FORMATTED_1})"
+        - "&c&l#2: &f{LEADER_NAME_2} &7({LEADER_SCORE_FORMATTED_2})"
+        - "&6&l#3: &f{LEADER_NAME_3} &7({LEADER_SCORE_FORMATTED_3})"
+        - "&e&l#4: &f{LEADER_NAME_4} &7({LEADER_SCORE_FORMATTED_4})"
+        - "&7&l#5: &f{LEADER_NAME_5} &7({LEADER_SCORE_FORMATTED_5})"
+        - ""
+        - "&4&lUYARI: &CHer dakikada sıralama güncellenir!"
+    waiting:
+      material: ORANGE_STAINED_GLASS_PANE
+      display_name: "&e&lZANAAT YARIŞMASIS"
+      lore:
+        - "&8{START_DAY} {START_MONTH} - {END_DAY} {END_MONTH}"
+        - ""
+        - "&7Bitirmek için 20 &b&lfener &7 yapın!"
+        - ""
+        - "&e&lÖDÜLLER"
+        - "  &fExample Reward #1"
+        - "  &fExample Reward #2"
+        - "  &fExample Reward #3"
+        - ""
+        - "&e&lBAŞLAMASINA"
+        - "  &f{TIME_REMAINING}"
+    ended:
+      material: BARRIER
+      display_name: "&c&lZANAAT YARIŞMASI"
+      lore:
+        - "&8{START_DAY} {START_MONTH} - {END_DAY} {END_MONTH}"
+        - ""
+        - "&e&lİSTATİSTİKLERİN:"
+        - "  &7Hazırlanmış Fenerler: &f{PLAYER_SCORE}"
+        - "  &7Durum: &f#{PLAYER_POSITION}"
+        - ""
+        - "&e&lKAZANAN OYUNCULAR"
+        - "&4&l#1: &f{LEADER_NAME_1} &7({LEADER_SCORE_FORMATTED_1})"
+        - "&c&l#2: &f{LEADER_NAME_2} &7({LEADER_SCORE_FORMATTED_2})"
+        - "&6&l#3: &f{LEADER_NAME_3} &7({LEADER_SCORE_FORMATTED_3})"
+        - "&e&l#4: &f{LEADER_NAME_4} &7({LEADER_SCORE_FORMATTED_4})"
+        - "&7&l#5: &f{LEADER_NAME_5} &7({LEADER_SCORE_FORMATTED_5})"
+        - ""
+        - "&cBu turnuva sona erdi."
+  player_kills_tournament:
+    slot: 16
+    active:
+      material: PLAYER_HEAD
+      display_name: "&3&lÖLDÜRME TURNUVASI"
+      lore:
+        - "&8{START_DAY} {START_MONTH} - {END_DAY} {END_MONTH}"
+        - ""
+        - "&7Mümkün olduğu kadar çok sayıda diğer oyuncuyu öldürün!"
+        - ""
+        - "&3&lİSTATİSTİKLERİN:"
+        - "  &7Öldürülen Oyuncu: &f{PLAYER_SCORE}"
+        - "  &7Durum: &f#{PLAYER_POSITION}"
+        - ""
+        - "&3&lKALAN ZAMAN"
+        - "  &f{TIME_REMAINING}"
+        - ""
+        - "&4&l#1: &f{LEADER_NAME_1} &7({LEADER_SCORE_FORMATTED_1})"
+        - "&c&l#2: &f{LEADER_NAME_2} &7({LEADER_SCORE_FORMATTED_2})"
+        - "&6&l#3: &f{LEADER_NAME_3} &7({LEADER_SCORE_FORMATTED_3})"
+        - "&e&l#4: &f{LEADER_NAME_4} &7({LEADER_SCORE_FORMATTED_4})"
+        - "&7&l#5: &f{LEADER_NAME_5} &7({LEADER_SCORE_FORMATTED_5})"
+        - ""
+        - "&4&lUYARI: &CHer dakikada sıralama güncellenir!"
+    waiting:
+      material: ORANGE_STAINED_GLASS_PANE
+      display_name: "&3&lÖLDÜRME TURNUVASI"
+      lore:
+        - "&8{START_DAY} {START_MONTH} - {END_DAY} {END_MONTH}"
+        - ""
+        - "&7Mümkün olduğu kadar çok sayıda diğer oyuncuyu öldürün!"
+        - ""
+        - "&3&lÖDÜLLER:"
+        - "  &fExample Reward #1"
+        - "  &fExample Reward #2"
+        - "  &fExample Reward #3"
+        - ""
+        - "&3&lBAŞLAMASINA"
+        - "  &f{TIME_REMAINING}"
+    ended:
+      material: BARRIER
+      display_name: "&c&lÖLDÜRME TURNUVASI"
+      lore:
+        - "&8{START_DAY} {START_MONTH} - {END_DAY} {END_MONTH}"
+        - ""
+        - "&3&lİSTATİSTİKLERİN"
+        - "  &7Mevcut Öldürme: &f{PLAYER_SCORE}"
+        - "  &7Durum: &f#{PLAYER_POSITION}"
+        - ""
+        - "&3&lKAZANAN OYUNCULAR"
+        - "&4&l#1: &f{LEADER_NAME_1} &7({LEADER_SCORE_FORMATTED_1})"
+        - "&c&l#2: &f{LEADER_NAME_2} &7({LEADER_SCORE_FORMATTED_2})"
+        - "&6&l#3: &f{LEADER_NAME_3} &7({LEADER_SCORE_FORMATTED_3})"
+        - "&e&l#4: &f{LEADER_NAME_4} &7({LEADER_SCORE_FORMATTED_4})"
+        - "&7&l#5: &f{LEADER_NAME_5} &7({LEADER_SCORE_FORMATTED_5})"
+        - ""
+        - "&cBu turnuva sona erdi!"
